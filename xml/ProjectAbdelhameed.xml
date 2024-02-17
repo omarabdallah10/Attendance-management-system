@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<School xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="C:\Users\Abdel7amed\Desktop\ITI\XML\proSchema.xsd">
+	<Users>
+		<Admin>
+			<UserID>A001</UserID>
+			<Name>John Doe</Name>
+			<Email>Admin@admin.com</Email>
+			<Password>123456789Aa</Password>
+		</Admin>
+		<Teacher>
+			<UserID>T001</UserID>
+			<Name>Nadia Saleh</Name>
+			<Email>NadiaSaleh@teacher.com</Email>
+			<Password>123456789Aa</Password>
+		</Teacher>
+		<Teacher>
+			<UserID>T002</UserID>
+			<Name>Nadin Saleh</Name>
+			<Email>NadinSaleh@teacher.com</Email>
+			<Password>Ac1515as</Password>
+		</Teacher>
+		<Student>
+			<UserID>S001</UserID>
+			<Name>Abdelhameed Osama</Name>
+			<Email>abdelhameed_osama@example.com</Email>
+			<Password>611</Password>
+			<ClassName>C001</ClassName>
+		</Student>
+		<Student>
+			<UserID>S002</UserID>
+			<Name>AbdUllah Aiman</Name>
+			<Email>abdUllah_aiman@example.com</Email>
+			<Password>123456789Aa</Password>
+			<ClassName>C001</ClassName>
+		</Student>
+		<Student>
+			<UserID>S003</UserID>
+			<Name>Omar Abdullah</Name>
+			<Email>omar_abdullah@example.com</Email>
+			<Password>123456789Aa</Password>
+			<ClassName>C001</ClassName>
+		</Student>
+	</Users>
+		<Class>
+			<Name>PD</Name>
+			<Supervisor>
+				<UserID>T001</UserID>
+			</Supervisor>
+			<Teachers>
+				<UserID>T001</UserID>
+				<UserID>T002</UserID>
+			</Teachers>
+			<Students>
+				<UserID>S001</UserID>
+				<UserID>S002</UserID>
+				<UserID>S003</UserID>
+			</Students>
+		</Class>
+	<AttendanceData>
+    <AttendanceRecord>
+      <UserID>S001</UserID>
+      <Date>2024-02-15</Date>
+      <Status>Present</Status>
+    </AttendanceRecord>
+    <AttendanceRecord>
+      <UserID>S002</UserID>
+      <Date>2024-02-15</Date>
+      <Status>Absent</Status>
+    </AttendanceRecord>
+    <!-- Add more attendance records as needed -->
+  </AttendanceData>
+</School>
+
