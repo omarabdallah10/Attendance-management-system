@@ -33,7 +33,7 @@ namespace AttendanceSysytem.Forms
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Name1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Edit = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.go_back_btn = new System.Windows.Forms.Button();
             this.teachers_label = new System.Windows.Forms.Label();
@@ -56,7 +56,7 @@ namespace AttendanceSysytem.Forms
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Name,
+            this.Name1,
             this.Edit});
             this.dataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dataGridView1.Enabled = false;
@@ -72,12 +72,12 @@ namespace AttendanceSysytem.Forms
             // 
             // Name
             // 
-            this.Name.HeaderText = "Name";
-            this.Name.MinimumWidth = 6;
-            this.Name.Name = "Name";
-            this.Name.ReadOnly = true;
-            this.Name.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Name.Width = 125;
+            this.Name1.HeaderText = "Name";
+            this.Name1.MinimumWidth = 6;
+            this.Name1.Name = "Name";
+            this.Name1.ReadOnly = true;
+            this.Name1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Name1.Width = 125;
             // 
             // Edit
             // 
@@ -138,6 +138,6 @@ namespace AttendanceSysytem.Forms
         private Label teachers_label;
         private DataGridViewTextBoxColumn Edit;
         private DataGridViewTextBoxColumn NameCol;
-        private DataGridViewTextBoxColumn Name;
+        private DataGridViewTextBoxColumn Name1;
     }
 }
