@@ -1,4 +1,5 @@
 ﻿using AttendanceSysytem.Classes;
+using AttendanceSysytem.Forms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -41,15 +42,20 @@ namespace AttendanceSysytem
                         MessageBox.Show("Login Successful as Admin!");
                         //Close();
 
-                        
-                        //Form2 form2 = new Form2();
-                        //form2.Show();
+
+                        AdminFunctionalities form2 = new AdminFunctionalities();
+                        form2.Show();
                         break;
                     case 'T':
                         MessageBox.Show("Login Successful as Teacher!");
+                       // Close();
+                       Teachers teachers = new Teachers();
+                        teachers.Show();
                         break;
                     case 'S':
                         MessageBox.Show("Login Successful as Student!");
+                        StudentForm studentForm = new StudentForm();    
+                        studentForm.Show();
                         break;
                     default:
                         MessageBox.Show("Login Successful.");
