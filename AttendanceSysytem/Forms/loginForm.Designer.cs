@@ -59,6 +59,7 @@
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(189, 22);
             this.txtUserName.TabIndex = 2;
+            this.txtUserName.TextChanged += new System.EventHandler(this.txtUserName_TextChanged);
             // 
             // txtPassword
             // 
@@ -69,16 +70,19 @@
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(128, 265);
+            this.btnLogin.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnLogin.Location = new System.Drawing.Point(357, 349);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(175, 35);
             this.btnLogin.TabIndex = 4;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // loginForm
             // 
-            this.ClientSize = new System.Drawing.Size(416, 351);
+            this.CancelButton = this.btnLogin;
+            this.ClientSize = new System.Drawing.Size(811, 434);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUserName);

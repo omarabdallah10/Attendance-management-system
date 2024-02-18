@@ -1,8 +1,13 @@
-﻿using System;
+﻿using AttendanceSysytem.Users;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml;
+
 
 namespace AttendanceSysytem
 {
@@ -16,7 +21,10 @@ namespace AttendanceSysytem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AddStudentForm());
+            Application.Run(new loginForm());
+
+            
+            //isAdmin("Admin@admin.com", "123456789Aa");
         }
     }
 }
