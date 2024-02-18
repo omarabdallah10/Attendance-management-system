@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AttendanceSysytem.Forms;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace AttendanceSysytem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AddStudentForm());
+            Application.Run(new Teachers());
         }
     }
 }
