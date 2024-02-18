@@ -5,7 +5,7 @@ using System.Xml.Linq;
 
 namespace AttendanceSysytem.Forms
 {
-        partial class AdminEditForm
+        partial class EditAdminForm
         {
             /// <summary>
             ///  Required designer variable.
@@ -106,18 +106,18 @@ namespace AttendanceSysytem.Forms
             this.classes_btn.Text = "Classes";
             this.classes_btn.UseVisualStyleBackColor = false;
             // 
-            // AdminEditForm
+            // EditAdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(682, 279);
+            this.ClientSize = new System.Drawing.Size(832, 453);
             this.Controls.Add(this.classes_btn);
             this.Controls.Add(this.teachers_btn);
             this.Controls.Add(this.students_btn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.go_back_btn);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "AdminEditForm";
+            this.Name = "EditAdminForm";
             this.Text = "Admin Edit View";
             this.ResumeLayout(false);
             this.PerformLayout();

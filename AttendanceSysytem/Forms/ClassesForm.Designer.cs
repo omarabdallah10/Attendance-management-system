@@ -33,12 +33,12 @@ namespace AttendanceSysytem.Forms
             /// </summary>
             private void InitializeComponent()
             {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.classes_label = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.go_back_btn = new System.Windows.Forms.Button();
             this.Class = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Edit = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.go_back_btn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,11 +55,11 @@ namespace AttendanceSysytem.Forms
             // 
             // dataGridView1
             // 
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(5);
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(5);
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -74,20 +74,6 @@ namespace AttendanceSysytem.Forms
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(476, 176);
             this.dataGridView1.TabIndex = 1;
-            // 
-            // go_back_btn
-            // 
-            this.go_back_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.go_back_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.go_back_btn.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.go_back_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.go_back_btn.Location = new System.Drawing.Point(12, 10);
-            this.go_back_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.go_back_btn.Name = "go_back_btn";
-            this.go_back_btn.Size = new System.Drawing.Size(134, 42);
-            this.go_back_btn.TabIndex = 2;
-            this.go_back_btn.Text = "Go Back";
-            this.go_back_btn.UseVisualStyleBackColor = false;
             // 
             // Class
             // 
@@ -105,11 +91,25 @@ namespace AttendanceSysytem.Forms
             this.Edit.ReadOnly = true;
             this.Edit.Width = 150;
             // 
+            // go_back_btn
+            // 
+            this.go_back_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.go_back_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.go_back_btn.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.go_back_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.go_back_btn.Location = new System.Drawing.Point(12, 10);
+            this.go_back_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.go_back_btn.Name = "go_back_btn";
+            this.go_back_btn.Size = new System.Drawing.Size(134, 42);
+            this.go_back_btn.TabIndex = 2;
+            this.go_back_btn.Text = "Go Back";
+            this.go_back_btn.UseVisualStyleBackColor = false;
+            // 
             // ClassesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(909, 477);
+            this.ClientSize = new System.Drawing.Size(832, 453);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.go_back_btn);
             this.Controls.Add(this.classes_label);

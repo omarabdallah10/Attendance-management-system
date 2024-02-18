@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace AttendanceSysytem.Forms
 {
-    public partial class StudentForm : Form
+    public partial class AddClassForm : Form
     {
-        public StudentForm()
+        public AddClassForm()
         {
             InitializeComponent();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void AddClassForm_Load(object sender, EventArgs e)
         {
 
         }

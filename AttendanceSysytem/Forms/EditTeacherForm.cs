@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace AttendanceSysytem.Forms
 {
-    public partial class StudentForm : Form
+    public partial class EditTeacherForm : Form
     {
-        public StudentForm()
+        public EditTeacherForm()
         {
             InitializeComponent();
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
     }
 }

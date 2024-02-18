@@ -33,7 +33,7 @@ namespace AttendanceSysytem.Forms
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.NameColum = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.__Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Class = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Edit = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.go_back_btn = new System.Windows.Forms.Button();
@@ -56,7 +56,7 @@ namespace AttendanceSysytem.Forms
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.NameColum,
+            this.__Name,
             this.Class,
             this.Edit});
             this.dataGridView1.GridColor = System.Drawing.SystemColors.InactiveCaptionText;
@@ -70,11 +70,11 @@ namespace AttendanceSysytem.Forms
             // 
             // Name
             // 
-            this.NameColum.HeaderText = "Name";
-            this.NameColum.MinimumWidth = 6;
-            this.NameColum.Name = "Name";
-            this.NameColum.ReadOnly = true;
-            this.NameColum.Width = 125;
+            this.__Name.HeaderText = "Name";
+            this.__Name.MinimumWidth = 6;
+            this.__Name.Name = "Name";
+            this.__Name.ReadOnly = true;
+            this.__Name.Width = 125;
             // 
             // Class
             // 
@@ -120,7 +120,7 @@ namespace AttendanceSysytem.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(806, 478);
+            this.ClientSize = new System.Drawing.Size(832, 453);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.go_back_btn);
             this.Controls.Add(this.students_label);
@@ -146,5 +146,6 @@ namespace AttendanceSysytem.Forms
         private DataGridViewTextBoxColumn Edit;
         private DataGridViewTextBoxColumn Name1;
         private DataGridViewTextBoxColumn NameColum;
+        private DataGridViewTextBoxColumn __Name;
     }
 }
