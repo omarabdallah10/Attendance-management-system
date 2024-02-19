@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AttendanceSysytem.Classes;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
@@ -11,10 +12,16 @@ namespace AttendanceSysytem.Forms
         // Define a method to fetch and display attendance data for a specific student
         private void ShowStudentAttendance(string studentID, DateTime fromDate, DateTime toDate)
         {
+            // Clear existing rows in the DataGridView
+            StudentAttendanceTable.Rows.Clear();
             int absentDays = 0;
+            if (DateTime.Compare(fromDate, toDate) == 1)
+            {
+                MessageBox.Show("Choose a correct range for date", "Date Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                FromDate.Value = FromDate.MinDate;
+            }
             // Load the XML file
-            XmlDocument xmlDoc = new XmlDocument();
-            xmlDoc.Load("E:\\ITI\\Projects\\XML & C#\\Attendance-management-system\\xml\\ProjectSchema.xml");
+            XmlDocument xmlDoc = DataManagement.XmlPath();
 
             // Define a list to store attendance data
             List<Classes.Attendance> attendanceData = new List<Classes.Attendance>();
@@ -31,14 +38,14 @@ namespace AttendanceSysytem.Forms
 
                 // Compare the DateTime objects
                 int result = DateTime.Compare(fromDate, attendanceDate);
-                if (result < 0)
+                if (result <= 0)
                 {
                     result = DateTime.Compare(toDate, attendanceDate);
-                    if (result > 0)
+                    if (result >= 0)
                     {
                         string status = record.SelectSingleNode("Status").InnerText;
                         if (status == "Absent") absentDays++;
-                        attendanceData.Add(new Classes.Attendance { Date = AttendanceDateString, Status = status });
+                        attendanceData.Add(new Attendance(Userid, attendanceDate.Date, status));
                     }
                 }
             }
@@ -48,7 +55,7 @@ namespace AttendanceSysytem.Forms
             // Populate the DataGridView with attendance data
             foreach (var data in attendanceData)
             {
-                StudentAttendanceTable.Rows.Add(DateTime.Parse(data.Date).DayOfWeek, data.Date, data.Status);
+                StudentAttendanceTable.Rows.Add(data.AttendanceDate.DayOfWeek, data.AttendanceDate, data.Status);
             }
         }
 

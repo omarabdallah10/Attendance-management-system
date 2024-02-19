@@ -56,10 +56,11 @@ namespace AttendanceSysytem
                         break;
                     case 'S':
                         MessageBox.Show("Login Successful as Student!");
-                        Close();
                         StudentForm studentForm = new StudentForm();
                         studentForm.recived = (Users.Student)validator;
                         studentForm.Show();
+                        Hide();
+                        //Close();
                         break;
                     default:
                         MessageBox.Show("Login Successful.");
