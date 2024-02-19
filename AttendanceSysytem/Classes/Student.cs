@@ -22,7 +22,8 @@ namespace AttendanceSysytem.Users
             return $"name : {Name}\nEmail : {Email}\nPassword : {Password}\nUserID : {UserID}\nClassName : {ClassName}";
 
         }
-        public void ShowStudentAttendance(DateTime fromDate, DateTime toDate,StudentForm MyForm)
+        public void ShowStudentAttendance(DateTime fromDate, DateTime toDate, StudentForm MyForm)
+
         {
             // Clear existing rows in the DataGridView
             MyForm.resetAttendanceTable();
@@ -69,6 +70,16 @@ namespace AttendanceSysytem.Users
             {
                 MyForm.setAttendanceRecord(data.AttendanceDate, data.Status);
             }
+        }
+        public void ShowStudentData(StudentsForm MyForm)
+        {
+            //=================================   Clear existing rows in the DataGridView
+            //=================================   MyForm.resetDataTable();
+
+            // Load the XML file
+            XmlDocument xmlDoc = DataManagement.XmlPath();
+            MyForm.AddRow(UserID, Name, ClassName);
+
         }
     }
 }
