@@ -27,49 +27,45 @@ namespace AttendanceSysytem
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            string email=txtUserName.Text;
-            string password=txtPassword.Text;
+            string email = txtUserName.Text;
+            string password = txtPassword.Text;
 
-            User validator = (User)login.auth(email, password);
+            User validator = (User)login.isAdmin(email, password);
             Console.WriteLine(validator.ToString());
 
-             if (validator == null )
-             {
-                 MessageBox.Show("Login Failed. Please check your email and password.");
-             }
-
-              else
-             {
-                
-                 char type = validator.UserID[0];
-                 switch (type)
-                 {
-                     case 'A':
-                         MessageBox.Show("Login Successful as Admin!");
-                         //Close();
-
-
-                         AdminFunctionalities form2 = new AdminFunctionalities();
-                         form2.Show();
-                         break;
-                     case 'T':
-                         MessageBox.Show("Login Successful as Teacher!");
-                        // Close();
-                        Teachers teachers = new Teachers();
-                         teachers.Show();
-                         break;
-                     case 'S':
-                         MessageBox.Show("Login Successful as Student!");
-                         StudentForm studentForm = new StudentForm();    
-                         studentForm.Show();
-                         break;
-                     default:
-                         MessageBox.Show("Login Successful.");
-                         break;
-
-
-                 }
-             }
+            if (validator == null)
+            {
+                MessageBox.Show("Login Failed. Please check your email and password.");
+            }
+            else
+            {
+                char type = validator.UserID[0];
+                switch (type)
+                {
+                    case 'A':
+                        MessageBox.Show("Login Successful as Admin!");
+                        Close();
+                        AdminFunctionalitiesForm form2 = new AdminFunctionalitiesForm();
+                        form2.Show();
+                        break;
+                    case 'T':
+                        MessageBox.Show("Login Successful as Teacher!");
+                        Close();
+                        teacherFunctionalitiesForm teachers = new teacherFunctionalitiesForm();
+                        teachers.Show();
+                        break;
+                    case 'S':
+                        MessageBox.Show("Login Successful as Student!");
+                        Close();
+                        StudentForm studentForm = new StudentForm();
+                        studentForm.recived = (Users.Student)validator;
+                        studentForm.Show();
+                        break;
+                    default:
+                        MessageBox.Show("Login Successful.");
+                        break;
+                }
+            }
         }
     }
 }

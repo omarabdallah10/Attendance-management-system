@@ -13,15 +13,9 @@ namespace AttendanceSysytem.Classes
 {
     internal class login
     {
-        static XmlDocument doc = new XmlDocument();
-        static string sCurrentDirectory = AppDomain.CurrentDomain.BaseDirectory;
-        static string sFile = System.IO.Path.Combine(sCurrentDirectory, @"..\..\..\xml\ProjectXml.xml");
-        static string sFilePath = Path.GetFullPath(sFile);
-
-
-            public static object isAdmin(string email, string password)
-        {
-            doc.Load(sFilePath);
+        public static object isAdmin(string email, string password)
+          {
+            XmlDocument doc=DataManagement.XmlPath();  
             XmlNodeList adminNodes = doc.SelectNodes("//Users/Admin");
             foreach (XmlNode adminNode in adminNodes)
             {
@@ -40,7 +34,7 @@ namespace AttendanceSysytem.Classes
         }
         public static object isStudent(string email, string password)
         {
-            doc.Load(sFilePath);
+            XmlDocument doc = DataManagement.XmlPath(); ;
             XmlNodeList studentNodes = doc.SelectNodes("//Users/Student");
             foreach (XmlNode studentNode in studentNodes)
             {
@@ -60,7 +54,7 @@ namespace AttendanceSysytem.Classes
         }
         public static object isTeacher(string email, string password)
         {
-            doc.Load(sFilePath);
+            XmlDocument doc = DataManagement.XmlPath();
             XmlNodeList teacherNodes = doc.SelectNodes("//Users/Teacher");
             foreach (XmlNode teacherNode in teacherNodes)
             {
@@ -77,7 +71,7 @@ namespace AttendanceSysytem.Classes
             }
             return null;
         }
-        public static object auth(string email, string password)
+       /* public static object auth(string email, string password)
         {
             if (isAdmin(email, password) != null)
             {
@@ -96,6 +90,6 @@ namespace AttendanceSysytem.Classes
                     }
                 }
             }return null;
-        }
+        }*/
     }
 }

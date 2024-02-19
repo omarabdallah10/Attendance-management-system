@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AttendanceSysytem.Users;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace AttendanceSysytem.Forms
 {
     public partial class StudentForm : Form
     {
+        public Student recived {  get; set; }
         public StudentForm()
         {
             InitializeComponent();
@@ -38,6 +40,11 @@ namespace AttendanceSysytem.Forms
             // set student Name and class
             StudentNametxt.Text = "Abdelhameed Osama";
             StudentClasstxt.Text = "PD";
+        }
+
+        private void StudentAttendanceTable_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

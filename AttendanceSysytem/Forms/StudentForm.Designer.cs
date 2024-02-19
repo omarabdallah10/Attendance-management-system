@@ -173,6 +173,7 @@ namespace AttendanceSysytem.Forms
             this.StudentAttendanceTable.RowHeadersWidth = 51;
             this.StudentAttendanceTable.Size = new System.Drawing.Size(582, 150);
             this.StudentAttendanceTable.TabIndex = 10;
+            this.StudentAttendanceTable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.StudentAttendanceTable_CellContentClick);
             // 
             // Day
             // 
