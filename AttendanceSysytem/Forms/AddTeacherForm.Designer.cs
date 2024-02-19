@@ -30,15 +30,15 @@
         {
             this.AddTeacher = new System.Windows.Forms.Label();
             this.btnCancel = new System.Windows.Forms.Button();
-            this.txtClasses = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
             this.Classes = new System.Windows.Forms.Label();
             this.TeacherName = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
             this.txtPassword = new System.Windows.Forms.TextBox();
-            this.txtUserName = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.Password = new System.Windows.Forms.Label();
-            this.Username = new System.Windows.Forms.Label();
+            this.Email = new System.Windows.Forms.Label();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.SuspendLayout();
             // 
             // AddTeacher
@@ -52,19 +52,12 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(453, 348);
+            this.btnCancel.Location = new System.Drawing.Point(618, 388);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(175, 35);
             this.btnCancel.TabIndex = 21;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
-            // 
-            // txtClasses
-            // 
-            this.txtClasses.Location = new System.Drawing.Point(347, 263);
-            this.txtClasses.Name = "txtClasses";
-            this.txtClasses.Size = new System.Drawing.Size(189, 22);
-            this.txtClasses.TabIndex = 19;
             // 
             // txtName
             // 
@@ -93,12 +86,13 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(204, 348);
+            this.btnSave.Location = new System.Drawing.Point(405, 388);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(175, 35);
             this.btnSave.TabIndex = 20;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // txtPassword
             // 
@@ -107,12 +101,12 @@
             this.txtPassword.Size = new System.Drawing.Size(189, 22);
             this.txtPassword.TabIndex = 17;
             // 
-            // txtUserName
+            // txtEmail
             // 
-            this.txtUserName.Location = new System.Drawing.Point(347, 155);
-            this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(189, 22);
-            this.txtUserName.TabIndex = 15;
+            this.txtEmail.Location = new System.Drawing.Point(347, 155);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(189, 22);
+            this.txtEmail.TabIndex = 15;
             // 
             // Password
             // 
@@ -123,33 +117,43 @@
             this.Password.TabIndex = 16;
             this.Password.Text = "Password";
             // 
-            // Username
+            // Email
             // 
-            this.Username.AutoSize = true;
-            this.Username.Location = new System.Drawing.Point(230, 158);
-            this.Username.Name = "Username";
-            this.Username.Size = new System.Drawing.Size(70, 16);
-            this.Username.TabIndex = 14;
-            this.Username.Text = "Username";
+            this.Email.AutoSize = true;
+            this.Email.Location = new System.Drawing.Point(230, 158);
+            this.Email.Name = "Email";
+            this.Email.Size = new System.Drawing.Size(41, 16);
+            this.Email.TabIndex = 14;
+            this.Email.Text = "Email";
+            // 
+            // checkedListBox1
+            // 
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Location = new System.Drawing.Point(344, 266);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.Size = new System.Drawing.Size(192, 106);
+            this.checkedListBox1.TabIndex = 22;
+            this.checkedListBox1.SelectedIndexChanged += new System.EventHandler(this.checkedListBox1_SelectedIndexChanged);
             // 
             // AddTeacherForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(832, 453);
+            this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.AddTeacher);
             this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.txtClasses);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.Classes);
             this.Controls.Add(this.TeacherName);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.txtUserName);
+            this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.Password);
-            this.Controls.Add(this.Username);
+            this.Controls.Add(this.Email);
             this.Name = "AddTeacherForm";
             this.Text = "AddTeacherForm";
+            this.Load += new System.EventHandler(this.AddTeacherForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -159,14 +163,14 @@
 
         private System.Windows.Forms.Label AddTeacher;
         private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.TextBox txtClasses;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label Classes;
         private System.Windows.Forms.Label TeacherName;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.TextBox txtPassword;
-        private System.Windows.Forms.TextBox txtUserName;
+        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label Password;
-        private System.Windows.Forms.Label Username;
+        private System.Windows.Forms.Label Email;
+        private System.Windows.Forms.CheckedListBox checkedListBox1;
     }
 }

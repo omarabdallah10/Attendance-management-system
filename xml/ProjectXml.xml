@@ -7,16 +7,16 @@
       <Email>Admin@admin.com</Email>
       <Password>123456789Aa</Password>
     </Admin>
-    <Teacher>
-      <UserID>T001</UserID>
-      <Name>Nadia Saleh</Name>
-      <Email>NadiaSaleh@teacher.com</Email>
-      <Password>123456789Aa</Password>
-    </Teacher>
-    <Teacher>
+    <Teacher Supervisor="true">
       <UserID>T002</UserID>
       <Name>Nadin Saleh</Name>
       <Email>NadinSaleh@teacher.com</Email>
+      <Password>Ac1515as</Password>
+    </Teacher>
+    <Teacher Supervisor="false">
+      <UserID>T004</UserID>
+      <Name>Amir Saleh</Name>
+      <Email>Amir@teacher.com</Email>
       <Password>Ac1515as</Password>
     </Teacher>
     <Student>
@@ -49,6 +49,7 @@
     <Teachers>
       <UserID>T001</UserID>
       <UserID>T002</UserID>
+      <UserID>T705</UserID>
     </Teachers>
     <Students>
       <UserID>S001</UserID>
@@ -62,6 +63,7 @@
     </Supervisor>
     <Teachers>
       <UserID>T001</UserID>
+      <UserID>T705</UserID>
     </Teachers>
     <Students>
       <UserID>S003</UserID>
@@ -75,6 +77,7 @@
     <Teachers>
       <UserID>T001</UserID>
       <UserID>T002</UserID>
+      <UserID>T705</UserID>
     </Teachers>
     <Students>
       <UserID>S002</UserID>
@@ -89,6 +92,21 @@
     <AttendanceRecord>
       <UserID>S002</UserID>
       <Date>2024-02-15</Date>
+      <Status>Present</Status>
+    </AttendanceRecord>
+    <AttendanceRecord>
+      <UserID>S002</UserID>
+      <Date>2024-02-16</Date>
+      <Status>Absent</Status>
+    </AttendanceRecord>
+    <AttendanceRecord>
+      <UserID>S002</UserID>
+      <Date>2024-02-17</Date>
+      <Status>Present</Status>
+    </AttendanceRecord>
+    <AttendanceRecord>
+      <UserID>S002</UserID>
+      <Date>2024-02-18</Date>
       <Status>Absent</Status>
     </AttendanceRecord>
     <!-- Add more attendance records as needed -->

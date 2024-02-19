@@ -15,7 +15,7 @@ namespace AttendanceSysytem.Classes
         2-Save Data to XML
         3-Load Data from XML
         */
-        public static XmlDocument XmlPath()
+        public static XmlDocument xmlDoc()
         {
             XmlDocument doc = new XmlDocument();
             string sCurrentDirectory = AppDomain.CurrentDomain.BaseDirectory;
@@ -23,6 +23,13 @@ namespace AttendanceSysytem.Classes
             string sFilePath = Path.GetFullPath(sFile);
             doc.Load(sFilePath);
             return doc;
+        }
+        public static void SaveXml(XmlDocument doc)
+        {
+            string sCurrentDirectory = AppDomain.CurrentDomain.BaseDirectory;
+            string sFile = System.IO.Path.Combine(sCurrentDirectory, @"..\..\..\xml\ProjectXml.xml");
+            string sFilePath = Path.GetFullPath(sFile);
+            doc.Save(sFilePath);
         }
     }
 }
