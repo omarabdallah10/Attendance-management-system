@@ -6,45 +6,39 @@
       <Name>John Doe</Name>
       <Email>Admin@admin.com</Email>
       <Password>123456789Aa</Password>
-      <Role>Admin</Role>
     </Admin>
     <Teacher>
       <UserID>T001</UserID>
       <Name>Nadia Saleh</Name>
       <Email>NadiaSaleh@teacher.com</Email>
       <Password>123456789Aa</Password>
-      <Role>Teacher</Role>
     </Teacher>
     <Teacher>
       <UserID>T002</UserID>
       <Name>Nadin Saleh</Name>
       <Email>NadinSaleh@teacher.com</Email>
       <Password>Ac1515as</Password>
-      <Role>Teacher</Role>
     </Teacher>
     <Student>
       <UserID>S001</UserID>
       <Name>Abdelhameed Osama</Name>
       <Email>abdelhameed_osama@example.com</Email>
       <Password>611</Password>
-      <ClassName>C001</ClassName>
-      <Role>Student</Role>
+      <ClassName>PD</ClassName>
     </Student>
     <Student>
       <UserID>S002</UserID>
       <Name>AbdUllah Aiman</Name>
       <Email>abdUllah_aiman@example.com</Email>
       <Password>123456789Aa</Password>
-      <ClassName>C001</ClassName>
-      <Role>Student</Role>
+      <ClassName>AI</ClassName>
     </Student>
     <Student>
       <UserID>S003</UserID>
       <Name>Omar Abdullah</Name>
       <Email>omar_abdullah@example.com</Email>
       <Password>123456789Aa</Password>
-      <ClassName>C001</ClassName>
-      <Role>Student</Role>
+      <ClassName>OS</ClassName>
     </Student>
   </Users>
   <Class>
@@ -68,7 +62,6 @@
     </Supervisor>
     <Teachers>
       <UserID>T001</UserID>
-      <UserID>T002</UserID>
     </Teachers>
     <Students>
       <UserID>S003</UserID>
