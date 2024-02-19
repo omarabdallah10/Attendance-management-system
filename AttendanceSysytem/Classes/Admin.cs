@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace AttendanceSysytem.Users
 {
-    internal class Admin
+    internal class Admin : User
     {
+        public Admin(string name, string email, string password, string userID) : base(name, email, password, userID)
+        {
+
+        }
+
     }
 }

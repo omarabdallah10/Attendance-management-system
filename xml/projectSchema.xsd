@@ -32,13 +32,6 @@
 			<xs:enumeration value="Absent"/>
 		</xs:restriction>
 	</xs:simpleType>
-		<xs:simpleType name="roleType">
-		<xs:restriction base="xs:string">
-			<xs:enumeration value="Admin"/>
-			<xs:enumeration value="Teacher"/>
-			<xs:enumeration value="Student"/>
-		</xs:restriction>
-	</xs:simpleType>
 	<!-- Define elements -->
 	<xs:element name="School">
 		<xs:complexType>
@@ -62,7 +55,6 @@
 			<xs:element name="Name" type="nameType"/>
 			<xs:element name="Email" type="emailType"/>
 			<xs:element name="Password" type="passwordType"/>
-			<xs:element name="Role" type="roleType"/>
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="TeacherType">
@@ -71,7 +63,6 @@
 			<xs:element name="Name" type="nameType"/>
 			<xs:element name="Email" type="emailType"/>
 			<xs:element name="Password" type="passwordType"/>
-			<xs:element name="Role" type="roleType"/>
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="StudentType">
@@ -81,7 +72,6 @@
 			<xs:element name="Email" type="emailType"/>
 			<xs:element name="Password" type="passwordType"/>
 			<xs:element name="ClassName" type="xs:string"/>
-			<xs:element name="Role" type="roleType"/>
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="ClassType">
