@@ -33,7 +33,7 @@ namespace AttendanceSysytem.Forms
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NameCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Edit = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.go_back_btn = new System.Windows.Forms.Button();
             this.teachers_label = new System.Windows.Forms.Label();
@@ -56,7 +56,7 @@ namespace AttendanceSysytem.Forms
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Name,
+            this.NameCol,
             this.Edit});
             this.dataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dataGridView1.Enabled = false;
@@ -72,12 +72,12 @@ namespace AttendanceSysytem.Forms
             // 
             // Name
             // 
-            this.Name.HeaderText = "Name";
-            this.Name.MinimumWidth = 6;
-            this.Name.Name = "Name";
-            this.Name.ReadOnly = true;
-            this.Name.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Name.Width = 125;
+            this.NameCol.HeaderText = "Name";
+            this.NameCol.MinimumWidth = 6;
+            this.NameCol.Name = "Name";
+            this.NameCol.ReadOnly = true;
+            this.NameCol.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.NameCol.Width = 125;
             // 
             // Edit
             // 
@@ -122,7 +122,7 @@ namespace AttendanceSysytem.Forms
             this.Controls.Add(this.go_back_btn);
             this.Controls.Add(this.teachers_label);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "Teachers";
+            this.Name = "TeachersForm";
             this.Text = "Teachers";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -138,6 +138,5 @@ namespace AttendanceSysytem.Forms
         private Label teachers_label;
         private DataGridViewTextBoxColumn Edit;
         private DataGridViewTextBoxColumn NameCol;
-        private DataGridViewTextBoxColumn Name;
     }
 }

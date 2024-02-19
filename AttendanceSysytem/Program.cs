@@ -17,7 +17,7 @@ namespace AttendanceSysytem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Teachers());
+            Application.Run(new StudentForm());
         }
     }
 }

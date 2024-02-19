@@ -16,5 +16,28 @@ namespace AttendanceSysytem.Forms
         {
             InitializeComponent();
         }
+
+        private void FromDate_ValueChanged(object sender, EventArgs e)
+        {
+               ShowStudentAttendance("S002", FromDate.Value, ToDate.Value);
+        }
+
+        private void ToDate_ValueChanged(object sender, EventArgs e)
+        {
+            ShowStudentAttendance("S002", FromDate.Value, ToDate.Value);
+
+        }
+
+        private void StudentForm_Load(object sender, EventArgs e)
+        {
+            // Clear existing rows in the DataGridView
+            StudentAttendanceTable.Rows.Clear();
+            // initialize max date
+            ToDate.MaxDate = System.DateTime.Today;
+            FromDate.MaxDate = System.DateTime.Today;
+            // set student Name and class
+            StudentNametxt.Text = "Abdelhameed Osama";
+            StudentClasstxt.Text = "PD";
+        }
     }
 }
