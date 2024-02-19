@@ -1,6 +1,6 @@
 ﻿namespace AttendanceSysytem
 {
-    partial class teacherFunctionalities
+    partial class teacherFunctionalitiesForm
     {
         /// <summary>
         /// Required designer variable.
@@ -60,15 +60,15 @@
             this.btnTakeAttendance.Text = "Take Attendance";
             this.btnTakeAttendance.UseVisualStyleBackColor = true;
             // 
-            // teacherFunctionalities
+            // teacherFunctionalitiesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(832, 453);
             this.Controls.Add(this.btnTakeAttendance);
             this.Controls.Add(this.btnViewAttendance);
             this.Controls.Add(this.btnSignOut);
-            this.Name = "teacherFunctionalities";
+            this.Name = "teacherFunctionalitiesForm";
             this.Text = "teacherFunctionalities";
             this.ResumeLayout(false);
 

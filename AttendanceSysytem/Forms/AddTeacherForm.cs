@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AttendanceSysytem.Forms
 {
-    public partial class ClassEditForm : Form
+    public partial class AddTeacherForm : Form
     {
-        public ClassEditForm()
+        public AddTeacherForm()
         {
             InitializeComponent();
         }

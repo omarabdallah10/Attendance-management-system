@@ -40,13 +40,13 @@ namespace AttendanceSysytem.Forms
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Day = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DATE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.STATUS = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label5 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.Day = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DATE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.STATUS = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -136,13 +136,38 @@ namespace AttendanceSysytem.Forms
             this.DATE,
             this.STATUS});
             this.dataGridView1.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.dataGridView1.Location = new System.Drawing.Point(60, 184);
+            this.dataGridView1.Location = new System.Drawing.Point(81, 179);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(582, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(501, 155);
             this.dataGridView1.TabIndex = 10;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // Day
+            // 
+            this.Day.HeaderText = "DAY";
+            this.Day.MinimumWidth = 6;
+            this.Day.Name = "Day";
+            this.Day.ReadOnly = true;
+            this.Day.Width = 125;
+            // 
+            // DATE
+            // 
+            this.DATE.HeaderText = "DATE";
+            this.DATE.MinimumWidth = 6;
+            this.DATE.Name = "DATE";
+            this.DATE.ReadOnly = true;
+            this.DATE.Width = 125;
+            // 
+            // STATUS
+            // 
+            this.STATUS.HeaderText = "STATUS";
+            this.STATUS.MinimumWidth = 6;
+            this.STATUS.Name = "STATUS";
+            this.STATUS.ReadOnly = true;
+            this.STATUS.Width = 125;
             // 
             // label5
             // 
@@ -192,35 +217,11 @@ namespace AttendanceSysytem.Forms
             this.button2.Text = "Save As";
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // Day
-            // 
-            this.Day.HeaderText = "DAY";
-            this.Day.MinimumWidth = 6;
-            this.Day.Name = "Day";
-            this.Day.ReadOnly = true;
-            this.Day.Width = 125;
-            // 
-            // DATE
-            // 
-            this.DATE.HeaderText = "DATE";
-            this.DATE.MinimumWidth = 6;
-            this.DATE.Name = "DATE";
-            this.DATE.ReadOnly = true;
-            this.DATE.Width = 125;
-            // 
-            // STATUS
-            // 
-            this.STATUS.HeaderText = "STATUS";
-            this.STATUS.MinimumWidth = 6;
-            this.STATUS.Name = "STATUS";
-            this.STATUS.ReadOnly = true;
-            this.STATUS.Width = 125;
-            // 
             // StudentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(949, 499);
+            this.ClientSize = new System.Drawing.Size(832, 453);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label5);

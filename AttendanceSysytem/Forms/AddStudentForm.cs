@@ -36,5 +36,10 @@ namespace AttendanceSysytem
         {
 
         }
+
+        private void AddStudentForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
