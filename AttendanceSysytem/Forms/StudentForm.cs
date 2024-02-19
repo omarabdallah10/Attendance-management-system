@@ -22,12 +22,12 @@ namespace AttendanceSysytem.Forms
 
         private void FromDate_ValueChanged(object sender, EventArgs e)
         {
-            ShowStudentAttendance(recived.UserID, FromDate.Value, ToDate.Value);
+            recived.ShowStudentAttendance(FromDate.Value, ToDate.Value, this);
         }
 
         private void ToDate_ValueChanged(object sender, EventArgs e)
         {
-            ShowStudentAttendance(recived.UserID, FromDate.Value, ToDate.Value);
+            recived.ShowStudentAttendance(FromDate.Value, ToDate.Value, this);
 
         }
 
@@ -35,15 +35,13 @@ namespace AttendanceSysytem.Forms
         {
             if (recived != null && recived.UserID[0].ToString() == "S")
             {
-                
                 // initialize max date
                 ToDate.MaxDate = System.DateTime.Today;
                 FromDate.MaxDate = System.DateTime.Today;
                 // set student Name and class
                 StudentNametxt.Text = recived.Name;
                 StudentClasstxt.Text = recived.ClassName;
-                ShowStudentAttendance(recived.UserID, FromDate.Value, ToDate.Value);
-
+                recived.ShowStudentAttendance(FromDate.Value, ToDate.Value, this);
             }
             else
             {

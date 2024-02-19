@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Security.Cryptography.X509Certificates;
 using System.Windows.Forms;
 using System.Xml;
 
@@ -9,59 +10,6 @@ namespace AttendanceSysytem.Forms
 {
     partial class StudentForm
     {
-        // Define a method to fetch and display attendance data for a specific student
-        private void ShowStudentAttendance(string studentID, DateTime fromDate, DateTime toDate)
-        {
-            // Clear existing rows in the DataGridView
-            StudentAttendanceTable.Rows.Clear();
-            int absentDays = 0;
-            if (DateTime.Compare(fromDate, toDate) == 1)
-            {
-                MessageBox.Show("Choose a correct range for date", "Date Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                FromDate.Value = FromDate.MinDate;
-            }
-            // Load the XML file
-            XmlDocument xmlDoc = DataManagement.XmlPath();
-
-            // Define a list to store attendance data
-            List<Classes.Attendance> attendanceData = new List<Classes.Attendance>();
-
-            // Select all AttendanceRecord nodes for the specific student within the specified date range and Date >= '" + fromDate.ToString("yyyy-MM-dd") + "' and Date <= '" + toDate.ToString("yyyy-MM-dd") + "']
-            XmlNodeList attendanceRecords = xmlDoc.SelectNodes("//AttendanceData/AttendanceRecord[UserID='" + studentID + "']");
-
-            // Iterate through the selected attendance records and extract relevant information
-            foreach (XmlNode record in attendanceRecords)
-            {
-                string Userid = record.SelectSingleNode("UserID").InnerText;
-                string AttendanceDateString = record.SelectSingleNode("Date").InnerText;
-                DateTime attendanceDate = DateTime.Parse(AttendanceDateString);
-
-                // Compare the DateTime objects
-                int result = DateTime.Compare(fromDate, attendanceDate);
-                if (result <= 0)
-                {
-                    result = DateTime.Compare(toDate, attendanceDate);
-                    if (result >= 0)
-                    {
-                        string status = record.SelectSingleNode("Status").InnerText;
-                        if (status == "Absent") absentDays++;
-                        attendanceData.Add(new Attendance(Userid, attendanceDate.Date, status));
-                    }
-                }
-            }
-
-            AbsentDays.Text = absentDays.ToString();
-
-            // Populate the DataGridView with attendance data
-            foreach (var data in attendanceData)
-            {
-                StudentAttendanceTable.Rows.Add(data.AttendanceDate.DayOfWeek, data.AttendanceDate, data.Status);
-            }
-        }
-
-
-
-
         /// <summary>
         ///  Required designer variable.
         /// </summary>
@@ -167,6 +115,7 @@ namespace AttendanceSysytem.Forms
             // 
             // StudentAttendanceTable
             // 
+            this.StudentAttendanceTable.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.StudentAttendanceTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.StudentAttendanceTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Day,
@@ -308,22 +257,35 @@ namespace AttendanceSysytem.Forms
         }
 
         #endregion
-
-        private TextBox StudentNametxt;
         private Label name_label;
         private Label class_label;
-        private TextBox StudentClasstxt;
         private Label showFrom_label;
         private Label to_label;
-        private DataGridView StudentAttendanceTable;
         private Label absentdays_label;
-        private TextBox AbsentDays;
         private Button signOutBTN;
         private Button saveAs_btn;
         private DataGridViewTextBoxColumn Day;
         private DataGridViewTextBoxColumn DATE;
         private DataGridViewTextBoxColumn STATUS;
+        private TextBox StudentNametxt;
+        private TextBox StudentClasstxt;
+        private TextBox AbsentDays;
         private DateTimePicker ToDate;
         private DateTimePicker FromDate;
+        private DataGridView StudentAttendanceTable;
+
+        // Setters And Getters
+        public void setAbsentDays(int number) { AbsentDays.Text = number.ToString(); }
+        //public void setTable() { StudentAttendanceTable. }
+        public void setFromDate() { FromDate.Value = FromDate.MinDate; }
+        // Populate the DataGridView with attendance data
+
+        public void setAttendanceRecord(DateTime _date, string _status)
+        {
+            StudentAttendanceTable.Rows.Add(_date.DayOfWeek, _date, _status);
+
+        }
+        public void resetAttendanceTable() {  StudentAttendanceTable.Rows.Clear();}
+
     }
 }
