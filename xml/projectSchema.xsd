@@ -16,27 +16,27 @@
 			<xs:pattern value="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"/>
 		</xs:restriction>
 	</xs:simpleType>
-	
-<!--	<xs:simpleType name="passwordType">
+	<!--	<xs:simpleType name="passwordType">
 		<xs:restriction base="xs:string">
 			<xs:pattern value="^(?=.*[A-Za-z])(?=.*\d)(?=.*[!@#$%^&_;*()_+,-./:<=>?@[\]^_`{|}~])(?=.*[A-Z]).{8,}$"/>
 		</xs:restriction>
 	</xs:simpleType>-->
-	
-	
-<xs:simpleType name="passwordType"> 
-  <xs:restriction base="xs:string"> 
-    <xs:pattern value="(?!^[0-9]*$)(?!^[a-zA-Z]*$)^([a-zA-Z0-9]{8,})$"/> 
-  </xs:restriction> 
-</xs:simpleType>
-      
-	
-	
-	
+	<xs:simpleType name="passwordType">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="(?!^[0-9]*$)(?!^[a-zA-Z]*$)^([a-zA-Z0-9]{8,})$"/>
+		</xs:restriction>
+	</xs:simpleType>
 	<xs:simpleType name="statusType">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="Present"/>
 			<xs:enumeration value="Absent"/>
+		</xs:restriction>
+	</xs:simpleType>
+		<xs:simpleType name="roleType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Admin"/>
+			<xs:enumeration value="Teacher"/>
+			<xs:enumeration value="Student"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<!-- Define elements -->
@@ -44,14 +44,14 @@
 		<xs:complexType>
 			<xs:sequence>
 				<xs:element name="Users" type="UsersType"/>
-				<xs:element name="Class" type="ClassType"/>
+				<xs:element name="Class" type="ClassType" maxOccurs="unbounded"/>
 				<xs:element name="AttendanceData" type="AttendanceDataType"/>
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
 	<xs:complexType name="UsersType">
 		<xs:sequence>
-			<xs:element name="Admin" type="AdminType" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="Admin" type="AdminType"/>
 			<xs:element name="Teacher" type="TeacherType" maxOccurs="unbounded"/>
 			<xs:element name="Student" type="StudentType" maxOccurs="unbounded"/>
 		</xs:sequence>
@@ -62,6 +62,7 @@
 			<xs:element name="Name" type="nameType"/>
 			<xs:element name="Email" type="emailType"/>
 			<xs:element name="Password" type="passwordType"/>
+			<xs:element name="Role" type="roleType"/>
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="TeacherType">
@@ -70,6 +71,7 @@
 			<xs:element name="Name" type="nameType"/>
 			<xs:element name="Email" type="emailType"/>
 			<xs:element name="Password" type="passwordType"/>
+			<xs:element name="Role" type="roleType"/>
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="StudentType">
@@ -78,7 +80,8 @@
 			<xs:element name="Name" type="nameType"/>
 			<xs:element name="Email" type="emailType"/>
 			<xs:element name="Password" type="passwordType"/>
-			<xs:element name="ClassName" type="xs:string" maxOccurs="1"/>
+			<xs:element name="ClassName" type="xs:string"/>
+			<xs:element name="Role" type="roleType"/>
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="ClassType">
