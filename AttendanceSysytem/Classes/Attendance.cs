@@ -8,5 +8,7 @@ namespace AttendanceSysytem.Classes
 {
     internal class Attendance
     {
+        public string Date { get; set; }
+        public string Status { get; set; }
     }
 }
