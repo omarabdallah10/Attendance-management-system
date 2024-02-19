@@ -44,13 +44,13 @@ namespace AttendanceSysytem
                 {
                     case 'A':
                         MessageBox.Show("Login Successful as Admin!");
-                        Close();
+                        Hide();
                         AdminFunctionalitiesForm form2 = new AdminFunctionalitiesForm();
                         form2.Show();
                         break;
                     case 'T':
                         MessageBox.Show("Login Successful as Teacher!");
-                        Close();
+                        Hide();
                         teacherFunctionalitiesForm teachers = new teacherFunctionalitiesForm();
                         teachers.Show();
                         break;
@@ -60,7 +60,7 @@ namespace AttendanceSysytem
                         studentForm.recived = (Users.Student)validator;
                         studentForm.Show();
                         Hide();
-                        //Close();
+                        //
                         break;
                     default:
                         MessageBox.Show("Login Successful.");

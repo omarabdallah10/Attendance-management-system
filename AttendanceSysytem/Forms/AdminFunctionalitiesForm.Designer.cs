@@ -52,6 +52,7 @@
             this.btnAddTeacher.TabIndex = 1;
             this.btnAddTeacher.Text = "Add Teacher";
             this.btnAddTeacher.UseVisualStyleBackColor = false;
+            this.btnAddTeacher.Click += new System.EventHandler(this.btnAddTeacher_Click);
             // 
             // btnAddStudent
             // 

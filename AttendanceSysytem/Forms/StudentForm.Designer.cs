@@ -10,6 +10,59 @@ namespace AttendanceSysytem.Forms
 {
     partial class StudentForm
     {
+        // Define a method to fetch and display attendance data for a specific student
+        private void ShowStudentAttendance(string studentID, DateTime fromDate, DateTime toDate)
+        {
+            // Clear existing rows in the DataGridView
+            StudentAttendanceTable.Rows.Clear();
+            int absentDays = 0;
+            if (DateTime.Compare(fromDate, toDate) == 1)
+            {
+                MessageBox.Show("Choose a correct range for date", "Date Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                FromDate.Value = FromDate.MinDate;
+            }
+            // Load the XML file
+            XmlDocument xmlDoc = DataManagement.xmlDoc();
+
+            // Define a list to store attendance data
+            List<Classes.Attendance> attendanceData = new List<Classes.Attendance>();
+
+            // Select all AttendanceRecord nodes for the specific student within the specified date range and Date >= '" + fromDate.ToString("yyyy-MM-dd") + "' and Date <= '" + toDate.ToString("yyyy-MM-dd") + "']
+            XmlNodeList attendanceRecords = xmlDoc.SelectNodes("//AttendanceData/AttendanceRecord[UserID='" + studentID + "']");
+
+            // Iterate through the selected attendance records and extract relevant information
+            foreach (XmlNode record in attendanceRecords)
+            {
+                string Userid = record.SelectSingleNode("UserID").InnerText;
+                string AttendanceDateString = record.SelectSingleNode("Date").InnerText;
+                DateTime attendanceDate = DateTime.Parse(AttendanceDateString);
+
+                // Compare the DateTime objects
+                int result = DateTime.Compare(fromDate, attendanceDate);
+                if (result <= 0)
+                {
+                    result = DateTime.Compare(toDate, attendanceDate);
+                    if (result >= 0)
+                    {
+                        string status = record.SelectSingleNode("Status").InnerText;
+                        if (status == "Absent") absentDays++;
+                        attendanceData.Add(new Attendance(Userid, attendanceDate.Date, status));
+                    }
+                }
+            }
+
+            AbsentDays.Text = absentDays.ToString();
+
+            // Populate the DataGridView with attendance data
+            foreach (var data in attendanceData)
+            {
+                StudentAttendanceTable.Rows.Add(data.AttendanceDate.DayOfWeek, data.AttendanceDate, data.Status);
+            }
+        }
+
+
+
+
         /// <summary>
         ///  Required designer variable.
         /// </summary>
