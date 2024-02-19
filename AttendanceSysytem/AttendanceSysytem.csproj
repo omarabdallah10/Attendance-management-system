@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Adding.cs" />
     <Compile Include="Classes\Attendance.cs" />
     <Compile Include="Classes\DataManagement.cs" />
     <Compile Include="Classes\login.cs" />

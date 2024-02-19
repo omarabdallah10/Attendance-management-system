@@ -15,7 +15,7 @@ namespace AttendanceSysytem.Classes
     {
         public static object isAdmin(string email, string password)
           {
-            XmlDocument doc=DataManagement.XmlPath();  
+            XmlDocument doc=DataManagement.xmlDoc();  
             XmlNodeList adminNodes = doc.SelectNodes("//Users/Admin");
             foreach (XmlNode adminNode in adminNodes)
             {
@@ -34,7 +34,7 @@ namespace AttendanceSysytem.Classes
         }
         public static object isStudent(string email, string password)
         {
-            XmlDocument doc = DataManagement.XmlPath(); ;
+            XmlDocument doc = DataManagement.xmlDoc(); ;
             XmlNodeList studentNodes = doc.SelectNodes("//Users/Student");
             foreach (XmlNode studentNode in studentNodes)
             {
@@ -54,7 +54,7 @@ namespace AttendanceSysytem.Classes
         }
         public static object isTeacher(string email, string password)
         {
-            XmlDocument doc = DataManagement.XmlPath();
+            XmlDocument doc = DataManagement.xmlDoc();
             XmlNodeList teacherNodes = doc.SelectNodes("//Users/Teacher");
             foreach (XmlNode teacherNode in teacherNodes)
             {
@@ -71,25 +71,5 @@ namespace AttendanceSysytem.Classes
             }
             return null;
         }
-       /* public static object auth(string email, string password)
-        {
-            if (isAdmin(email, password) != null)
-            {
-                return isAdmin(email, password);
-            }else
-            {
-                if(isTeacher(email, password) != null)
-                {
-                    return isTeacher(email, password);
-                }
-                else
-                {
-                    if(isStudent(email, password) != null)
-                    {
-                        return isStudent(email, password);
-                    }
-                }
-            }return null;
-        }*/
     }
 }

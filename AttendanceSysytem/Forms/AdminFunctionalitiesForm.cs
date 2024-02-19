@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AttendanceSysytem.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,6 +26,13 @@ namespace AttendanceSysytem
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnAddTeacher_Click(object sender, EventArgs e)
+        {
+            AddTeacherForm addTeacherForm = new AddTeacherForm();
+            addTeacherForm.Show();
+            Hide();
         }
     }
 }
