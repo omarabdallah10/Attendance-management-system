@@ -5,7 +5,7 @@ using System.Xml.Linq;
 
 namespace AttendanceSysytem.Forms
 {
-        partial class ClassEditForm
+        partial class EditClassForm
         {
             /// <summary>
             ///  Required designer variable.
@@ -148,11 +148,11 @@ namespace AttendanceSysytem.Forms
             this.supervisor_txt.Size = new System.Drawing.Size(277, 39);
             this.supervisor_txt.TabIndex = 9;
             // 
-            // ClassEditForm
+            // EditClassForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(812, 422);
+            this.ClientSize = new System.Drawing.Size(832, 453);
             this.Controls.Add(this.supervisor_txt);
             this.Controls.Add(this.class_name_txt);
             this.Controls.Add(this.supervisor_label);
@@ -163,7 +163,7 @@ namespace AttendanceSysytem.Forms
             this.Controls.Add(this.add_teacher_btn);
             this.Controls.Add(this.go_back_btn);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "ClassEditForm";
+            this.Name = "EditClassForm";
             this.Text = "Edit Class";
             this.ResumeLayout(false);
             this.PerformLayout();

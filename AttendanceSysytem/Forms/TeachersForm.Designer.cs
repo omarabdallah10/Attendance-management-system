@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace AttendanceSysytem.Forms
 {
-    partial class Teachers
+    partial class TeachersForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -113,16 +113,16 @@ namespace AttendanceSysytem.Forms
             this.teachers_label.TabIndex = 3;
             this.teachers_label.Text = "Teachers";
             // 
-            // Teachers
+            // TeachersForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(679, 486);
+            this.ClientSize = new System.Drawing.Size(832, 453);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.go_back_btn);
             this.Controls.Add(this.teachers_label);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "Teachers";
+            this.Name = "TeachersForm";
             this.Text = "Teachers";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -138,6 +138,7 @@ namespace AttendanceSysytem.Forms
         private Label teachers_label;
         private DataGridViewTextBoxColumn Edit;
         private DataGridViewTextBoxColumn NameCol;
+        private DataGridViewTextBoxColumn _Name;
         private DataGridViewTextBoxColumn Name1;
     }
 }

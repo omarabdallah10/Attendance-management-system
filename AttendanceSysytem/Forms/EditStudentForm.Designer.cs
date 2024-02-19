@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace AttendanceSysytem.Forms
 {
-    partial class StudentEditForm
+    partial class EditStudentForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -177,11 +177,11 @@ namespace AttendanceSysytem.Forms
             this.classes_list.Size = new System.Drawing.Size(335, 39);
             this.classes_list.TabIndex = 25;
             // 
-            // StudentEditForm
+            // EditStudentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(813, 464);
+            this.ClientSize = new System.Drawing.Size(832, 453);
             this.Controls.Add(this.classes_list);
             this.Controls.Add(this.cancel_btn);
             this.Controls.Add(this.save_btn);
@@ -195,7 +195,7 @@ namespace AttendanceSysytem.Forms
             this.Controls.Add(this.name_label);
             this.Controls.Add(this.edit_student_label);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "StudentEditForm";
+            this.Name = "EditStudentForm";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
