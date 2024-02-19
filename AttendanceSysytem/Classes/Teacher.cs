@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AttendanceSysytem.Users
 {
-    internal class Teacher : User
+    public class Teacher : User
     {
         public Teacher(string name, string email, string password, string userID):base(name, email, password, userID)
         {
