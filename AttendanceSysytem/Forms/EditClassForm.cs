@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AttendanceSysytem
+namespace AttendanceSysytem.Forms
 {
-    public partial class teacherFunctionalities : Form
+    public partial class EditClassForm : Form
     {
-        public teacherFunctionalities()
+        public EditClassForm()
         {
             InitializeComponent();
         }

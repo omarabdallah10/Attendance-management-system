@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace AttendanceSysytem
 {
-    public partial class AdminFunctionalities : Form
+    public partial class AdminFunctionalitiesForm : Form
     {
-        public AdminFunctionalities()
+        public AdminFunctionalitiesForm()
         {
             InitializeComponent();
+        }
+
+        private void AdminFunctionalitiesForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

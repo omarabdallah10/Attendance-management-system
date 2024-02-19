@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace AttendanceSysytem.Forms
 {
-    partial class Teachers
+    partial class TeachersForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -33,7 +33,7 @@ namespace AttendanceSysytem.Forms
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.NameCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Name1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Edit = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.go_back_btn = new System.Windows.Forms.Button();
             this.teachers_label = new System.Windows.Forms.Label();
@@ -56,7 +56,7 @@ namespace AttendanceSysytem.Forms
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.NameCol,
+            this.Name1,
             this.Edit});
             this.dataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dataGridView1.Enabled = false;
@@ -72,12 +72,12 @@ namespace AttendanceSysytem.Forms
             // 
             // Name
             // 
-            this.NameCol.HeaderText = "Name";
-            this.NameCol.MinimumWidth = 6;
-            this.NameCol.Name = "Name";
-            this.NameCol.ReadOnly = true;
-            this.NameCol.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.NameCol.Width = 125;
+            this.Name1.HeaderText = "Name";
+            this.Name1.MinimumWidth = 6;
+            this.Name1.Name = "Name";
+            this.Name1.ReadOnly = true;
+            this.Name1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Name1.Width = 125;
             // 
             // Edit
             // 
@@ -113,11 +113,11 @@ namespace AttendanceSysytem.Forms
             this.teachers_label.TabIndex = 3;
             this.teachers_label.Text = "Teachers";
             // 
-            // Teachers
+            // TeachersForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(679, 486);
+            this.ClientSize = new System.Drawing.Size(832, 453);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.go_back_btn);
             this.Controls.Add(this.teachers_label);
@@ -138,5 +138,7 @@ namespace AttendanceSysytem.Forms
         private Label teachers_label;
         private DataGridViewTextBoxColumn Edit;
         private DataGridViewTextBoxColumn NameCol;
+        private DataGridViewTextBoxColumn _Name;
+        private DataGridViewTextBoxColumn Name1;
     }
 }
