@@ -16,5 +16,10 @@ namespace AttendanceSysytem.Forms
         {
             InitializeComponent();
         }
+
+        private void btnViewAttendance_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

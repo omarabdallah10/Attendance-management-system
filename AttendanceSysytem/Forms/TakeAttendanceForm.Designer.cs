@@ -34,6 +34,7 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.NameColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.StatusColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.btnSave = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,7 +48,7 @@
             "PD",
             "OS",
             "AI"});
-            this.comboBox1.Location = new System.Drawing.Point(388, 84);
+            this.comboBox1.Location = new System.Drawing.Point(541, 35);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(200, 28);
@@ -57,7 +58,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(240, 87);
+            this.label2.Location = new System.Drawing.Point(393, 38);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(74, 25);
             this.label2.TabIndex = 14;
@@ -84,7 +85,7 @@
             this.NameColumn,
             this.StatusColumn});
             this.dataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 186);
+            this.dataGridView1.Location = new System.Drawing.Point(11, 106);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -107,11 +108,25 @@
             this.StatusColumn.TrueValue = "";
             this.StatusColumn.Width = 125;
             // 
+            // btnSave
+            // 
+            this.btnSave.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Location = new System.Drawing.Point(302, 385);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(200, 40);
+            this.btnSave.TabIndex = 16;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnViewAttendance_Click);
+            // 
             // TakeAttendanceForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnGoBack);
@@ -132,5 +147,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn NameColumn;
         private System.Windows.Forms.DataGridViewCheckBoxColumn StatusColumn;
+        private System.Windows.Forms.Button btnSave;
     }
 }
