@@ -40,7 +40,7 @@
             // AddClass
             // 
             this.AddClass.AutoSize = true;
-            this.AddClass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddClass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddClass.Location = new System.Drawing.Point(361, 43);
             this.AddClass.Name = "AddClass";
             this.AddClass.Size = new System.Drawing.Size(112, 25);
