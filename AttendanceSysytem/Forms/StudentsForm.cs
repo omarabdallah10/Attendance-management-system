@@ -27,14 +27,14 @@ namespace AttendanceSysytem.Forms
 
         private void StudentsForm_Load(object sender, EventArgs e)
         {
-            XmlDocument xmlDoc = DataManagement.XmlPath();
+            XmlDocument xmlDoc = DataManagement.xmlDoc();
             XmlNodeList Students = xmlDoc.SelectNodes("//Users/Student");
 
             // Clear existing rows in the DataGridView
             this.resetDataTable();
             List<Student> StudentsList = new List<Student>();
 
-            foreach (XmlNode StudentRecord in Students)
+            foreach (XmlElement StudentRecord in Students)
             {
                 string StudentID = StudentRecord.SelectSingleNode("UserID").InnerText;
                 string StudentName = StudentRecord.SelectSingleNode("Name").InnerText;
@@ -45,24 +45,6 @@ namespace AttendanceSysytem.Forms
                 std.ShowStudentData(this);
             }
 
-        }
-
-        public string GetStudentClassByID(string ID)
-        {
-            XmlDocument xmlDoc = DataManagement.XmlPath();
-            XmlNodeList Classes = xmlDoc.SelectNodes("//Class");
-            foreach (XmlNode classrecord in Classes)
-            {
-                XmlNodeList StudentsInClass = classrecord.SelectNodes("Students/UserID");
-                foreach (XmlNode StudentID in StudentsInClass)
-                {
-                    if (StudentID.InnerText == ID)
-                    {
-                        return StudentID.ParentNode.ParentNode.FirstChild.InnerText;
-                    }
-                }
-            }
-            return "Not Found";
         }
     }
 }

@@ -32,61 +32,20 @@ namespace AttendanceSysytem.Forms
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Name1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Edit = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.go_back_btn = new System.Windows.Forms.Button();
             this.teachers_label = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.TeachersTable = new System.Windows.Forms.DataGridView();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TeacherName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Classes = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Supervised_Class = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewButtonColumn1 = new System.Windows.Forms.DataGridViewButtonColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.TeachersTable)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AllowUserToOrderColumns = true;
-            this.dataGridView1.AllowUserToResizeColumns = false;
-            this.dataGridView1.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(5);
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Name1,
-            this.Edit});
-            this.dataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dataGridView1.Enabled = false;
-            this.dataGridView1.GridColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.dataGridView1.Location = new System.Drawing.Point(160, 125);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(423, 82);
-            this.dataGridView1.TabIndex = 4;
-            // 
-            // Name
-            // 
-            this.Name1.HeaderText = "Name";
-            this.Name1.MinimumWidth = 6;
-            this.Name1.Name = "Name";
-            this.Name1.ReadOnly = true;
-            this.Name1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Name1.Width = 125;
-            // 
-            // Edit
-            // 
-            this.Edit.HeaderText = "Edit";
-            this.Edit.MinimumWidth = 6;
-            this.Edit.Name = "Edit";
-            this.Edit.ReadOnly = true;
-            this.Edit.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Edit.Width = 125;
             // 
             // go_back_btn
             // 
@@ -107,38 +66,154 @@ namespace AttendanceSysytem.Forms
             this.teachers_label.AutoSize = true;
             this.teachers_label.Enabled = false;
             this.teachers_label.Font = new System.Drawing.Font("Segoe UI", 20F);
-            this.teachers_label.Location = new System.Drawing.Point(261, 77);
+            this.teachers_label.Location = new System.Drawing.Point(353, 77);
             this.teachers_label.Name = "teachers_label";
             this.teachers_label.Size = new System.Drawing.Size(149, 46);
             this.teachers_label.TabIndex = 3;
             this.teachers_label.Text = "Teachers";
+            // 
+            // TeachersTable
+            // 
+            this.TeachersTable.AllowUserToAddRows = false;
+            this.TeachersTable.AllowUserToDeleteRows = false;
+            this.TeachersTable.AllowUserToResizeColumns = false;
+            this.TeachersTable.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Calibri", 12F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.TeachersTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.TeachersTable.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TeachersTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.TeachersTable.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.TeachersTable.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.TeachersTable.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TeachersTable.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.TeachersTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.TeachersTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.TeachersTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ID,
+            this.TeacherName,
+            this.Classes,
+            this.Supervised_Class,
+            this.dataGridViewButtonColumn1});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.TeachersTable.DefaultCellStyle = dataGridViewCellStyle3;
+            this.TeachersTable.GridColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.TeachersTable.Location = new System.Drawing.Point(71, 125);
+            this.TeachersTable.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TeachersTable.Name = "TeachersTable";
+            this.TeachersTable.ReadOnly = true;
+            this.TeachersTable.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.TeachersTable.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.TeachersTable.RowHeadersVisible = false;
+            this.TeachersTable.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.TeachersTable.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.TeachersTable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.TeachersTable.Size = new System.Drawing.Size(684, 285);
+            this.TeachersTable.TabIndex = 8;
+            // 
+            // ID
+            // 
+            this.ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.ID.HeaderText = "ID";
+            this.ID.MinimumWidth = 6;
+            this.ID.Name = "ID";
+            this.ID.ReadOnly = true;
+            this.ID.Width = 60;
+            // 
+            // TeacherName
+            // 
+            this.TeacherName.FillWeight = 84.78261F;
+            this.TeacherName.HeaderText = "Name";
+            this.TeacherName.MinimumWidth = 6;
+            this.TeacherName.Name = "TeacherName";
+            this.TeacherName.ReadOnly = true;
+            this.TeacherName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.TeacherName.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Classes
+            // 
+            this.Classes.FillWeight = 84.78261F;
+            this.Classes.HeaderText = "Classes";
+            this.Classes.MinimumWidth = 6;
+            this.Classes.Name = "Classes";
+            this.Classes.ReadOnly = true;
+            this.Classes.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Classes.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Supervised_Class
+            // 
+            this.Supervised_Class.HeaderText = "Supervised Class";
+            this.Supervised_Class.MinimumWidth = 6;
+            this.Supervised_Class.Name = "Supervised_Class";
+            this.Supervised_Class.ReadOnly = true;
+            // 
+            // dataGridViewButtonColumn1
+            // 
+            this.dataGridViewButtonColumn1.FillWeight = 60F;
+            this.dataGridViewButtonColumn1.HeaderText = "Edit";
+            this.dataGridViewButtonColumn1.MinimumWidth = 6;
+            this.dataGridViewButtonColumn1.Name = "dataGridViewButtonColumn1";
+            this.dataGridViewButtonColumn1.ReadOnly = true;
+            this.dataGridViewButtonColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewButtonColumn1.Text = "Edit";
+            this.dataGridViewButtonColumn1.UseColumnTextForButtonValue = true;
             // 
             // TeachersForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(832, 453);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.TeachersTable);
             this.Controls.Add(this.go_back_btn);
             this.Controls.Add(this.teachers_label);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "TeachersForm";
             this.Text = "Teachers";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.TeachersForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.TeachersTable)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private DataGridView dataGridView1;
         private DataGridViewTextBoxColumn NameColumn;
         private Button go_back_btn;
         private Label teachers_label;
-        private DataGridViewTextBoxColumn Edit;
         private DataGridViewTextBoxColumn NameCol;
         private DataGridViewTextBoxColumn _Name;
         private DataGridViewTextBoxColumn Name1;
+        private DataGridView TeachersTable;
+        public void AddRow(string _UserID, string _Name, string _classes, string super_classes) { TeachersTable.Rows.Add(_UserID, _Name, _classes, super_classes); }
+
+        private DataGridViewTextBoxColumn ID;
+        private DataGridViewTextBoxColumn TeacherName;
+        private DataGridViewTextBoxColumn Classes;
+        private DataGridViewTextBoxColumn Supervised_Class;
+        private DataGridViewButtonColumn dataGridViewButtonColumn1;
     }
 }

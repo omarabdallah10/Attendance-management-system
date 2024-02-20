@@ -34,7 +34,7 @@ namespace AttendanceSysytem.Users
                 MyForm.setFromDate();
             }
             // Load the XML file
-            XmlDocument xmlDoc = DataManagement.XmlPath();
+            XmlDocument xmlDoc = DataManagement.xmlDoc();
 
             // Define a list to store attendance data
             List<Classes.Attendance> attendanceData = new List<Classes.Attendance>();
@@ -74,7 +74,7 @@ namespace AttendanceSysytem.Users
         public void ShowStudentData(StudentsForm MyForm)
         {
             // Load the XML file
-            XmlDocument xmlDoc = DataManagement.XmlPath();
+            XmlDocument xmlDoc = DataManagement.xmlDoc();
             MyForm.AddRow(UserID, Name, ClassName);
 
         }
