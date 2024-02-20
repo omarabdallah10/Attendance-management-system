@@ -59,6 +59,7 @@
             this.btnTakeAttendance.TabIndex = 2;
             this.btnTakeAttendance.Text = "Take Attendance";
             this.btnTakeAttendance.UseVisualStyleBackColor = true;
+            this.btnTakeAttendance.Click += new System.EventHandler(this.btnTakeAttendance_Click);
             // 
             // teacherFunctionalitiesForm
             // 

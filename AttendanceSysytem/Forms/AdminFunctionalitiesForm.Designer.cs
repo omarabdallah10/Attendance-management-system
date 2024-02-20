@@ -67,6 +67,7 @@
             this.btnAddStudent.TabIndex = 0;
             this.btnAddStudent.Text = "Add Student";
             this.btnAddStudent.UseVisualStyleBackColor = false;
+            this.btnAddStudent.Click += new System.EventHandler(this.btnAddStudent_Click);
             // 
             // btnSignOut
             // 
@@ -94,6 +95,7 @@
             this.btnAddClass.TabIndex = 2;
             this.btnAddClass.Text = "Add Class";
             this.btnAddClass.UseVisualStyleBackColor = false;
+            this.btnAddClass.Click += new System.EventHandler(this.btnAddClass_Click);
             // 
             // button2
             // 
