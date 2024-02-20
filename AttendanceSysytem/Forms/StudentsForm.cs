@@ -22,7 +22,12 @@ namespace AttendanceSysytem.Forms
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            if (e.ColumnIndex==3)
+            {
+                Hide();
+                EditStudentForm form = new EditStudentForm();
+                form.ShowDialog();
+            }
         }
 
         private void StudentsForm_Load(object sender, EventArgs e)
@@ -45,6 +50,13 @@ namespace AttendanceSysytem.Forms
                 std.ShowStudentData(this);
             }
 
+        }
+
+        private void go_back_btn_Click(object sender, EventArgs e)
+        {
+            Hide();
+            EditAdminForm form = new EditAdminForm();
+            form.Show();
         }
     }
 }

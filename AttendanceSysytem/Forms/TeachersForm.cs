@@ -39,5 +39,23 @@ namespace AttendanceSysytem.Forms
                 _teacher.ShowTeacherData(this);
             }
         }
+
+        private void TeachersTable_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == 4)
+            {
+                MessageBox.Show(this.TeachersTable.Rows.SharedRow(e.RowIndex).Cells[0].Value.ToString());
+                Hide();
+                EditTeacherForm form = new EditTeacherForm();
+                form.Show();
+            }
+        }
+
+        private void go_back_btn_Click(object sender, EventArgs e)
+        {
+            Hide();
+            EditAdminForm form = new EditAdminForm();
+            form.Show();
+        }
     }
 }

@@ -37,12 +37,12 @@ namespace AttendanceSysytem.Forms
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.StudentsTable = new System.Windows.Forms.DataGridView();
-            this.go_back_btn = new System.Windows.Forms.Button();
-            this.students_label = new System.Windows.Forms.Label();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.StdName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Class = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Edit = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.go_back_btn = new System.Windows.Forms.Button();
+            this.students_label = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.StudentsTable)).BeginInit();
             this.SuspendLayout();
             // 
@@ -109,33 +109,6 @@ namespace AttendanceSysytem.Forms
             this.StudentsTable.TabIndex = 7;
             this.StudentsTable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // go_back_btn
-            // 
-            this.go_back_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.go_back_btn.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.go_back_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.go_back_btn.Location = new System.Drawing.Point(12, 10);
-            this.go_back_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.go_back_btn.Name = "go_back_btn";
-            this.go_back_btn.Size = new System.Drawing.Size(134, 42);
-            this.go_back_btn.TabIndex = 8;
-            this.go_back_btn.Text = "Go Back";
-            this.go_back_btn.UseVisualStyleBackColor = false;
-            // 
-            // students_label
-            // 
-            this.students_label.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.students_label.AutoSize = true;
-            this.students_label.Enabled = false;
-            this.students_label.Font = new System.Drawing.Font("Segoe UI", 20F);
-            this.students_label.Location = new System.Drawing.Point(336, 93);
-            this.students_label.Name = "students_label";
-            this.students_label.Size = new System.Drawing.Size(151, 46);
-            this.students_label.TabIndex = 6;
-            this.students_label.Text = "Students";
-            // 
             // ID
             // 
             this.ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
@@ -175,6 +148,34 @@ namespace AttendanceSysytem.Forms
             this.Edit.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Edit.Text = "Edit";
             this.Edit.UseColumnTextForButtonValue = true;
+            // 
+            // go_back_btn
+            // 
+            this.go_back_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.go_back_btn.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.go_back_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.go_back_btn.Location = new System.Drawing.Point(12, 10);
+            this.go_back_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.go_back_btn.Name = "go_back_btn";
+            this.go_back_btn.Size = new System.Drawing.Size(134, 42);
+            this.go_back_btn.TabIndex = 8;
+            this.go_back_btn.Text = "Go Back";
+            this.go_back_btn.UseVisualStyleBackColor = false;
+            this.go_back_btn.Click += new System.EventHandler(this.go_back_btn_Click);
+            // 
+            // students_label
+            // 
+            this.students_label.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.students_label.AutoSize = true;
+            this.students_label.Enabled = false;
+            this.students_label.Font = new System.Drawing.Font("Segoe UI", 20F);
+            this.students_label.Location = new System.Drawing.Point(336, 93);
+            this.students_label.Name = "students_label";
+            this.students_label.Size = new System.Drawing.Size(151, 46);
+            this.students_label.TabIndex = 6;
+            this.students_label.Text = "Students";
             // 
             // StudentsForm
             // 

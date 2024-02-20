@@ -294,6 +294,7 @@ namespace AttendanceSysytem.Forms
             this.signOutBTN.TabIndex = 13;
             this.signOutBTN.Text = "Sign out";
             this.signOutBTN.UseVisualStyleBackColor = false;
+            this.signOutBTN.Click += new System.EventHandler(this.signOutBTN_Click);
             // 
             // saveAs_btn
             // 

@@ -34,5 +34,12 @@ namespace AttendanceSysytem
             addTeacherForm.Show();
             Hide();
         }
+
+        private void btnEditUsers_Click(object sender, EventArgs e)
+        {
+            Hide();
+            EditAdminForm editAdminForm = new EditAdminForm();
+            editAdminForm.Show();
+        }
     }
 }

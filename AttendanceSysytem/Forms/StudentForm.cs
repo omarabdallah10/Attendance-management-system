@@ -54,5 +54,13 @@ namespace AttendanceSysytem.Forms
         {
 
         }
+
+        private void signOutBTN_Click(object sender, EventArgs e)
+        {
+            Hide();
+            loginForm login = new loginForm();
+            login.Show();
+            recived = null;
+        }
     }
 }
