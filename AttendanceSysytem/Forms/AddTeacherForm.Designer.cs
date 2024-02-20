@@ -44,91 +44,108 @@
             // AddTeacher
             // 
             this.AddTeacher.AutoSize = true;
-            this.AddTeacher.Location = new System.Drawing.Point(365, 70);
+            this.AddTeacher.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddTeacher.Location = new System.Drawing.Point(347, 29);
             this.AddTeacher.Name = "AddTeacher";
-            this.AddTeacher.Size = new System.Drawing.Size(86, 16);
+            this.AddTeacher.Size = new System.Drawing.Size(137, 25);
             this.AddTeacher.TabIndex = 11;
             this.AddTeacher.Text = "Add Teacher";
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(453, 348);
+            this.btnCancel.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.Location = new System.Drawing.Point(433, 366);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(175, 35);
+            this.btnCancel.Size = new System.Drawing.Size(220, 45);
             this.btnCancel.TabIndex = 21;
             this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.UseVisualStyleBackColor = false;
             // 
             // txtClasses
             // 
-            this.txtClasses.Location = new System.Drawing.Point(347, 263);
+            this.txtClasses.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtClasses.Location = new System.Drawing.Point(382, 297);
             this.txtClasses.Name = "txtClasses";
-            this.txtClasses.Size = new System.Drawing.Size(189, 22);
+            this.txtClasses.Size = new System.Drawing.Size(271, 30);
             this.txtClasses.TabIndex = 19;
+            this.txtClasses.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(347, 112);
+            this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.Location = new System.Drawing.Point(382, 102);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(189, 22);
+            this.txtName.Size = new System.Drawing.Size(271, 30);
             this.txtName.TabIndex = 13;
+            this.txtName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Classes
             // 
             this.Classes.AutoSize = true;
-            this.Classes.Location = new System.Drawing.Point(230, 266);
+            this.Classes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Classes.Location = new System.Drawing.Point(187, 300);
             this.Classes.Name = "Classes";
-            this.Classes.Size = new System.Drawing.Size(56, 16);
+            this.Classes.Size = new System.Drawing.Size(90, 25);
             this.Classes.TabIndex = 18;
             this.Classes.Text = "Classes";
             // 
             // TeacherName
             // 
             this.TeacherName.AutoSize = true;
-            this.TeacherName.Location = new System.Drawing.Point(230, 115);
+            this.TeacherName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TeacherName.Location = new System.Drawing.Point(187, 105);
             this.TeacherName.Name = "TeacherName";
-            this.TeacherName.Size = new System.Drawing.Size(44, 16);
+            this.TeacherName.Size = new System.Drawing.Size(68, 25);
             this.TeacherName.TabIndex = 12;
             this.TeacherName.Text = "Name";
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(204, 348);
+            this.btnSave.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Location = new System.Drawing.Point(184, 366);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(175, 35);
+            this.btnSave.Size = new System.Drawing.Size(220, 45);
             this.btnSave.TabIndex = 20;
             this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.UseVisualStyleBackColor = false;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(347, 207);
+            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Location = new System.Drawing.Point(382, 230);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(189, 22);
+            this.txtPassword.Size = new System.Drawing.Size(271, 30);
             this.txtPassword.TabIndex = 17;
+            this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtUserName
             // 
-            this.txtUserName.Location = new System.Drawing.Point(347, 155);
+            this.txtUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUserName.Location = new System.Drawing.Point(382, 165);
             this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(189, 22);
+            this.txtUserName.Size = new System.Drawing.Size(271, 30);
             this.txtUserName.TabIndex = 15;
+            this.txtUserName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Password
             // 
             this.Password.AutoSize = true;
-            this.Password.Location = new System.Drawing.Point(230, 210);
+            this.Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Password.Location = new System.Drawing.Point(187, 233);
             this.Password.Name = "Password";
-            this.Password.Size = new System.Drawing.Size(67, 16);
+            this.Password.Size = new System.Drawing.Size(106, 25);
             this.Password.TabIndex = 16;
             this.Password.Text = "Password";
             // 
             // Username
             // 
             this.Username.AutoSize = true;
-            this.Username.Location = new System.Drawing.Point(230, 158);
+            this.Username.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Username.Location = new System.Drawing.Point(187, 168);
             this.Username.Name = "Username";
-            this.Username.Size = new System.Drawing.Size(70, 16);
+            this.Username.Size = new System.Drawing.Size(110, 25);
             this.Username.TabIndex = 14;
             this.Username.Text = "Username";
             // 
@@ -136,6 +153,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(832, 453);
             this.Controls.Add(this.AddTeacher);
             this.Controls.Add(this.btnCancel);
@@ -150,6 +168,7 @@
             this.Controls.Add(this.Username);
             this.Name = "AddTeacherForm";
             this.Text = "AddTeacherForm";
+            this.Load += new System.EventHandler(this.AddTeacherForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

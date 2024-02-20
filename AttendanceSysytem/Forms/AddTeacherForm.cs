@@ -16,5 +16,10 @@ namespace AttendanceSysytem.Forms
         {
             InitializeComponent();
         }
+
+        private void AddTeacherForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

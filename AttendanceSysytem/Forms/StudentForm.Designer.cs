@@ -172,7 +172,7 @@ namespace AttendanceSysytem.Forms
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(674, 110);
+            this.label5.Location = new System.Drawing.Point(640, 110);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(84, 16);
             this.label5.TabIndex = 12;
@@ -182,7 +182,7 @@ namespace AttendanceSysytem.Forms
             // 
             this.textBox3.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.textBox3.Enabled = false;
-            this.textBox3.Location = new System.Drawing.Point(765, 107);
+            this.textBox3.Location = new System.Drawing.Point(731, 107);
             this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
@@ -195,7 +195,7 @@ namespace AttendanceSysytem.Forms
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(765, 398);
+            this.button1.Location = new System.Drawing.Point(687, 400);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(112, 42);
@@ -209,7 +209,7 @@ namespace AttendanceSysytem.Forms
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(629, 398);
+            this.button2.Location = new System.Drawing.Point(551, 400);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(124, 42);

@@ -16,5 +16,15 @@ namespace AttendanceSysytem.Forms
         {
             InitializeComponent();
         }
+
+        private void EditTeacherForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void edit_teacher_label_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

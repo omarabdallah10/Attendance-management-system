@@ -28,37 +28,58 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(teacherFunctionalitiesForm));
             this.btnSignOut = new System.Windows.Forms.Button();
             this.btnViewAttendance = new System.Windows.Forms.Button();
             this.btnTakeAttendance = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSignOut
             // 
-            this.btnSignOut.Location = new System.Drawing.Point(640, 44);
+            this.btnSignOut.BackColor = System.Drawing.Color.IndianRed;
+            this.btnSignOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSignOut.Location = new System.Drawing.Point(601, 36);
             this.btnSignOut.Name = "btnSignOut";
-            this.btnSignOut.Size = new System.Drawing.Size(75, 23);
+            this.btnSignOut.Size = new System.Drawing.Size(200, 40);
             this.btnSignOut.TabIndex = 0;
             this.btnSignOut.Text = "Sign out";
-            this.btnSignOut.UseVisualStyleBackColor = true;
+            this.btnSignOut.UseVisualStyleBackColor = false;
             // 
             // btnViewAttendance
             // 
-            this.btnViewAttendance.Location = new System.Drawing.Point(196, 196);
+            this.btnViewAttendance.BackColor = System.Drawing.Color.Black;
+            this.btnViewAttendance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewAttendance.ForeColor = System.Drawing.Color.White;
+            this.btnViewAttendance.Location = new System.Drawing.Point(147, 216);
             this.btnViewAttendance.Name = "btnViewAttendance";
-            this.btnViewAttendance.Size = new System.Drawing.Size(177, 23);
+            this.btnViewAttendance.Size = new System.Drawing.Size(220, 45);
             this.btnViewAttendance.TabIndex = 1;
             this.btnViewAttendance.Text = "View Attendance";
-            this.btnViewAttendance.UseVisualStyleBackColor = true;
+            this.btnViewAttendance.UseVisualStyleBackColor = false;
             // 
             // btnTakeAttendance
             // 
-            this.btnTakeAttendance.Location = new System.Drawing.Point(479, 196);
+            this.btnTakeAttendance.BackColor = System.Drawing.Color.Black;
+            this.btnTakeAttendance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTakeAttendance.ForeColor = System.Drawing.Color.White;
+            this.btnTakeAttendance.Location = new System.Drawing.Point(462, 216);
             this.btnTakeAttendance.Name = "btnTakeAttendance";
-            this.btnTakeAttendance.Size = new System.Drawing.Size(152, 23);
+            this.btnTakeAttendance.Size = new System.Drawing.Size(220, 45);
             this.btnTakeAttendance.TabIndex = 2;
             this.btnTakeAttendance.Text = "Take Attendance";
-            this.btnTakeAttendance.UseVisualStyleBackColor = true;
+            this.btnTakeAttendance.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(850, 500);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
             // 
             // teacherFunctionalitiesForm
             // 
@@ -68,8 +89,10 @@
             this.Controls.Add(this.btnTakeAttendance);
             this.Controls.Add(this.btnViewAttendance);
             this.Controls.Add(this.btnSignOut);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "teacherFunctionalitiesForm";
             this.Text = "teacherFunctionalities";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -79,5 +102,6 @@
         private System.Windows.Forms.Button btnSignOut;
         private System.Windows.Forms.Button btnViewAttendance;
         private System.Windows.Forms.Button btnTakeAttendance;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

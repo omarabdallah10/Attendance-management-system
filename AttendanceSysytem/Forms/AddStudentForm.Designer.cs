@@ -155,11 +155,13 @@
             this.AddStudent.Size = new System.Drawing.Size(132, 25);
             this.AddStudent.TabIndex = 0;
             this.AddStudent.Text = "Add Student";
+            this.AddStudent.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // AddStudentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(832, 453);
             this.Controls.Add(this.AddStudent);
             this.Controls.Add(this.btnCancel);
