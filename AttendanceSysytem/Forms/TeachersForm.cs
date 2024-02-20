@@ -47,6 +47,8 @@ namespace AttendanceSysytem.Forms
                 MessageBox.Show(this.TeachersTable.Rows.SharedRow(e.RowIndex).Cells[0].Value.ToString());
                 Hide();
                 EditTeacherForm form = new EditTeacherForm();
+                form.recived = TeachersTable.Rows.SharedRow(e.RowIndex).Cells[0].Value.ToString();
+                Console.WriteLine(form.recived);
                 form.Show();
             }
         }

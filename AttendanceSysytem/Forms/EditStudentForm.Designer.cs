@@ -153,6 +153,7 @@ namespace AttendanceSysytem.Forms
             this.save_btn.TabIndex = 10;
             this.save_btn.Text = "Save";
             this.save_btn.UseVisualStyleBackColor = false;
+            this.save_btn.Click += new System.EventHandler(this.save_btn_Click);
             // 
             // cancel_btn
             // 

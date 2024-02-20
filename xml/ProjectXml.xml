@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <School xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="projectSchema.xsd">
   <Users>
     <Admin>
@@ -23,12 +23,12 @@
       <UserID>T002</UserID>
       <Name>Nadin Saleh</Name>
       <Email>NadinSaleh@teacher.com</Email>
-      <Password>Ac1515as</Password>
+      <Password>@aad2daW</Password>
     </Teacher>
     <Teacher Supervisor="false">
       <UserID>T004</UserID>
-      <Name>Amir Saleh</Name>
-      <Email>Amir@teacher.com</Email>
+      <Name>Amira Salah</Name>
+      <Email>Amira@teacher.com</Email>
       <Password>Ac1515as</Password>
     </Teacher>
     <Student>
@@ -74,9 +74,8 @@
       <UserID>T002</UserID>
     </Supervisor>
     <Teachers>
-      <UserID>T002</UserID>
-      <UserID>T004</UserID>
       <UserID>T101</UserID>
+      <UserID>T001</UserID>
     </Teachers>
     <Students>
       <UserID>S003</UserID>

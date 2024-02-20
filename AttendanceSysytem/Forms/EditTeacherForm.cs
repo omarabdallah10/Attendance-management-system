@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AttendanceSysytem.Users;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,10 @@ namespace AttendanceSysytem.Forms
 {
     public partial class EditTeacherForm : Form
     {
+        public string recived { get; set; }
         public EditTeacherForm()
         {
-            InitializeComponent();
+            InitializeComponent();           
         }
 
 
@@ -23,6 +25,11 @@ namespace AttendanceSysytem.Forms
             Hide();
             TeachersForm teachersForm = new TeachersForm();
             teachersForm.Show();
+        }
+
+        private void EditTeacherForm_Load(object sender, EventArgs e)
+        {
+            Console.WriteLine(recived);
         }
     }
 }
