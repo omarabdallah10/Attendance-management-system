@@ -73,9 +73,6 @@ namespace AttendanceSysytem.Users
         }
         public void ShowStudentData(StudentsForm MyForm)
         {
-            //=================================   Clear existing rows in the DataGridView
-            //=================================   MyForm.resetDataTable();
-
             // Load the XML file
             XmlDocument xmlDoc = DataManagement.XmlPath();
             MyForm.AddRow(UserID, Name, ClassName);
