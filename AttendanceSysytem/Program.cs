@@ -24,6 +24,9 @@ namespace AttendanceSysytem
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new TeacherViewAttendanceForm());
 
+
+            
+            //isAdmin("Admin@admin.com", "123456789Aa");
         }
     }
 }
