@@ -143,17 +143,23 @@
     <Compile Include="Forms\EditTeacherForm.Designer.cs">
       <DependentUpon>EditTeacherForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\TakeAttendanceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TakeAttendanceForm.Designer.cs">
+      <DependentUpon>TakeAttendanceForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\TeachersForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\TeachersForm.Designer.cs">
       <DependentUpon>TeachersForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\TeacherViewForm.cs">
+    <Compile Include="Forms\TeacherViewAttendanceForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\TeacherViewForm.Designer.cs">
-      <DependentUpon>TeacherViewForm.cs</DependentUpon>
+    <Compile Include="Forms\TeacherViewAttendanceForm.Designer.cs">
+      <DependentUpon>TeacherViewAttendanceForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -206,11 +212,14 @@
     <EmbeddedResource Include="Forms\EditTeacherForm.resx">
       <DependentUpon>EditTeacherForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TakeAttendanceForm.resx">
+      <DependentUpon>TakeAttendanceForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\TeachersForm.resx">
       <DependentUpon>TeachersForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\TeacherViewForm.resx">
-      <DependentUpon>TeacherViewForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\TeacherViewAttendanceForm.resx">
+      <DependentUpon>TeacherViewAttendanceForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

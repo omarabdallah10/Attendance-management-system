@@ -74,7 +74,7 @@
             // 
             // btnLogin
             // 
-            this.btnLogin.BackColor = System.Drawing.SystemColors.Desktop;
+            this.btnLogin.BackColor = System.Drawing.Color.Black;
             this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
@@ -83,7 +83,7 @@
             this.btnLogin.Size = new System.Drawing.Size(180, 40);
             this.btnLogin.TabIndex = 4;
             this.btnLogin.Text = "Login";
-            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // loginForm

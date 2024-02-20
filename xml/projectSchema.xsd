@@ -107,6 +107,8 @@
 	<xs:complexType name="AttendanceRecordType">
 		<xs:sequence>
 			<xs:element name="UserID" type="userIDType"/>
+			<xs:element name="Name" type="xs:string"/>
+			<xs:element name="ClassName" type="xs:string"/>
 			<xs:element name="Date" type="xs:date"/>
 			<xs:element name="Status" type="statusType"/>
 		</xs:sequence>
