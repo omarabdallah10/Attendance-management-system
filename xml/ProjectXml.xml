@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<School xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="projectSchema.xsd">
+  <Users>
+    <Admin>
+      <UserID>A001</UserID>
+      <Name>John Doe</Name>
+      <Email>Admin@admin.com</Email>
+      <Password>123456789Aa</Password>
+    </Admin>
+    <Teacher Supervisor="false">
+      <UserID>T101</UserID>
+      <Name>ahmed ali</Name>
+      <Email>ali@2gm.com</Email>
+      <Password>123@ASDasa</Password>
+    </Teacher>
+    <Teacher Supervisor="true">
+      <UserID>T001</UserID>
+      <Name>Mohammed AbuTrika</Name>
+      <Email>AbuTrika22@teacher.com</Email>
+      <Password>AlAhly22@Trika</Password>
+    </Teacher>
+    <Teacher Supervisor="true">
+      <UserID>T002</UserID>
+      <Name>Nadin Saleh</Name>
+      <Email>NadinSaleh@teacher.com</Email>
+      <Password>Ac1515as</Password>
+    </Teacher>
+    <Teacher Supervisor="false">
+      <UserID>T004</UserID>
+      <Name>Amir Saleh</Name>
+      <Email>Amir@teacher.com</Email>
+      <Password>Ac1515as</Password>
+    </Teacher>
+    <Student>
+      <UserID>S001</UserID>
+      <Name>Abdelhameed Osama</Name>
+      <Email>abdelhameed_osama@example.com</Email>
+      <Password>611</Password>
+      <ClassName>PD</ClassName>
+    </Student>
+    <Student>
+      <UserID>S002</UserID>
+      <Name>AbdUllah Aiman</Name>
+      <Email>abdUllah_aiman@example.com</Email>
+      <Password>123456789Aa</Password>
+      <ClassName>AI</ClassName>
+    </Student>
+    <Student>
+      <UserID>S003</UserID>
+      <Name>Omar Abdullah</Name>
+      <Email>omar_abdullah@example.com</Email>
+      <Password>123456789Aa</Password>
+      <ClassName>OS</ClassName>
+    </Student>
+  </Users>
+  <Class>
+    <Name>PD</Name>
+    <Supervisor>
+      <UserID>T001</UserID>
+    </Supervisor>
+    <Teachers>
+      <UserID>T001</UserID>
+      <UserID>T002</UserID>
+      <UserID>T004</UserID>
+    </Teachers>
+    <Students>
+      <UserID>S001</UserID>
+      <UserID>S002</UserID>
+    </Students>
+  </Class>
+  <Class>
+    <Name>OS</Name>
+    <Supervisor>
+      <UserID>T002</UserID>
+    </Supervisor>
+    <Teachers>
+      <UserID>T002</UserID>
+      <UserID>T004</UserID>
+      <UserID>T101</UserID>
+    </Teachers>
+    <Students>
+      <UserID>S003</UserID>
+    </Students>
+  </Class>
+  <Class>
+    <Name>AI</Name>
+    <Supervisor>
+      <UserID>T004</UserID>
+    </Supervisor>
+    <Teachers>
+      <UserID>T001</UserID>
+      <UserID>T002</UserID>
+      <UserID>T004</UserID>
+    </Teachers>
+    <Students>
+      <UserID>S002</UserID>
+    </Students>
+  </Class>
+  <AttendanceData>
+    <AttendanceRecord>
+      <UserID>S001</UserID>
+      <Date>2024-02-15</Date>
+      <Status>Present</Status>
+    </AttendanceRecord>
+    <AttendanceRecord>
+      <UserID>S002</UserID>
+      <Date>2024-02-15</Date>
+      <Status>Present</Status>
+    </AttendanceRecord>
+    <AttendanceRecord>
+      <UserID>S002</UserID>
+      <Date>2024-02-16</Date>
+      <Status>Absent</Status>
+    </AttendanceRecord>
+    <AttendanceRecord>
+      <UserID>S002</UserID>
+      <Date>2024-02-17</Date>
+      <Status>Present</Status>
+    </AttendanceRecord>
+    <AttendanceRecord>
+      <UserID>S002</UserID>
+      <Date>2024-02-18</Date>
+      <Status>Absent</Status>
+    </AttendanceRecord>
+    <!-- Add more attendance records as needed -->
+  </AttendanceData>
+</School>

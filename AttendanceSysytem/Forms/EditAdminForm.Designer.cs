@@ -78,6 +78,7 @@ namespace AttendanceSysytem.Forms
             this.students_btn.TabIndex = 2;
             this.students_btn.Text = "Students";
             this.students_btn.UseVisualStyleBackColor = false;
+            this.students_btn.Click += new System.EventHandler(this.students_btn_Click);
             // 
             // teachers_btn
             // 
@@ -92,6 +93,7 @@ namespace AttendanceSysytem.Forms
             this.teachers_btn.TabIndex = 3;
             this.teachers_btn.Text = "Teachers";
             this.teachers_btn.UseVisualStyleBackColor = false;
+            this.teachers_btn.Click += new System.EventHandler(this.teachers_btn_Click);
             // 
             // classes_btn
             // 

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using AttendanceSysytem.Forms;
+using AttendanceSysytem.Users;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +14,7 @@ namespace AttendanceSysytem
 {
     public partial class AdminFunctionalitiesForm : Form
     {
+        public Admin recived { get; set; }
         public AdminFunctionalitiesForm()
         {
             InitializeComponent();
@@ -25,6 +28,34 @@ namespace AttendanceSysytem
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnAddTeacher_Click(object sender, EventArgs e)
+        {
+            AddTeacherForm addTeacherForm = new AddTeacherForm();
+            addTeacherForm.Show();
+            Hide();
+        }
+
+        private void btnEditUsers_Click(object sender, EventArgs e)
+        {
+            Hide();
+            EditAdminForm editAdminForm = new EditAdminForm();
+            editAdminForm.Show();
+        }
+
+        private void btnAddStudent_Click(object sender, EventArgs e)
+        {
+            AddStudentForm addStudent = new AddStudentForm();
+            addStudent.Show();
+            Hide();
+        }
+
+        private void btnAddClass_Click(object sender, EventArgs e)
+        {
+            AddClassForm addClass = new AddClassForm();
+            addClass.Show();
+            Hide();
         }
     }
 }

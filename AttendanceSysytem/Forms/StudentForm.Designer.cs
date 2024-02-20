@@ -1,10 +1,68 @@
-﻿using System.Drawing;
+﻿using AttendanceSysytem.Classes;
+using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Security.Cryptography.X509Certificates;
 using System.Windows.Forms;
+using System.Xml;
 
 namespace AttendanceSysytem.Forms
 {
     partial class StudentForm
     {
+        // Define a method to fetch and display attendance data for a specific student
+        private void ShowStudentAttendance(string studentID, DateTime fromDate, DateTime toDate)
+        {
+            // Clear existing rows in the DataGridView
+            StudentAttendanceTable.Rows.Clear();
+            int absentDays = 0;
+            if (DateTime.Compare(fromDate, toDate) == 1)
+            {
+                MessageBox.Show("Choose a correct range for date", "Date Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                FromDate.Value = FromDate.MinDate;
+            }
+            // Load the XML file
+            XmlDocument xmlDoc = DataManagement.xmlDoc();
+
+            // Define a list to store attendance data
+            List<Classes.Attendance> attendanceData = new List<Classes.Attendance>();
+
+            // Select all AttendanceRecord nodes for the specific student within the specified date range and Date >= '" + fromDate.ToString("yyyy-MM-dd") + "' and Date <= '" + toDate.ToString("yyyy-MM-dd") + "']
+            XmlNodeList attendanceRecords = xmlDoc.SelectNodes("//AttendanceData/AttendanceRecord[UserID='" + studentID + "']");
+
+            // Iterate through the selected attendance records and extract relevant information
+            foreach (XmlNode record in attendanceRecords)
+            {
+                string Userid = record.SelectSingleNode("UserID").InnerText;
+                string AttendanceDateString = record.SelectSingleNode("Date").InnerText;
+                DateTime attendanceDate = DateTime.Parse(AttendanceDateString);
+
+                // Compare the DateTime objects
+                int result = DateTime.Compare(fromDate, attendanceDate);
+                if (result <= 0)
+                {
+                    result = DateTime.Compare(toDate, attendanceDate);
+                    if (result >= 0)
+                    {
+                        string status = record.SelectSingleNode("Status").InnerText;
+                        if (status == "Absent") absentDays++;
+                        attendanceData.Add(new Attendance(Userid, attendanceDate.Date, status));
+                    }
+                }
+            }
+
+            AbsentDays.Text = absentDays.ToString();
+
+            // Populate the DataGridView with attendance data
+            foreach (var data in attendanceData)
+            {
+                StudentAttendanceTable.Rows.Add(data.AttendanceDate.DayOfWeek, data.AttendanceDate, data.Status);
+            }
+        }
+
+
+
+
         /// <summary>
         ///  Required designer variable.
         /// </summary>
@@ -31,119 +89,142 @@ namespace AttendanceSysytem.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.StudentNametxt = new System.Windows.Forms.TextBox();
+            this.name_label = new System.Windows.Forms.Label();
+            this.class_label = new System.Windows.Forms.Label();
+            this.StudentClasstxt = new System.Windows.Forms.TextBox();
+            this.showFrom_label = new System.Windows.Forms.Label();
+            this.to_label = new System.Windows.Forms.Label();
+            this.StudentAttendanceTable = new System.Windows.Forms.DataGridView();
             this.Day = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DATE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.STATUS = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.absentdays_label = new System.Windows.Forms.Label();
+            this.AbsentDays = new System.Windows.Forms.TextBox();
+            this.signOutBTN = new System.Windows.Forms.Button();
+            this.saveAs_btn = new System.Windows.Forms.Button();
+            this.ToDate = new System.Windows.Forms.DateTimePicker();
+            this.FromDate = new System.Windows.Forms.DateTimePicker();
+            ((System.ComponentModel.ISupportInitialize)(this.StudentAttendanceTable)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // StudentNametxt
             // 
-            this.textBox1.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(169, 29);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(187, 22);
-            this.textBox1.TabIndex = 0;
+            this.StudentNametxt.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.StudentNametxt.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.StudentNametxt.Enabled = false;
+            this.StudentNametxt.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StudentNametxt.Location = new System.Drawing.Point(166, 38);
+            this.StudentNametxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.StudentNametxt.Name = "StudentNametxt";
+            this.StudentNametxt.ReadOnly = true;
+            this.StudentNametxt.Size = new System.Drawing.Size(200, 27);
+            this.StudentNametxt.TabIndex = 0;
             // 
-            // label1
+            // name_label
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(57, 31);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 16);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Name";
+            this.name_label.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.name_label.AutoSize = true;
+            this.name_label.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.name_label.Location = new System.Drawing.Point(56, 41);
+            this.name_label.Name = "name_label";
+            this.name_label.Size = new System.Drawing.Size(51, 19);
+            this.name_label.TabIndex = 1;
+            this.name_label.Text = "Name";
             // 
-            // label2
+            // class_label
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(57, 67);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 16);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Class";
+            this.class_label.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.class_label.AutoSize = true;
+            this.class_label.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.class_label.Location = new System.Drawing.Point(56, 77);
+            this.class_label.Name = "class_label";
+            this.class_label.Size = new System.Drawing.Size(49, 19);
+            this.class_label.TabIndex = 3;
+            this.class_label.Text = "Class";
             // 
-            // textBox2
+            // StudentClasstxt
             // 
-            this.textBox2.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(169, 67);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(187, 22);
-            this.textBox2.TabIndex = 2;
+            this.StudentClasstxt.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.StudentClasstxt.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.StudentClasstxt.Enabled = false;
+            this.StudentClasstxt.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StudentClasstxt.Location = new System.Drawing.Point(166, 74);
+            this.StudentClasstxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.StudentClasstxt.Name = "StudentClasstxt";
+            this.StudentClasstxt.ReadOnly = true;
+            this.StudentClasstxt.Size = new System.Drawing.Size(200, 27);
+            this.StudentClasstxt.TabIndex = 2;
             // 
-            // label3
+            // showFrom_label
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(57, 110);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(74, 16);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Show From";
+            this.showFrom_label.AutoSize = true;
+            this.showFrom_label.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showFrom_label.Location = new System.Drawing.Point(56, 118);
+            this.showFrom_label.Name = "showFrom_label";
+            this.showFrom_label.Size = new System.Drawing.Size(92, 19);
+            this.showFrom_label.TabIndex = 4;
+            this.showFrom_label.Text = "Show From";
             // 
-            // label4
+            // to_label
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(352, 110);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(24, 16);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "To";
+            this.to_label.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.to_label.AutoSize = true;
+            this.to_label.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.to_label.Location = new System.Drawing.Point(391, 121);
+            this.to_label.Name = "to_label";
+            this.to_label.Size = new System.Drawing.Size(25, 19);
+            this.to_label.TabIndex = 5;
+            this.to_label.Text = "To";
             // 
-            // comboBox1
+            // StudentAttendanceTable
             // 
-            this.comboBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(169, 110);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(151, 24);
-            this.comboBox1.TabIndex = 8;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(417, 110);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(151, 24);
-            this.comboBox2.TabIndex = 9;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.StudentAttendanceTable.AllowUserToAddRows = false;
+            this.StudentAttendanceTable.AllowUserToDeleteRows = false;
+            this.StudentAttendanceTable.AllowUserToOrderColumns = true;
+            this.StudentAttendanceTable.AllowUserToResizeColumns = false;
+            this.StudentAttendanceTable.AllowUserToResizeRows = false;
+            this.StudentAttendanceTable.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.StudentAttendanceTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.StudentAttendanceTable.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.StudentAttendanceTable.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.StudentAttendanceTable.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.StudentAttendanceTable.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.StudentAttendanceTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.StudentAttendanceTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.StudentAttendanceTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Day,
             this.DATE,
             this.STATUS});
-            this.dataGridView1.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.dataGridView1.Location = new System.Drawing.Point(81, 179);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(501, 155);
-            this.dataGridView1.TabIndex = 10;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.StudentAttendanceTable.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.StudentAttendanceTable.Location = new System.Drawing.Point(60, 184);
+            this.StudentAttendanceTable.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.StudentAttendanceTable.Name = "StudentAttendanceTable";
+            this.StudentAttendanceTable.ReadOnly = true;
+            this.StudentAttendanceTable.RowHeadersVisible = false;
+            this.StudentAttendanceTable.RowHeadersWidth = 51;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.StudentAttendanceTable.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.StudentAttendanceTable.Size = new System.Drawing.Size(787, 210);
+            this.StudentAttendanceTable.TabIndex = 10;
+            this.StudentAttendanceTable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.StudentAttendanceTable_CellContentClick);
             // 
             // Day
             // 
@@ -151,7 +232,6 @@ namespace AttendanceSysytem.Forms
             this.Day.MinimumWidth = 6;
             this.Day.Name = "Day";
             this.Day.ReadOnly = true;
-            this.Day.Width = 125;
             // 
             // DATE
             // 
@@ -159,7 +239,6 @@ namespace AttendanceSysytem.Forms
             this.DATE.MinimumWidth = 6;
             this.DATE.Name = "DATE";
             this.DATE.ReadOnly = true;
-            this.DATE.Width = 125;
             // 
             // STATUS
             // 
@@ -167,19 +246,33 @@ namespace AttendanceSysytem.Forms
             this.STATUS.MinimumWidth = 6;
             this.STATUS.Name = "STATUS";
             this.STATUS.ReadOnly = true;
-            this.STATUS.Width = 125;
             // 
-            // label5
+            // absentdays_label
             // 
+<<<<<<< HEAD
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(640, 110);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(84, 16);
             this.label5.TabIndex = 12;
             this.label5.Text = "Absent Days";
+=======
+            this.absentdays_label.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.absentdays_label.AutoSize = true;
+            this.absentdays_label.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.absentdays_label.Location = new System.Drawing.Point(674, 118);
+            this.absentdays_label.Margin = new System.Windows.Forms.Padding(5);
+            this.absentdays_label.Name = "absentdays_label";
+            this.absentdays_label.Size = new System.Drawing.Size(102, 19);
+            this.absentdays_label.TabIndex = 12;
+            this.absentdays_label.Text = "Absent Days";
+>>>>>>> main
             // 
-            // textBox3
+            // AbsentDays
             // 
+<<<<<<< HEAD
             this.textBox3.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.textBox3.Enabled = false;
             this.textBox3.Location = new System.Drawing.Point(731, 107);
@@ -188,9 +281,26 @@ namespace AttendanceSysytem.Forms
             this.textBox3.ReadOnly = true;
             this.textBox3.Size = new System.Drawing.Size(44, 22);
             this.textBox3.TabIndex = 11;
+=======
+            this.AbsentDays.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.AbsentDays.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.AbsentDays.Enabled = false;
+            this.AbsentDays.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AbsentDays.Location = new System.Drawing.Point(793, 115);
+            this.AbsentDays.Margin = new System.Windows.Forms.Padding(5);
+            this.AbsentDays.MaximumSize = new System.Drawing.Size(100, 27);
+            this.AbsentDays.MinimumSize = new System.Drawing.Size(80, 27);
+            this.AbsentDays.Name = "AbsentDays";
+            this.AbsentDays.ReadOnly = true;
+            this.AbsentDays.Size = new System.Drawing.Size(80, 27);
+            this.AbsentDays.TabIndex = 11;
+>>>>>>> main
             // 
-            // button1
+            // signOutBTN
             // 
+<<<<<<< HEAD
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 12F);
@@ -202,9 +312,27 @@ namespace AttendanceSysytem.Forms
             this.button1.TabIndex = 13;
             this.button1.Text = "Sign out";
             this.button1.UseVisualStyleBackColor = false;
+=======
+            this.signOutBTN.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.signOutBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.signOutBTN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.signOutBTN.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.signOutBTN.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.signOutBTN.Location = new System.Drawing.Point(787, 448);
+            this.signOutBTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.signOutBTN.MaximumSize = new System.Drawing.Size(150, 40);
+            this.signOutBTN.MinimumSize = new System.Drawing.Size(150, 40);
+            this.signOutBTN.Name = "signOutBTN";
+            this.signOutBTN.Size = new System.Drawing.Size(150, 40);
+            this.signOutBTN.TabIndex = 13;
+            this.signOutBTN.Text = "Sign out";
+            this.signOutBTN.UseVisualStyleBackColor = false;
+            this.signOutBTN.Click += new System.EventHandler(this.signOutBTN_Click);
+>>>>>>> main
             // 
-            // button2
+            // saveAs_btn
             // 
+<<<<<<< HEAD
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.Font = new System.Drawing.Font("Segoe UI", 12F);
@@ -216,51 +344,118 @@ namespace AttendanceSysytem.Forms
             this.button2.TabIndex = 14;
             this.button2.Text = "Save As";
             this.button2.UseVisualStyleBackColor = false;
+=======
+            this.saveAs_btn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.saveAs_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.saveAs_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.saveAs_btn.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.saveAs_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.saveAs_btn.Location = new System.Drawing.Point(651, 448);
+            this.saveAs_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.saveAs_btn.MaximumSize = new System.Drawing.Size(150, 40);
+            this.saveAs_btn.MinimumSize = new System.Drawing.Size(150, 40);
+            this.saveAs_btn.Name = "saveAs_btn";
+            this.saveAs_btn.Size = new System.Drawing.Size(150, 40);
+            this.saveAs_btn.TabIndex = 14;
+            this.saveAs_btn.Text = "Save As";
+            this.saveAs_btn.UseVisualStyleBackColor = false;
+            // 
+            // ToDate
+            // 
+            this.ToDate.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ToDate.CustomFormat = "dd/MM/yyyy";
+            this.ToDate.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ToDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.ToDate.Location = new System.Drawing.Point(439, 115);
+            this.ToDate.MaximumSize = new System.Drawing.Size(200, 27);
+            this.ToDate.MinDate = new System.DateTime(2023, 10, 1, 0, 0, 0, 0);
+            this.ToDate.MinimumSize = new System.Drawing.Size(200, 27);
+            this.ToDate.Name = "ToDate";
+            this.ToDate.Size = new System.Drawing.Size(200, 27);
+            this.ToDate.TabIndex = 15;
+            this.ToDate.Value = new System.DateTime(2023, 10, 1, 0, 0, 0, 0);
+            this.ToDate.ValueChanged += new System.EventHandler(this.ToDate_ValueChanged);
+            // 
+            // FromDate
+            // 
+            this.FromDate.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.FromDate.CustomFormat = "dd/MM/yyyy";
+            this.FromDate.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FromDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.FromDate.Location = new System.Drawing.Point(166, 115);
+            this.FromDate.MaxDate = new System.DateTime(2024, 2, 18, 0, 0, 0, 0);
+            this.FromDate.MaximumSize = new System.Drawing.Size(200, 27);
+            this.FromDate.MinDate = new System.DateTime(2023, 10, 1, 0, 0, 0, 0);
+            this.FromDate.MinimumSize = new System.Drawing.Size(150, 27);
+            this.FromDate.Name = "FromDate";
+            this.FromDate.Size = new System.Drawing.Size(200, 27);
+            this.FromDate.TabIndex = 16;
+            this.FromDate.Value = new System.DateTime(2023, 10, 1, 0, 0, 0, 0);
+            this.FromDate.ValueChanged += new System.EventHandler(this.FromDate_ValueChanged);
+>>>>>>> main
             // 
             // StudentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(832, 453);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(949, 499);
+            this.Controls.Add(this.FromDate);
+            this.Controls.Add(this.ToDate);
+            this.Controls.Add(this.saveAs_btn);
+            this.Controls.Add(this.signOutBTN);
+            this.Controls.Add(this.absentdays_label);
+            this.Controls.Add(this.AbsentDays);
+            this.Controls.Add(this.StudentAttendanceTable);
+            this.Controls.Add(this.to_label);
+            this.Controls.Add(this.showFrom_label);
+            this.Controls.Add(this.class_label);
+            this.Controls.Add(this.StudentClasstxt);
+            this.Controls.Add(this.name_label);
+            this.Controls.Add(this.StudentNametxt);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "StudentForm";
             this.Text = "Student";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.StudentForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.StudentAttendanceTable)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private TextBox textBox1;
-        private Label label1;
-        private Label label2;
-        private TextBox textBox2;
-        private Label label3;
-        private Label label4;
-        private ComboBox comboBox1;
-        private ComboBox comboBox2;
-        private DataGridView dataGridView1;
-        private Label label5;
-        private TextBox textBox3;
-        private Button button1;
-        private Button button2;
+        private Label name_label;
+        private Label class_label;
+        private Label showFrom_label;
+        private Label to_label;
+        private Label absentdays_label;
+        private Button signOutBTN;
+        private Button saveAs_btn;
         private DataGridViewTextBoxColumn Day;
         private DataGridViewTextBoxColumn DATE;
         private DataGridViewTextBoxColumn STATUS;
+        private TextBox StudentNametxt;
+        private TextBox StudentClasstxt;
+        private TextBox AbsentDays;
+        private DateTimePicker ToDate;
+        private DateTimePicker FromDate;
+        private DataGridView StudentAttendanceTable;
+
+        // Setters And Getters
+        public void setAbsentDays(int number) { AbsentDays.Text = number.ToString(); }
+        //public void setTable() { StudentAttendanceTable. }
+        public void setFromDate() { FromDate.Value = FromDate.MinDate; }
+        // Populate the DataGridView with attendance data
+
+        public void setAttendanceRecord(DateTime _date, string _status)
+        {
+            StudentAttendanceTable.Rows.Add(_date.DayOfWeek, _date, _status);
+
+        }
+        public void resetAttendanceTable() {  StudentAttendanceTable.Rows.Clear();}
+
     }
 }

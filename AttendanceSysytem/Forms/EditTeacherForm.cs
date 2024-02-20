@@ -17,6 +17,7 @@ namespace AttendanceSysytem.Forms
             InitializeComponent();
         }
 
+<<<<<<< HEAD
         private void EditTeacherForm_Load(object sender, EventArgs e)
         {
 
@@ -25,6 +26,13 @@ namespace AttendanceSysytem.Forms
         private void edit_teacher_label_Click(object sender, EventArgs e)
         {
 
+=======
+        private void cancel_btn_Click(object sender, EventArgs e)
+        {
+            Hide();
+            TeachersForm teachersForm = new TeachersForm();
+            teachersForm.Show();
+>>>>>>> main
         }
     }
 }

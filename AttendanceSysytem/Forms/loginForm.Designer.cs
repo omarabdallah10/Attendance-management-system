@@ -83,7 +83,8 @@
             this.btnLogin.Size = new System.Drawing.Size(180, 40);
             this.btnLogin.TabIndex = 4;
             this.btnLogin.Text = "Login";
-            this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // loginForm
             // 
@@ -96,6 +97,7 @@
             this.Controls.Add(this.Username);
             this.Name = "loginForm";
             this.Text = "Login Form";
+            this.Load += new System.EventHandler(this.loginForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

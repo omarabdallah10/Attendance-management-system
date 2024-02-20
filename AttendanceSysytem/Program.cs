@@ -1,9 +1,14 @@
-﻿using AttendanceSysytem.Forms;
+using AttendanceSysytem.Forms;
+using AttendanceSysytem.Users;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml;
+
 
 namespace AttendanceSysytem
 {
@@ -17,7 +22,14 @@ namespace AttendanceSysytem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+<<<<<<< HEAD
             Application.Run(new TeacherViewForm());
+=======
+            Application.Run(new AddClassForm());
+
+            
+            //isAdmin("Admin@admin.com", "123456789Aa");
+>>>>>>> main
         }
     }
 }

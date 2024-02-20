@@ -34,7 +34,7 @@
             this.ClassName = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
             this.Supervisor = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.txtSupervisor = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // AddClass
@@ -57,6 +57,7 @@
             this.btnCancel.TabIndex = 21;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // txtName
             // 
@@ -87,6 +88,7 @@
             this.btnSave.TabIndex = 20;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // Supervisor
             // 
@@ -98,18 +100,14 @@
             this.Supervisor.TabIndex = 14;
             this.Supervisor.Text = "Supervisor";
             // 
-            // comboBox1
+            // txtSupervisor
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Supervisor 1",
-            "Supervisor 2",
-            "Supervisor 3"});
-            this.comboBox1.Location = new System.Drawing.Point(376, 211);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(265, 33);
-            this.comboBox1.TabIndex = 22;
+            this.txtSupervisor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSupervisor.FormattingEnabled = true;
+            this.txtSupervisor.Location = new System.Drawing.Point(376, 211);
+            this.txtSupervisor.Name = "txtSupervisor";
+            this.txtSupervisor.Size = new System.Drawing.Size(265, 33);
+            this.txtSupervisor.TabIndex = 18;
             // 
             // AddClassForm
             // 
@@ -117,7 +115,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(832, 453);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.txtSupervisor);
             this.Controls.Add(this.AddClass);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.txtName);
@@ -140,6 +138,6 @@
         private System.Windows.Forms.Label ClassName;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Label Supervisor;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox txtSupervisor;
     }
 }

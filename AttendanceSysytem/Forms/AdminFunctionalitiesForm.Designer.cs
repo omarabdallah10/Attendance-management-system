@@ -52,6 +52,7 @@
             this.btnAddTeacher.TabIndex = 1;
             this.btnAddTeacher.Text = "Add Teacher";
             this.btnAddTeacher.UseVisualStyleBackColor = false;
+            this.btnAddTeacher.Click += new System.EventHandler(this.btnAddTeacher_Click);
             // 
             // btnAddStudent
             // 
@@ -66,6 +67,7 @@
             this.btnAddStudent.TabIndex = 0;
             this.btnAddStudent.Text = "Add Student";
             this.btnAddStudent.UseVisualStyleBackColor = false;
+            this.btnAddStudent.Click += new System.EventHandler(this.btnAddStudent_Click);
             // 
             // btnSignOut
             // 
@@ -93,6 +95,7 @@
             this.btnAddClass.TabIndex = 2;
             this.btnAddClass.Text = "Add Class";
             this.btnAddClass.UseVisualStyleBackColor = false;
+            this.btnAddClass.Click += new System.EventHandler(this.btnAddClass_Click);
             // 
             // button2
             // 
@@ -121,6 +124,7 @@
             this.btnEditUsers.TabIndex = 3;
             this.btnEditUsers.Text = "Edit Users";
             this.btnEditUsers.UseVisualStyleBackColor = false;
+            this.btnEditUsers.Click += new System.EventHandler(this.btnEditUsers_Click);
             // 
             // pictureBox1
             // 

@@ -17,9 +17,17 @@ namespace AttendanceSysytem.Forms
             InitializeComponent();
         }
 
+<<<<<<< HEAD
         private void edit_student_label_Click(object sender, EventArgs e)
         {
 
+=======
+        private void cancel_btn_Click(object sender, EventArgs e)
+        {
+            Hide();
+            StudentsForm studentsForm = new StudentsForm();
+            studentsForm.Show();
+>>>>>>> main
         }
     }
 }

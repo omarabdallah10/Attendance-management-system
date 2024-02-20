@@ -56,7 +56,12 @@ namespace AttendanceSysytem.Forms
             this.cancel_btn.Size = new System.Drawing.Size(200, 40);
             this.cancel_btn.TabIndex = 23;
             this.cancel_btn.Text = "Cancel";
+<<<<<<< HEAD
             this.cancel_btn.UseVisualStyleBackColor = false;
+=======
+            this.cancel_btn.UseVisualStyleBackColor = true;
+            this.cancel_btn.Click += new System.EventHandler(this.cancel_btn_Click);
+>>>>>>> main
             // 
             // save_btn
             // 
