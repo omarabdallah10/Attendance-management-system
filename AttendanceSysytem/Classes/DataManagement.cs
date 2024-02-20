@@ -8,6 +8,8 @@ using System.Xml;
 
 using System.IO;
 using System.Drawing;
+using System.Xml.Serialization;
+using System.Windows.Forms;
 
 
 
@@ -43,6 +45,59 @@ namespace AttendanceSysytem.Classes
             string sFile = System.IO.Path.Combine(sCurrentDirectory, @"..\..\..\xml\ProjectXml.xml");
             string sFilePath = Path.GetFullPath(sFile);
             doc.Save(sFilePath);
+        }
+        public static XmlElement GetElementById(XmlDocument doc, string id)
+        {
+            XmlNodeList TeachereNodes=doc.SelectNodes("//Users/Teacher");
+            foreach (XmlNode TeacherNode in TeachereNodes)
+            {
+                XmlNode userID = TeacherNode.SelectSingleNode("UserID");
+                if (id == userID.InnerText)
+                {
+                    return (XmlElement)TeacherNode;
+                }
+            }
+            return null;
+        }
+
+        public static void addTeacherToClass(XmlDocument doc,string id,string className)
+        {
+            XmlNodeList ClassNodes = doc.SelectNodes("//Class");
+
+                foreach (XmlNode ClassNode in ClassNodes)
+                {
+                    XmlNode NameNode = ClassNode.SelectSingleNode("Name");
+                    if (className == NameNode.InnerText)
+                    {
+                    XmlElement user = doc.CreateElement("UserID");
+                        user.InnerText=id;
+                        XmlNode classTeachers = ClassNode.SelectSingleNode("Teachers");
+                        classTeachers.AppendChild(user);
+                    }
+                }
+            
+        }
+        public static void removeTeacherFromClass(XmlDocument doc, string id, string className)
+        {
+            XmlNodeList ClassNodes = doc.SelectNodes("//Class");
+
+            foreach (XmlNode ClassNode in ClassNodes)
+            {
+                XmlNode NameNode = ClassNode.SelectSingleNode("Name");
+                if (className == NameNode.InnerText)
+                {
+                    XmlNode classTeachers = ClassNode.SelectSingleNode("Teachers");
+                    XmlNodeList teachernodes = classTeachers.SelectNodes("UserID");
+                    foreach (XmlNode teacherId in teachernodes)
+                    {
+                        if(teacherId.InnerText == id)
+                        {
+                            classTeachers.RemoveChild(teacherId);
+                        }
+                    }   
+                }
+            }
+
         }
     }
 }
