@@ -7,6 +7,12 @@
       <Email>Admin@admin.com</Email>
       <Password>123456789Aa</Password>
     </Admin>
+    <Teacher Supervisor="false">
+      <UserID>T101</UserID>
+      <Name>ahmed ali</Name>
+      <Email>ali@2gm.com</Email>
+      <Password>123@ASDasa</Password>
+    </Teacher>
     <Teacher Supervisor="true">
       <UserID>T001</UserID>
       <Name>Mohammed AbuTrika</Name>
@@ -68,8 +74,9 @@
       <UserID>T002</UserID>
     </Supervisor>
     <Teachers>
-      <UserID>T001</UserID>
+      <UserID>T002</UserID>
       <UserID>T004</UserID>
+      <UserID>T101</UserID>
     </Teachers>
     <Students>
       <UserID>S003</UserID>

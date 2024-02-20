@@ -1,4 +1,5 @@
 ﻿using AttendanceSysytem.Forms;
+using AttendanceSysytem.Users;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,6 +14,7 @@ namespace AttendanceSysytem
 {
     public partial class AdminFunctionalitiesForm : Form
     {
+        public Admin recived { get; set; }
         public AdminFunctionalitiesForm()
         {
             InitializeComponent();
@@ -40,6 +42,20 @@ namespace AttendanceSysytem
             Hide();
             EditAdminForm editAdminForm = new EditAdminForm();
             editAdminForm.Show();
+        }
+
+        private void btnAddStudent_Click(object sender, EventArgs e)
+        {
+            AddStudentForm addStudent = new AddStudentForm();
+            addStudent.Show();
+            Hide();
+        }
+
+        private void btnAddClass_Click(object sender, EventArgs e)
+        {
+            AddClassForm addClass = new AddClassForm();
+            addClass.Show();
+            Hide();
         }
     }
 }

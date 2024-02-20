@@ -54,6 +54,7 @@
     <Compile Include="Classes\DataManagement.cs" />
     <Compile Include="Classes\login.cs" />
     <Compile Include="Classes\Track.cs" />
+    <Compile Include="Classes\Validating.cs" />
     <Compile Include="Forms\AddClassForm.cs">
       <SubType>Form</SubType>
     </Compile>

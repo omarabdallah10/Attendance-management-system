@@ -44,15 +44,17 @@ namespace AttendanceSysytem
                 {
                     case 'A':
                         MessageBox.Show("Login Successful as Admin!");
+                        AdminFunctionalitiesForm adminForm = new AdminFunctionalitiesForm();
+                        adminForm.recived = (Users.Admin)validator;
+                        adminForm.Show();
                         Hide();
-                        AdminFunctionalitiesForm form2 = new AdminFunctionalitiesForm();
-                        form2.Show();
                         break;
                     case 'T':
                         MessageBox.Show("Login Successful as Teacher!");
-                        Hide();
                         teacherFunctionalitiesForm teachers = new teacherFunctionalitiesForm();
+                        teachers.recived = (Users.Teacher)validator;
                         teachers.Show();
+                        Hide();
                         break;
                     case 'S':
                         MessageBox.Show("Login Successful as Student!");
@@ -60,13 +62,17 @@ namespace AttendanceSysytem
                         studentForm.recived = (Users.Student)validator;
                         studentForm.Show();
                         Hide();
-                        //
                         break;
                     default:
-                        MessageBox.Show("Login Successful.");
+                        MessageBox.Show("Try again something went wrong");
                         break;
                 }
             }
+        }
+
+        private void loginForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

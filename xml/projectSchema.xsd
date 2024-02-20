@@ -64,7 +64,7 @@
 			<xs:element name="Email" type="emailType"/>
 			<xs:element name="Password" type="passwordType"/>
 		</xs:sequence>
-      <xs:attribute name="Supervisor" type="xs:boolean" use="required"/>
+		<xs:attribute name="Supervisor" type="xs:boolean" use="required"/>
 	</xs:complexType>
 	<xs:complexType name="StudentType">
 		<xs:sequence>
@@ -86,7 +86,7 @@
 				</xs:complexType>
 			</xs:element>
 			<xs:element name="Teachers" type="TeachersType"/>
-			<xs:element name="Students" type="StudentsType"/>
+			<xs:element name="Students" type="StudentsType" nillable="true"/>
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="TeachersType">
