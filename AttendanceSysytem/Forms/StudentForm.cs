@@ -46,7 +46,7 @@ namespace AttendanceSysytem.Forms
             else
             {
                 MessageBox.Show("Not Authorized", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                Close();
+                
             }
         }
 
