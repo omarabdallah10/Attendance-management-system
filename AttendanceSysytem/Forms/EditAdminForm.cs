@@ -16,5 +16,19 @@ namespace AttendanceSysytem.Forms
         {
             InitializeComponent();
         }
+
+        private void students_btn_Click(object sender, EventArgs e)
+        {
+            StudentsForm studentsForm = new StudentsForm();
+            studentsForm.Show();
+            Hide();
+        }
+
+        private void teachers_btn_Click(object sender, EventArgs e)
+        {
+            TeachersForm teachersForm = new TeachersForm();
+            teachersForm.Show();
+            Hide();
+        }
     }
 }

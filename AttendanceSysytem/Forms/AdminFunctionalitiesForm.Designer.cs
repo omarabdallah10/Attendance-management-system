@@ -122,6 +122,7 @@
             this.btnEditUsers.TabIndex = 3;
             this.btnEditUsers.Text = "Edit Users";
             this.btnEditUsers.UseVisualStyleBackColor = false;
+            this.btnEditUsers.Click += new System.EventHandler(this.btnEditUsers_Click);
             // 
             // pictureBox1
             // 

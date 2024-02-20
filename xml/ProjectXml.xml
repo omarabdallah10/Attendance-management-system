@@ -8,6 +8,12 @@
       <Password>123456789Aa</Password>
     </Admin>
     <Teacher Supervisor="true">
+      <UserID>T001</UserID>
+      <Name>Mohammed AbuTrika</Name>
+      <Email>AbuTrika22@teacher.com</Email>
+      <Password>AlAhly22@Trika</Password>
+    </Teacher>
+    <Teacher Supervisor="true">
       <UserID>T002</UserID>
       <Name>Nadin Saleh</Name>
       <Email>NadinSaleh@teacher.com</Email>
@@ -49,7 +55,7 @@
     <Teachers>
       <UserID>T001</UserID>
       <UserID>T002</UserID>
-      <UserID>T705</UserID>
+      <UserID>T004</UserID>
     </Teachers>
     <Students>
       <UserID>S001</UserID>
@@ -63,7 +69,7 @@
     </Supervisor>
     <Teachers>
       <UserID>T001</UserID>
-      <UserID>T705</UserID>
+      <UserID>T004</UserID>
     </Teachers>
     <Students>
       <UserID>S003</UserID>
@@ -72,12 +78,12 @@
   <Class>
     <Name>AI</Name>
     <Supervisor>
-      <UserID>T001</UserID>
+      <UserID>T004</UserID>
     </Supervisor>
     <Teachers>
       <UserID>T001</UserID>
       <UserID>T002</UserID>
-      <UserID>T705</UserID>
+      <UserID>T004</UserID>
     </Teachers>
     <Students>
       <UserID>S002</UserID>

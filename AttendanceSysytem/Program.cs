@@ -22,7 +22,7 @@ namespace AttendanceSysytem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AddTeacherForm());
+            Application.Run(new loginForm());
 
             
             //isAdmin("Admin@admin.com", "123456789Aa");
