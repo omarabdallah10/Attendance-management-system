@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace AttendanceSysytem.Classes
 {
-    public class Validating
+    public class Valid
     {
         static public bool ValidName(string name)
         {
