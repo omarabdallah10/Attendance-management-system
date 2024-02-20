@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AttendanceSysytem.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -26,7 +27,8 @@ namespace AttendanceSysytem.Forms
             {
 
                 XmlDataDocument xmlData = new XmlDataDocument();
-                xmlData.DataSet.ReadXml("D:\\ITI-9 Month\\11-C#\\Repo\\Attendance-management-system\\xml\\ProjectSchema.xml");
+                string xmlPath = DataManagement.xmlPath();
+                xmlData.DataSet.ReadXml(xmlPath);
                 dataGridView1.DataSource = xmlData.DataSet;
                 dataGridView1.DataMember = "AttendanceRecord";
 

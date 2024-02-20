@@ -249,14 +249,7 @@ namespace AttendanceSysytem.Forms
             // 
             // absentdays_label
             // 
-<<<<<<< HEAD
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(640, 110);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(84, 16);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "Absent Days";
-=======
+
             this.absentdays_label.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -265,23 +258,13 @@ namespace AttendanceSysytem.Forms
             this.absentdays_label.Location = new System.Drawing.Point(674, 118);
             this.absentdays_label.Margin = new System.Windows.Forms.Padding(5);
             this.absentdays_label.Name = "absentdays_label";
-            this.absentdays_label.Size = new System.Drawing.Size(102, 19);
+            this.absentdays_label.Size = new System.Drawing.Size(84, 16);
             this.absentdays_label.TabIndex = 12;
             this.absentdays_label.Text = "Absent Days";
->>>>>>> main
             // 
             // AbsentDays
             // 
-<<<<<<< HEAD
-            this.textBox3.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox3.Enabled = false;
-            this.textBox3.Location = new System.Drawing.Point(731, 107);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(44, 22);
-            this.textBox3.TabIndex = 11;
-=======
+
             this.AbsentDays.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -296,23 +279,10 @@ namespace AttendanceSysytem.Forms
             this.AbsentDays.ReadOnly = true;
             this.AbsentDays.Size = new System.Drawing.Size(80, 27);
             this.AbsentDays.TabIndex = 11;
->>>>>>> main
             // 
             // signOutBTN
             // 
-<<<<<<< HEAD
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(687, 400);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(112, 42);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Sign out";
-            this.button1.UseVisualStyleBackColor = false;
-=======
+
             this.signOutBTN.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.signOutBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.signOutBTN.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -328,23 +298,10 @@ namespace AttendanceSysytem.Forms
             this.signOutBTN.Text = "Sign out";
             this.signOutBTN.UseVisualStyleBackColor = false;
             this.signOutBTN.Click += new System.EventHandler(this.signOutBTN_Click);
->>>>>>> main
             // 
             // saveAs_btn
             // 
-<<<<<<< HEAD
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(551, 400);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(124, 42);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "Save As";
-            this.button2.UseVisualStyleBackColor = false;
-=======
+
             this.saveAs_btn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.saveAs_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.saveAs_btn.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -396,7 +353,6 @@ namespace AttendanceSysytem.Forms
             this.FromDate.TabIndex = 16;
             this.FromDate.Value = new System.DateTime(2023, 10, 1, 0, 0, 0, 0);
             this.FromDate.ValueChanged += new System.EventHandler(this.FromDate_ValueChanged);
->>>>>>> main
             // 
             // StudentForm
             // 

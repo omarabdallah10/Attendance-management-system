@@ -63,7 +63,6 @@ namespace AttendanceSysytem.Forms
             this.label1.Size = new System.Drawing.Size(544, 36);
             this.label1.TabIndex = 1;
             this.label1.Text = "Who would you like to (edit \\ delete)?";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // students_btn
             // 
@@ -123,7 +122,6 @@ namespace AttendanceSysytem.Forms
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "EditAdminForm";
             this.Text = "Admin Edit View";
-            this.Load += new System.EventHandler(this.EditAdminForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -26,10 +26,10 @@ namespace AttendanceSysytem.Forms
             
         }
 
-        private void AddTeacherForm_Load(object sender, EventArgs e)
+       /* private void AddTeacherForm_Load(object sender, EventArgs e)
         {
 
-        }
+        }*/
 
         private void btnSave_Click(object sender, EventArgs e)
         {

@@ -56,12 +56,9 @@ namespace AttendanceSysytem.Forms
             this.cancel_btn.Size = new System.Drawing.Size(200, 40);
             this.cancel_btn.TabIndex = 23;
             this.cancel_btn.Text = "Cancel";
-<<<<<<< HEAD
+
             this.cancel_btn.UseVisualStyleBackColor = false;
-=======
-            this.cancel_btn.UseVisualStyleBackColor = true;
             this.cancel_btn.Click += new System.EventHandler(this.cancel_btn_Click);
->>>>>>> main
             // 
             // save_btn
             // 
@@ -177,7 +174,6 @@ namespace AttendanceSysytem.Forms
             this.edit_teacher_label.Size = new System.Drawing.Size(135, 25);
             this.edit_teacher_label.TabIndex = 12;
             this.edit_teacher_label.Text = "Edit Teacher";
-            this.edit_teacher_label.Click += new System.EventHandler(this.edit_teacher_label_Click);
             // 
             // classes_list
             // 
@@ -211,7 +207,6 @@ namespace AttendanceSysytem.Forms
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "EditTeacherForm";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.EditTeacherForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

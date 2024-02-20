@@ -17,16 +17,7 @@ namespace AttendanceSysytem.Forms
             InitializeComponent();
         }
 
-<<<<<<< HEAD
-        private void EditAdminForm_Load(object sender, EventArgs e)
-        {
 
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-=======
         private void students_btn_Click(object sender, EventArgs e)
         {
             StudentsForm studentsForm = new StudentsForm();
@@ -39,7 +30,6 @@ namespace AttendanceSysytem.Forms
             TeachersForm teachersForm = new TeachersForm();
             teachersForm.Show();
             Hide();
->>>>>>> main
         }
     }
 }

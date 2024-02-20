@@ -69,7 +69,6 @@
             this.btnTakeAttendance.Size = new System.Drawing.Size(220, 45);
             this.btnTakeAttendance.TabIndex = 2;
             this.btnTakeAttendance.Text = "Take Attendance";
-<<<<<<< HEAD
             this.btnTakeAttendance.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
@@ -81,10 +80,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
-=======
-            this.btnTakeAttendance.UseVisualStyleBackColor = true;
-            this.btnTakeAttendance.Click += new System.EventHandler(this.btnTakeAttendance_Click);
->>>>>>> main
+
             // 
             // teacherFunctionalitiesForm
             // 

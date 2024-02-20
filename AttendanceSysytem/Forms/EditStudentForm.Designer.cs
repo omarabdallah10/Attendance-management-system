@@ -55,7 +55,6 @@ namespace AttendanceSysytem.Forms
             this.edit_student_label.Size = new System.Drawing.Size(130, 25);
             this.edit_student_label.TabIndex = 0;
             this.edit_student_label.Text = "Edit Student";
-            this.edit_student_label.Click += new System.EventHandler(this.edit_student_label_Click);
             // 
             // name_label
             // 
@@ -166,12 +165,9 @@ namespace AttendanceSysytem.Forms
             this.cancel_btn.Size = new System.Drawing.Size(200, 40);
             this.cancel_btn.TabIndex = 11;
             this.cancel_btn.Text = "Cancel";
-<<<<<<< HEAD
+
             this.cancel_btn.UseVisualStyleBackColor = false;
-=======
-            this.cancel_btn.UseVisualStyleBackColor = true;
             this.cancel_btn.Click += new System.EventHandler(this.cancel_btn_Click);
->>>>>>> main
             // 
             // classes_list
             // 
