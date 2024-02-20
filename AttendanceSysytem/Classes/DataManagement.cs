@@ -15,21 +15,7 @@ namespace AttendanceSysytem.Classes
 {
     internal class DataManagement
     {
-<<<<<<< HEAD
-        
-     // 1-Sava as PDF file or excel file
-     
 
-        
-
-    
-    // 2-Save Data to XML
-    // 3-Load Data from XML
-    
-}
-
-   
-=======
         /*
         1-Sava as PDF file or excel file
         2-Save Data to XML
@@ -52,5 +38,4 @@ namespace AttendanceSysytem.Classes
             doc.Save(sFilePath);
         }
     }
->>>>>>> main
 }

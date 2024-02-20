@@ -46,12 +46,9 @@
             // AddTeacher
             // 
             this.AddTeacher.AutoSize = true;
-<<<<<<< HEAD
             this.AddTeacher.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddTeacher.Location = new System.Drawing.Point(347, 29);
-=======
-            this.AddTeacher.Location = new System.Drawing.Point(366, 41);
->>>>>>> main
+
             this.AddTeacher.Name = "AddTeacher";
             this.AddTeacher.Size = new System.Drawing.Size(137, 25);
             this.AddTeacher.TabIndex = 11;

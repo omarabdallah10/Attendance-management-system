@@ -22,14 +22,8 @@ namespace AttendanceSysytem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-<<<<<<< HEAD
             Application.Run(new TeacherViewForm());
-=======
-            Application.Run(new AddClassForm());
 
-            
-            //isAdmin("Admin@admin.com", "123456789Aa");
->>>>>>> main
         }
     }
 }
