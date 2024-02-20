@@ -22,7 +22,7 @@ namespace AttendanceSysytem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TakeAttendanceForm());
+            Application.Run(new TeacherViewAttendanceForm());
 
         }
     }
