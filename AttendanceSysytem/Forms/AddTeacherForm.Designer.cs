@@ -63,6 +63,7 @@
             this.btnCancel.TabIndex = 21;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click_1);
             // 
             // txtFName
             // 
@@ -89,7 +90,6 @@
             this.TeacherFName.Size = new System.Drawing.Size(72, 16);
             this.TeacherFName.TabIndex = 12;
             this.TeacherFName.Text = "First Name";
-            this.TeacherFName.Click += new System.EventHandler(this.TeacherName_Click);
             // 
             // btnSave
             // 
@@ -145,7 +145,6 @@
             this.checkedListBox1.Name = "checkedListBox1";
             this.checkedListBox1.Size = new System.Drawing.Size(189, 106);
             this.checkedListBox1.TabIndex = 22;
-            this.checkedListBox1.SelectedIndexChanged += new System.EventHandler(this.checkedListBox1_SelectedIndexChanged);
             // 
             // txtLName
             // 
@@ -153,7 +152,6 @@
             this.txtLName.Name = "txtLName";
             this.txtLName.Size = new System.Drawing.Size(189, 22);
             this.txtLName.TabIndex = 15;
-            this.txtLName.TextChanged += new System.EventHandler(this.text_TextChanged);
             // 
             // TeacherLName
             // 

@@ -49,7 +49,7 @@ namespace AttendanceSysytem.Forms
             this.go_back_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.go_back_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.go_back_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.go_back_btn.Location = new System.Drawing.Point(12, 11);
+            this.go_back_btn.Location = new System.Drawing.Point(26, 46);
             this.go_back_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.go_back_btn.Name = "go_back_btn";
             this.go_back_btn.Size = new System.Drawing.Size(200, 40);

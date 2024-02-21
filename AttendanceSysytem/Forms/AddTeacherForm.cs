@@ -88,26 +88,6 @@ namespace AttendanceSysytem.Forms
 
         }
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TeacherName_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void text_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnCancel_Click(object sender, EventArgs e)
         {
             AdminFunctionalitiesForm adminForm = new AdminFunctionalitiesForm();
@@ -118,6 +98,13 @@ namespace AttendanceSysytem.Forms
         private void AddTeacherForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnCancel_Click_1(object sender, EventArgs e)
+        {
+            AdminFunctionalitiesForm adminFunctionalitiesForm = new AdminFunctionalitiesForm();
+            adminFunctionalitiesForm.Show();
+            Hide();
         }
     }
 }
