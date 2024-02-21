@@ -51,18 +51,27 @@ namespace AttendanceSysytem.Forms
 
         private void save_btn_Click(object sender, EventArgs e)
         {
-           // Console.WriteLine(recived.Name);
 
             XmlNode classNode = doc.SelectSingleNode("//Class[Name='" + recived.Name + "']");
             classNode.SelectSingleNode("Name").InnerText = class_name_txt.Text;
             XmlNode newSuper = doc.SelectSingleNode("//Users/Teacher[Name='" + SupervisorComboBox.Text + "']");
             XmlNode oldSuper = doc.SelectSingleNode("//Users/Teacher[UserID='" + classNode.SelectSingleNode("Supervisor/UserID").InnerText + "']");
-            Console.WriteLine(oldSuper.InnerText);
             classNode.SelectSingleNode("Supervisor/UserID").InnerText = newSuper.SelectSingleNode("UserID").InnerText;
             newSuper.Attributes[0].InnerText = "true";
             oldSuper.Attributes[0].InnerText = "false";
             DataManagement.SaveXml(doc);
-            //Console.WriteLine(classNode.InnerText);
+            MessageBox.Show("Your edits have been saved successfully");
+            ClassesForm classesForm = new ClassesForm();
+            classesForm.Show();
+            Hide();
+
+        }
+
+        private void go_back_btn_Click(object sender, EventArgs e)
+        {
+            ClassesForm classesForm = new ClassesForm();
+            classesForm.Show();
+            Hide();
         }
     }
 }
