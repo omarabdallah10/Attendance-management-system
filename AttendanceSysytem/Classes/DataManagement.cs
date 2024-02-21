@@ -46,15 +46,15 @@ namespace AttendanceSysytem.Classes
             string sFilePath = Path.GetFullPath(sFile);
             doc.Save(sFilePath);
         }
-        public static XmlElement GetElementById(XmlDocument doc, string id)
+        public static XmlElement GetElementById(XmlDocument doc, string id,string type)
         {
-            XmlNodeList TeachereNodes=doc.SelectNodes("//Users/Teacher");
-            foreach (XmlNode TeacherNode in TeachereNodes)
+            XmlNodeList UserNodes=doc.SelectNodes($"//Users/{type}");
+            foreach (XmlNode UserNode in UserNodes)
             {
-                XmlNode userID = TeacherNode.SelectSingleNode("UserID");
+                XmlNode userID = UserNode.SelectSingleNode("UserID");
                 if (id == userID.InnerText)
                 {
-                    return (XmlElement)TeacherNode;
+                    return (XmlElement)UserNode;
                 }
             }
             return null;
@@ -98,6 +98,11 @@ namespace AttendanceSysytem.Classes
                 }
             }
 
+        }
+        public static void deleteUser(XmlDocument doc,XmlNode user)
+        {
+            XmlNode Users = doc.SelectSingleNode("//Users");
+            Users.RemoveChild(user);
         }
     }
 }

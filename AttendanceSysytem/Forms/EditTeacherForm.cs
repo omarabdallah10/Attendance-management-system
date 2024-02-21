@@ -1,5 +1,6 @@
 ﻿using AttendanceSysytem.Classes;
 using AttendanceSysytem.Users;
+using Microsoft.Office.Interop.Excel;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -33,7 +34,7 @@ namespace AttendanceSysytem.Forms
         {
              doc = DataManagement.xmlDoc();
             
-            teacherElement = DataManagement.GetElementById(doc, recived);
+            teacherElement = DataManagement.GetElementById(doc, recived,"Teacher");
             XmlNode name = teacherElement.SelectSingleNode("Name");
             XmlNode email = teacherElement.SelectSingleNode("Email");
             XmlNode password = teacherElement.SelectSingleNode("Password");
@@ -73,6 +74,9 @@ namespace AttendanceSysytem.Forms
             {
                 MessageBox.Show("Data has been updated");
                 DataManagement.SaveXml(doc);
+                EditAdminForm adminForm = new EditAdminForm();
+                adminForm.Show();
+                Hide();
             }
            
         }
@@ -98,7 +102,13 @@ namespace AttendanceSysytem.Forms
 
         private void delete_teacher_btn_Click(object sender, EventArgs e)
         {
-
+            XmlNode teacher = (XmlNode)teacherElement;
+            DataManagement.deleteUser(doc,teacher);
+            MessageBox.Show("Teacher has been deleted");
+            DataManagement.SaveXml(doc);
+            TeachersForm teachersForm = new TeachersForm();
+            teachersForm.Show();
+            Hide();
         }
     }
 }
