@@ -154,6 +154,7 @@ namespace AttendanceSysytem.Forms
             this.add_students_btn.TabIndex = 15;
             this.add_students_btn.Text = "Add Students";
             this.add_students_btn.UseVisualStyleBackColor = true;
+            this.add_students_btn.Click += new System.EventHandler(this.add_students_btn_Click);
             // 
             // EditClassForm
             // 

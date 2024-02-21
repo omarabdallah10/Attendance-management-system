@@ -30,8 +30,10 @@ namespace AttendanceSysytem.Forms
 
                 EditClassForm form = new EditClassForm();
                 form.recived = new Track(Classname.ToString(), supervisorID.ToString());
-                Hide();
+                form.StartPosition = FormStartPosition.CenterScreen;
                 form.Show();
+
+                this.Hide();
             }
         }
 
@@ -47,6 +49,14 @@ namespace AttendanceSysytem.Forms
                 this.ClassesTable.Rows.Add(_className, _supervisorID, _supervisorName);
             }
         
+        }
+
+        private void go_back_btn_Click(object sender, EventArgs e)
+        {
+            AdminFunctionalitiesForm form = new AdminFunctionalitiesForm();
+            form.StartPosition = FormStartPosition.CenterScreen;
+            form.Show();
+            Hide();
         }
     }
 }

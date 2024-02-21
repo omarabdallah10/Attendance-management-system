@@ -47,9 +47,9 @@ namespace AttendanceSysytem.Classes
             string sFilePath = Path.GetFullPath(sFile);
             doc.Save(sFilePath);
         }
-        public static XmlElement GetElementById(XmlDocument doc, string id,string type)
+        public static XmlElement GetElementById(XmlDocument doc, string id, string type)
         {
-            XmlNodeList UserNodes=doc.SelectNodes($"//Users/{type}");
+            XmlNodeList UserNodes = doc.SelectNodes($"//Users/{type}");
             foreach (XmlNode UserNode in UserNodes)
             {
                 XmlNode userID = UserNode.SelectSingleNode("UserID");
@@ -61,22 +61,22 @@ namespace AttendanceSysytem.Classes
             return null;
         }
 
-        public static void addTeacherToClass(XmlDocument doc,string id,string className)
+        public static void addTeacherToClass(XmlDocument doc, string id, string className)
         {
             XmlNodeList ClassNodes = doc.SelectNodes("//Class");
 
-                foreach (XmlNode ClassNode in ClassNodes)
+            foreach (XmlNode ClassNode in ClassNodes)
+            {
+                XmlNode NameNode = ClassNode.SelectSingleNode("Name");
+                if (className == NameNode.InnerText)
                 {
-                    XmlNode NameNode = ClassNode.SelectSingleNode("Name");
-                    if (className == NameNode.InnerText)
-                    {
                     XmlElement user = doc.CreateElement("UserID");
-                        user.InnerText=id;
-                        XmlNode classTeachers = ClassNode.SelectSingleNode("Teachers");
-                        classTeachers.AppendChild(user);
-                    }
+                    user.InnerText = id;
+                    XmlNode classTeachers = ClassNode.SelectSingleNode("Teachers");
+                    classTeachers.AppendChild(user);
                 }
-            
+            }
+
         }
         public static void removeTeacherFromClass(XmlDocument doc, string id, string className)
         {
@@ -91,11 +91,11 @@ namespace AttendanceSysytem.Classes
                     XmlNodeList teachernodes = classTeachers.SelectNodes("UserID");
                     foreach (XmlNode teacherId in teachernodes)
                     {
-                        if(teacherId.InnerText == id)
+                        if (teacherId.InnerText == id)
                         {
                             classTeachers.RemoveChild(teacherId);
                         }
-                    }   
+                    }
                 }
             }
 
@@ -106,7 +106,7 @@ namespace AttendanceSysytem.Classes
             // Get All the nodes similar to the user type
             XmlNode UserTypeNodes = doc.SelectSingleNode("//Users/Admin[UserID = '" + id + "']"); ;
             if (id[0] == 'S')
-                UserTypeNodes = doc.SelectSingleNode("//Users/Student[UserID = '"+id+"']");
+                UserTypeNodes = doc.SelectSingleNode("//Users/Student[UserID = '" + id + "']");
             else if (id[0] == 'T')
             {
                 UserTypeNodes = doc.SelectSingleNode("//Users/Teacher[UserID = '" + id + "']");
@@ -114,14 +114,14 @@ namespace AttendanceSysytem.Classes
             //
             string _name = UserTypeNodes.SelectSingleNode("Name").InnerText;
             string _Email = UserTypeNodes.SelectSingleNode("Email").InnerText;
-            string _Password= UserTypeNodes.SelectSingleNode("Password").InnerText;
-            User s = new User(_name,_Email,_Password,id);
+            string _Password = UserTypeNodes.SelectSingleNode("Password").InnerText;
+            User s = new User(_name, _Email, _Password, id);
             return s;
         }
-        public static void deleteUser(XmlDocument doc,XmlNode user)
+        public static void deleteUser(XmlDocument doc, XmlNode user)
         {
             XmlNode Users = doc.SelectSingleNode("//Users");
-            string id=user.SelectSingleNode("UserID").InnerText;
+            string id = user.SelectSingleNode("UserID").InnerText;
             if (id[0] == 'S')
             {
                 string classname = user.SelectSingleNode("ClassName").InnerText;
@@ -131,10 +131,10 @@ namespace AttendanceSysytem.Classes
                 {
                     if (ClassNode.SelectSingleNode("Name").InnerText == classname)
                     {
-                        Console.WriteLine(classname+"2");
+                        Console.WriteLine(classname + "2");
                         XmlNode studentsnode = ClassNode.SelectSingleNode("Students");
-                        XmlNodeList userIdnodes=studentsnode.SelectNodes("UserID");
-                        foreach(XmlNode userIdnode in userIdnodes)
+                        XmlNodeList userIdnodes = studentsnode.SelectNodes("UserID");
+                        foreach (XmlNode userIdnode in userIdnodes)
                         {
                             if (userIdnode.InnerText == id)
                             {
@@ -144,7 +144,8 @@ namespace AttendanceSysytem.Classes
                         }
                     }
                 }
-            }else if (id[0]=='T')
+            }
+            else if (id[0] == 'T')
             {
                 XmlNodeList ClassNodes = doc.SelectNodes("//Class");
                 foreach (XmlNode ClassNode in ClassNodes)
@@ -160,7 +161,7 @@ namespace AttendanceSysytem.Classes
                         }
                     }
                 }
-                if (user.Attributes[0].InnerText=="true")
+                if (user.Attributes[0].InnerText == "true")
                 {
                     XmlNode classname = doc.SelectSingleNode("//Class/Supervisor[UserID='" + id + "']");
                     //Console.WriteLine(classname.ParentNode.FirstChild.InnerText);
@@ -170,7 +171,7 @@ namespace AttendanceSysytem.Classes
 
                     return;
                 }
-                
+
             }
             Users.RemoveChild(user);
 

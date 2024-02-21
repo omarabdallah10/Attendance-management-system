@@ -45,8 +45,10 @@ namespace AttendanceSysytem.Forms
         private void add_teachers_btn_Click(object sender, EventArgs e)
         {
             AddTeachersToClass addteacherform = new AddTeachersToClass();
+            addteacherform.recivedTrack = recived;
+            addteacherform.StartPosition = FormStartPosition.CenterScreen;
             addteacherform.Show();
-            Hide();
+            Close();
         }
 
         private void save_btn_Click(object sender, EventArgs e)
@@ -72,6 +74,15 @@ namespace AttendanceSysytem.Forms
             ClassesForm classesForm = new ClassesForm();
             classesForm.Show();
             Hide();
+        }
+
+        private void add_students_btn_Click(object sender, EventArgs e)
+        {
+            AddStudentsToClass addStudentform = new AddStudentsToClass();
+            addStudentform.recivedTrack = recived;
+            addStudentform.StartPosition = FormStartPosition.CenterScreen;
+            addStudentform.Show();
+            Close();
         }
     }
 }
