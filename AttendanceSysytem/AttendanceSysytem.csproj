@@ -83,12 +83,17 @@
     <Compile Include="Forms\AddTeacherForm.Designer.cs">
       <DependentUpon>AddTeacherForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\AddTeachersToClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddTeachersToClass.Designer.cs">
+      <DependentUpon>AddTeachersToClass.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AdminDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\AdminDashboard.Designer.cs">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
-
     </Compile>
     <Compile Include="Forms\EditAdminForm.cs">
       <SubType>Form</SubType>
@@ -189,9 +194,11 @@
     <EmbeddedResource Include="Forms\AddTeacherForm.resx">
       <DependentUpon>AddTeacherForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddTeachersToClass.resx">
+      <DependentUpon>AddTeachersToClass.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
-
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\EditAdminForm.resx">
       <DependentUpon>EditAdminForm.cs</DependentUpon>
