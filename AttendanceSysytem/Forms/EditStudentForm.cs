@@ -23,5 +23,10 @@ namespace AttendanceSysytem.Forms
             StudentsForm studentsForm = new StudentsForm();
             studentsForm.Show();
         }
+
+        private void save_btn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
