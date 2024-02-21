@@ -1,5 +1,6 @@
 ﻿using AttendanceSysytem.Classes;
 using AttendanceSysytem.Users;
+using Microsoft.Office.Interop.Excel;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -33,7 +34,7 @@ namespace AttendanceSysytem.Forms
         {
              doc = DataManagement.xmlDoc();
             
-            teacherElement = DataManagement.GetElementById(doc, recived);
+            teacherElement = DataManagement.GetElementById(doc, recived,"Teacher");
             XmlNode name = teacherElement.SelectSingleNode("Name");
             XmlNode email = teacherElement.SelectSingleNode("Email");
             XmlNode password = teacherElement.SelectSingleNode("Password");
@@ -43,6 +44,7 @@ namespace AttendanceSysytem.Forms
             LnameTxt.Text = lname;
             email_box.Text= email.InnerText;
             password_box.Text= password.InnerText;
+            //checkbox items creation 
             XmlNodeList ClassNodes = doc.SelectNodes("//Class");
             foreach (XmlNode ClassNode in ClassNodes)
             {
@@ -73,10 +75,15 @@ namespace AttendanceSysytem.Forms
             {
                 MessageBox.Show("Data has been updated");
                 DataManagement.SaveXml(doc);
+                EditAdminForm adminForm = new EditAdminForm();
+                adminForm.Show();
+                Hide();
             }
            
         }
 
+
+        //check box event
         private void CheckedListBox_ItemCheck(object sender, ItemCheckEventArgs e)
         {
             string itemName = checkedListBox1.Items[e.Index].ToString();
@@ -98,7 +105,13 @@ namespace AttendanceSysytem.Forms
 
         private void delete_teacher_btn_Click(object sender, EventArgs e)
         {
-
+            XmlNode teacher = (XmlNode)teacherElement;
+            DataManagement.deleteUser(doc,teacher);
+            MessageBox.Show("Teacher has been deleted");
+            DataManagement.SaveXml(doc);
+            TeachersForm teachersForm = new TeachersForm();
+            teachersForm.Show();
+            Hide();
         }
     }
 }
