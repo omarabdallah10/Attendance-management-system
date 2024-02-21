@@ -44,6 +44,7 @@ namespace AttendanceSysytem.Forms
             LnameTxt.Text = lname;
             email_box.Text= email.InnerText;
             password_box.Text= password.InnerText;
+            //checkbox items creation 
             XmlNodeList ClassNodes = doc.SelectNodes("//Class");
             foreach (XmlNode ClassNode in ClassNodes)
             {
@@ -81,6 +82,8 @@ namespace AttendanceSysytem.Forms
            
         }
 
+
+        //check box event
         private void CheckedListBox_ItemCheck(object sender, ItemCheckEventArgs e)
         {
             string itemName = checkedListBox1.Items[e.Index].ToString();
