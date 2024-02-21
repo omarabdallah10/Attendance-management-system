@@ -68,10 +68,5 @@ namespace AttendanceSysytem
                 }
             }
         }
-
-        private void loginForm_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

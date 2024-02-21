@@ -71,6 +71,7 @@ namespace AttendanceSysytem.Forms
             this.add_teachers_btn.TabIndex = 2;
             this.add_teachers_btn.Text = "Add Teachers";
             this.add_teachers_btn.UseVisualStyleBackColor = true;
+            this.add_teachers_btn.Click += new System.EventHandler(this.add_teachers_btn_Click);
             // 
             // save_btn
             // 
@@ -118,7 +119,6 @@ namespace AttendanceSysytem.Forms
             // 
             this.class_name_txt.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.class_name_txt.Enabled = false;
             this.class_name_txt.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.class_name_txt.Location = new System.Drawing.Point(323, 168);
             this.class_name_txt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -132,7 +132,6 @@ namespace AttendanceSysytem.Forms
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SupervisorComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.SupervisorComboBox.Enabled = false;
             this.SupervisorComboBox.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SupervisorComboBox.FormattingEnabled = true;
             this.SupervisorComboBox.Location = new System.Drawing.Point(323, 220);
