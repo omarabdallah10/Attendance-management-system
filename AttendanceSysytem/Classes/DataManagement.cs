@@ -120,7 +120,48 @@ namespace AttendanceSysytem.Classes
         public static void deleteUser(XmlDocument doc,XmlNode user)
         {
             XmlNode Users = doc.SelectSingleNode("//Users");
+            string id=user.SelectSingleNode("UserID").InnerText;
+            if (id[0] == 'S')
+            {
+                string classname = user.SelectSingleNode("ClassName").InnerText;
+                Console.WriteLine(classname);
+                XmlNodeList ClassNodes = doc.SelectNodes("//Class");
+                foreach (XmlNode ClassNode in ClassNodes)
+                {
+                    if (ClassNode.SelectSingleNode("Name").InnerText == classname)
+                    {
+                        Console.WriteLine(classname+"2");
+                        XmlNode studentsnode = ClassNode.SelectSingleNode("Students");
+                        XmlNodeList userIdnodes=studentsnode.SelectNodes("UserID");
+                        foreach(XmlNode userIdnode in userIdnodes)
+                        {
+                            if (userIdnode.InnerText == id)
+                            {
+                                studentsnode.RemoveChild(userIdnode);
+                                Console.WriteLine(id);
+                            }
+                        }
+                    }
+                }
+            }else if (id[0]=='T')
+            {
+                XmlNodeList ClassNodes = doc.SelectNodes("//Class");
+                foreach (XmlNode ClassNode in ClassNodes)
+                {
+                    XmlNode TeacherNode = ClassNode.SelectSingleNode("Teachers");
+                    XmlNodeList TeachersNodes = TeacherNode.SelectNodes("UserID");
+                    foreach (XmlNode teacherNode in TeachersNodes)
+                    {
+                        if (id == teacherNode.InnerText)
+                        {
+                            TeacherNode.RemoveChild(teacherNode);
+                            Console.WriteLine(id);
+                        }
+                    }
+                }
+            }
             Users.RemoveChild(user);
+
         }
     }
 }
