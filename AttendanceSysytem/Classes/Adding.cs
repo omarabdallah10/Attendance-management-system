@@ -78,8 +78,11 @@ namespace AttendanceSysytem.Classes
             XmlDocument doc = DataManagement.xmlDoc();
             XmlNode MyClassTeachers = doc.SelectSingleNode("//Class[Name = '" + ClassNam + "']/Teachers");
             XmlNode newTeacher = doc.CreateElement("UserID");
+            Console.WriteLine(MyClassTeachers.InnerText);
             newTeacher.InnerText = Teacherid;
             MyClassTeachers.AppendChild(newTeacher);
+            Console.WriteLine(MyClassTeachers.InnerText);
+            DataManagement.SaveXml(doc);
         }
         public static void addStudentToClass(string Studentid, string oldclassNam,string ClassNam)
         {
