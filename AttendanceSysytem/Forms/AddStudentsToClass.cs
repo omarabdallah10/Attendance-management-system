@@ -35,6 +35,7 @@ namespace AttendanceSysytem.Forms
                     Adding.addStudentToClass(id, oldClassName, recivedTrack.Name);
                 }
             }
+            MessageBox.Show($"Students Added successfully to class {recivedTrack.Name}", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.go_back_btn_Click(sender, e);
         }
 
@@ -51,7 +52,6 @@ namespace AttendanceSysytem.Forms
             this.StudentsTable.Rows.Clear();
             foreach (XmlElement StudentsRecord in Students)
             {
-                Console.WriteLine(StudentsRecord.InnerText);
                 string StudentID = StudentsRecord.SelectSingleNode("UserID").InnerText;
                 string StudentName = StudentsRecord.SelectSingleNode("Name").InnerText;
                 string StudentEmail = StudentsRecord.SelectSingleNode("Email").InnerText;

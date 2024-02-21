@@ -75,5 +75,14 @@ namespace AttendanceSysytem.Forms
             classesForm.Show();
             Hide();
         }
+
+        private void add_students_btn_Click(object sender, EventArgs e)
+        {
+            AddStudentsToClass addStudentform = new AddStudentsToClass();
+            addStudentform.recivedTrack = recived;
+            addStudentform.StartPosition = FormStartPosition.CenterScreen;
+            addStudentform.Show();
+            Close();
+        }
     }
 }

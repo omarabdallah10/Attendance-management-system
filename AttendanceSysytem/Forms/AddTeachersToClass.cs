@@ -72,6 +72,7 @@ namespace AttendanceSysytem.Forms
                     Adding.addTeacherToClass(id, recivedTrack.Name);
                 }
             }
+            MessageBox.Show($"Teachers Added successfully to class {recivedTrack.Name}", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.go_back_btn_Click(sender, e);
         }
     }
