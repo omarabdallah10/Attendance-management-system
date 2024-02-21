@@ -249,6 +249,7 @@ namespace AttendanceSysytem.Forms
             // 
             // absentdays_label
             // 
+
             this.absentdays_label.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -257,12 +258,13 @@ namespace AttendanceSysytem.Forms
             this.absentdays_label.Location = new System.Drawing.Point(674, 118);
             this.absentdays_label.Margin = new System.Windows.Forms.Padding(5);
             this.absentdays_label.Name = "absentdays_label";
-            this.absentdays_label.Size = new System.Drawing.Size(102, 19);
+            this.absentdays_label.Size = new System.Drawing.Size(84, 16);
             this.absentdays_label.TabIndex = 12;
             this.absentdays_label.Text = "Absent Days";
             // 
             // AbsentDays
             // 
+
             this.AbsentDays.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -280,6 +282,7 @@ namespace AttendanceSysytem.Forms
             // 
             // signOutBTN
             // 
+
             this.signOutBTN.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.signOutBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.signOutBTN.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -298,6 +301,7 @@ namespace AttendanceSysytem.Forms
             // 
             // saveAs_btn
             // 
+
             this.saveAs_btn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.saveAs_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.saveAs_btn.Cursor = System.Windows.Forms.Cursors.Hand;

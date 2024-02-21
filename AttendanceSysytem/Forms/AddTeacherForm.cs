@@ -26,11 +26,6 @@ namespace AttendanceSysytem.Forms
             
         }
 
-        private void AddTeacherForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnSave_Click(object sender, EventArgs e)
         {
             XmlDocument doc = DataManagement.xmlDoc();
@@ -118,6 +113,11 @@ namespace AttendanceSysytem.Forms
             AdminFunctionalitiesForm adminForm = new AdminFunctionalitiesForm();
             adminForm.Show();
             Hide();
+        }
+
+        private void AddTeacherForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

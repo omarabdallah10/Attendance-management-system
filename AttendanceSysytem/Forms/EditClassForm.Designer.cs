@@ -47,18 +47,54 @@ namespace AttendanceSysytem.Forms
             // 
             this.go_back_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.go_back_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.go_back_btn.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.go_back_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.go_back_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.go_back_btn.Location = new System.Drawing.Point(12, 11);
             this.go_back_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.go_back_btn.Name = "go_back_btn";
-            this.go_back_btn.Size = new System.Drawing.Size(124, 42);
+            this.go_back_btn.Size = new System.Drawing.Size(200, 40);
             this.go_back_btn.TabIndex = 0;
             this.go_back_btn.Text = "Go Back";
             this.go_back_btn.UseVisualStyleBackColor = false;
             // 
             // add_teachers_btn
             // 
+            this.add_teacher_btn.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.add_teacher_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.add_teacher_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.add_teacher_btn.Location = new System.Drawing.Point(123, 261);
+            this.add_teacher_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.add_teacher_btn.Name = "add_teacher_btn";
+            this.add_teacher_btn.Size = new System.Drawing.Size(150, 35);
+            this.add_teacher_btn.TabIndex = 1;
+            this.add_teacher_btn.Text = "Add Teacher";
+            this.add_teacher_btn.UseVisualStyleBackColor = false;
+            // 
+            // add_student_btn
+            // 
+            this.add_student_btn.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.add_student_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.add_student_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.add_student_btn.Location = new System.Drawing.Point(123, 295);
+            this.add_student_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.add_student_btn.Name = "add_student_btn";
+            this.add_student_btn.Size = new System.Drawing.Size(150, 35);
+            this.add_student_btn.TabIndex = 2;
+            this.add_student_btn.Text = "Add Student";
+            this.add_student_btn.UseVisualStyleBackColor = false;
+            // 
+            // add_class_btn
+            // 
+            this.add_class_btn.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.add_class_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.add_class_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.add_class_btn.Location = new System.Drawing.Point(123, 329);
+            this.add_class_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.add_class_btn.Name = "add_class_btn";
+            this.add_class_btn.Size = new System.Drawing.Size(150, 35);
+            this.add_class_btn.TabIndex = 3;
+            this.add_class_btn.Text = "Add Class";
+            this.add_class_btn.UseVisualStyleBackColor = false;
             this.add_teachers_btn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -74,9 +110,13 @@ namespace AttendanceSysytem.Forms
             // 
             // save_btn
             // 
+            this.save_btn.BackColor = System.Drawing.Color.LightSkyBlue;
             this.save_btn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.save_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.save_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.save_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.save_btn.ForeColor = System.Drawing.Color.Black;
+            this.save_btn.Location = new System.Drawing.Point(566, 359);
             this.save_btn.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.save_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.save_btn.Location = new System.Drawing.Point(559, 526);
@@ -84,6 +124,7 @@ namespace AttendanceSysytem.Forms
             this.save_btn.MaximumSize = new System.Drawing.Size(150, 50);
             this.save_btn.MinimumSize = new System.Drawing.Size(150, 50);
             this.save_btn.Name = "save_btn";
+            this.save_btn.Size = new System.Drawing.Size(200, 40);
             this.save_btn.Size = new System.Drawing.Size(150, 50);
             this.save_btn.TabIndex = 4;
             this.save_btn.Text = "Save";
@@ -94,9 +135,12 @@ namespace AttendanceSysytem.Forms
             this.class_name_label.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.class_name_label.AutoSize = true;
+            this.class_name_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.class_name_label.Location = new System.Drawing.Point(193, 129);
             this.class_name_label.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.class_name_label.Location = new System.Drawing.Point(191, 171);
             this.class_name_label.Name = "class_name_label";
+            this.class_name_label.Size = new System.Drawing.Size(129, 25);
             this.class_name_label.Size = new System.Drawing.Size(114, 24);
             this.class_name_label.TabIndex = 6;
             this.class_name_label.Text = "Class Name";
@@ -106,6 +150,8 @@ namespace AttendanceSysytem.Forms
             this.supervisor_label.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.supervisor_label.AutoSize = true;
+            this.supervisor_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.supervisor_label.Location = new System.Drawing.Point(193, 181);
             this.supervisor_label.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.supervisor_label.Location = new System.Drawing.Point(191, 226);
             this.supervisor_label.Name = "supervisor_label";
@@ -118,15 +164,25 @@ namespace AttendanceSysytem.Forms
             this.class_name_txt.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.class_name_txt.Enabled = false;
+            this.class_name_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.class_name_txt.Location = new System.Drawing.Point(350, 126);
             this.class_name_txt.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.class_name_txt.Location = new System.Drawing.Point(323, 168);
             this.class_name_txt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.class_name_txt.Name = "class_name_txt";
+            this.class_name_txt.Size = new System.Drawing.Size(277, 30);
             this.class_name_txt.Size = new System.Drawing.Size(243, 32);
             this.class_name_txt.TabIndex = 8;
             // 
             // SupervisorComboBox
             // 
+            this.supervisor_txt.Enabled = false;
+            this.supervisor_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.supervisor_txt.Location = new System.Drawing.Point(350, 178);
+            this.supervisor_txt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.supervisor_txt.Name = "supervisor_txt";
+            this.supervisor_txt.Size = new System.Drawing.Size(277, 30);
+            this.supervisor_txt.TabIndex = 9;
             this.SupervisorComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -158,6 +214,9 @@ namespace AttendanceSysytem.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.ClientSize = new System.Drawing.Size(832, 453);
+            this.Controls.Add(this.supervisor_txt);
             this.ClientSize = new System.Drawing.Size(746, 604);
             this.Controls.Add(this.add_students_btn);
             this.Controls.Add(this.SupervisorComboBox);
@@ -170,6 +229,7 @@ namespace AttendanceSysytem.Forms
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "EditClassForm";
             this.Text = "Edit Class";
+            this.Load += new System.EventHandler(this.EditClassForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

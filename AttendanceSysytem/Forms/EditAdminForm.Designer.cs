@@ -44,12 +44,12 @@ namespace AttendanceSysytem.Forms
             // 
             this.go_back_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.go_back_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.go_back_btn.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.go_back_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.go_back_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.go_back_btn.Location = new System.Drawing.Point(12, 10);
             this.go_back_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.go_back_btn.Name = "go_back_btn";
-            this.go_back_btn.Size = new System.Drawing.Size(111, 38);
+            this.go_back_btn.Size = new System.Drawing.Size(200, 40);
             this.go_back_btn.TabIndex = 0;
             this.go_back_btn.Text = "Go back";
             this.go_back_btn.UseVisualStyleBackColor = false;
@@ -57,23 +57,23 @@ namespace AttendanceSysytem.Forms
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.label1.Location = new System.Drawing.Point(111, 111);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(139, 149);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(431, 35);
+            this.label1.Size = new System.Drawing.Size(544, 36);
             this.label1.TabIndex = 1;
             this.label1.Text = "Who would you like to (edit \\ delete)?";
             // 
             // students_btn
             // 
-            this.students_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.students_btn.BackColor = System.Drawing.Color.LightSkyBlue;
             this.students_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.students_btn.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.students_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.students_btn.Location = new System.Drawing.Point(111, 162);
+            this.students_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.students_btn.ForeColor = System.Drawing.Color.Black;
+            this.students_btn.Location = new System.Drawing.Point(271, 241);
             this.students_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.students_btn.Name = "students_btn";
-            this.students_btn.Size = new System.Drawing.Size(134, 42);
+            this.students_btn.Size = new System.Drawing.Size(245, 45);
             this.students_btn.TabIndex = 2;
             this.students_btn.Text = "Students";
             this.students_btn.UseVisualStyleBackColor = false;
@@ -81,14 +81,14 @@ namespace AttendanceSysytem.Forms
             // 
             // teachers_btn
             // 
-            this.teachers_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.teachers_btn.BackColor = System.Drawing.Color.LightSkyBlue;
             this.teachers_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.teachers_btn.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.teachers_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.teachers_btn.Location = new System.Drawing.Point(251, 162);
+            this.teachers_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.teachers_btn.ForeColor = System.Drawing.Color.Black;
+            this.teachers_btn.Location = new System.Drawing.Point(271, 290);
             this.teachers_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.teachers_btn.Name = "teachers_btn";
-            this.teachers_btn.Size = new System.Drawing.Size(134, 42);
+            this.teachers_btn.Size = new System.Drawing.Size(245, 45);
             this.teachers_btn.TabIndex = 3;
             this.teachers_btn.Text = "Teachers";
             this.teachers_btn.UseVisualStyleBackColor = false;
@@ -96,14 +96,14 @@ namespace AttendanceSysytem.Forms
             // 
             // classes_btn
             // 
-            this.classes_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.classes_btn.BackColor = System.Drawing.Color.LightSkyBlue;
             this.classes_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.classes_btn.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.classes_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.classes_btn.Location = new System.Drawing.Point(391, 162);
+            this.classes_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.classes_btn.ForeColor = System.Drawing.Color.Black;
+            this.classes_btn.Location = new System.Drawing.Point(271, 339);
             this.classes_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.classes_btn.Name = "classes_btn";
-            this.classes_btn.Size = new System.Drawing.Size(134, 42);
+            this.classes_btn.Size = new System.Drawing.Size(245, 45);
             this.classes_btn.TabIndex = 4;
             this.classes_btn.Text = "Classes";
             this.classes_btn.UseVisualStyleBackColor = false;
@@ -113,6 +113,7 @@ namespace AttendanceSysytem.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(832, 453);
             this.Controls.Add(this.classes_btn);
             this.Controls.Add(this.teachers_btn);

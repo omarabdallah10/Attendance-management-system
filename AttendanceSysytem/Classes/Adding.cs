@@ -20,8 +20,8 @@ namespace AttendanceSysytem.Classes
         static public XmlElement addUser(string type, XmlDocument doc, string Fname, string Lname, string email, string password)
         {
             XmlElement newUser = doc.CreateElement(type);
-            string fullName = Fname.Trim() + " " + Lname.Trim();
-            if (!Validating.ValidUserInput(fullName, email, password))
+            string fullName=Fname.Trim()+" "+Lname.Trim();
+            if(!Valid.ValidUserInput(fullName, email, password))
             {
                 return null;
             }

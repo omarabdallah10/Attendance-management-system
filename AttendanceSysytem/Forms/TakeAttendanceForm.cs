@@ -10,21 +10,14 @@ using System.Windows.Forms;
 
 namespace AttendanceSysytem.Forms
 {
-    public partial class EditStudentForm : Form
+    public partial class TakeAttendanceForm : Form
     {
-        public EditStudentForm()
+        public TakeAttendanceForm()
         {
             InitializeComponent();
         }
 
-        private void cancel_btn_Click(object sender, EventArgs e)
-        {
-            StudentsForm studentsForm = new StudentsForm();
-            studentsForm.Show();
-            Hide();
-        }
-
-        private void save_btn_Click(object sender, EventArgs e)
+        private void btnViewAttendance_Click(object sender, EventArgs e)
         {
 
         }

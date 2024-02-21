@@ -23,7 +23,8 @@ namespace AttendanceSysytem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ClassesForm());
+            Application.Run(new TeacherViewAttendanceForm());
+
 
             
             //isAdmin("Admin@admin.com", "123456789Aa");
