@@ -30,5 +30,12 @@ namespace AttendanceSysytem.Forms
             teachersForm.Show();
             Hide();
         }
+
+        private void classes_btn_Click(object sender, EventArgs e)
+        {
+            Hide();
+            ClassesForm classesForm = new ClassesForm();
+            classesForm.Show();
+        }
     }
 }

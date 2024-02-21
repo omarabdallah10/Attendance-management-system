@@ -81,7 +81,6 @@ namespace AttendanceSysytem.Users
             // Load the XML file
             XmlDocument xmlDoc = DataManagement.xmlDoc();
             MyForm.AddRow(UserID, Name, TeacherClasses, SupervisedClass);
-
         }
     }
 }
