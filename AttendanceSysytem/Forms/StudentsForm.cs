@@ -24,9 +24,12 @@ namespace AttendanceSysytem.Forms
         {
             if (e.ColumnIndex==3)
             {
-                Hide();
                 EditStudentForm form = new EditStudentForm();
-                form.ShowDialog();
+                MessageBox.Show(StudentsTable.Rows.SharedRow(e.RowIndex).Cells[0].Value.ToString());
+                form.Recived = StudentsTable.Rows.SharedRow(e.RowIndex).Cells[0].Value.ToString();
+                Console.WriteLine(form.Recived);
+                form.Show();
+                Hide();
             }
         }
 
@@ -48,6 +51,7 @@ namespace AttendanceSysytem.Forms
                 string ClassName = StudentRecord.SelectSingleNode("ClassName").InnerText;
                 Student std = new Student(StudentName,StudentEmail,StudentPassword,StudentID, ClassName);
                 std.ShowStudentData(this);
+                StudentsList.Add(std);
             }
 
         }

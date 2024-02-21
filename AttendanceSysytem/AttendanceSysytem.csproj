@@ -88,6 +88,7 @@
     </Compile>
     <Compile Include="Forms\AdminDashboard.Designer.cs">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
+
     </Compile>
     <Compile Include="Forms\EditAdminForm.cs">
       <SubType>Form</SubType>
@@ -190,6 +191,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
+
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\EditAdminForm.resx">
       <DependentUpon>EditAdminForm.cs</DependentUpon>

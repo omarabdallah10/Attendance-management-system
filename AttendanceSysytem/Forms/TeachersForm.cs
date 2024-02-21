@@ -37,6 +37,7 @@ namespace AttendanceSysytem.Forms
                 string TeacherPassword = TeacherRecord.SelectSingleNode("Password").InnerText;
                 Teacher _teacher = new Teacher(TeacherName,TeacherEmail,TeacherPassword,TeacherID);
                 _teacher.ShowTeacherData(this);
+                TeachersList.Add(_teacher);
             }
         }
 
