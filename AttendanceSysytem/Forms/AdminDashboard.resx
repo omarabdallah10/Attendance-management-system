@@ -117,32 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="minimize-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\minimize-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pngtree-minus-vector-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pngtree-minus-vector-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="logOut-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logOut-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mainIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mainIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="minimize-vector-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\minimize-vector-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pngtree-minus-vector-icon " type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pngtree-minus-vector-icon .png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="dropdown_arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dropdown_arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="dashboardIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dashboardIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="minimize-icon-purple" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\minimize-icon-purple.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
 </root>
