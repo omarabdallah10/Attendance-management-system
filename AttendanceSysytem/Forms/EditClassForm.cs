@@ -24,19 +24,38 @@ namespace AttendanceSysytem.Forms
         {
             class_name_txt.Text = recived.Name;
             SupervisorComboBox.Items.Add(recived.Supervisor.Name);
-            SupervisorComboBox.SelectedIndex=0;
+            SupervisorComboBox.SelectedIndex = 0;
         }
 
         private void add_teachers_btn_Click(object sender, EventArgs e)
         {
             AddTeachersToClass addteacherform = new AddTeachersToClass();
+            addteacherform.recivedTrack = recived;
+            addteacherform.StartPosition = FormStartPosition.CenterScreen;
             addteacherform.Show();
-            Hide();
+            Close();
         }
 
         private void save_btn_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void go_back_btn_Click(object sender, EventArgs e)
+        {
+            ClassesForm classesForm = new ClassesForm();
+            classesForm.StartPosition = FormStartPosition.CenterScreen;
+            classesForm.Show();
+            Hide();
+        }
+
+        private void add_students_btn_Click(object sender, EventArgs e)
+        {
+            AddStudentsToClass addstudentform = new AddStudentsToClass();
+            addstudentform.recivedTrack = recived;
+            addstudentform.StartPosition = FormStartPosition.CenterScreen;
+            addstudentform.Show();
+            Close();
         }
     }
 }

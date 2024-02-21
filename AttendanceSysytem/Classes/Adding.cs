@@ -20,8 +20,8 @@ namespace AttendanceSysytem.Classes
         static public XmlElement addUser(string type, XmlDocument doc, string Fname, string Lname, string email, string password)
         {
             XmlElement newUser = doc.CreateElement(type);
-            string fullName=Fname.Trim()+" "+Lname.Trim();
-            if(!Valid.ValidUserInput(fullName, email, password))
+            string fullName = Fname.Trim() + " " + Lname.Trim();
+            if (!Valid.ValidUserInput(fullName, email, password))
             {
                 return null;
             }
@@ -78,26 +78,30 @@ namespace AttendanceSysytem.Classes
             XmlDocument doc = DataManagement.xmlDoc();
             XmlNode MyClassTeachers = doc.SelectSingleNode("//Class[Name = '" + ClassNam + "']/Teachers");
             XmlNode newTeacher = doc.CreateElement("UserID");
-            Console.WriteLine(MyClassTeachers.InnerText);
             newTeacher.InnerText = Teacherid;
             MyClassTeachers.AppendChild(newTeacher);
-            Console.WriteLine(MyClassTeachers.InnerText);
             DataManagement.SaveXml(doc);
         }
-        public static void addStudentToClass(string Studentid, string oldclassNam,string ClassNam)
+        public static void addStudentToClass(string Studentid, string oldclassNam, string ClassNam)
         {
             XmlDocument doc = DataManagement.xmlDoc();
-            XmlNode MyClassStudents = doc.SelectSingleNode("//Class[Name = '" + ClassNam + "']/Students");
-            XmlNode oldClass = doc.SelectSingleNode("//Class[Name = '" + oldclassNam + "']/Students[UserID='"+Studentid+"']");
+
+
+            XmlNode MyNewClassStudents = doc.SelectSingleNode("//Class[Name = '" + ClassNam + "']/Students");
+
             XmlNode newStudent = doc.CreateElement("UserID");
             newStudent.InnerText = Studentid;
-            MyClassStudents.AppendChild(newStudent);
+
+            MyNewClassStudents.AppendChild(newStudent);
+
+            XmlNode oldClass = doc.SelectSingleNode("//Class[Name = '" + oldclassNam + "']/Students[UserID='" + Studentid + "']");
             foreach (XmlNode student in oldClass)
             {
-                if (student.InnerText==Studentid)
+                if (student.InnerText == Studentid)
                     oldClass.RemoveChild(student);
             }
-            Console.WriteLine(oldClass.InnerText);
+            XmlNode s = DataManagement.GetElementById(doc, Studentid, "Student");
+            s.SelectSingleNode("ClassName").InnerText = ClassNam;
             DataManagement.SaveXml(doc);
         }
     }

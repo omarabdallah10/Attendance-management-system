@@ -56,6 +56,7 @@ namespace AttendanceSysytem.Forms
             this.go_back_btn.TabIndex = 0;
             this.go_back_btn.Text = "Go Back";
             this.go_back_btn.UseVisualStyleBackColor = false;
+            this.go_back_btn.Click += new System.EventHandler(this.go_back_btn_Click);
             // 
             // add_teachers_btn
             // 
@@ -153,6 +154,7 @@ namespace AttendanceSysytem.Forms
             this.add_students_btn.TabIndex = 15;
             this.add_students_btn.Text = "Add Students";
             this.add_students_btn.UseVisualStyleBackColor = true;
+            this.add_students_btn.Click += new System.EventHandler(this.add_students_btn_Click);
             // 
             // EditClassForm
             // 

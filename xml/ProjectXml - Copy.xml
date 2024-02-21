@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <School xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="projectSchema.xsd">
   <Users>
     <Admin>
@@ -73,14 +73,14 @@
       <UserID>T001</UserID>
     </Supervisor>
     <Teachers>
-      <UserID>T555</UserID>
       <UserID>T001</UserID>
+      <UserID>T555</UserID>
       <UserID>T002</UserID>
       <UserID>T004</UserID>
     </Teachers>
     <Students>
-      <UserID>S207</UserID>
       <UserID>S001</UserID>
+      <UserID>S207</UserID>
     </Students>
   </Class>
   <Class>
@@ -89,13 +89,13 @@
       <UserID>T002</UserID>
     </Supervisor>
     <Teachers>
-      <UserID>T002</UserID>
       <UserID>T004</UserID>
+      <UserID>T002</UserID>
     </Teachers>
     <Students>
+      <UserID>S003</UserID>
       <UserID>S304</UserID>
       <UserID>S004</UserID>
-      <UserID>S003</UserID>
     </Students>
   </Class>
   <Class>
