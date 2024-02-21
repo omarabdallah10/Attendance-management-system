@@ -1,10 +1,12 @@
-﻿using System;
+﻿using AttendanceSysytem.Users;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
+using System.Xml.Linq;
 
 namespace AttendanceSysytem.Classes
 {
@@ -12,10 +14,10 @@ namespace AttendanceSysytem.Classes
     {
         static public int RandomID()
         {
-           Random random = new Random();
+            Random random = new Random();
             return random.Next(100, 1000);
         }
-        static public XmlElement addUser (string type, XmlDocument doc, string Fname,string Lname ,string email, string password)
+        static public XmlElement addUser(string type, XmlDocument doc, string Fname, string Lname, string email, string password)
         {
             XmlElement newUser = doc.CreateElement(type);
             string fullName=Fname.Trim()+" "+Lname.Trim();
@@ -23,7 +25,7 @@ namespace AttendanceSysytem.Classes
             {
                 return null;
             }
-            
+
             XmlElement newName = doc.CreateElement("Name");
             newName.InnerText = fullName; // Set the User name
 
@@ -42,12 +44,12 @@ namespace AttendanceSysytem.Classes
             newUser.AppendChild(newEmail);
             newUser.AppendChild(newPassword);
 
-            return newUser ;
+            return newUser;
         }
-       static public XmlElement AddClass(XmlDocument doc , string name , string supervisor)
+        static public XmlElement AddClass(XmlDocument doc, string name, string supervisor)
         {
-            name=name.Trim();
-            if (name.Length<2)
+            name = name.Trim();
+            if (name.Length < 2)
             {
                 return null;
             }
@@ -69,7 +71,34 @@ namespace AttendanceSysytem.Classes
             newClass.AppendChild(newSupervisor);
             newClass.AppendChild(Teachers);
             newClass.AppendChild(Students);
-            return newClass ;
+            return newClass;
+        }
+        public static void addTeacherToClass(string Teacherid, string ClassNam)
+        {
+            XmlDocument doc = DataManagement.xmlDoc();
+            XmlNode MyClassTeachers = doc.SelectSingleNode("//Class[Name = '" + ClassNam + "']/Teachers");
+            XmlNode newTeacher = doc.CreateElement("UserID");
+            Console.WriteLine(MyClassTeachers.InnerText);
+            newTeacher.InnerText = Teacherid;
+            MyClassTeachers.AppendChild(newTeacher);
+            Console.WriteLine(MyClassTeachers.InnerText);
+            DataManagement.SaveXml(doc);
+        }
+        public static void addStudentToClass(string Studentid, string oldclassNam,string ClassNam)
+        {
+            XmlDocument doc = DataManagement.xmlDoc();
+            XmlNode MyClassStudents = doc.SelectSingleNode("//Class[Name = '" + ClassNam + "']/Students");
+            XmlNode oldClass = doc.SelectSingleNode("//Class[Name = '" + oldclassNam + "']/Students[UserID='"+Studentid+"']");
+            XmlNode newStudent = doc.CreateElement("UserID");
+            newStudent.InnerText = Studentid;
+            MyClassStudents.AppendChild(newStudent);
+            foreach (XmlNode student in oldClass)
+            {
+                if (student.InnerText==Studentid)
+                    oldClass.RemoveChild(student);
+            }
+            Console.WriteLine(oldClass.InnerText);
+            DataManagement.SaveXml(doc);
         }
     }
 }

@@ -107,6 +107,7 @@ namespace AttendanceSysytem.Forms
             this.classes_btn.TabIndex = 4;
             this.classes_btn.Text = "Classes";
             this.classes_btn.UseVisualStyleBackColor = false;
+            this.classes_btn.Click += new System.EventHandler(this.classes_btn_Click);
             // 
             // EditAdminForm
             // 

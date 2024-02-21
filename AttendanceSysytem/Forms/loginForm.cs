@@ -31,7 +31,6 @@ namespace AttendanceSysytem
             string password = txtPassword.Text;
 
             User validator = (User)login.isAdmin(email, password);
-            Console.WriteLine(validator.ToString());
 
             if (validator == null)
             {
