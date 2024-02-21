@@ -46,15 +46,15 @@ namespace AttendanceSysytem.Classes
             string sFilePath = Path.GetFullPath(sFile);
             doc.Save(sFilePath);
         }
-        public static XmlElement GetElementById(XmlDocument doc, string id)
+        public static XmlElement GetElementById(XmlDocument doc, string id,string type)
         {
-            XmlNodeList TeachereNodes=doc.SelectNodes("//Users/Teacher");
-            foreach (XmlNode TeacherNode in TeachereNodes)
+            XmlNodeList UserNodes=doc.SelectNodes($"//Users/{type}");
+            foreach (XmlNode UserNode in UserNodes)
             {
-                XmlNode userID = TeacherNode.SelectSingleNode("UserID");
+                XmlNode userID = UserNode.SelectSingleNode("UserID");
                 if (id == userID.InnerText)
                 {
-                    return (XmlElement)TeacherNode;
+                    return (XmlElement)UserNode;
                 }
             }
             return null;
@@ -116,6 +116,52 @@ namespace AttendanceSysytem.Classes
             string _Password= UserTypeNodes.SelectSingleNode("Password").InnerText;
             User s = new User(_name,_Email,_Password,id);
             return s;
+        }
+        public static void deleteUser(XmlDocument doc,XmlNode user)
+        {
+            XmlNode Users = doc.SelectSingleNode("//Users");
+            string id=user.SelectSingleNode("UserID").InnerText;
+            if (id[0] == 'S')
+            {
+                string classname = user.SelectSingleNode("ClassName").InnerText;
+                Console.WriteLine(classname);
+                XmlNodeList ClassNodes = doc.SelectNodes("//Class");
+                foreach (XmlNode ClassNode in ClassNodes)
+                {
+                    if (ClassNode.SelectSingleNode("Name").InnerText == classname)
+                    {
+                        Console.WriteLine(classname+"2");
+                        XmlNode studentsnode = ClassNode.SelectSingleNode("Students");
+                        XmlNodeList userIdnodes=studentsnode.SelectNodes("UserID");
+                        foreach(XmlNode userIdnode in userIdnodes)
+                        {
+                            if (userIdnode.InnerText == id)
+                            {
+                                studentsnode.RemoveChild(userIdnode);
+                                Console.WriteLine(id);
+                            }
+                        }
+                    }
+                }
+            }else if (id[0]=='T')
+            {
+                XmlNodeList ClassNodes = doc.SelectNodes("//Class");
+                foreach (XmlNode ClassNode in ClassNodes)
+                {
+                    XmlNode TeacherNode = ClassNode.SelectSingleNode("Teachers");
+                    XmlNodeList TeachersNodes = TeacherNode.SelectNodes("UserID");
+                    foreach (XmlNode teacherNode in TeachersNodes)
+                    {
+                        if (id == teacherNode.InnerText)
+                        {
+                            TeacherNode.RemoveChild(teacherNode);
+                            Console.WriteLine(id);
+                        }
+                    }
+                }
+            }
+            Users.RemoveChild(user);
+
         }
     }
 }
