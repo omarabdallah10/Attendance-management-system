@@ -56,15 +56,6 @@ namespace AttendanceSysytem.Forms
                 string xmlPath = DataManagement.xmlPath();
                 xmlData.DataSet.ReadXml(xmlPath);
 
-                /* //view the matched date only
-                 DataView dv = new DataView(xmlData.DataSet.Tables["AttendanceRecord"]);
-                 dv.RowFilter = "Date = '" + DateComboBox.Text + "'";
-                 dataGridViewAttendance.DataSource = dv;
-                 //view the matched track only
-                 DataView dv2 = new DataView(xmlData.DataSet.Tables["AttendanceRecord"]);
-                 dv2.RowFilter = "ClassName = '" + TrackCompoBox.Text + "'";
-                 dataGridViewAttendance.DataSource = dv2;*/
-
                 //view the matched date and track
                 DataView dv = new DataView(xmlData.DataSet.Tables["AttendanceRecord"]);
                 dv.RowFilter = "Date = '" + DateComboBox.Text + "' AND ClassName = '" + TrackCompoBox.Text + "'";
@@ -79,24 +70,6 @@ namespace AttendanceSysytem.Forms
 
             }
 
-
-            /*try
-            {
-
-                XmlDataDocument xmlData = new XmlDataDocument();
-                string xmlPath = DataManagement.xmlPath();
-                xmlData.DataSet.ReadXml(xmlPath);
-                dataGridViewAttendance.DataSource = xmlData.DataSet;
-                dataGridViewAttendance.DataMember = "AttendanceRecord";
-                
-                //MessageBox.Show("Data Loaded Successfully!");
-            }
-            catch (Exception ex)
-            {
-                //MessageBox.Show(Text = ex.Message);
-                MessageBox.Show("Sorry Something go wrong! \nPlease ry again later.");
-
-            }*/
         }
 
        
