@@ -33,5 +33,10 @@ namespace AttendanceSysytem.Forms
             addteacherform.Show();
             Hide();
         }
+
+        private void save_btn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
