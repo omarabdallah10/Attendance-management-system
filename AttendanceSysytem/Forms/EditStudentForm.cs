@@ -24,9 +24,9 @@ namespace AttendanceSysytem.Forms
 
         private void cancel_btn_Click(object sender, EventArgs e)
         {
-            Hide();
             StudentsForm studentsForm = new StudentsForm();
             studentsForm.Show();
+            Hide();
         }
 
         private void save_btn_Click(object sender, EventArgs e)

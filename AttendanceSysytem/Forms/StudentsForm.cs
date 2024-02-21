@@ -51,6 +51,7 @@ namespace AttendanceSysytem.Forms
                 string ClassName = StudentRecord.SelectSingleNode("ClassName").InnerText;
                 Student std = new Student(StudentName,StudentEmail,StudentPassword,StudentID, ClassName);
                 std.ShowStudentData(this);
+                StudentsList.Add(std);
             }
 
         }

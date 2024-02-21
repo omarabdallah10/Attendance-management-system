@@ -99,6 +99,24 @@ namespace AttendanceSysytem.Classes
             }
 
         }
+        public static User getUserById(string id)
+        {
+            XmlDocument doc = xmlDoc();
+            // Get All the nodes similar to the user type
+            XmlNode UserTypeNodes = doc.SelectSingleNode("//Users/Admin[UserID = '" + id + "']"); ;
+            if (id[0] == 'S')
+                UserTypeNodes = doc.SelectSingleNode("//Users/Student[UserID = '"+id+"']");
+            else if (id[0] == 'T')
+            {
+                UserTypeNodes = doc.SelectSingleNode("//Users/Teacher[UserID = '" + id + "']");
+            }
+            //
+            string _name = UserTypeNodes.SelectSingleNode("Name").InnerText;
+            string _Email = UserTypeNodes.SelectSingleNode("Email").InnerText;
+            string _Password= UserTypeNodes.SelectSingleNode("Password").InnerText;
+            User s = new User(_name,_Email,_Password,id);
+            return s;
+        }
         public static void deleteUser(XmlDocument doc,XmlNode user)
         {
             XmlNode Users = doc.SelectSingleNode("//Users");
