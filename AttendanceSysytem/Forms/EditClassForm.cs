@@ -21,5 +21,10 @@ namespace AttendanceSysytem.Forms
         {
 
         }
+
+        private void save_btn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

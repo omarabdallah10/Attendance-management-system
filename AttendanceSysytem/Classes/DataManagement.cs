@@ -10,6 +10,7 @@ using System.IO;
 using System.Drawing;
 using System.Xml.Serialization;
 using System.Windows.Forms;
+using AttendanceSysytem.Forms;
 
 
 
@@ -159,6 +160,17 @@ namespace AttendanceSysytem.Classes
                         }
                     }
                 }
+                if (user.Attributes[0].InnerText=="true")
+                {
+                    XmlNode classname = doc.SelectSingleNode("//Class/Supervisor[UserID='" + id + "']");
+                    //Console.WriteLine(classname.ParentNode.FirstChild.InnerText);
+                    Track t1 = new Track(classname.ParentNode.FirstChild.InnerText, id);
+                    EditClassForm editClassForm = new EditClassForm();
+                    MessageBox.Show($"This teacher is a supervisor for class{t1.Name}, please change its supervisor first");
+
+                    return;
+                }
+                
             }
             Users.RemoveChild(user);
 
