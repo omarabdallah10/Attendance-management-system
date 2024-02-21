@@ -30,7 +30,6 @@ namespace AttendanceSysytem.Forms
 
                 EditClassForm form = new EditClassForm();
                 form.recived = new Track(Classname.ToString(), supervisorID.ToString());
-                MessageBox.Show(Classname + " " + supervisorID + " " + supervisor);
                 Hide();
                 form.Show();
             }
