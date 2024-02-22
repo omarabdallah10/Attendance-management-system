@@ -78,6 +78,7 @@ namespace AttendanceSysytem.Forms
             this.go_back_btn.TabIndex = 2;
             this.go_back_btn.Text = "Go Back";
             this.go_back_btn.UseVisualStyleBackColor = false;
+            this.go_back_btn.Click += new System.EventHandler(this.go_back_btn_Click);
             // 
             // ClassesTable
             // 

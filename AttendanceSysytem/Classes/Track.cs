@@ -15,10 +15,12 @@ namespace AttendanceSysytem.Classes
         public Track(string _name, string _SuperVisorID)
         {
             Name = _name;
-            Supervisor = _SuperVisorID;
+            SupervisorID = _SuperVisorID;
+            Supervisor = DataManagement.getUserById(SupervisorID);
         }
         public string Name { get; set; }
-        public string Supervisor { get; set; }
+        public string SupervisorID { get; set; }
+        public User Supervisor { get; set; }
         public List<Teacher> Teachers { get; set; }
         public List<Student> Students { get; set; }
 

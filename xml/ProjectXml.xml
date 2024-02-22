@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <School xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="projectSchema.xsd">
   <Users>
     <Admin>
       <UserID>A001</UserID>
       <Name>John Doe</Name>
       <Email>Admin@admin.com</Email>
-      <Password>123456789Aa</Password>
+      <Password>123456789</Password>
     </Admin>
     <Teacher Supervisor="false">
       <UserID>T555</UserID>
@@ -25,6 +25,12 @@
       <Email>NadinSaleh@teacher.com</Email>
       <Password>@aad2daW</Password>
     </Teacher>
+    <Teacher Supervisor="true">
+      <UserID>T004</UserID>
+      <Name>Nadia Salah</Name>
+      <Email>NadaSaleh@teacher.com</Email>
+      <Password>@aad2daW</Password>
+    </Teacher>
     <Student>
       <UserID>S304</UserID>
       <Name>kareem ahmed</Name>
@@ -36,7 +42,7 @@
       <UserID>S001</UserID>
       <Name>Abdelhameed Osama</Name>
       <Email>abdelhameed_osama@example.com</Email>
-      <Password>611</Password>
+      <Password>610</Password>
       <ClassName>PD</ClassName>
     </Student>
     <Student>
@@ -44,14 +50,14 @@
       <Name>AbdUllah Aiman</Name>
       <Email>abdUllah_aiman@example.com</Email>
       <Password>123456789Aa</Password>
-      <ClassName>AI</ClassName>
+      <ClassName>PD</ClassName>
     </Student>
     <Student>
       <UserID>S003</UserID>
       <Name>Omar Abdullah</Name>
       <Email>omar_abdullah@example.com</Email>
       <Password>123456789Aa</Password>
-      <ClassName>OS</ClassName>
+      <ClassName>AI</ClassName>
     </Student>
     <Student>
       <UserID>S004</UserID>
@@ -67,13 +73,15 @@
       <UserID>T001</UserID>
     </Supervisor>
     <Teachers>
-      <UserID>T001</UserID>
       <UserID>T555</UserID>
+      <UserID>T001</UserID>
       <UserID>T002</UserID>
+      <UserID>T004</UserID>
     </Teachers>
     <Students>
-      <UserID>S001</UserID>
       <UserID>S207</UserID>
+      <UserID>S001</UserID>
+      <UserID>S002</UserID>
     </Students>
   </Class>
   <Class>
@@ -82,11 +90,10 @@
       <UserID>T002</UserID>
     </Supervisor>
     <Teachers>
-      <UserID>T101</UserID>
-      <UserID>T555</UserID>
+      <UserID>T002</UserID>
+      <UserID>T004</UserID>
     </Teachers>
     <Students>
-      <UserID>S003</UserID>
       <UserID>S304</UserID>
       <UserID>S004</UserID>
     </Students>
@@ -101,7 +108,7 @@
       <UserID>T002</UserID>
     </Teachers>
     <Students>
-      <UserID>S002</UserID>
+      <UserID>S003</UserID>
     </Students>
   </Class>
   <AttendanceData>
