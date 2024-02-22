@@ -45,7 +45,6 @@
             this.password_box.Name = "password_box";
             this.password_box.Size = new System.Drawing.Size(314, 30);
             this.password_box.TabIndex = 39;
-            this.password_box.TextChanged += new System.EventHandler(this.password_box_TextChanged);
             // 
             // password_label
             // 
@@ -58,7 +57,6 @@
             this.password_label.Size = new System.Drawing.Size(106, 25);
             this.password_label.TabIndex = 37;
             this.password_label.Text = "Password";
-            this.password_label.Click += new System.EventHandler(this.password_label_Click);
             // 
             // cancel_btn
             // 
@@ -72,6 +70,7 @@
             this.cancel_btn.TabIndex = 35;
             this.cancel_btn.Text = "Cancel";
             this.cancel_btn.UseVisualStyleBackColor = false;
+            this.cancel_btn.Click += new System.EventHandler(this.cancel_btn_Click);
             // 
             // save_btn
             // 
@@ -85,6 +84,7 @@
             this.save_btn.TabIndex = 34;
             this.save_btn.Text = "Save";
             this.save_btn.UseVisualStyleBackColor = false;
+            this.save_btn.Click += new System.EventHandler(this.save_btn_Click);
             // 
             // Settings
             // 
