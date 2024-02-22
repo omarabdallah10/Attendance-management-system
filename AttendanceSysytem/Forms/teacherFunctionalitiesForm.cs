@@ -1,4 +1,5 @@
-﻿using AttendanceSysytem.Users;
+﻿using AttendanceSysytem.Forms;
+using AttendanceSysytem.Users;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -32,6 +33,13 @@ namespace AttendanceSysytem
         private void btnViewAttendance_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void settings_Click(object sender, EventArgs e)
+        {
+            SettingsForm settingsForm = new SettingsForm();
+            settingsForm.Recived = recived;
+            settingsForm.Show();
         }
     }
 }

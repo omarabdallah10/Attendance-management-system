@@ -17,6 +17,7 @@ namespace AttendanceSysytem.Forms
     {
         public User Recived { get; set; }
         public XmlDocument Document { get; set; }
+        public XmlElement User { get; set; }
 
         public SettingsForm()
         {
@@ -26,11 +27,21 @@ namespace AttendanceSysytem.Forms
         private void SettingsForm_Load(object sender, EventArgs e)
         {
             Document = DataManagement.xmlDoc();
+            Console.WriteLine(Recived.Name);
+            string type="Student";
+            if (Recived.UserID[0]=='T')
+            {
+                type = "Teacher";
+            }else if (Recived.UserID[0]=='A')
+            {
+                type = "Admin";
 
-            /*StudentElement = DataManagement.GetElementById(Document, Recived, "Student");
-            XmlNode name = StudentElement.SelectSingleNode("Name");
-            XmlNode email = StudentElement.SelectSingleNode("Email");
-            XmlNode password = StudentElement.SelectSingleNode("Password");
+            }
+            User = DataManagement.GetElementById(Document, Recived.UserID, type);
+
+            XmlNode password = User.SelectSingleNode("Password");
+            password_box.Text = password.InnerText;
+            /*
             string fname = name.InnerText.Split(' ')[0];
             string lname = name.InnerText.Split(' ')[1];
             FnameTxt.Text = fname;
@@ -39,15 +50,6 @@ namespace AttendanceSysytem.Forms
             password_box.Text = password.InnerText;*/
         }
 
-        private void password_label_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void password_box_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void font_Click(object sender, EventArgs e)
         {
@@ -57,6 +59,26 @@ namespace AttendanceSysytem.Forms
         private void Langauge_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void save_btn_Click(object sender, EventArgs e)
+        {
+            XmlNode password = User.SelectSingleNode("Password");
+            if (password_box.Text != password.InnerText)
+            {
+                password.InnerText = password_box.Text;
+                DataManagement.SaveXml(Document);
+                MessageBox.Show("Password updated successfully");
+            }
+            else
+            {
+                MessageBox.Show("Password didn't change");
+            }
+        }
+
+        private void cancel_btn_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
