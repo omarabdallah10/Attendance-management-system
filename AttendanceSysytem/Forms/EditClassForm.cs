@@ -55,17 +55,40 @@ namespace AttendanceSysytem.Forms
         {
 
             XmlNode classNode = doc.SelectSingleNode("//Class[Name='" + recived.Name + "']");
-            classNode.SelectSingleNode("Name").InnerText = class_name_txt.Text;
+            XmlNode name = classNode.SelectSingleNode("Name");
             XmlNode newSuper = doc.SelectSingleNode("//Users/Teacher[Name='" + SupervisorComboBox.Text + "']");
             XmlNode oldSuper = doc.SelectSingleNode("//Users/Teacher[UserID='" + classNode.SelectSingleNode("Supervisor/UserID").InnerText + "']");
-            classNode.SelectSingleNode("Supervisor/UserID").InnerText = newSuper.SelectSingleNode("UserID").InnerText;
-            newSuper.Attributes[0].InnerText = "true";
-            oldSuper.Attributes[0].InnerText = "false";
-            DataManagement.SaveXml(doc);
-            MessageBox.Show("Your edits have been saved successfully");
-            ClassesForm classesForm = new ClassesForm();
-            classesForm.Show();
-            Hide();
+            XmlNodeList classnodes = doc.SelectNodes("//Class");
+            int flag = 0;
+            foreach (XmlNode classnode in classnodes)
+            {
+                if(classnode.SelectSingleNode("Name").InnerText == class_name_txt.Text && class_name_txt.Text != recived.Name)
+                {
+                    flag++;
+                    break;
+                }
+            }
+            Console.WriteLine(flag);
+            if (newSuper != oldSuper && flag == 0)
+            {
+                newSuper.Attributes[0].InnerText = "true";
+                oldSuper.Attributes[0].InnerText = "false";
+                classNode.SelectSingleNode("Supervisor/UserID").InnerText = newSuper.SelectSingleNode("UserID").InnerText;
+            }
+            if (flag == 0 && (class_name_txt.Text != recived.Name || newSuper != oldSuper))
+            {
+                name.InnerText = class_name_txt.Text;
+                DataManagement.changeStdClassName(doc, recived.Name, class_name_txt.Text);
+                DataManagement.SaveXml(doc);
+                MessageBox.Show("Your edits have been saved successfully");
+                ClassesForm classsForm = new ClassesForm();
+                classsForm.Show();
+                Hide();
+            }
+            else
+            {
+                MessageBox.Show("Class name already exists, please choose another one");
+            }
 
         }
 

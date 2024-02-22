@@ -23,5 +23,15 @@ namespace AttendanceSysytem
         {
 
         }
+
+        private void btnTakeAttendance_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnViewAttendance_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

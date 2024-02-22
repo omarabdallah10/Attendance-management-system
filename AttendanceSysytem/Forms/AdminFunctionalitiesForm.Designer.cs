@@ -81,6 +81,7 @@
             this.btnSignOut.TabIndex = 5;
             this.btnSignOut.Text = "Sign out";
             this.btnSignOut.UseVisualStyleBackColor = false;
+            this.btnSignOut.Click += new System.EventHandler(this.btnSignOut_Click);
             // 
             // btnAddClass
             // 

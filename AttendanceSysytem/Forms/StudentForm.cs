@@ -62,5 +62,10 @@ namespace AttendanceSysytem.Forms
             login.Show();
             recived = null;
         }
+
+        private void settings_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
