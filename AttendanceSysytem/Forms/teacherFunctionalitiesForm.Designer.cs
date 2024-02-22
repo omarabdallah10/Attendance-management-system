@@ -58,6 +58,7 @@
             this.btnViewAttendance.TabIndex = 1;
             this.btnViewAttendance.Text = "View Attendance";
             this.btnViewAttendance.UseVisualStyleBackColor = false;
+            this.btnViewAttendance.Click += new System.EventHandler(this.btnViewAttendance_Click);
             // 
             // btnTakeAttendance
             // 
@@ -70,6 +71,7 @@
             this.btnTakeAttendance.TabIndex = 2;
             this.btnTakeAttendance.Text = "Take Attendance";
             this.btnTakeAttendance.UseVisualStyleBackColor = false;
+            this.btnTakeAttendance.Click += new System.EventHandler(this.btnTakeAttendance_Click_1);
             // 
             // pictureBox1
             // 
@@ -80,7 +82,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
-
             // 
             // teacherFunctionalitiesForm
             // 

@@ -13,7 +13,7 @@
       <Email>amira@amir.com</Email>
       <Password>amir@aS213</Password>
     </Teacher>
-    <Teacher Supervisor="false">
+    <Teacher Supervisor="true">
       <UserID>T001</UserID>
       <Name>Mohammed AbuTrika</Name>
       <Email>AbuTrika22@teacher.com</Email>
@@ -25,7 +25,7 @@
       <Email>NadinSaleh@teacher.com</Email>
       <Password>@aad2daW</Password>
     </Teacher>
-    <Teacher Supervisor="false">
+    <Teacher Supervisor="true">
       <UserID>T004</UserID>
       <Name>Nadia Salah</Name>
       <Email>NadaSaleh@teacher.com</Email>

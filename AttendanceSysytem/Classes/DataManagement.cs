@@ -176,5 +176,18 @@ namespace AttendanceSysytem.Classes
             Users.RemoveChild(user);
 
         }
+
+        public static void changeStdClassName(XmlDocument doc , string oldClassName ,string newClassName)
+        {
+            XmlNodeList studentnodes = doc.SelectNodes("//Users/Student");
+            foreach (XmlNode studentnode in studentnodes)
+            {
+                if(studentnode.SelectSingleNode("ClassName").InnerText == oldClassName)
+                {
+                    studentnode.SelectSingleNode("ClassName").InnerText = newClassName;
+                    Console.WriteLine(studentnode.SelectSingleNode("Name").InnerText);
+                }
+            }
+        }
     }
 }
