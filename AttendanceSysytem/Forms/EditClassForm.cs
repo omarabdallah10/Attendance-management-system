@@ -64,6 +64,7 @@ namespace AttendanceSysytem.Forms
             DataManagement.SaveXml(doc);
             MessageBox.Show("Your edits have been saved successfully");
             ClassesForm classesForm = new ClassesForm();
+            
             classesForm.Show();
             Hide();
 
