@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AttendanceSysytem.Classes;
 using PdfSharp;
 using PdfSharp.Drawing;
 using PdfSharp.Pdf;
@@ -19,6 +20,7 @@ namespace AttendanceSysytem.Forms
         public saveAsForm()
         {
             InitializeComponent();
+            DataManagement.ChangeFont(this, DataManagement.MyFont, true);
             // System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
         }
 
@@ -69,7 +71,9 @@ namespace AttendanceSysytem.Forms
 
         }
 
-        
+        private void saveAsForm_Load(object sender, EventArgs e)
+        {
+        }
     }
 }
 

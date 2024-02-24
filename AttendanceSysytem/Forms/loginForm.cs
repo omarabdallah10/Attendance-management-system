@@ -18,6 +18,7 @@ namespace AttendanceSysytem
         public loginForm()
         {
             InitializeComponent();
+            DataManagement.ChangeFont(this, DataManagement.MyFont, true);
         }
 
         private void txtUserName_TextChanged(object sender, EventArgs e)
@@ -67,6 +68,10 @@ namespace AttendanceSysytem
                         break;
                 }
             }
+        }
+
+        private void loginForm_Load(object sender, EventArgs e)
+        {
         }
     }
 }

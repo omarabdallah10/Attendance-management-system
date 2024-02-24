@@ -15,16 +15,19 @@ namespace AttendanceSysytem.Forms
 {
     public partial class StudentsForm : Form
     {
-        public StudentsForm()
+        Form oldform = null;
+        public StudentsForm(Form oldform)
         {
             InitializeComponent();
+            this.oldform = oldform;
+            DataManagement.ChangeFont(this, DataManagement.MyFont, true);
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.ColumnIndex==3)
             {
-                EditStudentForm form = new EditStudentForm();
+                EditStudentForm form = new EditStudentForm(this);
                 MessageBox.Show(StudentsTable.Rows.SharedRow(e.RowIndex).Cells[0].Value.ToString());
                 form.Recived = StudentsTable.Rows.SharedRow(e.RowIndex).Cells[0].Value.ToString();
                 Console.WriteLine(form.Recived);
@@ -41,7 +44,7 @@ namespace AttendanceSysytem.Forms
             // Clear existing rows in the DataGridView
             this.resetDataTable();
             List<Student> StudentsList = new List<Student>();
-
+            StudentsTable.AlternatingRowsDefaultCellStyle.Font = StudentsTable.RowsDefaultCellStyle.Font;
             foreach (XmlElement StudentRecord in Students)
             {
                 string StudentID = StudentRecord.SelectSingleNode("UserID").InnerText;
@@ -59,8 +62,7 @@ namespace AttendanceSysytem.Forms
         private void go_back_btn_Click(object sender, EventArgs e)
         {
             Hide();
-            EditAdminForm form = new EditAdminForm();
-            form.Show();
+            oldform.Show();
         }
     }
 }
