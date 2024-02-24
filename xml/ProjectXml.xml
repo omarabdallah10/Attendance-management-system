@@ -5,7 +5,7 @@
       <UserID>A001</UserID>
       <Name>John Doe</Name>
       <Email>Admin@admin.com</Email>
-      <Password>123456789Aa</Password>
+      <Password>123456789</Password>
     </Admin>
     <Teacher Supervisor="false">
       <UserID>T555</UserID>
@@ -42,7 +42,7 @@
       <UserID>S001</UserID>
       <Name>Abdelhameed Osama</Name>
       <Email>abdelhameed_osama@example.com</Email>
-      <Password>611</Password>
+      <Password>610</Password>
       <ClassName>PD</ClassName>
     </Student>
     <Student>

@@ -131,6 +131,12 @@
     <Compile Include="Forms\saveAsForm.Designer.cs">
       <DependentUpon>saveAsForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\SettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SettingsForm.Designer.cs">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\StudentsForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -230,6 +236,9 @@
     <EmbeddedResource Include="Forms\saveAsForm.resx">
       <DependentUpon>saveAsForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SettingsForm.resx">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\StudentForm.resx">
       <DependentUpon>StudentForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -301,6 +310,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\dashboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\attendance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addStudent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calender %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\att.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\class.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

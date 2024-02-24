@@ -36,6 +36,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.btnEditUsers = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.settings = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -75,12 +76,13 @@
             this.btnSignOut.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSignOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSignOut.ForeColor = System.Drawing.Color.White;
-            this.btnSignOut.Location = new System.Drawing.Point(611, 26);
+            this.btnSignOut.Location = new System.Drawing.Point(52, 36);
             this.btnSignOut.Name = "btnSignOut";
             this.btnSignOut.Size = new System.Drawing.Size(200, 40);
             this.btnSignOut.TabIndex = 5;
             this.btnSignOut.Text = "Sign out";
             this.btnSignOut.UseVisualStyleBackColor = false;
+            this.btnSignOut.Click += new System.EventHandler(this.btnSignOut_Click);
             // 
             // btnAddClass
             // 
@@ -137,12 +139,31 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // settings
+            // 
+            this.settings.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.settings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.settings.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settings.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.settings.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.settings.Location = new System.Drawing.Point(648, 36);
+            this.settings.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.settings.MaximumSize = new System.Drawing.Size(150, 40);
+            this.settings.MinimumSize = new System.Drawing.Size(150, 40);
+            this.settings.Name = "settings";
+            this.settings.Size = new System.Drawing.Size(150, 40);
+            this.settings.TabIndex = 18;
+            this.settings.Text = "Settings";
+            this.settings.UseVisualStyleBackColor = false;
+            this.settings.Click += new System.EventHandler(this.settings_Click);
+            // 
             // AdminFunctionalitiesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(832, 453);
+            this.Controls.Add(this.settings);
             this.Controls.Add(this.btnEditUsers);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnAddClass);
@@ -167,5 +188,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnEditUsers;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button settings;
     }
 }

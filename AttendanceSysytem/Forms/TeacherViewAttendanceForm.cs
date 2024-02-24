@@ -24,6 +24,10 @@ namespace AttendanceSysytem.Forms
         //load Data on form load
         private void TeacherViewAttendanceForm_Load(object sender, EventArgs e)
         {
+
+            dataGridViewAttendance.AllowUserToAddRows = false;
+
+
             //load dates into DateComboBox from xml file
             XmlDataDocument xmlData = new XmlDataDocument();
             string xmlPath = DataManagement.xmlPath();
