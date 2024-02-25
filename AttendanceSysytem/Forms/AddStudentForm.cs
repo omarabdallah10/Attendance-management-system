@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,8 +16,11 @@ namespace AttendanceSysytem
 {
     public partial class AddStudentForm : Form
     {
-        public AddStudentForm()
+        Form oldform = new AdminFunctionalitiesForm();
+        public AddStudentForm(Form f1)
         {
+            DataManagement.ChangeFont(this, DataManagement.MyFont, true);
+            oldform = f1;
             InitializeComponent();
             XmlDocument doc = DataManagement.xmlDoc();
             XmlNodeList ClassNodes = doc.SelectNodes("//Class");
@@ -50,7 +54,7 @@ namespace AttendanceSysytem
 
         private void AddStudentForm_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -116,8 +120,7 @@ namespace AttendanceSysytem
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            AdminFunctionalitiesForm adminForm = new AdminFunctionalitiesForm();
-            adminForm.Show();
+            oldform.Show();
             Hide();
         }
     }

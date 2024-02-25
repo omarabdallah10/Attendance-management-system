@@ -1,4 +1,5 @@
-﻿using AttendanceSysytem.Forms;
+﻿using AttendanceSysytem.Classes;
+using AttendanceSysytem.Forms;
 using AttendanceSysytem.Users;
 using System;
 using System.Collections.Generic;
@@ -17,22 +18,17 @@ namespace AttendanceSysytem
         public Admin recived { get; set; }
         public AdminFunctionalitiesForm()
         {
+            DataManagement.ChangeFont(this, DataManagement.MyFont, true);
             InitializeComponent();
         }
 
         private void AdminFunctionalitiesForm_Load(object sender, EventArgs e)
         {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btnAddTeacher_Click(object sender, EventArgs e)
         {
-            AddTeacherForm addTeacherForm = new AddTeacherForm();
+            AddTeacherForm addTeacherForm = new AddTeacherForm(this);
             addTeacherForm.Show();
             Hide();
         }
@@ -40,20 +36,20 @@ namespace AttendanceSysytem
         private void btnEditUsers_Click(object sender, EventArgs e)
         {
             Hide();
-            EditAdminForm editAdminForm = new EditAdminForm();
+            EditAdminForm editAdminForm = new EditAdminForm(this);
             editAdminForm.Show();
         }
 
         private void btnAddStudent_Click(object sender, EventArgs e)
         {
-            AddStudentForm addStudent = new AddStudentForm();
+            AddStudentForm addStudent = new AddStudentForm(this);
             addStudent.Show();
             Hide();
         }
 
         private void btnAddClass_Click(object sender, EventArgs e)
         {
-            AddClassForm addClass = new AddClassForm();
+            AddClassForm addClass = new AddClassForm(this);
             addClass.Show();
             Hide();
         }
@@ -73,5 +69,6 @@ namespace AttendanceSysytem
             settingsForm.Show();
 
         }
+
     }
 }

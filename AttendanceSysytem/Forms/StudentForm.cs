@@ -1,4 +1,5 @@
-﻿using AttendanceSysytem.Users;
+﻿using AttendanceSysytem.Classes;
+using AttendanceSysytem.Users;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,6 +19,7 @@ namespace AttendanceSysytem.Forms
         public StudentForm()
         {
             InitializeComponent();
+            DataManagement.ChangeFont(this, DataManagement.MyFont, true);
         }
 
         private void FromDate_ValueChanged(object sender, EventArgs e)
@@ -33,6 +35,7 @@ namespace AttendanceSysytem.Forms
 
         private void StudentForm_Load(object sender, EventArgs e)
         {
+            StudentAttendanceTable.AlternatingRowsDefaultCellStyle.Font = StudentAttendanceTable.RowsDefaultCellStyle.Font;
             if (recived != null && recived.UserID[0].ToString() == "S")
             {
                 // initialize max date

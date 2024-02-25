@@ -16,6 +16,7 @@ namespace AttendanceSysytem.Forms
     {
         public ClassesForm()
         {
+            DataManagement.ChangeFont(this, DataManagement.MyFont, true);
             InitializeComponent();
         }
 
@@ -39,6 +40,7 @@ namespace AttendanceSysytem.Forms
 
         private void ClassesForm_Load(object sender, EventArgs e)
         {
+            ClassesTable.AlternatingRowsDefaultCellStyle.Font = ClassesTable.RowsDefaultCellStyle.Font;
             XmlDocument xmlDoc = DataManagement.xmlDoc();
             XmlNodeList MyClasses = xmlDoc.SelectNodes("//Class");
             foreach (XmlNode MyClass in MyClasses)

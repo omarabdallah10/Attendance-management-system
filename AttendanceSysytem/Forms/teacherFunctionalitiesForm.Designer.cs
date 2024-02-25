@@ -72,7 +72,7 @@
             this.btnTakeAttendance.TabIndex = 2;
             this.btnTakeAttendance.Text = "Take Attendance";
             this.btnTakeAttendance.UseVisualStyleBackColor = false;
-            this.btnTakeAttendance.Click += new System.EventHandler(this.btnTakeAttendance_Click_1);
+            this.btnTakeAttendance.Click += new System.EventHandler(this.btnTakeAttendance_Click);
             // 
             // pictureBox1
             // 
@@ -114,6 +114,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "teacherFunctionalitiesForm";
             this.Text = "teacherFunctionalities";
+            this.Load += new System.EventHandler(this.teacherFunctionalitiesForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AttendanceSysytem.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,11 @@ namespace AttendanceSysytem.Forms
         public AdminDashboard()
         {
             InitializeComponent();
+            DataManagement.ChangeFont(this, DataManagement.MyFont, true);
+        }
+
+        private void AdminDashboard_Load(object sender, EventArgs e)
+        {
         }
     }
 }
