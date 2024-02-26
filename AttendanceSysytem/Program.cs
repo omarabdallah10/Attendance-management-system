@@ -27,8 +27,9 @@ namespace AttendanceSysytem
 
 
 
+
             
-            //isAdmin("Admin@admin.com", "123456789Aa");
+            //isAdmin("Admin@admin.com", "123456789");
         }
     }
 }

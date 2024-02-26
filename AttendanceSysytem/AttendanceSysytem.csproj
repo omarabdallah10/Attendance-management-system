@@ -77,18 +77,29 @@
     <Compile Include="Forms\AddStudentForm.Designer.cs">
       <DependentUpon>AddStudentForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\AddStudentsToClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddStudentsToClass.Designer.cs">
+      <DependentUpon>AddStudentsToClass.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AddTeacherForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\AddTeacherForm.Designer.cs">
       <DependentUpon>AddTeacherForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\AddTeachersToClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddTeachersToClass.Designer.cs">
+      <DependentUpon>AddTeachersToClass.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AdminDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\AdminDashboard.Designer.cs">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
-
     </Compile>
     <Compile Include="Forms\EditAdminForm.cs">
       <SubType>Form</SubType>
@@ -119,6 +130,12 @@
     </Compile>
     <Compile Include="Forms\saveAsForm.Designer.cs">
       <DependentUpon>saveAsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SettingsForm.Designer.cs">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\StudentsForm.cs">
       <SubType>Form</SubType>
@@ -186,12 +203,17 @@
     <EmbeddedResource Include="Forms\AddStudentForm.resx">
       <DependentUpon>AddStudentForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddStudentsToClass.resx">
+      <DependentUpon>AddStudentsToClass.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AddTeacherForm.resx">
       <DependentUpon>AddTeacherForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddTeachersToClass.resx">
+      <DependentUpon>AddTeachersToClass.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
-
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\EditAdminForm.resx">
       <DependentUpon>EditAdminForm.cs</DependentUpon>
@@ -213,6 +235,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\saveAsForm.resx">
       <DependentUpon>saveAsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SettingsForm.resx">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\StudentForm.resx">
       <DependentUpon>StudentForm.cs</DependentUpon>

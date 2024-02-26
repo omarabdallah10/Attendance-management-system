@@ -24,16 +24,16 @@ namespace AttendanceSysytem.Forms
             if (e.ColumnIndex == 3)
             {
                 DataGridViewRow row = ClassesTable.Rows[e.RowIndex];
-                
-                // Now you can access cell values using column indexes or names
-
                 string Classname = row.Cells["ClassName"].Value.ToString();
                 string supervisor = row.Cells["Supervisor"].Value.ToString();
                 string supervisorID= row.Cells["SupervisorID"].Value.ToString();
-                MessageBox.Show(Classname + " " + supervisorID + " " + supervisor);
-                Hide();
+
                 EditClassForm form = new EditClassForm();
+                form.recived = new Track(Classname.ToString(), supervisorID.ToString());
+                form.StartPosition = FormStartPosition.CenterScreen;
                 form.Show();
+
+                this.Hide();
             }
         }
 
@@ -49,6 +49,14 @@ namespace AttendanceSysytem.Forms
                 this.ClassesTable.Rows.Add(_className, _supervisorID, _supervisorName);
             }
         
+        }
+
+        private void go_back_btn_Click(object sender, EventArgs e)
+        {
+            AdminFunctionalitiesForm form = new AdminFunctionalitiesForm();
+            form.StartPosition = FormStartPosition.CenterScreen;
+            form.Show();
+            Hide();
         }
     }
 }

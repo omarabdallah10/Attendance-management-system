@@ -14,6 +14,7 @@ namespace AttendanceSysytem.Users
     {
         string TeacherClasses;
         string SupervisedClass;
+        XmlDocument xmlDoc = DataManagement.xmlDoc();
         public Teacher(string name, string email, string password, string userID) : base(name, email, password, userID)
         {
             TeacherClasses = getClassesFromXML();
@@ -25,25 +26,21 @@ namespace AttendanceSysytem.Users
         {
             string TeacherClassesXml = "";
             int First = 1;
-            XmlDocument xmlDoc = DataManagement.xmlDoc();
             XmlNodeList Classes = xmlDoc.SelectNodes("//Class");
             foreach (XmlNode classrecord in Classes)
             {
-                XmlNodeList TeachersInClass = classrecord.SelectNodes("Teachers/UserID");
-                foreach (XmlNode TeacherID in TeachersInClass)
+                XmlNode TeachersInClass = classrecord.SelectSingleNode($"Teachers[UserID = '{UserID}']");
+                if (TeachersInClass == null) continue;
+                if (First == 1)
                 {
-                    if (TeacherID.InnerText == UserID)
-                    {
-                        if (First == 1)
-                        {
-                            TeacherClassesXml += TeacherID.ParentNode.ParentNode.FirstChild.InnerText;
-                            First = 0;
-                        }
-                        else
-                            TeacherClassesXml += ", " + TeacherID.ParentNode.ParentNode.FirstChild.InnerText;
-                    }
+                    TeacherClassesXml += TeachersInClass.ParentNode.FirstChild.InnerText;
+                    First = 0;
                 }
+                else
+                    TeacherClassesXml += ", " + TeachersInClass.ParentNode.FirstChild.InnerText;
             }
+
+
             return TeacherClassesXml;
         }
 
@@ -68,7 +65,7 @@ namespace AttendanceSysytem.Users
                         if (TeacherSupervisedClassesXml != "----") break;
 
                     }
-                        if (TeacherSupervisedClassesXml != "----") break;
+                    if (TeacherSupervisedClassesXml != "----") break;
                 }
             }
             return TeacherSupervisedClassesXml;
