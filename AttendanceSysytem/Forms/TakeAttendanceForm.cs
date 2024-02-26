@@ -57,9 +57,20 @@ namespace AttendanceSysytem.Forms
                 checkColumn.HeaderText = "Status";
                 checkColumn.Width = 100;
                 checkColumn.ReadOnly = false;
+
+
+                //add event on checkbox cell click
                 
+
+
                 /*checkColumn.TrueValue = true;
-                checkColumn.FalseValue = false;*/
+                checkColumn.FalseValue = false;
+
+                //print the state of the checkbox
+                Console.WriteLine(checkColumn.TrueValue);
+                Console.WriteLine(checkColumn.FalseValue);*/
+
+
                 dataGridViewTakeAttendance.Columns.Add(checkColumn);
 
                 
@@ -70,6 +81,33 @@ namespace AttendanceSysytem.Forms
             {
                 MessageBox.Show("Something went wrong!! please try again later");
             }
+
+
+        }
+
+        private void dataGridViewTakeAttendance_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //change the state of the checkbox when clicked
+            //change the apperance of the checkbox when clicked
+            if (e.ColumnIndex == 2)
+            {
+                if (dataGridViewTakeAttendance.Rows[e.RowIndex].Cells[2].Value == null)
+                {
+                    dataGridViewTakeAttendance.Rows[e.RowIndex].Cells[2].Value = true;
+                }
+                else
+                {
+                    if ((bool)dataGridViewTakeAttendance.Rows[e.RowIndex].Cells[2].Value == true)
+                    {
+                        dataGridViewTakeAttendance.Rows[e.RowIndex].Cells[2].Value = false;
+                    }
+                    else
+                    {
+                        dataGridViewTakeAttendance.Rows[e.RowIndex].Cells[2].Value = true;
+                    }
+                }
+            }
+
 
 
         }
