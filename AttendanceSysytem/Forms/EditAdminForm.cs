@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AttendanceSysytem.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,22 +13,25 @@ namespace AttendanceSysytem.Forms
 {
     public partial class EditAdminForm : Form
     {
-        public EditAdminForm()
+        Form adminform = new AdminFunctionalitiesForm();
+        public EditAdminForm(Form oldform)
         {
+            adminform = oldform;
+            DataManagement.ChangeFont(this, DataManagement.MyFont, true);
             InitializeComponent();
         }
 
 
         private void students_btn_Click(object sender, EventArgs e)
         {
-            StudentsForm studentsForm = new StudentsForm();
+            StudentsForm studentsForm = new StudentsForm(this);
             studentsForm.Show();
             Hide();
         }
 
         private void teachers_btn_Click(object sender, EventArgs e)
         {
-            TeachersForm teachersForm = new TeachersForm();
+            TeachersForm teachersForm = new TeachersForm(this);
             teachersForm.Show();
             Hide();
         }
@@ -37,6 +41,17 @@ namespace AttendanceSysytem.Forms
             Hide();
             ClassesForm classesForm = new ClassesForm();
             classesForm.Show();
+        }
+
+        private void EditAdminForm_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void go_back_btn_Click(object sender, EventArgs e)
+        {
+            adminform.Show();
+            Hide();
         }
     }
 }

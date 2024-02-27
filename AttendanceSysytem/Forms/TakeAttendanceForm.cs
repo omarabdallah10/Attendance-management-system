@@ -21,6 +21,7 @@ namespace AttendanceSysytem.Forms
         public TakeAttendanceForm()
         {
             InitializeComponent();
+            DataManagement.ChangeFont(this, DataManagement.MyFont, true);
         }
 
 
@@ -29,7 +30,7 @@ namespace AttendanceSysytem.Forms
         {
             //'select track' is displayed by default
             ClassComboBox.Text = "Select Class";
-
+            dataGridViewTakeAttendance.AlternatingRowsDefaultCellStyle.Font = dataGridViewTakeAttendance.RowsDefaultCellStyle.Font;
             dataGridViewTakeAttendance.AllowUserToAddRows = false;
             
 

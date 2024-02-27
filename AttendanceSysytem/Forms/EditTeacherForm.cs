@@ -19,20 +19,22 @@ namespace AttendanceSysytem.Forms
         public string recived { get; set; }
         public XmlElement teacherElement { get; set; }
         public XmlDocument doc { get; set; }
-        public EditTeacherForm()
+        Form oldform=null;
+        public EditTeacherForm(Form f1)
         {
+            DataManagement.ChangeFont(this, DataManagement.MyFont, true);
+            oldform = f1;
             InitializeComponent();           
         }
         private void cancel_btn_Click(object sender, EventArgs e)
         {
             Hide();
-            TeachersForm teachersForm = new TeachersForm();
-            teachersForm.Show();
+            oldform.Show();
         }
 
         public void EditTeacherForm_Load(object sender, EventArgs e)
         {
-             doc = DataManagement.xmlDoc();
+            doc = DataManagement.xmlDoc();
             
             teacherElement = DataManagement.GetElementById(doc, recived,"Teacher");
             XmlNode name = teacherElement.SelectSingleNode("Name");
@@ -75,8 +77,7 @@ namespace AttendanceSysytem.Forms
             {
                 MessageBox.Show("Data has been updated");
                 DataManagement.SaveXml(doc);
-                EditAdminForm adminForm = new EditAdminForm();
-                adminForm.Show();
+                oldform.Show();
                 Hide();
             }
            
@@ -109,8 +110,7 @@ namespace AttendanceSysytem.Forms
             DataManagement.deleteUser(doc,teacher);
             MessageBox.Show("Teacher has been deleted");
             DataManagement.SaveXml(doc);
-            TeachersForm teachersForm = new TeachersForm();
-            teachersForm.Show();
+            oldform.Show();
             Hide();
         }
     }

@@ -17,15 +17,17 @@ namespace AttendanceSysytem.Forms
         public string Recived { get; set; }
         public XmlElement StudentElement { get; set; }
         public XmlDocument Doc { get; set; }
-        public EditStudentForm()
+        Form oldform = null;
+        public EditStudentForm(Form f1)
         {
             InitializeComponent();
+            DataManagement.ChangeFont(this, DataManagement.MyFont, true);
+            oldform = f1;
         }
 
         private void cancel_btn_Click(object sender, EventArgs e)
         {
-            StudentsForm studentsForm = new StudentsForm();
-            studentsForm.Show();
+            oldform.Show();
             Hide();
         }
 
@@ -43,8 +45,7 @@ namespace AttendanceSysytem.Forms
             {
                 MessageBox.Show("Data has been updated");
                 DataManagement.SaveXml(Doc);
-                EditAdminForm adminForm = new EditAdminForm();
-                adminForm.Show();
+                oldform.Show();
                 Hide();
             }
         }
@@ -87,8 +88,7 @@ namespace AttendanceSysytem.Forms
             DataManagement.deleteUser(Doc, student);
             MessageBox.Show("Student has been deleted");
             DataManagement.SaveXml(Doc);
-            StudentsForm studentsForm = new StudentsForm();
-            studentsForm.Show();
+            oldform.Show();
             Hide();
         }
     }

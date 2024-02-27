@@ -19,15 +19,15 @@ namespace AttendanceSysytem.Forms
         public TeacherViewAttendanceForm()
         {
             InitializeComponent();
+            DataManagement.ChangeFont(this, DataManagement.MyFont, true);
         }
 
         //load Data on form load
         private void TeacherViewAttendanceForm_Load(object sender, EventArgs e)
         {
-
             dataGridViewAttendance.AllowUserToAddRows = false;
 
-
+            dataGridViewAttendance.AlternatingRowsDefaultCellStyle.Font = dataGridViewAttendance.RowsDefaultCellStyle.Font;
             //load dates into DateComboBox from xml file
             XmlDataDocument xmlData = new XmlDataDocument();
             string xmlPath = DataManagement.xmlPath();
@@ -76,6 +76,11 @@ namespace AttendanceSysytem.Forms
 
         }
 
-       
+        private void btnGoBack_Click(object sender, EventArgs e)
+        {
+            teacherFunctionalitiesForm form = new teacherFunctionalitiesForm();
+            form.Show();
+            Hide();
+        }
     }
 }

@@ -1,4 +1,5 @@
-﻿using AttendanceSysytem.Forms;
+﻿using AttendanceSysytem.Classes;
+using AttendanceSysytem.Forms;
 using AttendanceSysytem.Users;
 using System;
 using System.Collections.Generic;
@@ -18,21 +19,15 @@ namespace AttendanceSysytem
         public teacherFunctionalitiesForm()
         {
             InitializeComponent();
+            DataManagement.ChangeFont(this, DataManagement.MyFont, true);
         }
 
-        private void btnTakeAttendance_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnTakeAttendance_Click_1(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnViewAttendance_Click(object sender, EventArgs e)
         {
-
+            TeacherViewAttendanceForm form = new TeacherViewAttendanceForm();
+            form.Show();
+            Hide();
         }
 
         private void settings_Click(object sender, EventArgs e)
@@ -40,6 +35,18 @@ namespace AttendanceSysytem
             SettingsForm settingsForm = new SettingsForm();
             settingsForm.Recived = recived;
             settingsForm.Show();
+            Hide();
+        }
+
+        private void teacherFunctionalitiesForm_Load(object sender, EventArgs e)
+        {
+        }
+
+        private void btnTakeAttendance_Click(object sender, EventArgs e)
+        {
+            TakeAttendanceForm form = new TakeAttendanceForm();
+            form.Show();
+            Hide();
         }
     }
 }

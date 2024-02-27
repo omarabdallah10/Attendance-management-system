@@ -424,7 +424,7 @@ namespace AttendanceSysytem.Forms
 
         public void setAttendanceRecord(DateTime _date, string _status)
         {
-            StudentAttendanceTable.Rows.Add(_date.DayOfWeek, _date, _status);
+            StudentAttendanceTable.Rows.Add(_date.DayOfWeek, _date.ToString("dddd, dd MMMM yyyy"), _status);
 
         }
         public void resetAttendanceTable() {  StudentAttendanceTable.Rows.Clear();}

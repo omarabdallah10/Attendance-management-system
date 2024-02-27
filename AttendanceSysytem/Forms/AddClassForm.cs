@@ -14,8 +14,11 @@ namespace AttendanceSysytem.Forms
 {
     public partial class AddClassForm : Form
     {
-        public AddClassForm()
+        Form adminform = new AdminFunctionalitiesForm();
+        public AddClassForm(Form f1)
         {
+            DataManagement.ChangeFont(this, DataManagement.MyFont, true);
+            adminform = f1;
             InitializeComponent();
             XmlDocument doc = DataManagement.xmlDoc();
             XmlNodeList TeacherNodes = doc.SelectNodes("//Users/Teacher");
@@ -32,7 +35,7 @@ namespace AttendanceSysytem.Forms
 
         private void AddClassForm_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -81,8 +84,7 @@ namespace AttendanceSysytem.Forms
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            AdminFunctionalitiesForm adminForm = new AdminFunctionalitiesForm();
-            adminForm.Show();
+            adminform.Show();
             Hide();
         }
     }
