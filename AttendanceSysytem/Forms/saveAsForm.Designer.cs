@@ -76,6 +76,7 @@
             this.Controls.Add(this.btnSaveAsPDF);
             this.Name = "saveAsForm";
             this.Text = "saveAsForm";
+            this.Load += new System.EventHandler(this.saveAsForm_Load);
             this.ResumeLayout(false);
 
         }

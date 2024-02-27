@@ -53,6 +53,7 @@ namespace AttendanceSysytem.Forms
             this.go_back_btn.TabIndex = 0;
             this.go_back_btn.Text = "Go back";
             this.go_back_btn.UseVisualStyleBackColor = false;
+            this.go_back_btn.Click += new System.EventHandler(this.go_back_btn_Click);
             // 
             // label1
             // 
@@ -123,6 +124,7 @@ namespace AttendanceSysytem.Forms
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "EditAdminForm";
             this.Text = "Admin Edit View";
+            this.Load += new System.EventHandler(this.EditAdminForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

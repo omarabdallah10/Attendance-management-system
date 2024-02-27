@@ -21,6 +21,7 @@ namespace AttendanceSysytem.Forms
         public Classes.Track recivedTrack { get; set; }
         public AddTeachersToClass()
         {
+            DataManagement.ChangeFont(this, DataManagement.MyFont, true);
             InitializeComponent();
         }
 

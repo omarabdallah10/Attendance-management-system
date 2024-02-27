@@ -26,8 +26,9 @@ namespace AttendanceSysytem.Forms
 
         private void SettingsForm_Load(object sender, EventArgs e)
         {
+            this.Font = DataManagement.MyFont;
             Document = DataManagement.xmlDoc();
-            Console.WriteLine(Recived.Name);
+            //Console.WriteLine(Recived.Name);
             string type="Student";
             if (Recived.UserID[0]=='T')
             {
@@ -53,7 +54,10 @@ namespace AttendanceSysytem.Forms
 
         private void font_Click(object sender, EventArgs e)
         {
-
+            FontDialog font = new FontDialog();
+            font.ShowDialog();
+            
+            DataManagement.ChangeFontForAllPages(font.Font);
         }
 
         private void Langauge_Click(object sender, EventArgs e)

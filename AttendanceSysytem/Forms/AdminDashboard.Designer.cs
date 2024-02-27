@@ -36,6 +36,7 @@
             this.btnAddClass = new System.Windows.Forms.Button();
             this.btnAddTeacher = new System.Windows.Forms.Button();
             this.btnAddStudent = new System.Windows.Forms.Button();
+
             this.panelSide = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
@@ -193,6 +194,8 @@
             this.btnAddStudent.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAddStudent.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAddStudent.UseVisualStyleBackColor = true;
+
+            
             // 
             // panelSide
             // 
@@ -221,7 +224,7 @@
             this.label2.Location = new System.Drawing.Point(97, 125);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 23);
+            this.label2.Size = new System.Drawing.Size(84, 25);
             this.label2.TabIndex = 0;
             this.label2.Text = "System";
             // 
@@ -232,7 +235,7 @@
             this.label1.Location = new System.Drawing.Point(23, 106);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(264, 23);
+            this.label1.Size = new System.Drawing.Size(253, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Attendance Management";
             // 
@@ -280,6 +283,7 @@
             this.buttonLogout.FlatAppearance.BorderSize = 0;
             this.buttonLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonLogout.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
+
             this.buttonLogout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(3)))), ((int)(((byte)(125)))));
             this.buttonLogout.Image = global::AttendanceSysytem.Properties.Resources.logOut_icon;
             this.buttonLogout.Location = new System.Drawing.Point(0, 53);
@@ -297,6 +301,7 @@
             this.button1.Dock = System.Windows.Forms.DockStyle.Top;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+
             this.button1.Font = new System.Drawing.Font("Century Gothic", 9F);
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(3)))), ((int)(((byte)(125)))));
             this.button1.Image = global::AttendanceSysytem.Properties.Resources.minimize_icon_purple;
@@ -347,7 +352,7 @@
             this.labelTime.Location = new System.Drawing.Point(24, 23);
             this.labelTime.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelTime.Name = "labelTime";
-            this.labelTime.Size = new System.Drawing.Size(37, 23);
+            this.labelTime.Size = new System.Drawing.Size(40, 25);
             this.labelTime.TabIndex = 0;
             this.labelTime.Text = "(?)";
             // 
@@ -372,7 +377,7 @@
             this.labelRole.Location = new System.Drawing.Point(154, 57);
             this.labelRole.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelRole.Name = "labelRole";
-            this.labelRole.Size = new System.Drawing.Size(37, 23);
+            this.labelRole.Size = new System.Drawing.Size(40, 25);
             this.labelRole.TabIndex = 0;
             this.labelRole.Text = "(?)";
             // 
@@ -384,7 +389,7 @@
             this.label7.Location = new System.Drawing.Point(50, 57);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(59, 23);
+            this.label7.Size = new System.Drawing.Size(62, 25);
             this.label7.TabIndex = 0;
             this.label7.Text = "Role:";
             // 
@@ -396,7 +401,7 @@
             this.labelUsername.Location = new System.Drawing.Point(154, 22);
             this.labelUsername.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelUsername.Name = "labelUsername";
-            this.labelUsername.Size = new System.Drawing.Size(37, 23);
+            this.labelUsername.Size = new System.Drawing.Size(40, 25);
             this.labelUsername.TabIndex = 0;
             this.labelUsername.Text = "(?)";
             // 
@@ -408,24 +413,25 @@
             this.label4.Location = new System.Drawing.Point(50, 22);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(110, 23);
+            this.label4.Size = new System.Drawing.Size(109, 25);
             this.label4.TabIndex = 0;
             this.label4.Text = "Welcome:";
             // 
             // AdminDashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1182, 673);
             this.Controls.Add(this.panelBack);
             this.Controls.Add(this.panel1);
-            this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AdminDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminDashboard";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.AdminDashboard_Load);
             this.panel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

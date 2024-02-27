@@ -14,8 +14,11 @@ namespace AttendanceSysytem.Forms
 {
     public partial class AddTeacherForm : Form
     {
-        public AddTeacherForm()
+        Form adminform = new AdminFunctionalitiesForm();
+        public AddTeacherForm(Form oldform)
         {
+            DataManagement.ChangeFont(this, DataManagement.MyFont, true);
+            adminform = oldform;
             InitializeComponent();
             XmlDocument doc = DataManagement.xmlDoc();
             XmlNodeList ClassNodes = doc.SelectNodes("//Class");
@@ -23,7 +26,6 @@ namespace AttendanceSysytem.Forms
             {
                 checkedListBox1.Items.Add(ClassNode.SelectSingleNode("Name").InnerText);
             }
-            
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -36,7 +38,7 @@ namespace AttendanceSysytem.Forms
             string password = txtPassword.Text;
 
 
-            XmlElement newTeacher= Adding.addUser("Teacher", doc, userFname, userLname, email,password);
+            XmlElement newTeacher = Adding.addUser("Teacher", doc, userFname, userLname, email, password);
             if (newTeacher != null)
             {
                 newTeacher.SetAttribute("Supervisor", "false");
@@ -90,20 +92,18 @@ namespace AttendanceSysytem.Forms
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            AdminFunctionalitiesForm adminForm = new AdminFunctionalitiesForm();
-            adminForm.Show();
+            adminform.Show();
             Hide();
         }
 
         private void AddTeacherForm_Load(object sender, EventArgs e)
         {
-
+            DataManagement.ChangeFont(this, DataManagement.MyFont, true);
         }
 
         private void btnCancel_Click_1(object sender, EventArgs e)
         {
-            AdminFunctionalitiesForm adminFunctionalitiesForm = new AdminFunctionalitiesForm();
-            adminFunctionalitiesForm.Show();
+            adminform.Show();
             Hide();
         }
     }

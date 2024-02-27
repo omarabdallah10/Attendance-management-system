@@ -20,6 +20,7 @@ namespace AttendanceSysytem.Forms
         public Classes.Track recivedTrack { get; set; }
         public AddStudentsToClass()
         {
+            DataManagement.ChangeFont(this, DataManagement.MyFont, true);
             InitializeComponent();
         }
 
@@ -42,6 +43,7 @@ namespace AttendanceSysytem.Forms
         private void AddStudentsToClass_Load(object sender, EventArgs e)
         {
             printTable();
+            StudentsTable.AlternatingRowsDefaultCellStyle.Font = StudentsTable.RowsDefaultCellStyle.Font;
         }
         private void printTable()
         {
