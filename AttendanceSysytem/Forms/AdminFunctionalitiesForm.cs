@@ -18,7 +18,7 @@ namespace AttendanceSysytem
         public Admin recived { get; set; }
         public AdminFunctionalitiesForm()
         {
-            DataManagement.ChangeFont(this, DataManagement.MyFont, true);
+            Settings.ChangeFont(this, Settings.MyFont, true);
             InitializeComponent();
         }
 

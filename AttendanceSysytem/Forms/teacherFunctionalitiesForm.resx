@@ -117,7 +117,126 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnTakeAttendance.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>850, 500</value>
+  </data>
+  <data name="settings.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="settings.Text" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="&gt;&gt;btnSignOut.Name" xml:space="preserve">
+    <value>btnSignOut</value>
+  </data>
+  <data name="&gt;&gt;btnSignOut.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;btnTakeAttendance.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnSignOut.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 40</value>
+  </data>
+  <data name="btnViewAttendance.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 45</value>
+  </data>
+  <data name="settings.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>150, 40</value>
+  </data>
+  <data name="btnSignOut.Location" type="System.Drawing.Point, System.Drawing">
+    <value>57, 35</value>
+  </data>
+  <data name="&gt;&gt;btnSignOut.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="settings.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>teacher Functionalities</value>
+  </data>
+  <data name="&gt;&gt;btnViewAttendance.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="settings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>638, 35</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;btnTakeAttendance.Name" xml:space="preserve">
+    <value>btnTakeAttendance</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="&gt;&gt;btnViewAttendance.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnTakeAttendance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="&gt;&gt;btnTakeAttendance.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnViewAttendance.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="settings.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>832, 453</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnTakeAttendance.Location" type="System.Drawing.Point, System.Drawing">
+    <value>462, 216</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 16</value>
+  </data>
+  <data name="&gt;&gt;settings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnSignOut.Text" xml:space="preserve">
+    <value>Sign out</value>
+  </data>
+  <data name="&gt;&gt;btnViewAttendance.Name" xml:space="preserve">
+    <value>btnViewAttendance</value>
+  </data>
+  <data name="btnSignOut.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;settings.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnSignOut.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="btnSignOut.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERET
@@ -1778,4 +1897,61 @@
         2Vl/YV9lmvC/sM/Ux4//2Q==
 </value>
   </data>
+  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="&gt;&gt;btnTakeAttendance.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="btnViewAttendance.Text" xml:space="preserve">
+    <value>View Attendance</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="&gt;&gt;btnViewAttendance.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="btnViewAttendance.Location" type="System.Drawing.Point, System.Drawing">
+    <value>147, 216</value>
+  </data>
+  <data name="settings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 40</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>teacherFunctionalitiesForm</value>
+  </data>
+  <data name="btnViewAttendance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="settings.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>150, 40</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="settings.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="btnTakeAttendance.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 45</value>
+  </data>
+  <data name="&gt;&gt;settings.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;settings.Name" xml:space="preserve">
+    <value>settings</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>On</value>
+  </data>
+  <data name="btnTakeAttendance.Text" xml:space="preserve">
+    <value>Take Attendance</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>ar</value>
+  </metadata>
 </root>

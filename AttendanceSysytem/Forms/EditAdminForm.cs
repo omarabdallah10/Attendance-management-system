@@ -17,7 +17,7 @@ namespace AttendanceSysytem.Forms
         public EditAdminForm(Form oldform)
         {
             adminform = oldform;
-            DataManagement.ChangeFont(this, DataManagement.MyFont, true);
+            Settings.ChangeFont(this, Settings.MyFont, true);
             InitializeComponent();
         }
 

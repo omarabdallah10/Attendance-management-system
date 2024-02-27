@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
@@ -19,7 +20,7 @@ namespace AttendanceSysytem
         Form oldform = new AdminFunctionalitiesForm();
         public AddStudentForm(Form f1)
         {
-            DataManagement.ChangeFont(this, DataManagement.MyFont, true);
+            Settings.ChangeFont(this, Settings.MyFont, true);
             oldform = f1;
             InitializeComponent();
             XmlDocument doc = DataManagement.xmlDoc();
@@ -31,36 +32,7 @@ namespace AttendanceSysytem
             ClassList.SelectedIndex = 0;
             ClassList.DropDownStyle = ComboBoxStyle.DropDownList;
         }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void AddStudentForm_Load(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void btnSave_Click(object sender, EventArgs e)
         {
@@ -122,6 +94,11 @@ namespace AttendanceSysytem
         {
             oldform.Show();
             Hide();
+        }
+
+        private void AddStudentForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

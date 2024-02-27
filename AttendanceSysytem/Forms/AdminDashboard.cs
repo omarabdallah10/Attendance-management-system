@@ -15,6 +15,11 @@ namespace AttendanceSysytem.Forms
         public AdminDashboard()
         {
             InitializeComponent();
+            Settings.ChangeFont(this, Settings.MyFont, true);
+        }
+
+        private void AdminDashboard_Load(object sender, EventArgs e)
+        {
         }
     }
 }
