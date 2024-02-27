@@ -9,6 +9,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
+using System.IO;
+using System.Xml.Linq;
+
+
 
 namespace AttendanceSysytem.Forms
 {
@@ -56,28 +60,14 @@ namespace AttendanceSysytem.Forms
                 DataGridViewCheckBoxColumn checkColumn = new DataGridViewCheckBoxColumn();
                 checkColumn.Name = "AttendanceStatusCheckBox";
                 checkColumn.HeaderText = "Status";
-                checkColumn.Width = 100;
                 checkColumn.ReadOnly = false;
 
-
-
-
-                //add event on checkbox cell click
-
-
-
-                /*checkColumn.TrueValue = true;
-                checkColumn.FalseValue = false;
-
-                //print the state of the checkbox
-                Console.WriteLine(checkColumn.TrueValue);
-                Console.WriteLine(checkColumn.FalseValue);*/
-
+                //make the of three columns equal one third the width of the datagridview
+                dataGridViewTakeAttendance.Columns[0].Width = dataGridViewTakeAttendance.Width / 3;
+                dataGridViewTakeAttendance.Columns[1].Width = dataGridViewTakeAttendance.Width / 3;
+                checkColumn.Width = dataGridViewTakeAttendance.Width / 3;
 
                 dataGridViewTakeAttendance.Columns.Add(checkColumn);                
-
-                
-
 
             }
             catch (Exception ex)
@@ -111,100 +101,70 @@ namespace AttendanceSysytem.Forms
                 }
             }
 
-            //make the width of the whole gridview bigger
-
 
 
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            //save the attendance status of the students in the xml file into the attendance table with the current date
-
-            /*try
+            //read the data fro dataGridView
+            string todayDate = DateTime.Now.ToString("yyyy-MM-dd");
+            string className = ClassComboBox.Text;
+            for (int i = 0; i < dataGridViewTakeAttendance.Rows.Count; i++)
             {
-                XmlDataDocument xmlData = new XmlDataDocument();
-                string xmlPath = DataManagement.xmlPath();
-                xmlData.DataSet.ReadXml(xmlPath);
-
-                //get the current date
-                string date = DateTime.Now.ToString("dd/MM/yyyy");
-
-                //get the class name from the index of the classComboBox and set the class in the xml file to the class name in the combobox to the attenedace from in XML
-                if (ClassComboBox.SelectedIndex != 0)
+                string userID = dataGridViewTakeAttendance.Rows[i].Cells[0].Value.ToString();
+                string Studentname = dataGridViewTakeAttendance.Rows[i].Cells[1].Value.ToString();
+                string status;
+                if (dataGridViewTakeAttendance.Rows[i].Cells[2].Value == null)
                 {
-                    xmlData.DataSet.Tables["Attendance"].Rows[0]["Class"] = ClassComboBox.Text;
-                    xmlData.DataSet.WriteXml(xmlPath);
+                    status = "Absent";
                 }
                 else
                 {
-                    MessageBox.Show("Please select a class");
-                    return;
+                    if ((bool)dataGridViewTakeAttendance.Rows[i].Cells[2].Value == true)
+                    {
+                        status = "Present";
+                    }
+                    else
+                    {
+                        status = "Absent";
+                    }
                 }
-            }*/
-                
 
-               /* //get the attendance id
-                string attendanceID = DataManagement.getAttendanceID();
+                //build a new AttendanceRecord element
+                XElement newAttendanceRecord = new XElement("AttendanceRecord",
+                                           new XElement("UserID", userID),
+                                           new XElement("Name", Studentname),
+                                           new XElement("ClassName", className),
+                                           new XElement("Date", todayDate),
+                                           new XElement("Status", status)
+                                           );
 
-                //get the students' attendance status
-                for (int i = 0; i < dataGridViewTakeAttendance.Rows.Count; i++)
+
+                //insert the record into the XML file
+                try
                 {
-                    string studentID = dataGridViewTakeAttendance.Rows[i].Cells[0].Value.ToString();
-                    string status = dataGridViewTakeAttendance.Rows[i].Cells[2].Value.ToString();
+                    XmlDocument xmlDoc = new XmlDocument();
+                    string xmlPath = DataManagement.xmlPath();
+                    xmlDoc.Load(xmlPath);
 
-                    //add the attendance status of the students to the attendance table
-                    DataManagement.addAttendance(attendanceID, studentID, status, date, classID);
+                    XmlNode parentNode = xmlDoc.SelectSingleNode("School/AttendanceData");
+                    parentNode.AppendChild(parentNode.OwnerDocument.ReadNode(newAttendanceRecord.CreateReader()));
+
+                    xmlDoc.Save(xmlPath);
+
+                    if(i == dataGridViewTakeAttendance.Rows.Count - 1)
+                    {
+                        MessageBox.Show("Attendance has been saved successfully");
+                    }
                 }
-
-                MessageBox.Show("Attendance has been saved successfully");
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Something went wrong!! please try again later");
+                }
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Something went wrong!! please try again later");
-            }*/
+
         }
     }
 }
 
-/*//save the attendance status of the students in the xml file into the attendance table with the current date
-            //as the structure of attendance record in XML (userID, Name, Class, Date, Status)
-            //the status is the attendance status of the student (true or false) represented as (present or absent) respectively
-            try
-            {
-                XmlDataDocument xmlData = new XmlDataDocument();
-                string xmlPath = DataManagement.xmlPath();
-                xmlData.DataSet.ReadXml(xmlPath);
-
-                //get the current date
-                string date = DateTime.Now.ToString("dd/MM/yyyy");
-
-                //get the students of the selected class
-                DataView dv = new DataView(xmlData.DataSet.Tables["Student"]);
-                dv.RowFilter = "ClassName = '" + ClassComboBox.Text + "'";
-                DataTable dc = dv.ToTable(true, "UserID", "Name");
-
-                //get the attendance table
-                DataTable dt = xmlData.DataSet.Tables["Attendance"];
-                Console.WriteLine(dt);
-
-                //add the attendance status of the students to the attendance table
-                foreach (DataRow row in dc.Rows)
-                {
-                    DataRow dr = dt.NewRow();
-                    dr["UserID"] = row["UserID"];
-                    dr["Name"] = row["Name"];
-                    dr["Class"] = ClassComboBox.Text;
-                    dr["Date"] = date;
-                    dr["Status"] = dataGridViewTakeAttendance.Rows[dc.Rows.IndexOf(row)].Cells[2].Value;
-                    dt.Rows.Add(dr);
-                }
-
-                //save the changes to the xml file
-                xmlData.DataSet.WriteXml(xmlPath);
-                MessageBox.Show("Attendance has been saved successfully");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Something went wrong!! please try again later");
-            }*/
