@@ -20,7 +20,7 @@ namespace AttendanceSysytem.Forms
         {
             InitializeComponent();
             this.oldform = oldform;
-            DataManagement.ChangeFont(this, DataManagement.MyFont, true);
+            Settings.ChangeFont(this, Settings.MyFont, true);
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

@@ -21,7 +21,7 @@ namespace AttendanceSysytem.Forms
         public EditStudentForm(Form f1)
         {
             InitializeComponent();
-            DataManagement.ChangeFont(this, DataManagement.MyFont, true);
+            Settings.ChangeFont(this, Settings.MyFont, true);
             oldform = f1;
         }
 

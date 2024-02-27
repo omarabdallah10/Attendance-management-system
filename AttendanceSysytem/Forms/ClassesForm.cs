@@ -16,7 +16,7 @@ namespace AttendanceSysytem.Forms
     {
         public ClassesForm()
         {
-            DataManagement.ChangeFont(this, DataManagement.MyFont, true);
+            Settings.ChangeFont(this, Settings.MyFont, true);
             InitializeComponent();
         }
 
