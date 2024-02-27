@@ -30,12 +30,13 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.buttonRegister = new System.Windows.Forms.Button();
-            this.buttonReport = new System.Windows.Forms.Button();
-            this.ButtonAddStudent = new System.Windows.Forms.Button();
-            this.buttonAddClass = new System.Windows.Forms.Button();
-            this.buttonAttendance = new System.Windows.Forms.Button();
-            this.buttonDashboard = new System.Windows.Forms.Button();
+            this.btnSettings = new System.Windows.Forms.Button();
+            this.btnViewAttendance = new System.Windows.Forms.Button();
+            this.btnEditUsers = new System.Windows.Forms.Button();
+            this.btnAddClass = new System.Windows.Forms.Button();
+            this.btnAddTeacher = new System.Windows.Forms.Button();
+            this.btnAddStudent = new System.Windows.Forms.Button();
+
             this.panelSide = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
@@ -79,12 +80,12 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.buttonRegister);
-            this.panel4.Controls.Add(this.buttonReport);
-            this.panel4.Controls.Add(this.ButtonAddStudent);
-            this.panel4.Controls.Add(this.buttonAddClass);
-            this.panel4.Controls.Add(this.buttonAttendance);
-            this.panel4.Controls.Add(this.buttonDashboard);
+            this.panel4.Controls.Add(this.btnSettings);
+            this.panel4.Controls.Add(this.btnViewAttendance);
+            this.panel4.Controls.Add(this.btnEditUsers);
+            this.panel4.Controls.Add(this.btnAddClass);
+            this.panel4.Controls.Add(this.btnAddTeacher);
+            this.panel4.Controls.Add(this.btnAddStudent);
             this.panel4.Controls.Add(this.panelSide);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel4.Location = new System.Drawing.Point(0, 180);
@@ -92,107 +93,109 @@
             this.panel4.Size = new System.Drawing.Size(258, 493);
             this.panel4.TabIndex = 0;
             // 
-            // buttonRegister
+            // btnSettings
             // 
-            this.buttonRegister.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonRegister.FlatAppearance.BorderSize = 0;
-            this.buttonRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonRegister.ForeColor = System.Drawing.Color.White;
-            this.buttonRegister.Image = global::AttendanceSysytem.Properties.Resources.settings1;
-            this.buttonRegister.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonRegister.Location = new System.Drawing.Point(0, 235);
-            this.buttonRegister.Name = "buttonRegister";
-            this.buttonRegister.Size = new System.Drawing.Size(258, 47);
-            this.buttonRegister.TabIndex = 0;
-            this.buttonRegister.Text = "              Register";
-            this.buttonRegister.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonRegister.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonRegister.UseVisualStyleBackColor = true;
+            this.btnSettings.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSettings.FlatAppearance.BorderSize = 0;
+            this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSettings.ForeColor = System.Drawing.Color.White;
+            this.btnSettings.Image = global::AttendanceSysytem.Properties.Resources.settings1;
+            this.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSettings.Location = new System.Drawing.Point(0, 235);
+            this.btnSettings.Name = "btnSettings";
+            this.btnSettings.Size = new System.Drawing.Size(258, 47);
+            this.btnSettings.TabIndex = 0;
+            this.btnSettings.Text = "              Settings";
+            this.btnSettings.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSettings.UseVisualStyleBackColor = true;
             // 
-            // buttonReport
+            // btnViewAttendance
             // 
-            this.buttonReport.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonReport.FlatAppearance.BorderSize = 0;
-            this.buttonReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonReport.ForeColor = System.Drawing.Color.White;
-            this.buttonReport.Image = global::AttendanceSysytem.Properties.Resources.download;
-            this.buttonReport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonReport.Location = new System.Drawing.Point(0, 188);
-            this.buttonReport.Name = "buttonReport";
-            this.buttonReport.Size = new System.Drawing.Size(258, 47);
-            this.buttonReport.TabIndex = 0;
-            this.buttonReport.Text = "              Report";
-            this.buttonReport.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonReport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonReport.UseVisualStyleBackColor = true;
+            this.btnViewAttendance.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnViewAttendance.FlatAppearance.BorderSize = 0;
+            this.btnViewAttendance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnViewAttendance.ForeColor = System.Drawing.Color.White;
+            this.btnViewAttendance.Image = global::AttendanceSysytem.Properties.Resources.download;
+            this.btnViewAttendance.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnViewAttendance.Location = new System.Drawing.Point(0, 188);
+            this.btnViewAttendance.Name = "btnViewAttendance";
+            this.btnViewAttendance.Size = new System.Drawing.Size(258, 47);
+            this.btnViewAttendance.TabIndex = 0;
+            this.btnViewAttendance.Text = "              View Attendance";
+            this.btnViewAttendance.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnViewAttendance.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnViewAttendance.UseVisualStyleBackColor = true;
             // 
-            // ButtonAddStudent
+            // btnEditUsers
             // 
-            this.ButtonAddStudent.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ButtonAddStudent.FlatAppearance.BorderSize = 0;
-            this.ButtonAddStudent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonAddStudent.ForeColor = System.Drawing.Color.White;
-            this.ButtonAddStudent.Image = global::AttendanceSysytem.Properties.Resources.addStudent;
-            this.ButtonAddStudent.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ButtonAddStudent.Location = new System.Drawing.Point(0, 141);
-            this.ButtonAddStudent.Name = "ButtonAddStudent";
-            this.ButtonAddStudent.Size = new System.Drawing.Size(258, 47);
-            this.ButtonAddStudent.TabIndex = 0;
-            this.ButtonAddStudent.Text = "              Add Student";
-            this.ButtonAddStudent.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ButtonAddStudent.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ButtonAddStudent.UseVisualStyleBackColor = true;
+            this.btnEditUsers.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnEditUsers.FlatAppearance.BorderSize = 0;
+            this.btnEditUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditUsers.ForeColor = System.Drawing.Color.White;
+            this.btnEditUsers.Image = global::AttendanceSysytem.Properties.Resources.addStudent;
+            this.btnEditUsers.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditUsers.Location = new System.Drawing.Point(0, 141);
+            this.btnEditUsers.Name = "btnEditUsers";
+            this.btnEditUsers.Size = new System.Drawing.Size(258, 47);
+            this.btnEditUsers.TabIndex = 0;
+            this.btnEditUsers.Text = "              Edit Users";
+            this.btnEditUsers.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditUsers.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnEditUsers.UseVisualStyleBackColor = true;
             // 
-            // buttonAddClass
+            // btnAddClass
             // 
-            this.buttonAddClass.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonAddClass.FlatAppearance.BorderSize = 0;
-            this.buttonAddClass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAddClass.ForeColor = System.Drawing.Color.White;
-            this.buttonAddClass.Image = global::AttendanceSysytem.Properties.Resources._class;
-            this.buttonAddClass.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonAddClass.Location = new System.Drawing.Point(0, 94);
-            this.buttonAddClass.Name = "buttonAddClass";
-            this.buttonAddClass.Size = new System.Drawing.Size(258, 47);
-            this.buttonAddClass.TabIndex = 0;
-            this.buttonAddClass.Text = "              Add Class";
-            this.buttonAddClass.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonAddClass.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonAddClass.UseVisualStyleBackColor = true;
+            this.btnAddClass.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAddClass.FlatAppearance.BorderSize = 0;
+            this.btnAddClass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddClass.ForeColor = System.Drawing.Color.White;
+            this.btnAddClass.Image = global::AttendanceSysytem.Properties.Resources._class;
+            this.btnAddClass.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddClass.Location = new System.Drawing.Point(0, 94);
+            this.btnAddClass.Name = "btnAddClass";
+            this.btnAddClass.Size = new System.Drawing.Size(258, 47);
+            this.btnAddClass.TabIndex = 0;
+            this.btnAddClass.Text = "              Add Class";
+            this.btnAddClass.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddClass.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAddClass.UseVisualStyleBackColor = true;
             // 
-            // buttonAttendance
+            // btnAddTeacher
             // 
-            this.buttonAttendance.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonAttendance.FlatAppearance.BorderSize = 0;
-            this.buttonAttendance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAttendance.ForeColor = System.Drawing.Color.White;
-            this.buttonAttendance.Image = global::AttendanceSysytem.Properties.Resources.att;
-            this.buttonAttendance.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonAttendance.Location = new System.Drawing.Point(0, 47);
-            this.buttonAttendance.Name = "buttonAttendance";
-            this.buttonAttendance.Size = new System.Drawing.Size(258, 47);
-            this.buttonAttendance.TabIndex = 0;
-            this.buttonAttendance.Text = "              Attendance";
-            this.buttonAttendance.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonAttendance.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonAttendance.UseVisualStyleBackColor = true;
+            this.btnAddTeacher.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAddTeacher.FlatAppearance.BorderSize = 0;
+            this.btnAddTeacher.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddTeacher.ForeColor = System.Drawing.Color.White;
+            this.btnAddTeacher.Image = global::AttendanceSysytem.Properties.Resources.att;
+            this.btnAddTeacher.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddTeacher.Location = new System.Drawing.Point(0, 47);
+            this.btnAddTeacher.Name = "btnAddTeacher";
+            this.btnAddTeacher.Size = new System.Drawing.Size(258, 47);
+            this.btnAddTeacher.TabIndex = 0;
+            this.btnAddTeacher.Text = "              Add Teacher";
+            this.btnAddTeacher.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddTeacher.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAddTeacher.UseVisualStyleBackColor = true;
             // 
-            // buttonDashboard
+            // btnAddStudent
             // 
-            this.buttonDashboard.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonDashboard.FlatAppearance.BorderSize = 0;
-            this.buttonDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonDashboard.ForeColor = System.Drawing.Color.White;
-            this.buttonDashboard.Image = global::AttendanceSysytem.Properties.Resources.dashboard;
-            this.buttonDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonDashboard.Location = new System.Drawing.Point(0, 0);
-            this.buttonDashboard.Name = "buttonDashboard";
-            this.buttonDashboard.Size = new System.Drawing.Size(258, 47);
-            this.buttonDashboard.TabIndex = 0;
-            this.buttonDashboard.Text = "              Dashboard";
-            this.buttonDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonDashboard.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonDashboard.UseVisualStyleBackColor = true;
+            this.btnAddStudent.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAddStudent.FlatAppearance.BorderSize = 0;
+            this.btnAddStudent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddStudent.ForeColor = System.Drawing.Color.White;
+            this.btnAddStudent.Image = global::AttendanceSysytem.Properties.Resources.dashboard;
+            this.btnAddStudent.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddStudent.Location = new System.Drawing.Point(0, 0);
+            this.btnAddStudent.Name = "btnAddStudent";
+            this.btnAddStudent.Size = new System.Drawing.Size(258, 47);
+            this.btnAddStudent.TabIndex = 0;
+            this.btnAddStudent.Text = "              Add Student";
+            this.btnAddStudent.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddStudent.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAddStudent.UseVisualStyleBackColor = true;
+
+            
             // 
             // panelSide
             // 
@@ -279,7 +282,8 @@
             this.buttonLogout.Dock = System.Windows.Forms.DockStyle.Top;
             this.buttonLogout.FlatAppearance.BorderSize = 0;
             this.buttonLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.buttonLogout.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
+
             this.buttonLogout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(3)))), ((int)(((byte)(125)))));
             this.buttonLogout.Image = global::AttendanceSysytem.Properties.Resources.logOut_icon;
             this.buttonLogout.Location = new System.Drawing.Point(0, 53);
@@ -297,7 +301,8 @@
             this.button1.Dock = System.Windows.Forms.DockStyle.Top;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 9F);
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(3)))), ((int)(((byte)(125)))));
             this.button1.Image = global::AttendanceSysytem.Properties.Resources.minimize_icon_purple;
             this.button1.Location = new System.Drawing.Point(0, 5);
@@ -465,11 +470,11 @@
         private System.Windows.Forms.Button buttonLogout;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panelSide;
-        private System.Windows.Forms.Button buttonDashboard;
-        private System.Windows.Forms.Button buttonRegister;
-        private System.Windows.Forms.Button buttonReport;
-        private System.Windows.Forms.Button ButtonAddStudent;
-        private System.Windows.Forms.Button buttonAddClass;
-        private System.Windows.Forms.Button buttonAttendance;
+        private System.Windows.Forms.Button btnAddStudent;
+        private System.Windows.Forms.Button btnSettings;
+        private System.Windows.Forms.Button btnViewAttendance;
+        private System.Windows.Forms.Button btnEditUsers;
+        private System.Windows.Forms.Button btnAddClass;
+        private System.Windows.Forms.Button btnAddTeacher;
     }
 }
