@@ -19,7 +19,7 @@ namespace AttendanceSysytem
     {
         public loginForm()
         {
-            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ar");
+
             InitializeComponent();
             Settings.ChangeFont(this, Settings.MyFont, true);
         }
@@ -74,11 +74,6 @@ namespace AttendanceSysytem
         }
         private void loginForm_Load(object sender, EventArgs e)
         {
-            CultureInfo[] a = CultureInfo.GetCultures(CultureTypes.AllCultures);
-            for (int i = 0; i < a.Length; i++)
-            {
-                Console.WriteLine(a[i]);
-            }
         }
     }
 }

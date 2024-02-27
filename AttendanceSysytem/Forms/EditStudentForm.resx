@@ -117,4 +117,472 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="edit_student_label.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="edit_student_label.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="edit_student_label.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold, Underline</value>
+  </data>
+  <data name="edit_student_label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>372, 53</value>
+  </data>
+  <data name="edit_student_label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 25</value>
+  </data>
+  <data name="edit_student_label.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="edit_student_label.Text" xml:space="preserve">
+    <value>Edit Student</value>
+  </data>
+  <data name="&gt;&gt;edit_student_label.Name" xml:space="preserve">
+    <value>edit_student_label</value>
+  </data>
+  <data name="&gt;&gt;edit_student_label.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;edit_student_label.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;edit_student_label.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="delete_student_btn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="delete_student_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>41, 452</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="delete_student_btn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="delete_student_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 40</value>
+  </data>
+  <data name="delete_student_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="delete_student_btn.Text" xml:space="preserve">
+    <value>Delete Student</value>
+  </data>
+  <data name="&gt;&gt;delete_student_btn.Name" xml:space="preserve">
+    <value>delete_student_btn</value>
+  </data>
+  <data name="&gt;&gt;delete_student_btn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;delete_student_btn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;delete_student_btn.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="save_btn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="save_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>447, 452</value>
+  </data>
+  <data name="save_btn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="save_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 40</value>
+  </data>
+  <data name="save_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="save_btn.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="&gt;&gt;save_btn.Name" xml:space="preserve">
+    <value>save_btn</value>
+  </data>
+  <data name="&gt;&gt;save_btn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;save_btn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;save_btn.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="cancel_btn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="cancel_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>714, 452</value>
+  </data>
+  <data name="cancel_btn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="cancel_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 40</value>
+  </data>
+  <data name="cancel_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="cancel_btn.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="&gt;&gt;cancel_btn.Name" xml:space="preserve">
+    <value>cancel_btn</value>
+  </data>
+  <data name="&gt;&gt;cancel_btn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cancel_btn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cancel_btn.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="classes_list.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="classes_list.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="classes_list.Location" type="System.Drawing.Point, System.Drawing">
+    <value>312, 361</value>
+  </data>
+  <data name="classes_list.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="classes_list.Size" type="System.Drawing.Size, System.Drawing">
+    <value>335, 33</value>
+  </data>
+  <data name="classes_list.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;classes_list.Name" xml:space="preserve">
+    <value>classes_list</value>
+  </data>
+  <data name="&gt;&gt;classes_list.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;classes_list.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;classes_list.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="LName.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LName.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="LName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="LName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>169, 197</value>
+  </data>
+  <data name="LName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 25</value>
+  </data>
+  <data name="LName.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="LName.Text" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="&gt;&gt;LName.Name" xml:space="preserve">
+    <value>LName</value>
+  </data>
+  <data name="&gt;&gt;LName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LName.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LName.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="LnameTxt.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="LnameTxt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>312, 192</value>
+  </data>
+  <data name="LnameTxt.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="LnameTxt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>335, 30</value>
+  </data>
+  <data name="LnameTxt.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="&gt;&gt;LnameTxt.Name" xml:space="preserve">
+    <value>LnameTxt</value>
+  </data>
+  <data name="&gt;&gt;LnameTxt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LnameTxt.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LnameTxt.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="password_box.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="password_box.Location" type="System.Drawing.Point, System.Drawing">
+    <value>312, 301</value>
+  </data>
+  <data name="password_box.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="password_box.Size" type="System.Drawing.Size, System.Drawing">
+    <value>335, 30</value>
+  </data>
+  <data name="password_box.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="&gt;&gt;password_box.Name" xml:space="preserve">
+    <value>password_box</value>
+  </data>
+  <data name="&gt;&gt;password_box.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;password_box.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;password_box.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="email_box.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="email_box.Location" type="System.Drawing.Point, System.Drawing">
+    <value>312, 242</value>
+  </data>
+  <data name="email_box.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="email_box.Size" type="System.Drawing.Size, System.Drawing">
+    <value>335, 30</value>
+  </data>
+  <data name="email_box.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="&gt;&gt;email_box.Name" xml:space="preserve">
+    <value>email_box</value>
+  </data>
+  <data name="&gt;&gt;email_box.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;email_box.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;email_box.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="FnameTxt.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="FnameTxt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>312, 139</value>
+  </data>
+  <data name="FnameTxt.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="FnameTxt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>335, 30</value>
+  </data>
+  <data name="FnameTxt.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;FnameTxt.Name" xml:space="preserve">
+    <value>FnameTxt</value>
+  </data>
+  <data name="&gt;&gt;FnameTxt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FnameTxt.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;FnameTxt.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="class_label.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="class_label.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="class_label.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="class_label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>169, 366</value>
+  </data>
+  <data name="class_label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 25</value>
+  </data>
+  <data name="class_label.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="class_label.Text" xml:space="preserve">
+    <value>Classes</value>
+  </data>
+  <data name="&gt;&gt;class_label.Name" xml:space="preserve">
+    <value>class_label</value>
+  </data>
+  <data name="&gt;&gt;class_label.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;class_label.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;class_label.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="password_label.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="password_label.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="password_label.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="password_label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>169, 304</value>
+  </data>
+  <data name="password_label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 25</value>
+  </data>
+  <data name="password_label.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="password_label.Text" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="&gt;&gt;password_label.Name" xml:space="preserve">
+    <value>password_label</value>
+  </data>
+  <data name="&gt;&gt;password_label.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;password_label.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;password_label.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="email_label.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="email_label.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="email_label.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="email_label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>169, 245</value>
+  </data>
+  <data name="email_label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 25</value>
+  </data>
+  <data name="email_label.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="email_label.Text" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="&gt;&gt;email_label.Name" xml:space="preserve">
+    <value>email_label</value>
+  </data>
+  <data name="&gt;&gt;email_label.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;email_label.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;email_label.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="Fname.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Fname.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="Fname.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="Fname.Location" type="System.Drawing.Point, System.Drawing">
+    <value>169, 144</value>
+  </data>
+  <data name="Fname.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 25</value>
+  </data>
+  <data name="Fname.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="Fname.Text" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="&gt;&gt;Fname.Name" xml:space="preserve">
+    <value>Fname</value>
+  </data>
+  <data name="&gt;&gt;Fname.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Fname.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Fname.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>ar</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 16</value>
+  </data>
+  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>960, 538</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>On</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="$this.RightToLeftLayout" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Edit Student</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>EditStudentForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

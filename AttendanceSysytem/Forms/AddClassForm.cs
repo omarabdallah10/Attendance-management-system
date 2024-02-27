@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
@@ -17,6 +18,7 @@ namespace AttendanceSysytem.Forms
         Form adminform = new AdminFunctionalitiesForm();
         public AddClassForm(Form f1)
         {
+            //Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ar");
             Settings.ChangeFont(this, Settings.MyFont, true);
             adminform = f1;
             InitializeComponent();

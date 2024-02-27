@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(saveAsForm));
             this.btnSaveAsPDF = new System.Windows.Forms.Button();
             this.RichTxtBox = new System.Windows.Forms.RichTextBox();
             this.btnSaveAsExcel = new System.Windows.Forms.Button();
@@ -35,49 +36,34 @@
             // 
             // btnSaveAsPDF
             // 
+            resources.ApplyResources(this.btnSaveAsPDF, "btnSaveAsPDF");
             this.btnSaveAsPDF.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnSaveAsPDF.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaveAsPDF.Location = new System.Drawing.Point(187, 333);
             this.btnSaveAsPDF.Name = "btnSaveAsPDF";
-            this.btnSaveAsPDF.Size = new System.Drawing.Size(220, 45);
-            this.btnSaveAsPDF.TabIndex = 0;
-            this.btnSaveAsPDF.Text = "Save As PDF";
             this.btnSaveAsPDF.UseVisualStyleBackColor = false;
             this.btnSaveAsPDF.Click += new System.EventHandler(this.btnSaveAsPDF_Click);
             // 
             // RichTxtBox
             // 
-            this.RichTxtBox.Location = new System.Drawing.Point(187, 90);
+            resources.ApplyResources(this.RichTxtBox, "RichTxtBox");
             this.RichTxtBox.Name = "RichTxtBox";
-            this.RichTxtBox.Size = new System.Drawing.Size(460, 205);
-            this.RichTxtBox.TabIndex = 1;
-            this.RichTxtBox.Text = "";
             // 
             // btnSaveAsExcel
             // 
+            resources.ApplyResources(this.btnSaveAsExcel, "btnSaveAsExcel");
             this.btnSaveAsExcel.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnSaveAsExcel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaveAsExcel.Location = new System.Drawing.Point(427, 333);
             this.btnSaveAsExcel.Name = "btnSaveAsExcel";
-            this.btnSaveAsExcel.Size = new System.Drawing.Size(220, 45);
-            this.btnSaveAsExcel.TabIndex = 2;
-            this.btnSaveAsExcel.Text = "Save As EXCEL";
             this.btnSaveAsExcel.UseVisualStyleBackColor = false;
             this.btnSaveAsExcel.Click += new System.EventHandler(this.btnSaveAsExcel_Click);
             // 
             // saveAsForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.ClientSize = new System.Drawing.Size(832, 453);
             this.Controls.Add(this.btnSaveAsExcel);
             this.Controls.Add(this.RichTxtBox);
             this.Controls.Add(this.btnSaveAsPDF);
             this.Name = "saveAsForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "saveAsForm";
             this.Load += new System.EventHandler(this.saveAsForm_Load);
             this.ResumeLayout(false);
 

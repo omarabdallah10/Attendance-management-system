@@ -26,14 +26,16 @@ namespace AttendanceSysytem.Forms
 
         private void SettingsForm_Load(object sender, EventArgs e)
         {
+            Languages.DropDownStyle = ComboBoxStyle.DropDownList;
             this.Font = Classes.Settings.MyFont;
             Document = DataManagement.xmlDoc();
             //Console.WriteLine(Recived.Name);
-            string type="Student";
-            if (Recived.UserID[0]=='T')
+            string type = "Student";
+            if (Recived.UserID[0] == 'T')
             {
                 type = "Teacher";
-            }else if (Recived.UserID[0]=='A')
+            }
+            else if (Recived.UserID[0] == 'A')
             {
                 type = "Admin";
 
@@ -60,11 +62,6 @@ namespace AttendanceSysytem.Forms
             Classes.Settings.ChangeFontForAllPages(font.Font);
         }
 
-        private void Langauge_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void save_btn_Click(object sender, EventArgs e)
         {
             XmlNode password = User.SelectSingleNode("Password");
@@ -83,6 +80,14 @@ namespace AttendanceSysytem.Forms
         private void cancel_btn_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void Languages_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (Languages.SelectedIndex == 0)
+                Classes.Settings.SwitchLanguage("ar");
+            else
+                Classes.Settings.SwitchLanguage("en");
         }
     }
 }

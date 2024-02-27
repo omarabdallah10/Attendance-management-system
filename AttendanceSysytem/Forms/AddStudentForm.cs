@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
@@ -93,6 +94,11 @@ namespace AttendanceSysytem
         {
             oldform.Show();
             Hide();
+        }
+
+        private void AddStudentForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
