@@ -64,6 +64,7 @@ namespace AttendanceSysytem.Forms
             this.label1.Size = new System.Drawing.Size(544, 36);
             this.label1.TabIndex = 1;
             this.label1.Text = "Who would you like to (edit \\ delete)?";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // students_btn
             // 

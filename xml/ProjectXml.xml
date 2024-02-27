@@ -1,12 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <School xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="projectSchema.xsd">
   <Users>
     <Admin>
       <UserID>A001</UserID>
       <Name>John Doe</Name>
       <Email>Admin@admin.com</Email>
-      <Password>123456789</Password>
+      <Password>1234567890</Password>
     </Admin>
+    <Teacher Supervisor="false">
+      <UserID>T161</UserID>
+      <Name>sayed ahmed</Name>
+      <Email>sayed@sayed.com</Email>
+      <Password>Sayed@1231</Password>
+    </Teacher>
     <Teacher Supervisor="false">
       <UserID>T555</UserID>
       <Name>amira amir</Name>
@@ -31,6 +37,20 @@
       <Email>NadaSaleh@teacher.com</Email>
       <Password>@aad2daW</Password>
     </Teacher>
+    <Student>
+      <UserID>S774</UserID>
+      <Name>abody abodk</Name>
+      <Email>abody@abodk.com</Email>
+      <Password>@1254Adsd</Password>
+      <ClassName>OS</ClassName>
+    </Student>
+    <Student>
+      <UserID>S849</UserID>
+      <Name>alo ahme</Name>
+      <Email>ahmed@ahmed.alo</Email>
+      <Password>123@adadaA</Password>
+      <ClassName>OS</ClassName>
+    </Student>
     <Student>
       <UserID>S304</UserID>
       <Name>kareem ahmed</Name>
@@ -82,6 +102,8 @@
       <UserID>S207</UserID>
       <UserID>S001</UserID>
       <UserID>S002</UserID>
+      <UserID>S849</UserID>
+      <UserID>S774</UserID>
     </Students>
   </Class>
   <Class>
@@ -92,6 +114,7 @@
     <Teachers>
       <UserID>T002</UserID>
       <UserID>T004</UserID>
+      <UserID>T161</UserID>
     </Teachers>
     <Students>
       <UserID>S304</UserID>
@@ -106,6 +129,7 @@
     <Teachers>
       <UserID>T555</UserID>
       <UserID>T002</UserID>
+      <UserID>T161</UserID>
     </Teachers>
     <Students>
       <UserID>S003</UserID>
@@ -217,6 +241,34 @@
       <ClassName>OS</ClassName>
       <Date>2024-02-27</Date>
       <Status>Absent</Status>
+    </AttendanceRecord>
+    <AttendanceRecord>
+      <UserID>S774</UserID>
+      <Name>abody abodk</Name>
+      <ClassName>OS</ClassName>
+      <Date>2024-02-28</Date>
+      <Status>Present</Status>
+    </AttendanceRecord>
+    <AttendanceRecord>
+      <UserID>S849</UserID>
+      <Name>alo ahme</Name>
+      <ClassName>OS</ClassName>
+      <Date>2024-02-28</Date>
+      <Status>Absent</Status>
+    </AttendanceRecord>
+    <AttendanceRecord>
+      <UserID>S304</UserID>
+      <Name>kareem ahmed</Name>
+      <ClassName>OS</ClassName>
+      <Date>2024-02-28</Date>
+      <Status>Present</Status>
+    </AttendanceRecord>
+    <AttendanceRecord>
+      <UserID>S004</UserID>
+      <Name>Zeoz Khaledooo</Name>
+      <ClassName>OS</ClassName>
+      <Date>2024-02-28</Date>
+      <Status>Present</Status>
     </AttendanceRecord>
   </AttendanceData>
 </School>

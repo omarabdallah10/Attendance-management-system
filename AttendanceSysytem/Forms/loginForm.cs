@@ -44,8 +44,8 @@ namespace AttendanceSysytem
                 {
                     case 'A':
                         MessageBox.Show("Login Successful as Admin!");
-                        AdminFunctionalitiesForm adminForm = new AdminFunctionalitiesForm();
-                        adminForm.recived = (Users.Admin)validator;
+                        AdminDashboard adminForm = new AdminDashboard();
+                        adminForm.recived =validator;
                         adminForm.Show();
                         Hide();
                         break;
@@ -67,6 +67,7 @@ namespace AttendanceSysytem
                         MessageBox.Show("Try again something went wrong");
                         break;
                 }
+                Console.WriteLine(validator);
             }
         }
 

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnSettings = new System.Windows.Forms.Button();
@@ -36,7 +37,6 @@
             this.btnAddClass = new System.Windows.Forms.Button();
             this.btnAddTeacher = new System.Windows.Forms.Button();
             this.btnAddStudent = new System.Windows.Forms.Button();
-
             this.panelSide = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
@@ -49,6 +49,9 @@
             this.labelUsername = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.btnLogout = new System.Windows.Forms.Button();
+            this.DateandTime = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -66,7 +69,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(258, 673);
+            this.panel1.Size = new System.Drawing.Size(258, 979);
             this.panel1.TabIndex = 0;
             // 
             // panel4
@@ -81,7 +84,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel4.Location = new System.Drawing.Point(0, 180);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(258, 493);
+            this.panel4.Size = new System.Drawing.Size(258, 799);
             this.panel4.TabIndex = 0;
             // 
             // btnSettings
@@ -100,6 +103,7 @@
             this.btnSettings.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSettings.UseVisualStyleBackColor = true;
+            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
             // 
             // btnViewAttendance
             // 
@@ -134,6 +138,7 @@
             this.btnEditUsers.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEditUsers.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnEditUsers.UseVisualStyleBackColor = true;
+            this.btnEditUsers.Click += new System.EventHandler(this.btnEditUsers_Click);
             // 
             // btnAddClass
             // 
@@ -151,6 +156,7 @@
             this.btnAddClass.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAddClass.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAddClass.UseVisualStyleBackColor = true;
+            this.btnAddClass.Click += new System.EventHandler(this.btnAddClass_Click);
             // 
             // btnAddTeacher
             // 
@@ -168,6 +174,7 @@
             this.btnAddTeacher.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAddTeacher.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAddTeacher.UseVisualStyleBackColor = true;
+            this.btnAddTeacher.Click += new System.EventHandler(this.btnAddTeacher_Click);
             // 
             // btnAddStudent
             // 
@@ -185,8 +192,7 @@
             this.btnAddStudent.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAddStudent.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAddStudent.UseVisualStyleBackColor = true;
-
-            
+            this.btnAddStudent.Click += new System.EventHandler(this.btnAddStudent_Click);
             // 
             // panelSide
             // 
@@ -243,14 +249,14 @@
             // 
             // panelBack
             // 
-            this.panelBack.Controls.Add(this.btnLogout);
             this.panelBack.Controls.Add(this.panelTop);
+            this.panelBack.Controls.Add(this.btnLogout);
+            this.panelBack.Controls.Add(this.DateandTime);
             this.panelBack.Location = new System.Drawing.Point(258, 0);
             this.panelBack.Name = "panelBack";
-            this.panelBack.Size = new System.Drawing.Size(942, 165);
+            this.panelBack.Size = new System.Drawing.Size(1387, 165);
             this.panelBack.TabIndex = 0;
             // 
-
             // panelTop
             // 
             this.panelTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(3)))), ((int)(((byte)(125)))));
@@ -261,7 +267,7 @@
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelTop.Location = new System.Drawing.Point(0, 65);
             this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(942, 100);
+            this.panelTop.Size = new System.Drawing.Size(1387, 100);
             this.panelTop.TabIndex = 0;
             // 
             // labelRole
@@ -320,20 +326,46 @@
             this.btnLogout.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
             this.btnLogout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(3)))), ((int)(((byte)(125)))));
             this.btnLogout.Image = global::AttendanceSysytem.Properties.Resources.logOut_icon;
-            this.btnLogout.Location = new System.Drawing.Point(779, 12);
+            this.btnLogout.Location = new System.Drawing.Point(1109, 3);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(133, 48);
             this.btnLogout.TabIndex = 1;
             this.btnLogout.Text = "Log Out";
             this.btnLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnLogout.UseVisualStyleBackColor = false;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
+            // DateandTime
+            // 
+            this.DateandTime.AutoSize = true;
+            this.DateandTime.BackColor = System.Drawing.Color.White;
+            this.DateandTime.ForeColor = System.Drawing.Color.IndianRed;
+            this.DateandTime.Location = new System.Drawing.Point(29, 22);
+            this.DateandTime.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.DateandTime.Name = "DateandTime";
+            this.DateandTime.Size = new System.Drawing.Size(109, 25);
+            this.DateandTime.TabIndex = 1;
+            this.DateandTime.Text = "Welcome:";
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
+            this.panel3.Location = new System.Drawing.Point(258, 168);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1387, 799);
+            this.panel3.TabIndex = 1;
             // 
             // AdminDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1182, 673);
+            this.ClientSize = new System.Drawing.Size(1657, 979);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panelBack);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -342,12 +374,14 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminDashboard";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.AdminDashboard_Load);
             this.panel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelBack.ResumeLayout(false);
+            this.panelBack.PerformLayout();
             this.panelTop.ResumeLayout(false);
             this.panelTop.PerformLayout();
             this.ResumeLayout(false);
@@ -376,5 +410,8 @@
         private System.Windows.Forms.Button btnAddClass;
         private System.Windows.Forms.Button btnAddTeacher;
         private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.Label DateandTime;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Panel panel3;
     }
 }

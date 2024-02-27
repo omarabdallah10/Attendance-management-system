@@ -10,20 +10,16 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
 
-namespace AttendanceSysytem.Forms
+namespace AttendanceSysytem.UserControls
 {
-    public partial class AddClassForm : Form
+    public partial class AddClass : UserControl
     {
-        Form adminform = new AdminFunctionalitiesForm();
-        public AddClassForm(Form f1)
+        public AddClass()
         {
-            DataManagement.ChangeFont(this, DataManagement.MyFont, true);
-            adminform = f1;
             InitializeComponent();
-            
         }
 
-        private void AddClassForm_Load(object sender, EventArgs e)
+        private void AddClass_Load(object sender, EventArgs e)
         {
             XmlDocument doc = DataManagement.xmlDoc();
             XmlNodeList TeacherNodes = doc.SelectNodes("//Users/Teacher");
@@ -80,12 +76,6 @@ namespace AttendanceSysytem.Forms
                 }
 
             }
-        }
-
-        private void btnCancel_Click(object sender, EventArgs e)
-        {
-            adminform.Show();
-            Hide();
         }
     }
 }

@@ -10,23 +10,28 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
 
-namespace AttendanceSysytem.Forms
+namespace AttendanceSysytem.UserControls
 {
-    public partial class AddTeacherForm : Form
+    public partial class AddTeacher : UserControl
     {
-        Form adminform = new AdminFunctionalitiesForm();
-        public AddTeacherForm(Form oldform)
+        public AddTeacher()
         {
-            DataManagement.ChangeFont(this, DataManagement.MyFont, true);
-            adminform = oldform;
             InitializeComponent();
-           // XmlDocument doc = DataManagement.xmlDoc();
-           XmlDataDocument doc = new XmlDataDocument();
+        }
+
+        private void AddTeacher_Load(object sender, EventArgs e)
+        {
+            XmlDocument doc = DataManagement.xmlDoc();
             XmlNodeList ClassNodes = doc.SelectNodes("//Class");
             foreach (XmlNode ClassNode in ClassNodes)
             {
                 checkedListBox1.Items.Add(ClassNode.SelectSingleNode("Name").InnerText);
             }
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -88,24 +93,6 @@ namespace AttendanceSysytem.Forms
                     }
                 }
             }
-
-        }
-
-        private void btnCancel_Click(object sender, EventArgs e)
-        {
-            adminform.Show();
-            Hide();
-        }
-
-        private void AddTeacherForm_Load(object sender, EventArgs e)
-        {
-            DataManagement.ChangeFont(this, DataManagement.MyFont, true);
-        }
-
-        private void btnCancel_Click_1(object sender, EventArgs e)
-        {
-            adminform.Show();
-            Hide();
         }
     }
 }

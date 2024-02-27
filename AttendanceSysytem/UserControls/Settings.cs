@@ -1,5 +1,4 @@
 ﻿using AttendanceSysytem.Classes;
-using AttendanceSysytem.Users;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,51 +10,26 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
 
-namespace AttendanceSysytem.Forms
+namespace AttendanceSysytem.UserControls
 {
-    public partial class SettingsForm : Form
+    public partial class Settings : UserControl
     {
         public User Recived { get; set; }
         public XmlDocument Document { get; set; }
         public XmlElement User { get; set; }
-
-        public SettingsForm()
+        public Settings()
         {
             InitializeComponent();
         }
 
-        private void SettingsForm_Load(object sender, EventArgs e)
+        private void Settings_Load(object sender, EventArgs e)
         {
-            this.Font = DataManagement.MyFont;
+            Font = DataManagement.MyFont;
             Document = DataManagement.xmlDoc();
-            //Console.WriteLine(Recived.Name);
-            string type="Student";
-            if (Recived.UserID[0]=='T')
-            {
-                type = "Teacher";
-            }else if (Recived.UserID[0]=='A')
-            {
-                type = "Admin";
-
-            }
-            User = DataManagement.GetElementById(Document, Recived.UserID, type);
+            User = DataManagement.GetElementById(Document, Recived.UserID, "Admin");
 
             XmlNode password = User.SelectSingleNode("Password");
             password_box.Text = password.InnerText;
-        }
-
-
-        private void font_Click(object sender, EventArgs e)
-        {
-            FontDialog font = new FontDialog();
-            font.ShowDialog();
-            
-            DataManagement.ChangeFontForAllPages(font.Font);
-        }
-
-        private void Langauge_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void save_btn_Click(object sender, EventArgs e)
@@ -73,9 +47,12 @@ namespace AttendanceSysytem.Forms
             }
         }
 
-        private void cancel_btn_Click(object sender, EventArgs e)
+        private void font_Click(object sender, EventArgs e)
         {
-            Close();
+            FontDialog font = new FontDialog();
+            font.ShowDialog();
+
+            DataManagement.ChangeFontForAllPages(font.Font);
         }
     }
 }

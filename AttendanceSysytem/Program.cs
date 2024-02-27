@@ -24,7 +24,7 @@ namespace AttendanceSysytem
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Application.Run(new AdminDashboard());
+            Application.Run(new loginForm());
 
 
 
