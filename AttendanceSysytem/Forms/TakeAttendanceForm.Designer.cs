@@ -87,6 +87,7 @@
             this.dataGridViewTakeAttendance.RowTemplate.Height = 24;
             this.dataGridViewTakeAttendance.Size = new System.Drawing.Size(777, 242);
             this.dataGridViewTakeAttendance.TabIndex = 12;
+            this.dataGridViewTakeAttendance.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewTakeAttendance_CellClick);
             // 
             // btnSave
             // 
@@ -99,6 +100,7 @@
             this.btnSave.TabIndex = 16;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // TakeAttendanceForm
             // 
