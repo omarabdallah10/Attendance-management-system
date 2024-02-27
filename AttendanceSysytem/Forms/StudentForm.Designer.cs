@@ -10,6 +10,7 @@ namespace AttendanceSysytem.Forms
 {
     partial class StudentForm
     {
+        private string DateFormat = "dddd, dd MMMM yyyy";
         // Define a method to fetch and display attendance data for a specific student
         private void ShowStudentAttendance(string studentID, DateTime fromDate, DateTime toDate)
         {
@@ -89,8 +90,8 @@ namespace AttendanceSysytem.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.StudentNametxt = new System.Windows.Forms.TextBox();
             this.name_label = new System.Windows.Forms.Label();
             this.class_label = new System.Windows.Forms.Label();
@@ -98,9 +99,6 @@ namespace AttendanceSysytem.Forms
             this.showFrom_label = new System.Windows.Forms.Label();
             this.to_label = new System.Windows.Forms.Label();
             this.StudentAttendanceTable = new System.Windows.Forms.DataGridView();
-            this.Day = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DATE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.STATUS = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.absentdays_label = new System.Windows.Forms.Label();
             this.AbsentDays = new System.Windows.Forms.TextBox();
             this.signOutBTN = new System.Windows.Forms.Button();
@@ -108,6 +106,10 @@ namespace AttendanceSysytem.Forms
             this.ToDate = new System.Windows.Forms.DateTimePicker();
             this.FromDate = new System.Windows.Forms.DateTimePicker();
             this.settings = new System.Windows.Forms.Button();
+            this.DayFormatComboBox = new System.Windows.Forms.ComboBox();
+            this.DATE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.STATUS = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.StudentAttendanceTable)).BeginInit();
             this.SuspendLayout();
             // 
@@ -201,17 +203,16 @@ namespace AttendanceSysytem.Forms
             this.StudentAttendanceTable.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.StudentAttendanceTable.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.StudentAttendanceTable.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.StudentAttendanceTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.StudentAttendanceTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.StudentAttendanceTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.StudentAttendanceTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Day,
             this.DATE,
             this.STATUS});
             this.StudentAttendanceTable.Cursor = System.Windows.Forms.Cursors.Arrow;
@@ -221,32 +222,11 @@ namespace AttendanceSysytem.Forms
             this.StudentAttendanceTable.ReadOnly = true;
             this.StudentAttendanceTable.RowHeadersVisible = false;
             this.StudentAttendanceTable.RowHeadersWidth = 51;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.StudentAttendanceTable.RowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.StudentAttendanceTable.Size = new System.Drawing.Size(1014, 321);
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.StudentAttendanceTable.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.StudentAttendanceTable.Size = new System.Drawing.Size(1014, 291);
             this.StudentAttendanceTable.TabIndex = 10;
             this.StudentAttendanceTable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.StudentAttendanceTable_CellContentClick);
-            // 
-            // Day
-            // 
-            this.Day.HeaderText = "DAY";
-            this.Day.MinimumWidth = 6;
-            this.Day.Name = "Day";
-            this.Day.ReadOnly = true;
-            // 
-            // DATE
-            // 
-            this.DATE.HeaderText = "DATE";
-            this.DATE.MinimumWidth = 6;
-            this.DATE.Name = "DATE";
-            this.DATE.ReadOnly = true;
-            // 
-            // STATUS
-            // 
-            this.STATUS.HeaderText = "STATUS";
-            this.STATUS.MinimumWidth = 6;
-            this.STATUS.Name = "STATUS";
-            this.STATUS.ReadOnly = true;
             // 
             // absentdays_label
             // 
@@ -255,7 +235,7 @@ namespace AttendanceSysytem.Forms
             | System.Windows.Forms.AnchorStyles.Right)));
             this.absentdays_label.AutoSize = true;
             this.absentdays_label.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.absentdays_label.Location = new System.Drawing.Point(798, 171);
+            this.absentdays_label.Location = new System.Drawing.Point(833, 171);
             this.absentdays_label.Margin = new System.Windows.Forms.Padding(5);
             this.absentdays_label.Name = "absentdays_label";
             this.absentdays_label.Size = new System.Drawing.Size(102, 19);
@@ -270,7 +250,7 @@ namespace AttendanceSysytem.Forms
             this.AbsentDays.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.AbsentDays.Enabled = false;
             this.AbsentDays.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AbsentDays.Location = new System.Drawing.Point(917, 168);
+            this.AbsentDays.Location = new System.Drawing.Point(962, 168);
             this.AbsentDays.Margin = new System.Windows.Forms.Padding(5);
             this.AbsentDays.MaximumSize = new System.Drawing.Size(100, 27);
             this.AbsentDays.MinimumSize = new System.Drawing.Size(80, 27);
@@ -281,7 +261,6 @@ namespace AttendanceSysytem.Forms
             // 
             // signOutBTN
             // 
-            this.signOutBTN.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.signOutBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.signOutBTN.Cursor = System.Windows.Forms.Cursors.Hand;
             this.signOutBTN.Font = new System.Drawing.Font("Segoe UI", 12F);
@@ -300,11 +279,12 @@ namespace AttendanceSysytem.Forms
             // saveAs_btn
             // 
             this.saveAs_btn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.saveAs_btn.AutoSize = true;
             this.saveAs_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.saveAs_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.saveAs_btn.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.saveAs_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.saveAs_btn.Location = new System.Drawing.Point(998, 549);
+            this.saveAs_btn.Location = new System.Drawing.Point(1000, 559);
             this.saveAs_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.saveAs_btn.MaximumSize = new System.Drawing.Size(150, 40);
             this.saveAs_btn.MinimumSize = new System.Drawing.Size(150, 40);
@@ -353,7 +333,7 @@ namespace AttendanceSysytem.Forms
             // 
             // settings
             // 
-            this.settings.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.settings.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.settings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.settings.Cursor = System.Windows.Forms.Cursors.Hand;
             this.settings.Font = new System.Drawing.Font("Segoe UI", 12F);
@@ -369,11 +349,55 @@ namespace AttendanceSysytem.Forms
             this.settings.UseVisualStyleBackColor = false;
             this.settings.Click += new System.EventHandler(this.settings_Click);
             // 
+            // DayFormatComboBox
+            // 
+            this.DayFormatComboBox.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.DayFormatComboBox.DisplayMember = "day, dd Month YYYY";
+            this.DayFormatComboBox.FormattingEnabled = true;
+            this.DayFormatComboBox.Items.AddRange(new object[] {
+            "MM/dd/YYYY",
+            "day, dd Month YYYY",
+            "Month dd",
+            "YYYY Month"});
+            this.DayFormatComboBox.Location = new System.Drawing.Point(924, 94);
+            this.DayFormatComboBox.Name = "DayFormatComboBox";
+            this.DayFormatComboBox.Size = new System.Drawing.Size(174, 24);
+            this.DayFormatComboBox.TabIndex = 18;
+            this.DayFormatComboBox.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // DATE
+            // 
+            this.DATE.HeaderText = "DATE";
+            this.DATE.MinimumWidth = 6;
+            this.DATE.Name = "DATE";
+            this.DATE.ReadOnly = true;
+            // 
+            // STATUS
+            // 
+            this.STATUS.HeaderText = "STATUS";
+            this.STATUS.MinimumWidth = 6;
+            this.STATUS.Name = "STATUS";
+            this.STATUS.ReadOnly = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(810, 95);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(99, 19);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "Date Format";
+            // 
             // StudentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1176, 610);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.DayFormatComboBox);
             this.Controls.Add(this.settings);
             this.Controls.Add(this.FromDate);
             this.Controls.Add(this.ToDate);
@@ -390,6 +414,7 @@ namespace AttendanceSysytem.Forms
             this.Controls.Add(this.StudentNametxt);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "StudentForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Student";
             this.Load += new System.EventHandler(this.StudentForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.StudentAttendanceTable)).EndInit();
@@ -406,9 +431,6 @@ namespace AttendanceSysytem.Forms
         private Label absentdays_label;
         private Button signOutBTN;
         private Button saveAs_btn;
-        private DataGridViewTextBoxColumn Day;
-        private DataGridViewTextBoxColumn DATE;
-        private DataGridViewTextBoxColumn STATUS;
         private TextBox StudentNametxt;
         private TextBox StudentClasstxt;
         private TextBox AbsentDays;
@@ -424,11 +446,15 @@ namespace AttendanceSysytem.Forms
 
         public void setAttendanceRecord(DateTime _date, string _status)
         {
-            StudentAttendanceTable.Rows.Add(_date.DayOfWeek, _date.ToString("dddd, dd MMMM yyyy"), _status);
+            StudentAttendanceTable.Rows.Add(_date.ToString(DateFormat), _status);
 
         }
         public void resetAttendanceTable() {  StudentAttendanceTable.Rows.Clear();}
 
         private Button settings;
+        private ComboBox DayFormatComboBox;
+        private DataGridViewTextBoxColumn DATE;
+        private DataGridViewTextBoxColumn STATUS;
+        private Label label1;
     }
 }

@@ -17,7 +17,7 @@ namespace AttendanceSysytem.Forms
         Form adminform = new AdminFunctionalitiesForm();
         public AddClassForm(Form f1)
         {
-            DataManagement.ChangeFont(this, DataManagement.MyFont, true);
+            Settings.ChangeFont(this, Settings.MyFont, true);
             adminform = f1;
             InitializeComponent();
             XmlDocument doc = DataManagement.xmlDoc();
@@ -31,11 +31,6 @@ namespace AttendanceSysytem.Forms
             }
             txtSupervisor.SelectedIndex = 0;
             txtSupervisor.DropDownStyle = ComboBoxStyle.DropDownList;
-        }
-
-        private void AddClassForm_Load(object sender, EventArgs e)
-        {
-            
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -86,6 +81,11 @@ namespace AttendanceSysytem.Forms
         {
             adminform.Show();
             Hide();
+        }
+
+        private void AddClassForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

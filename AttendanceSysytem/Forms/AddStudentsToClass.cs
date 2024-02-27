@@ -20,7 +20,7 @@ namespace AttendanceSysytem.Forms
         public Classes.Track recivedTrack { get; set; }
         public AddStudentsToClass()
         {
-            DataManagement.ChangeFont(this, DataManagement.MyFont, true);
+            Settings.ChangeFont(this, Settings.MyFont, true);
             InitializeComponent();
         }
 

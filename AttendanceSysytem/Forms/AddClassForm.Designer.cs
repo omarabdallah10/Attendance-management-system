@@ -113,6 +113,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(832, 453);
             this.Controls.Add(this.txtSupervisor);
@@ -123,6 +124,7 @@
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.Supervisor);
             this.Name = "AddClassForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddClassForm";
             this.Load += new System.EventHandler(this.AddClassForm_Load);
             this.ResumeLayout(false);

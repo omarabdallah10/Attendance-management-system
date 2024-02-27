@@ -88,6 +88,7 @@
             // 
             // loginForm
             // 
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(482, 353);
             this.Controls.Add(this.btnLogin);
@@ -96,6 +97,7 @@
             this.Controls.Add(this.Password);
             this.Controls.Add(this.Username);
             this.Name = "loginForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login Form";
             this.Load += new System.EventHandler(this.loginForm_Load);
             this.ResumeLayout(false);

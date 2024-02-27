@@ -185,6 +185,7 @@ namespace AttendanceSysytem.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(832, 453);
             this.Controls.Add(this.ClassesTable);
@@ -192,6 +193,7 @@ namespace AttendanceSysytem.Forms
             this.Controls.Add(this.classes_label);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ClassesForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Classes";
             this.Load += new System.EventHandler(this.ClassesForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ClassesTable)).EndInit();

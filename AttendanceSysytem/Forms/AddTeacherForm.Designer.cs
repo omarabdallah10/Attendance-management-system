@@ -166,6 +166,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(832, 453);
             this.Controls.Add(this.txtLName);
@@ -182,6 +183,7 @@
             this.Controls.Add(this.Password);
             this.Controls.Add(this.Email);
             this.Name = "AddTeacherForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddTeacherForm";
             this.Load += new System.EventHandler(this.AddTeacherForm_Load);
             this.ResumeLayout(false);

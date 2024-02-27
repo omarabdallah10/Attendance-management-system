@@ -213,6 +213,7 @@ namespace AttendanceSysytem.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(960, 538);
             this.Controls.Add(this.LName);
             this.Controls.Add(this.LnameTxt);
@@ -230,6 +231,7 @@ namespace AttendanceSysytem.Forms
             this.Controls.Add(this.edit_student_label);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "EditStudentForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.EditStudentForm_Load);
             this.ResumeLayout(false);

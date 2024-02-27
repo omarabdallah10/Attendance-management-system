@@ -5,11 +5,13 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Resources;
 
 namespace AttendanceSysytem
 {
@@ -17,8 +19,9 @@ namespace AttendanceSysytem
     {
         public loginForm()
         {
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ar");
             InitializeComponent();
-            DataManagement.ChangeFont(this, DataManagement.MyFont, true);
+            Settings.ChangeFont(this, Settings.MyFont, true);
         }
 
         private void txtUserName_TextChanged(object sender, EventArgs e)
@@ -69,9 +72,13 @@ namespace AttendanceSysytem
                 }
             }
         }
-
         private void loginForm_Load(object sender, EventArgs e)
         {
+            CultureInfo[] a = CultureInfo.GetCultures(CultureTypes.AllCultures);
+            for (int i = 0; i < a.Length; i++)
+            {
+                Console.WriteLine(a[i]);
+            }
         }
     }
 }

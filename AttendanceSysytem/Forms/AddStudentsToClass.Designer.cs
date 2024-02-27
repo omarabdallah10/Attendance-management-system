@@ -36,11 +36,11 @@
             this.Save_btn = new System.Windows.Forms.Button();
             this.go_back_btn = new System.Windows.Forms.Button();
             this.StudentsTable = new System.Windows.Forms.DataGridView();
-            this.students_label = new System.Windows.Forms.Label();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TeacherName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.InClass = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.checkCol = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.students_label = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.StudentsTable)).BeginInit();
             this.SuspendLayout();
             // 
@@ -133,17 +133,6 @@
             this.StudentsTable.Size = new System.Drawing.Size(803, 319);
             this.StudentsTable.TabIndex = 14;
             // 
-            // students_label
-            // 
-            this.students_label.AutoSize = true;
-            this.students_label.Enabled = false;
-            this.students_label.Font = new System.Drawing.Font("Segoe UI", 20F);
-            this.students_label.Location = new System.Drawing.Point(327, 49);
-            this.students_label.Name = "students_label";
-            this.students_label.Size = new System.Drawing.Size(151, 46);
-            this.students_label.TabIndex = 13;
-            this.students_label.Text = "Students";
-            // 
             // ID
             // 
             this.ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
@@ -176,16 +165,29 @@
             this.checkCol.Name = "checkCol";
             this.checkCol.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
+            // students_label
+            // 
+            this.students_label.AutoSize = true;
+            this.students_label.Enabled = false;
+            this.students_label.Font = new System.Drawing.Font("Segoe UI", 20F);
+            this.students_label.Location = new System.Drawing.Point(327, 49);
+            this.students_label.Name = "students_label";
+            this.students_label.Size = new System.Drawing.Size(151, 46);
+            this.students_label.TabIndex = 13;
+            this.students_label.Text = "Students";
+            // 
             // AddStudentsToClass
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(858, 483);
             this.Controls.Add(this.Save_btn);
             this.Controls.Add(this.go_back_btn);
             this.Controls.Add(this.StudentsTable);
             this.Controls.Add(this.students_label);
             this.Name = "AddStudentsToClass";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddStudentsToClass";
             this.Load += new System.EventHandler(this.AddStudentsToClass_Load);
             ((System.ComponentModel.ISupportInitialize)(this.StudentsTable)).EndInit();

@@ -130,6 +130,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(832, 453);
             this.Controls.Add(this.btnViewAttendance);
@@ -140,6 +141,7 @@
             this.Controls.Add(this.btnGoBack);
             this.Controls.Add(this.dataGridViewAttendance);
             this.Name = "TeacherViewAttendanceForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TeacherView";
             this.Load += new System.EventHandler(this.TeacherViewAttendanceForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAttendance)).EndInit();

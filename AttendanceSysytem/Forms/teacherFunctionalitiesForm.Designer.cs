@@ -106,6 +106,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(832, 453);
             this.Controls.Add(this.settings);
             this.Controls.Add(this.btnTakeAttendance);
@@ -113,6 +114,7 @@
             this.Controls.Add(this.btnSignOut);
             this.Controls.Add(this.pictureBox1);
             this.Name = "teacherFunctionalitiesForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "teacherFunctionalities";
             this.Load += new System.EventHandler(this.teacherFunctionalitiesForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

@@ -35,6 +35,8 @@
   <PropertyGroup>
     <StartupObject />
   </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
   <ItemGroup>
     <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
@@ -63,6 +65,7 @@
     <Compile Include="Classes\Attendance.cs" />
     <Compile Include="Classes\DataManagement.cs" />
     <Compile Include="Classes\login.cs" />
+    <Compile Include="Classes\Settings.cs" />
     <Compile Include="Classes\Track.cs" />
     <Compile Include="Classes\Validating.cs" />
     <Compile Include="Forms\AddClassForm.cs">

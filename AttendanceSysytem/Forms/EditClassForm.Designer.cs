@@ -160,6 +160,7 @@ namespace AttendanceSysytem.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(746, 604);
             this.Controls.Add(this.add_students_btn);
@@ -172,6 +173,7 @@ namespace AttendanceSysytem.Forms
             this.Controls.Add(this.go_back_btn);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "EditClassForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Edit Class";
             this.Load += new System.EventHandler(this.EditClassForm_Load);
             this.ResumeLayout(false);

@@ -39,7 +39,7 @@
             // 
             // password_box
             // 
-            this.password_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.password_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.password_box.Location = new System.Drawing.Point(278, 164);
             this.password_box.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.password_box.Name = "password_box";
@@ -50,7 +50,7 @@
             // 
             this.password_label.AutoSize = true;
             this.password_label.Enabled = false;
-            this.password_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.password_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.password_label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.password_label.Location = new System.Drawing.Point(138, 167);
             this.password_label.Name = "password_label";
@@ -62,7 +62,7 @@
             // 
             this.cancel_btn.BackColor = System.Drawing.Color.LightSkyBlue;
             this.cancel_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cancel_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cancel_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.cancel_btn.Location = new System.Drawing.Point(568, 379);
             this.cancel_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cancel_btn.Name = "cancel_btn";
@@ -76,7 +76,7 @@
             // 
             this.save_btn.BackColor = System.Drawing.Color.LightSkyBlue;
             this.save_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.save_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.save_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.save_btn.Location = new System.Drawing.Point(342, 379);
             this.save_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.save_btn.Name = "save_btn";
@@ -133,6 +133,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.font);
             this.Controls.Add(this.Langauge);
@@ -142,6 +143,7 @@
             this.Controls.Add(this.cancel_btn);
             this.Controls.Add(this.save_btn);
             this.Name = "SettingsForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SettingsForm";
             this.Load += new System.EventHandler(this.SettingsForm_Load);
             this.ResumeLayout(false);

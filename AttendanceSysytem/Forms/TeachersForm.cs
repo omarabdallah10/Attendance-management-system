@@ -21,7 +21,8 @@ namespace AttendanceSysytem.Forms
         {
             InitializeComponent();
             oldform = f1;
-            DataManagement.ChangeFont(this, DataManagement.MyFont, true);
+            Settings.ChangeFont(this, Settings.MyFont, true);
+
         }
 
         private void TeachersForm_Load(object sender, EventArgs e)

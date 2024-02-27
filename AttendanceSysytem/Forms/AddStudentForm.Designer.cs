@@ -103,7 +103,6 @@
             this.txtFName.Size = new System.Drawing.Size(281, 30);
             this.txtFName.TabIndex = 2;
             this.txtFName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtFName.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // Class
             // 
@@ -114,7 +113,6 @@
             this.Class.Size = new System.Drawing.Size(67, 25);
             this.Class.TabIndex = 9;
             this.Class.Text = "Class";
-            this.Class.Click += new System.EventHandler(this.label1_Click);
             // 
             // FName
             // 
@@ -125,7 +123,6 @@
             this.FName.Size = new System.Drawing.Size(116, 25);
             this.FName.TabIndex = 1;
             this.FName.Text = "First Name";
-            this.FName.Click += new System.EventHandler(this.label2_Click);
             // 
             // btnCancel
             // 
@@ -159,7 +156,6 @@
             this.ClassList.Name = "ClassList";
             this.ClassList.Size = new System.Drawing.Size(281, 24);
             this.ClassList.TabIndex = 11;
-            this.ClassList.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // txtEmail
             // 
@@ -184,6 +180,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(832, 453);
             this.Controls.Add(this.txtEmail);
@@ -200,8 +197,8 @@
             this.Controls.Add(this.Password);
             this.Controls.Add(this.Lname);
             this.Name = "AddStudentForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddStudentForm";
-            this.Load += new System.EventHandler(this.AddStudentForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

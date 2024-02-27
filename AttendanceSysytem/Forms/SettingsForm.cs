@@ -26,7 +26,7 @@ namespace AttendanceSysytem.Forms
 
         private void SettingsForm_Load(object sender, EventArgs e)
         {
-            this.Font = DataManagement.MyFont;
+            this.Font = Classes.Settings.MyFont;
             Document = DataManagement.xmlDoc();
             //Console.WriteLine(Recived.Name);
             string type="Student";
@@ -56,8 +56,8 @@ namespace AttendanceSysytem.Forms
         {
             FontDialog font = new FontDialog();
             font.ShowDialog();
-            
-            DataManagement.ChangeFontForAllPages(font.Font);
+
+            Classes.Settings.ChangeFontForAllPages(font.Font);
         }
 
         private void Langauge_Click(object sender, EventArgs e)

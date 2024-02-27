@@ -189,12 +189,14 @@ namespace AttendanceSysytem.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(832, 453);
             this.Controls.Add(this.TeachersTable);
             this.Controls.Add(this.go_back_btn);
             this.Controls.Add(this.teachers_label);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "TeachersForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Teachers";
             this.Load += new System.EventHandler(this.TeachersForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.TeachersTable)).EndInit();

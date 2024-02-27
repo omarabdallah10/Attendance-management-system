@@ -182,12 +182,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(861, 557);
             this.Controls.Add(this.Save_btn);
             this.Controls.Add(this.go_back_btn);
             this.Controls.Add(this.TeachersTable);
             this.Controls.Add(this.teachers_label);
             this.Name = "AddTeachersToClass";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddTeachersToClass";
             this.Load += new System.EventHandler(this.AddTeachersToClass_Load);
             ((System.ComponentModel.ISupportInitialize)(this.TeachersTable)).EndInit();

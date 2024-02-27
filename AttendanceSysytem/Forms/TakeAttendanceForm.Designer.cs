@@ -104,6 +104,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.ClassComboBox);
@@ -111,6 +112,7 @@
             this.Controls.Add(this.btnGoBack);
             this.Controls.Add(this.dataGridViewTakeAttendance);
             this.Name = "TakeAttendanceForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TakeAttendanceForm";
             this.Load += new System.EventHandler(this.TakeAttendanceForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTakeAttendance)).EndInit();

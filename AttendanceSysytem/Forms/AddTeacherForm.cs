@@ -17,7 +17,7 @@ namespace AttendanceSysytem.Forms
         Form adminform = new AdminFunctionalitiesForm();
         public AddTeacherForm(Form oldform)
         {
-            DataManagement.ChangeFont(this, DataManagement.MyFont, true);
+            Settings.ChangeFont(this, Settings.MyFont, true);
             adminform = oldform;
             InitializeComponent();
             XmlDocument doc = DataManagement.xmlDoc();
@@ -98,7 +98,7 @@ namespace AttendanceSysytem.Forms
 
         private void AddTeacherForm_Load(object sender, EventArgs e)
         {
-            DataManagement.ChangeFont(this, DataManagement.MyFont, true);
+            Settings.ChangeFont(this, Settings.MyFont, true);
         }
 
         private void btnCancel_Click_1(object sender, EventArgs e)

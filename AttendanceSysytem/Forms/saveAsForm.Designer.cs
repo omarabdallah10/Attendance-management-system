@@ -69,12 +69,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClientSize = new System.Drawing.Size(832, 453);
             this.Controls.Add(this.btnSaveAsExcel);
             this.Controls.Add(this.RichTxtBox);
             this.Controls.Add(this.btnSaveAsPDF);
             this.Name = "saveAsForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "saveAsForm";
             this.Load += new System.EventHandler(this.saveAsForm_Load);
             this.ResumeLayout(false);
