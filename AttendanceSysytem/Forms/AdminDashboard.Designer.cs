@@ -43,26 +43,17 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelBack = new System.Windows.Forms.Panel();
-            this.panelExpand = new System.Windows.Forms.Panel();
-            this.buttonLogout = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBoxExpand = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.labelTime = new System.Windows.Forms.Label();
             this.panelTop = new System.Windows.Forms.Panel();
             this.labelRole = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.labelUsername = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelBack.SuspendLayout();
-            this.panelExpand.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExpand)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panelTop.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -116,7 +107,7 @@
             this.btnViewAttendance.FlatAppearance.BorderSize = 0;
             this.btnViewAttendance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnViewAttendance.ForeColor = System.Drawing.Color.White;
-            this.btnViewAttendance.Image = global::AttendanceSysytem.Properties.Resources.download;
+            this.btnViewAttendance.Image = global::AttendanceSysytem.Properties.Resources.att;
             this.btnViewAttendance.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnViewAttendance.Location = new System.Drawing.Point(0, 188);
             this.btnViewAttendance.Name = "btnViewAttendance";
@@ -167,7 +158,7 @@
             this.btnAddTeacher.FlatAppearance.BorderSize = 0;
             this.btnAddTeacher.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddTeacher.ForeColor = System.Drawing.Color.White;
-            this.btnAddTeacher.Image = global::AttendanceSysytem.Properties.Resources.att;
+            this.btnAddTeacher.Image = global::AttendanceSysytem.Properties.Resources.addStudent;
             this.btnAddTeacher.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAddTeacher.Location = new System.Drawing.Point(0, 47);
             this.btnAddTeacher.Name = "btnAddTeacher";
@@ -184,7 +175,7 @@
             this.btnAddStudent.FlatAppearance.BorderSize = 0;
             this.btnAddStudent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddStudent.ForeColor = System.Drawing.Color.White;
-            this.btnAddStudent.Image = global::AttendanceSysytem.Properties.Resources.dashboard;
+            this.btnAddStudent.Image = global::AttendanceSysytem.Properties.Resources.addStudent;
             this.btnAddStudent.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAddStudent.Location = new System.Drawing.Point(0, 0);
             this.btnAddStudent.Name = "btnAddStudent";
@@ -252,110 +243,14 @@
             // 
             // panelBack
             // 
-            this.panelBack.Controls.Add(this.panelExpand);
-            this.panelBack.Controls.Add(this.pictureBoxExpand);
-            this.panelBack.Controls.Add(this.pictureBox2);
-            this.panelBack.Controls.Add(this.labelTime);
+            this.panelBack.Controls.Add(this.btnLogout);
             this.panelBack.Controls.Add(this.panelTop);
             this.panelBack.Location = new System.Drawing.Point(258, 0);
             this.panelBack.Name = "panelBack";
             this.panelBack.Size = new System.Drawing.Size(942, 165);
             this.panelBack.TabIndex = 0;
             // 
-            // panelExpand
-            // 
-            this.panelExpand.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelExpand.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(3)))), ((int)(((byte)(125)))));
-            this.panelExpand.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelExpand.Controls.Add(this.buttonLogout);
-            this.panelExpand.Controls.Add(this.button1);
-            this.panelExpand.Controls.Add(this.panel3);
-            this.panelExpand.Location = new System.Drawing.Point(730, 58);
-            this.panelExpand.Name = "panelExpand";
-            this.panelExpand.Size = new System.Drawing.Size(200, 107);
-            this.panelExpand.TabIndex = 0;
-            // 
-            // buttonLogout
-            // 
-            this.buttonLogout.BackColor = System.Drawing.Color.White;
-            this.buttonLogout.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonLogout.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonLogout.FlatAppearance.BorderSize = 0;
-            this.buttonLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonLogout.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
 
-            this.buttonLogout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(3)))), ((int)(((byte)(125)))));
-            this.buttonLogout.Image = global::AttendanceSysytem.Properties.Resources.logOut_icon;
-            this.buttonLogout.Location = new System.Drawing.Point(0, 53);
-            this.buttonLogout.Name = "buttonLogout";
-            this.buttonLogout.Size = new System.Drawing.Size(198, 48);
-            this.buttonLogout.TabIndex = 0;
-            this.buttonLogout.Text = "   Log Out";
-            this.buttonLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonLogout.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 9F);
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(3)))), ((int)(((byte)(125)))));
-            this.button1.Image = global::AttendanceSysytem.Properties.Resources.minimize_icon_purple;
-            this.button1.Location = new System.Drawing.Point(0, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(198, 48);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "   Minimize";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // panel3
-            // 
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(198, 5);
-            this.panel3.TabIndex = 0;
-            // 
-            // pictureBoxExpand
-            // 
-            this.pictureBoxExpand.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBoxExpand.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxExpand.Image = global::AttendanceSysytem.Properties.Resources.dropdown_arrow;
-            this.pictureBoxExpand.Location = new System.Drawing.Point(796, 34);
-            this.pictureBoxExpand.Name = "pictureBoxExpand";
-            this.pictureBoxExpand.Size = new System.Drawing.Size(27, 24);
-            this.pictureBoxExpand.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxExpand.TabIndex = 4;
-            this.pictureBoxExpand.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox2.Image = global::AttendanceSysytem.Properties.Resources.mainIcon;
-            this.pictureBox2.Location = new System.Drawing.Point(730, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(60, 58);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
-            // 
-            // labelTime
-            // 
-            this.labelTime.AutoSize = true;
-            this.labelTime.BackColor = System.Drawing.Color.White;
-            this.labelTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(3)))), ((int)(((byte)(125)))));
-            this.labelTime.Location = new System.Drawing.Point(24, 23);
-            this.labelTime.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelTime.Name = "labelTime";
-            this.labelTime.Size = new System.Drawing.Size(40, 25);
-            this.labelTime.TabIndex = 0;
-            this.labelTime.Text = "(?)";
-            // 
             // panelTop
             // 
             this.panelTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(3)))), ((int)(((byte)(125)))));
@@ -417,6 +312,22 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Welcome:";
             // 
+            // btnLogout
+            // 
+            this.btnLogout.BackColor = System.Drawing.Color.White;
+            this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogout.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
+            this.btnLogout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(3)))), ((int)(((byte)(125)))));
+            this.btnLogout.Image = global::AttendanceSysytem.Properties.Resources.logOut_icon;
+            this.btnLogout.Location = new System.Drawing.Point(779, 12);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(133, 48);
+            this.btnLogout.TabIndex = 1;
+            this.btnLogout.Text = "Log Out";
+            this.btnLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnLogout.UseVisualStyleBackColor = false;
+            // 
             // AdminDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
@@ -431,17 +342,12 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminDashboard";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.AdminDashboard_Load);
             this.panel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelBack.ResumeLayout(false);
-            this.panelBack.PerformLayout();
-            this.panelExpand.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExpand)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panelTop.ResumeLayout(false);
             this.panelTop.PerformLayout();
             this.ResumeLayout(false);
@@ -457,17 +363,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panelBack;
         private System.Windows.Forms.Panel panelTop;
-        private System.Windows.Forms.Label labelTime;
         private System.Windows.Forms.Label labelRole;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label labelUsername;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBoxExpand;
-        private System.Windows.Forms.Panel panelExpand;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button buttonLogout;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panelSide;
         private System.Windows.Forms.Button btnAddStudent;
@@ -476,5 +375,6 @@
         private System.Windows.Forms.Button btnEditUsers;
         private System.Windows.Forms.Button btnAddClass;
         private System.Windows.Forms.Button btnAddTeacher;
+        private System.Windows.Forms.Button btnLogout;
     }
 }
