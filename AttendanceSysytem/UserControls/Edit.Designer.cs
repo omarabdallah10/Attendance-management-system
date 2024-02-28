@@ -35,18 +35,18 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.students_label = new System.Windows.Forms.Label();
-            this.go_back_btn = new System.Windows.Forms.Button();
             this.StudentsTable = new System.Windows.Forms.DataGridView();
-            this.dataGridViewButtonColumn1 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Class = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.StdName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.StdName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Class = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewButtonColumn1 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.go_back_btn = new System.Windows.Forms.Button();
+            this.students_label = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.label1 = new System.Windows.Forms.Label();
-            this.students_btn = new System.Windows.Forms.Button();
-            this.teachers_btn = new System.Windows.Forms.Button();
             this.classes_btn = new System.Windows.Forms.Button();
+            this.teachers_btn = new System.Windows.Forms.Button();
+            this.students_btn = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.editStudent1 = new System.Windows.Forms.TabControl();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StudentsTable)).BeginInit();
@@ -77,33 +77,6 @@
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             this.tabPage2.Enter += new System.EventHandler(this.tabPage2_Enter);
-            // 
-            // students_label
-            // 
-            this.students_label.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.students_label.AutoSize = true;
-            this.students_label.Enabled = false;
-            this.students_label.Font = new System.Drawing.Font("Segoe UI", 20F);
-            this.students_label.Location = new System.Drawing.Point(411, 127);
-            this.students_label.Name = "students_label";
-            this.students_label.Size = new System.Drawing.Size(151, 46);
-            this.students_label.TabIndex = 9;
-            this.students_label.Text = "Students";
-            // 
-            // go_back_btn
-            // 
-            this.go_back_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.go_back_btn.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.go_back_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.go_back_btn.Location = new System.Drawing.Point(87, 44);
-            this.go_back_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.go_back_btn.Name = "go_back_btn";
-            this.go_back_btn.Size = new System.Drawing.Size(134, 42);
-            this.go_back_btn.TabIndex = 11;
-            this.go_back_btn.Text = "Go Back";
-            this.go_back_btn.UseVisualStyleBackColor = false;
             // 
             // StudentsTable
             // 
@@ -168,26 +141,14 @@
             this.StudentsTable.TabIndex = 10;
             this.StudentsTable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.StudentsTable_CellContentClick);
             // 
-            // dataGridViewButtonColumn1
+            // ID
             // 
-            this.dataGridViewButtonColumn1.FillWeight = 60F;
-            this.dataGridViewButtonColumn1.HeaderText = "Edit";
-            this.dataGridViewButtonColumn1.MinimumWidth = 6;
-            this.dataGridViewButtonColumn1.Name = "dataGridViewButtonColumn1";
-            this.dataGridViewButtonColumn1.ReadOnly = true;
-            this.dataGridViewButtonColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewButtonColumn1.Text = "Edit";
-            this.dataGridViewButtonColumn1.UseColumnTextForButtonValue = true;
-            // 
-            // Class
-            // 
-            this.Class.FillWeight = 84.78261F;
-            this.Class.HeaderText = "Class";
-            this.Class.MinimumWidth = 6;
-            this.Class.Name = "Class";
-            this.Class.ReadOnly = true;
-            this.Class.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Class.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.ID.HeaderText = "ID";
+            this.ID.MinimumWidth = 6;
+            this.ID.Name = "ID";
+            this.ID.ReadOnly = true;
+            this.ID.Width = 60;
             // 
             // StdName
             // 
@@ -199,14 +160,53 @@
             this.StdName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.StdName.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
-            // ID
+            // Class
             // 
-            this.ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.ID.HeaderText = "ID";
-            this.ID.MinimumWidth = 6;
-            this.ID.Name = "ID";
-            this.ID.ReadOnly = true;
-            this.ID.Width = 60;
+            this.Class.FillWeight = 84.78261F;
+            this.Class.HeaderText = "Class";
+            this.Class.MinimumWidth = 6;
+            this.Class.Name = "Class";
+            this.Class.ReadOnly = true;
+            this.Class.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Class.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // dataGridViewButtonColumn1
+            // 
+            this.dataGridViewButtonColumn1.FillWeight = 60F;
+            this.dataGridViewButtonColumn1.HeaderText = "Edit";
+            this.dataGridViewButtonColumn1.MinimumWidth = 6;
+            this.dataGridViewButtonColumn1.Name = "dataGridViewButtonColumn1";
+            this.dataGridViewButtonColumn1.ReadOnly = true;
+            this.dataGridViewButtonColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewButtonColumn1.Text = "Edit";
+            this.dataGridViewButtonColumn1.UseColumnTextForButtonValue = true;
+            // 
+            // go_back_btn
+            // 
+            this.go_back_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.go_back_btn.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.go_back_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.go_back_btn.Location = new System.Drawing.Point(87, 44);
+            this.go_back_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.go_back_btn.Name = "go_back_btn";
+            this.go_back_btn.Size = new System.Drawing.Size(134, 42);
+            this.go_back_btn.TabIndex = 11;
+            this.go_back_btn.Text = "Go Back";
+            this.go_back_btn.UseVisualStyleBackColor = false;
+            // 
+            // students_label
+            // 
+            this.students_label.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.students_label.AutoSize = true;
+            this.students_label.Enabled = false;
+            this.students_label.Font = new System.Drawing.Font("Segoe UI", 20F);
+            this.students_label.Location = new System.Drawing.Point(411, 127);
+            this.students_label.Name = "students_label";
+            this.students_label.Size = new System.Drawing.Size(151, 46);
+            this.students_label.TabIndex = 9;
+            this.students_label.Text = "Students";
             // 
             // tabPage1
             // 
@@ -223,15 +223,33 @@
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
-            // label1
+            // classes_btn
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(261, 44);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(544, 36);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Who would you like to (edit \\ delete)?";
+            this.classes_btn.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.classes_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.classes_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.classes_btn.ForeColor = System.Drawing.Color.Black;
+            this.classes_btn.Location = new System.Drawing.Point(403, 294);
+            this.classes_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.classes_btn.Name = "classes_btn";
+            this.classes_btn.Size = new System.Drawing.Size(245, 45);
+            this.classes_btn.TabIndex = 8;
+            this.classes_btn.Text = "Classes";
+            this.classes_btn.UseVisualStyleBackColor = false;
+            // 
+            // teachers_btn
+            // 
+            this.teachers_btn.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.teachers_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.teachers_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.teachers_btn.ForeColor = System.Drawing.Color.Black;
+            this.teachers_btn.Location = new System.Drawing.Point(648, 148);
+            this.teachers_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.teachers_btn.Name = "teachers_btn";
+            this.teachers_btn.Size = new System.Drawing.Size(245, 45);
+            this.teachers_btn.TabIndex = 7;
+            this.teachers_btn.Text = "Teachers";
+            this.teachers_btn.UseVisualStyleBackColor = false;
             // 
             // students_btn
             // 
@@ -248,33 +266,15 @@
             this.students_btn.UseVisualStyleBackColor = false;
             this.students_btn.Click += new System.EventHandler(this.students_btn_Click);
             // 
-            // teachers_btn
+            // label1
             // 
-            this.teachers_btn.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.teachers_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.teachers_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.teachers_btn.ForeColor = System.Drawing.Color.Black;
-            this.teachers_btn.Location = new System.Drawing.Point(648, 148);
-            this.teachers_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.teachers_btn.Name = "teachers_btn";
-            this.teachers_btn.Size = new System.Drawing.Size(245, 45);
-            this.teachers_btn.TabIndex = 7;
-            this.teachers_btn.Text = "Teachers";
-            this.teachers_btn.UseVisualStyleBackColor = false;
-            // 
-            // classes_btn
-            // 
-            this.classes_btn.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.classes_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.classes_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.classes_btn.ForeColor = System.Drawing.Color.Black;
-            this.classes_btn.Location = new System.Drawing.Point(403, 294);
-            this.classes_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.classes_btn.Name = "classes_btn";
-            this.classes_btn.Size = new System.Drawing.Size(245, 45);
-            this.classes_btn.TabIndex = 8;
-            this.classes_btn.Text = "Classes";
-            this.classes_btn.UseVisualStyleBackColor = false;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(261, 44);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(544, 36);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Who would you like to (edit \\ delete)?";
             // 
             // editStudent1
             // 
@@ -292,9 +292,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
+            this.AutoSize = true;
             this.Controls.Add(this.editStudent1);
             this.Name = "Edit";
-            this.Size = new System.Drawing.Size(1171, 661);
+            this.Size = new System.Drawing.Size(1174, 664);
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StudentsTable)).EndInit();
