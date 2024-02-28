@@ -38,6 +38,13 @@
       <Password>@aad2daW</Password>
     </Teacher>
     <Student>
+      <UserID>S602</UserID>
+      <Name>test test</Name>
+      <Email>test@test.com</Email>
+      <Password>Abd@12341</Password>
+      <ClassName>PD</ClassName>
+    </Student>
+    <Student>
       <UserID>S774</UserID>
       <Name>abody abodk</Name>
       <Email>abody@abodk.com</Email>
@@ -119,6 +126,7 @@
     <Students>
       <UserID>S304</UserID>
       <UserID>S004</UserID>
+      <UserID>S602</UserID>
     </Students>
   </Class>
   <Class>
