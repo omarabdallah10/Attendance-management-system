@@ -160,7 +160,7 @@
     <value>3, 2, 3, 2</value>
   </data>
   <data name="ClassesTable.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1043, 440</value>
+    <value>1072, 456</value>
   </data>
   <data name="ClassesTable.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -232,7 +232,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1147, 616</value>
+    <value>1176, 632</value>
   </data>
   <data name="tabPage3.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -295,7 +295,7 @@
     <value>3, 2, 3, 2</value>
   </data>
   <data name="StudentsTable.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1043, 440</value>
+    <value>1072, 456</value>
   </data>
   <data name="StudentsTable.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -355,7 +355,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1147, 616</value>
+    <value>1176, 632</value>
   </data>
   <data name="tabPage2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -427,7 +427,7 @@
     <value>3, 2, 3, 2</value>
   </data>
   <data name="TeachersTable.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1043, 440</value>
+    <value>1072, 456</value>
   </data>
   <data name="TeachersTable.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -487,7 +487,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1147, 616</value>
+    <value>1176, 632</value>
   </data>
   <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -511,13 +511,13 @@
     <value>On</value>
   </data>
   <data name="editStudent1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 16</value>
+    <value>0, 0</value>
   </data>
   <data name="editStudent1.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>No</value>
   </data>
   <data name="editStudent1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1155, 645</value>
+    <value>1184, 661</value>
   </data>
   <data name="editStudent1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -550,7 +550,7 @@
     <value>On</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1174, 664</value>
+    <value>1187, 664</value>
   </data>
   <data name="&gt;&gt;ClassName.Name" xml:space="preserve">
     <value>ClassName</value>
