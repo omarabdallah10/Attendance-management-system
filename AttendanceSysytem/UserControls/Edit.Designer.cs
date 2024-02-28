@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Edit));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -38,7 +39,18 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.ClassesTable = new System.Windows.Forms.DataGridView();
+            this.ClassName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SuperVisorID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Supervisor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewButtonColumn2 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.classes_label = new System.Windows.Forms.Label();
             this.ClassesTable = new System.Windows.Forms.DataGridView();
             this.ClassName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SuperVisorID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,19 +63,23 @@
             this.StdName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Class = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewButtonColumn1 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.go_back_btn = new System.Windows.Forms.Button();
             this.students_label = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.classes_btn = new System.Windows.Forms.Button();
-            this.teachers_btn = new System.Windows.Forms.Button();
-            this.students_btn = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.TeachersTable = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TeacherName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Classes = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Supervised_Class = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewButtonColumn3 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.teachers_label = new System.Windows.Forms.Label();
             this.editStudent1 = new System.Windows.Forms.TabControl();
             this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ClassesTable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClassesTable)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StudentsTable)).BeginInit();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TeachersTable)).BeginInit();
             this.editStudent1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,12 +87,8 @@
             // 
             this.tabPage3.Controls.Add(this.ClassesTable);
             this.tabPage3.Controls.Add(this.classes_label);
-            this.tabPage3.Location = new System.Drawing.Point(4, 25);
+            resources.ApplyResources(this.tabPage3, "tabPage3");
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1160, 629);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "tabPage3";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // ClassesTable
@@ -89,9 +101,7 @@
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Calibri", 12F);
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             this.ClassesTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.ClassesTable.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.ClassesTable, "ClassesTable");
             this.ClassesTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.ClassesTable.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.ClassesTable.BackgroundColor = System.Drawing.SystemColors.Control;
@@ -120,8 +130,6 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.ClassesTable.DefaultCellStyle = dataGridViewCellStyle3;
             this.ClassesTable.GridColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.ClassesTable.Location = new System.Drawing.Point(180, 113);
-            this.ClassesTable.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ClassesTable.Name = "ClassesTable";
             this.ClassesTable.ReadOnly = true;
             this.ClassesTable.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
@@ -138,15 +146,12 @@
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.ClassesTable.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.ClassesTable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.ClassesTable.Size = new System.Drawing.Size(590, 268);
-            this.ClassesTable.TabIndex = 10;
             this.ClassesTable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ClassesTable_CellContentClick);
             // 
             // ClassName
             // 
             this.ClassName.FillWeight = 84.78261F;
-            this.ClassName.HeaderText = "Name";
-            this.ClassName.MinimumWidth = 6;
+            resources.ApplyResources(this.ClassName, "ClassName");
             this.ClassName.Name = "ClassName";
             this.ClassName.ReadOnly = true;
             this.ClassName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -154,8 +159,7 @@
             // SuperVisorID
             // 
             this.SuperVisorID.FillWeight = 84.78261F;
-            this.SuperVisorID.HeaderText = "SuperVisorID";
-            this.SuperVisorID.MinimumWidth = 6;
+            resources.ApplyResources(this.SuperVisorID, "SuperVisorID");
             this.SuperVisorID.Name = "SuperVisorID";
             this.SuperVisorID.ReadOnly = true;
             this.SuperVisorID.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -163,8 +167,7 @@
             // 
             // Supervisor
             // 
-            this.Supervisor.HeaderText = "Supervisor";
-            this.Supervisor.MinimumWidth = 6;
+            resources.ApplyResources(this.Supervisor, "Supervisor");
             this.Supervisor.Name = "Supervisor";
             this.Supervisor.ReadOnly = true;
             this.Supervisor.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
@@ -172,8 +175,7 @@
             // dataGridViewButtonColumn2
             // 
             this.dataGridViewButtonColumn2.FillWeight = 60F;
-            this.dataGridViewButtonColumn2.HeaderText = "Edit";
-            this.dataGridViewButtonColumn2.MinimumWidth = 6;
+            resources.ApplyResources(this.dataGridViewButtonColumn2, "dataGridViewButtonColumn2");
             this.dataGridViewButtonColumn2.Name = "dataGridViewButtonColumn2";
             this.dataGridViewButtonColumn2.ReadOnly = true;
             this.dataGridViewButtonColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -182,35 +184,16 @@
             // 
             // classes_label
             // 
-            this.classes_label.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.classes_label.AutoSize = true;
-            this.classes_label.Enabled = false;
-            this.classes_label.Font = new System.Drawing.Font("Segoe UI", 20F);
-            this.classes_label.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.classes_label.Location = new System.Drawing.Point(411, 51);
-            this.classes_label.Margin = new System.Windows.Forms.Padding(0);
-            this.classes_label.MaximumSize = new System.Drawing.Size(1800, 100);
+            resources.ApplyResources(this.classes_label, "classes_label");
             this.classes_label.Name = "classes_label";
-            this.classes_label.Size = new System.Drawing.Size(126, 46);
-            this.classes_label.TabIndex = 9;
-            this.classes_label.Text = "Classes";
-            this.classes_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.StudentsTable);
-            this.tabPage2.Controls.Add(this.go_back_btn);
             this.tabPage2.Controls.Add(this.students_label);
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            resources.ApplyResources(this.tabPage2, "tabPage2");
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1135, 601);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
-            this.tabPage2.Enter += new System.EventHandler(this.tabPage2_Enter);
             // 
             // StudentsTable
             // 
@@ -222,9 +205,7 @@
             dataGridViewCellStyle6.Font = new System.Drawing.Font("Calibri", 12F);
             dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
             this.StudentsTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
-            this.StudentsTable.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.StudentsTable, "StudentsTable");
             this.StudentsTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.StudentsTable.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.StudentsTable.BackgroundColor = System.Drawing.SystemColors.Control;
@@ -253,8 +234,6 @@
             dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.StudentsTable.DefaultCellStyle = dataGridViewCellStyle8;
             this.StudentsTable.GridColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.StudentsTable.Location = new System.Drawing.Point(187, 175);
-            this.StudentsTable.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.StudentsTable.Name = "StudentsTable";
             this.StudentsTable.ReadOnly = true;
             this.StudentsTable.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
@@ -271,24 +250,19 @@
             dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.StudentsTable.RowsDefaultCellStyle = dataGridViewCellStyle10;
             this.StudentsTable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.StudentsTable.Size = new System.Drawing.Size(565, 257);
-            this.StudentsTable.TabIndex = 10;
             this.StudentsTable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.StudentsTable_CellContentClick);
             // 
             // ID
             // 
             this.ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.ID.HeaderText = "ID";
-            this.ID.MinimumWidth = 6;
+            resources.ApplyResources(this.ID, "ID");
             this.ID.Name = "ID";
             this.ID.ReadOnly = true;
-            this.ID.Width = 60;
             // 
             // StdName
             // 
             this.StdName.FillWeight = 84.78261F;
-            this.StdName.HeaderText = "Name";
-            this.StdName.MinimumWidth = 6;
+            resources.ApplyResources(this.StdName, "StdName");
             this.StdName.Name = "StdName";
             this.StdName.ReadOnly = true;
             this.StdName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -297,8 +271,7 @@
             // Class
             // 
             this.Class.FillWeight = 84.78261F;
-            this.Class.HeaderText = "Class";
-            this.Class.MinimumWidth = 6;
+            resources.ApplyResources(this.Class, "Class");
             this.Class.Name = "Class";
             this.Class.ReadOnly = true;
             this.Class.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -307,138 +280,158 @@
             // dataGridViewButtonColumn1
             // 
             this.dataGridViewButtonColumn1.FillWeight = 60F;
-            this.dataGridViewButtonColumn1.HeaderText = "Edit";
-            this.dataGridViewButtonColumn1.MinimumWidth = 6;
+            resources.ApplyResources(this.dataGridViewButtonColumn1, "dataGridViewButtonColumn1");
             this.dataGridViewButtonColumn1.Name = "dataGridViewButtonColumn1";
             this.dataGridViewButtonColumn1.ReadOnly = true;
             this.dataGridViewButtonColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewButtonColumn1.Text = "Edit";
             this.dataGridViewButtonColumn1.UseColumnTextForButtonValue = true;
             // 
-            // go_back_btn
-            // 
-            this.go_back_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.go_back_btn.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.go_back_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.go_back_btn.Location = new System.Drawing.Point(87, 44);
-            this.go_back_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.go_back_btn.Name = "go_back_btn";
-            this.go_back_btn.Size = new System.Drawing.Size(134, 42);
-            this.go_back_btn.TabIndex = 11;
-            this.go_back_btn.Text = "Go Back";
-            this.go_back_btn.UseVisualStyleBackColor = false;
-            // 
             // students_label
             // 
-            this.students_label.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.students_label.AutoSize = true;
-            this.students_label.Enabled = false;
-            this.students_label.Font = new System.Drawing.Font("Segoe UI", 20F);
-            this.students_label.Location = new System.Drawing.Point(411, 127);
+            resources.ApplyResources(this.students_label, "students_label");
             this.students_label.Name = "students_label";
-            this.students_label.Size = new System.Drawing.Size(151, 46);
-            this.students_label.TabIndex = 9;
-            this.students_label.Text = "Students";
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.classes_btn);
-            this.tabPage1.Controls.Add(this.teachers_btn);
-            this.tabPage1.Controls.Add(this.students_btn);
-            this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Controls.Add(this.TeachersTable);
+            this.tabPage1.Controls.Add(this.teachers_label);
+            resources.ApplyResources(this.tabPage1, "tabPage1");
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1160, 629);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
-            // classes_btn
+            // TeachersTable
             // 
-            this.classes_btn.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.classes_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.classes_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.classes_btn.ForeColor = System.Drawing.Color.Black;
-            this.classes_btn.Location = new System.Drawing.Point(403, 294);
-            this.classes_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.classes_btn.Name = "classes_btn";
-            this.classes_btn.Size = new System.Drawing.Size(245, 45);
-            this.classes_btn.TabIndex = 8;
-            this.classes_btn.Text = "Classes";
-            this.classes_btn.UseVisualStyleBackColor = false;
+            this.TeachersTable.AllowUserToAddRows = false;
+            this.TeachersTable.AllowUserToDeleteRows = false;
+            this.TeachersTable.AllowUserToResizeColumns = false;
+            this.TeachersTable.AllowUserToResizeRows = false;
+            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Calibri", 12F);
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
+            this.TeachersTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
+            resources.ApplyResources(this.TeachersTable, "TeachersTable");
+            this.TeachersTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.TeachersTable.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.TeachersTable.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.TeachersTable.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TeachersTable.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.TeachersTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            this.TeachersTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.TeachersTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.TeacherName,
+            this.Classes,
+            this.Supervised_Class,
+            this.dataGridViewButtonColumn3});
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.TeachersTable.DefaultCellStyle = dataGridViewCellStyle13;
+            this.TeachersTable.GridColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.TeachersTable.Name = "TeachersTable";
+            this.TeachersTable.ReadOnly = true;
+            this.TeachersTable.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.TeachersTable.RowHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            this.TeachersTable.RowHeadersVisible = false;
+            this.TeachersTable.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.TeachersTable.RowsDefaultCellStyle = dataGridViewCellStyle15;
+            this.TeachersTable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.TeachersTable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.TeachersTable_CellContentClick);
             // 
-            // teachers_btn
+            // dataGridViewTextBoxColumn1
             // 
-            this.teachers_btn.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.teachers_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.teachers_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.teachers_btn.ForeColor = System.Drawing.Color.Black;
-            this.teachers_btn.Location = new System.Drawing.Point(648, 148);
-            this.teachers_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.teachers_btn.Name = "teachers_btn";
-            this.teachers_btn.Size = new System.Drawing.Size(245, 45);
-            this.teachers_btn.TabIndex = 7;
-            this.teachers_btn.Text = "Teachers";
-            this.teachers_btn.UseVisualStyleBackColor = false;
+            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            resources.ApplyResources(this.dataGridViewTextBoxColumn1, "dataGridViewTextBoxColumn1");
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
             // 
-            // students_btn
+            // TeacherName
             // 
-            this.students_btn.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.students_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.students_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.students_btn.ForeColor = System.Drawing.Color.Black;
-            this.students_btn.Location = new System.Drawing.Point(129, 148);
-            this.students_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.students_btn.Name = "students_btn";
-            this.students_btn.Size = new System.Drawing.Size(245, 45);
-            this.students_btn.TabIndex = 6;
-            this.students_btn.Text = "Students";
-            this.students_btn.UseVisualStyleBackColor = false;
-            this.students_btn.Click += new System.EventHandler(this.students_btn_Click);
+            this.TeacherName.FillWeight = 84.78261F;
+            resources.ApplyResources(this.TeacherName, "TeacherName");
+            this.TeacherName.Name = "TeacherName";
+            this.TeacherName.ReadOnly = true;
+            this.TeacherName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.TeacherName.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
-            // label1
+            // Classes
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(261, 44);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(544, 36);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Who would you like to (edit \\ delete)?";
+            this.Classes.FillWeight = 84.78261F;
+            resources.ApplyResources(this.Classes, "Classes");
+            this.Classes.Name = "Classes";
+            this.Classes.ReadOnly = true;
+            this.Classes.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Classes.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Supervised_Class
+            // 
+            resources.ApplyResources(this.Supervised_Class, "Supervised_Class");
+            this.Supervised_Class.Name = "Supervised_Class";
+            this.Supervised_Class.ReadOnly = true;
+            this.Supervised_Class.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // dataGridViewButtonColumn3
+            // 
+            this.dataGridViewButtonColumn3.FillWeight = 60F;
+            resources.ApplyResources(this.dataGridViewButtonColumn3, "dataGridViewButtonColumn3");
+            this.dataGridViewButtonColumn3.Name = "dataGridViewButtonColumn3";
+            this.dataGridViewButtonColumn3.ReadOnly = true;
+            this.dataGridViewButtonColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewButtonColumn3.Text = "Edit";
+            this.dataGridViewButtonColumn3.UseColumnTextForButtonValue = true;
+            // 
+            // teachers_label
+            // 
+            resources.ApplyResources(this.teachers_label, "teachers_label");
+            this.teachers_label.Name = "teachers_label";
             // 
             // editStudent1
             // 
             this.editStudent1.Controls.Add(this.tabPage1);
             this.editStudent1.Controls.Add(this.tabPage2);
             this.editStudent1.Controls.Add(this.tabPage3);
-            this.editStudent1.Location = new System.Drawing.Point(3, 31);
+            resources.ApplyResources(this.editStudent1, "editStudent1");
             this.editStudent1.Name = "editStudent1";
             this.editStudent1.SelectedIndex = 0;
-            this.editStudent1.Size = new System.Drawing.Size(1143, 630);
-            this.editStudent1.TabIndex = 0;
             // 
             // Edit
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoScroll = true;
-            this.AutoSize = true;
             this.Controls.Add(this.editStudent1);
             this.Name = "Edit";
-            this.Size = new System.Drawing.Size(1174, 664);
             this.Load += new System.EventHandler(this.Edit_Load);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ClassesTable)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClassesTable)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StudentsTable)).EndInit();
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TeachersTable)).EndInit();
             this.editStudent1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -446,7 +439,7 @@
 
         #endregion
 
-        public void resetDataTable() { StudentsTable.Rows.Clear(); }
+        public void resetStudentsTable() { StudentsTable.Rows.Clear(); }
 
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage2;
@@ -455,19 +448,21 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn StdName;
         private System.Windows.Forms.DataGridViewTextBoxColumn Class;
         private System.Windows.Forms.DataGridViewButtonColumn dataGridViewButtonColumn1;
-        private System.Windows.Forms.Button go_back_btn;
         private System.Windows.Forms.Label students_label;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.Button classes_btn;
-        private System.Windows.Forms.Button teachers_btn;
-        private System.Windows.Forms.Button students_btn;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabControl editStudent1;
-        private System.Windows.Forms.DataGridView ClassesTable;
         private System.Windows.Forms.DataGridViewTextBoxColumn ClassName;
         private System.Windows.Forms.DataGridViewTextBoxColumn SuperVisorID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Supervisor;
         private System.Windows.Forms.DataGridViewButtonColumn dataGridViewButtonColumn2;
         private System.Windows.Forms.Label classes_label;
+        public System.Windows.Forms.DataGridView ClassesTable;
+        private System.Windows.Forms.DataGridView TeachersTable;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TeacherName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Classes;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Supervised_Class;
+        private System.Windows.Forms.DataGridViewButtonColumn dataGridViewButtonColumn3;
+        private System.Windows.Forms.Label teachers_label;
     }
 }

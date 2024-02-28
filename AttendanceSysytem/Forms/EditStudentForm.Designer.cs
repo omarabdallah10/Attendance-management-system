@@ -157,6 +157,7 @@ namespace AttendanceSysytem.Forms
             this.Controls.Add(this.delete_student_btn);
             this.Controls.Add(this.edit_student_label);
             this.Name = "EditStudentForm";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.EditStudentForm_FormClosed);
             this.Load += new System.EventHandler(this.EditStudentForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

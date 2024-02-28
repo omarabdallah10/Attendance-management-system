@@ -50,27 +50,27 @@ namespace AttendanceSysytem.Forms
             // 
             // cancel_btn
             // 
-            resources.ApplyResources(this.cancel_btn, "cancel_btn");
             this.cancel_btn.BackColor = System.Drawing.Color.LightSkyBlue;
             this.cancel_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.cancel_btn, "cancel_btn");
             this.cancel_btn.Name = "cancel_btn";
             this.cancel_btn.UseVisualStyleBackColor = false;
             this.cancel_btn.Click += new System.EventHandler(this.cancel_btn_Click);
             // 
             // save_btn
             // 
-            resources.ApplyResources(this.save_btn, "save_btn");
             this.save_btn.BackColor = System.Drawing.Color.LightSkyBlue;
             this.save_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.save_btn, "save_btn");
             this.save_btn.Name = "save_btn";
             this.save_btn.UseVisualStyleBackColor = false;
             this.save_btn.Click += new System.EventHandler(this.save_btn_Click);
             // 
             // delete_teacher_btn
             // 
-            resources.ApplyResources(this.delete_teacher_btn, "delete_teacher_btn");
             this.delete_teacher_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.delete_teacher_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.delete_teacher_btn, "delete_teacher_btn");
             this.delete_teacher_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.delete_teacher_btn.Name = "delete_teacher_btn";
             this.delete_teacher_btn.UseVisualStyleBackColor = false;
@@ -134,8 +134,8 @@ namespace AttendanceSysytem.Forms
             // 
             // checkedListBox1
             // 
-            resources.ApplyResources(this.checkedListBox1, "checkedListBox1");
             this.checkedListBox1.FormattingEnabled = true;
+            resources.ApplyResources(this.checkedListBox1, "checkedListBox1");
             this.checkedListBox1.Name = "checkedListBox1";
             // 
             // EditTeacherForm
@@ -158,6 +158,7 @@ namespace AttendanceSysytem.Forms
             this.Controls.Add(this.edit_teacher_label);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Name = "EditTeacherForm";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.EditTeacherForm_FormClosed);
             this.Load += new System.EventHandler(this.EditTeacherForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

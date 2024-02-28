@@ -71,12 +71,5 @@ namespace AttendanceSysytem.Users
                 MyForm.setAttendanceRecord(data.AttendanceDate, data.Status);
             }
         }
-        public void ShowStudentData(StudentsForm MyForm)
-        {
-            // Load the XML file
-            XmlDocument xmlDoc = DataManagement.xmlDoc();
-            MyForm.AddRow(UserID, Name, ClassName);
-
-        }
     }
 }

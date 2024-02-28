@@ -123,21 +123,21 @@
   <data name="&gt;&gt;Supervised_Class.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;ID.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>832, 453</value>
+  </data>
+  <data name="TeachersTable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>71, 125</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="TeachersTable.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="ID.Width" type="System.Int32, mscorlib">
     <value>60</value>
   </data>
-  <data name="go_back_btn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 42</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
@@ -147,8 +147,14 @@
   <data name="TeachersTable.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
+  <data name="teachers_label.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 20pt</value>
+  </data>
   <data name="&gt;&gt;teachers_label.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="Classes.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
   <data name="&gt;&gt;TeachersTable.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -195,6 +201,9 @@
   <data name="&gt;&gt;go_back_btn.Name" xml:space="preserve">
     <value>go_back_btn</value>
   </data>
+  <data name="teachers_label.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;TeachersTable.Name" xml:space="preserve">
     <value>TeachersTable</value>
   </data>
@@ -210,20 +219,14 @@
   <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>On</value>
   </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
-  </data>
-  <data name="TeachersTable.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="&gt;&gt;TeacherName.Type" xml:space="preserve">
+  <data name="&gt;&gt;ID.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="teachers_label.Text" xml:space="preserve">
+    <value>Teachers</value>
   </data>
   <data name="Supervised_Class.HeaderText" xml:space="preserve">
     <value>Supervised Class</value>
-  </data>
-  <data name="teachers_label.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="go_back_btn.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt</value>
@@ -234,23 +237,20 @@
   <data name="&gt;&gt;ID.Name" xml:space="preserve">
     <value>ID</value>
   </data>
-  <data name="&gt;&gt;Classes.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;teachers_label.Name" xml:space="preserve">
     <value>teachers_label</value>
   </data>
   <data name="go_back_btn.Text" xml:space="preserve">
     <value>Go Back</value>
   </data>
-  <data name="teachers_label.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
   </data>
-  <data name="teachers_label.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 20pt</value>
+  <data name="teachers_label.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="TeacherName.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="go_back_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 42</value>
   </data>
   <data name="TeachersTable.Size" type="System.Drawing.Size, System.Drawing">
     <value>684, 285</value>
@@ -276,14 +276,14 @@
   <data name="&gt;&gt;TeachersTable.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="Classes.MinimumWidth" type="System.Int32, mscorlib">
+  <data name="TeacherName.MinimumWidth" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="TeachersTable.Location" type="System.Drawing.Point, System.Drawing">
-    <value>71, 125</value>
+  <data name="&gt;&gt;Classes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="teachers_label.Text" xml:space="preserve">
-    <value>Teachers</value>
+  <data name="teachers_label.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
   <data name="&gt;&gt;teachers_label.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -294,17 +294,14 @@
   <data name="&gt;&gt;Supervised_Class.Name" xml:space="preserve">
     <value>Supervised_Class</value>
   </data>
-  <data name="teachers_label.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="&gt;&gt;TeacherName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ID.HeaderText" xml:space="preserve">
     <value>ID</value>
   </data>
   <metadata name="TeacherName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
-  </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>ar</value>
   </metadata>
   <metadata name="Supervised_Class.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

@@ -27,12 +27,12 @@ namespace AttendanceSysytem.Forms
         {
             if (e.ColumnIndex==3)
             {
-                EditStudentForm form = new EditStudentForm(this);
-                MessageBox.Show(StudentsTable.Rows.SharedRow(e.RowIndex).Cells[0].Value.ToString());
-                form.Recived = StudentsTable.Rows.SharedRow(e.RowIndex).Cells[0].Value.ToString();
-                Console.WriteLine(form.Recived);
-                form.Show();
-                Hide();
+                //EditStudentForm form = new EditStudentForm();
+                //MessageBox.Show(StudentsTable.Rows.SharedRow(e.RowIndex).Cells[0].Value.ToString());
+                //form.Recived = StudentsTable.Rows.SharedRow(e.RowIndex).Cells[0].Value.ToString();
+                //Console.WriteLine(form.Recived);
+                //form.Show();
+                //Hide();
             }
         }
 
@@ -53,7 +53,6 @@ namespace AttendanceSysytem.Forms
                 string StudentPassword = StudentRecord.SelectSingleNode("Password").InnerText;
                 string ClassName = StudentRecord.SelectSingleNode("ClassName").InnerText;
                 Student std = new Student(StudentName,StudentEmail,StudentPassword,StudentID, ClassName);
-                std.ShowStudentData(this);
                 StudentsList.Add(std);
             }
 

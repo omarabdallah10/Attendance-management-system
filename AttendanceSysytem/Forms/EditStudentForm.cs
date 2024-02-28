@@ -17,18 +17,17 @@ namespace AttendanceSysytem.Forms
         public string Recived { get; set; }
         public XmlElement StudentElement { get; set; }
         public XmlDocument Doc { get; set; }
-        Form oldform = null;
-        public EditStudentForm(Form f1)
+        UserControls.Edit ParentController = null;
+        public EditStudentForm(UserControls.Edit _parentController)
         {
             InitializeComponent();
             Settings.ChangeFont(this, Settings.MyFont, true);
-            oldform = f1;
+            ParentController = _parentController;
         }
 
         private void cancel_btn_Click(object sender, EventArgs e)
         {
-            oldform.Show();
-            Hide();
+            Close();
         }
 
         private void save_btn_Click(object sender, EventArgs e)
@@ -45,8 +44,7 @@ namespace AttendanceSysytem.Forms
             {
                 MessageBox.Show("Data has been updated");
                 DataManagement.SaveXml(Doc);
-                oldform.Show();
-                Hide();
+                Close();
             }
         }
 
@@ -73,7 +71,7 @@ namespace AttendanceSysytem.Forms
                 index++;
                 string className = ClassNode.SelectSingleNode("Name").InnerText;
                 classes_list.Items.Add(className);
-                if (className==StudentElement.SelectSingleNode("ClassName").InnerText)
+                if (className == StudentElement.SelectSingleNode("ClassName").InnerText)
                 {
                     classes_list.SelectedIndex = index;
                     Console.WriteLine(className);
@@ -88,8 +86,12 @@ namespace AttendanceSysytem.Forms
             DataManagement.deleteUser(Doc, student);
             MessageBox.Show("Student has been deleted");
             DataManagement.SaveXml(Doc);
-            oldform.Show();
-            Hide();
+            Close();
+        }
+
+        private void EditStudentForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            ParentController.printStudentTable();
         }
     }
 }

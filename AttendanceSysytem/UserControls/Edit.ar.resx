@@ -117,47 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="class_label.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>No</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1143, 586</value>
   </data>
-  <data name="password_label.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>No</value>
-  </data>
-  <data name="email_label.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>No</value>
-  </data>
-  <data name="Fname.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>No</value>
-  </data>
-  <data name="LName.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>No</value>
-  </data>
-  <data name="cancel_btn.Text" xml:space="preserve">
-    <value>الغاء</value>
-  </data>
-  <data name="email_label.Text" xml:space="preserve">
-    <value>البريد الالكتروني</value>
-  </data>
-  <data name="class_label.Text" xml:space="preserve">
-    <value>الفصول</value>
-  </data>
-  <data name="LName.Text" xml:space="preserve">
-    <value>اسم العائلة</value>
-  </data>
-  <data name="Fname.Text" xml:space="preserve">
-    <value>الاسم الأول</value>
-  </data>
-  <data name="delete_teacher_btn.Text" xml:space="preserve">
-    <value>حذف المعلم</value>
-  </data>
-  <data name="password_label.Text" xml:space="preserve">
-    <value>كلمة السر</value>
-  </data>
-  <data name="edit_teacher_label.Text" xml:space="preserve">
-    <value>تعديل المعلم</value>
-  </data>
-  <data name="save_btn.Text" xml:space="preserve">
-    <value>حفظ</value>
+  <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1143, 586</value>
   </data>
 </root>
