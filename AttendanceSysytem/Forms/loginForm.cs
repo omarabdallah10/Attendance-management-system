@@ -74,9 +74,5 @@ namespace AttendanceSysytem
                 Console.WriteLine(validator);
             }
         }
-        private void loginForm_Load(object sender, EventArgs e)
-        {
-            this.StartPosition = FormStartPosition.CenterScreen;
-        }
     }
 }

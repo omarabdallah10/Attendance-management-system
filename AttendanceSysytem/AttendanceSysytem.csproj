@@ -467,5 +467,14 @@
   <ItemGroup>
     <None Include="Resources\class.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\attendanceLogo-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\attendanceLogo-removebg-preview1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
