@@ -75,7 +75,6 @@
             this.editStudent1 = new System.Windows.Forms.TabControl();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ClassesTable)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ClassesTable)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StudentsTable)).BeginInit();
             this.tabPage1.SuspendLayout();
@@ -421,7 +420,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.editStudent1);
             this.Name = "Edit";
-            this.Load += new System.EventHandler(this.Edit_Load);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ClassesTable)).EndInit();
