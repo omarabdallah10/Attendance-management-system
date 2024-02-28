@@ -8,28 +8,40 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 using System.Xml;
 
 namespace AttendanceSysytem.UserControls
 {
-    public partial class Settings : UserControl
+    public partial class SettingsControl : UserControl
     {
         public User Recived { get; set; }
         public XmlDocument Document { get; set; }
         public XmlElement User { get; set; }
-        public Settings()
+        public SettingsControl()
         {
             InitializeComponent();
         }
 
-        private void Settings_Load(object sender, EventArgs e)
+        private void SettingsControl_Load(object sender, EventArgs e)
         {
-            Font = DataManagement.MyFont;
+            Languages.DropDownStyle = ComboBoxStyle.DropDownList;
+            this.Font = Classes.Settings.MyFont;
             Document = DataManagement.xmlDoc();
+            //Console.WriteLine(Recived.Name);
+            
             User = DataManagement.GetElementById(Document, Recived.UserID, "Admin");
 
             XmlNode password = User.SelectSingleNode("Password");
             password_box.Text = password.InnerText;
+        }
+
+        private void Languages_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (Languages.SelectedIndex == 0)
+                Classes.Settings.SwitchLanguage("ar");
+            else
+                Classes.Settings.SwitchLanguage("en");
         }
 
         private void save_btn_Click(object sender, EventArgs e)
@@ -52,7 +64,7 @@ namespace AttendanceSysytem.UserControls
             FontDialog font = new FontDialog();
             font.ShowDialog();
 
-            DataManagement.ChangeFontForAllPages(font.Font);
+            Classes.Settings.ChangeFontForAllPages(font.Font);
         }
     }
 }
