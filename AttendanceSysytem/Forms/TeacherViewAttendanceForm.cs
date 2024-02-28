@@ -109,13 +109,6 @@ namespace AttendanceSysytem.Forms
                 }
             }
 
-
-            /*for (int i = 0; i < rows.Length; i++)
-            {
-                graph.DrawString(rows[i], font, XBrushes.Black,
-                                       new XRect(0, i * 20, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.Center);
-            }*/
-
             pdf.Save(fileName);
 
         }

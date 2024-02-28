@@ -34,6 +34,7 @@
             this.DateComboBox = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnViewAttendance = new System.Windows.Forms.Button();
+            this.btnSaveAs = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAttendance)).BeginInit();
             this.SuspendLayout();
             // 
@@ -122,7 +123,7 @@
             this.btnViewAttendance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.btnViewAttendance.ForeColor = System.Drawing.Color.White;
             this.btnViewAttendance.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnViewAttendance.Location = new System.Drawing.Point(441, 117);
+            this.btnViewAttendance.Location = new System.Drawing.Point(290, 123);
             this.btnViewAttendance.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnViewAttendance.Name = "btnViewAttendance";
             this.btnViewAttendance.Size = new System.Drawing.Size(234, 46);
@@ -131,10 +132,28 @@
             this.btnViewAttendance.UseVisualStyleBackColor = false;
             this.btnViewAttendance.Click += new System.EventHandler(this.btnViewAttendance_Click);
             // 
+            // btnSaveAs
+            // 
+            this.btnSaveAs.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnSaveAs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnSaveAs.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSaveAs.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.btnSaveAs.ForeColor = System.Drawing.Color.White;
+            this.btnSaveAs.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnSaveAs.Location = new System.Drawing.Point(652, 123);
+            this.btnSaveAs.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSaveAs.Name = "btnSaveAs";
+            this.btnSaveAs.Size = new System.Drawing.Size(234, 46);
+            this.btnSaveAs.TabIndex = 46;
+            this.btnSaveAs.Text = "Save AS";
+            this.btnSaveAs.UseVisualStyleBackColor = false;
+            this.btnSaveAs.Click += new System.EventHandler(this.btnSaveAs_Click);
+            // 
             // ViewAttendance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnSaveAs);
             this.Controls.Add(this.btnViewAttendance);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.DateComboBox);
@@ -157,5 +176,6 @@
         private System.Windows.Forms.ComboBox DateComboBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnViewAttendance;
+        private System.Windows.Forms.Button btnSaveAs;
     }
 }
