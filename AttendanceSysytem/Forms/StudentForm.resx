@@ -117,622 +117,646 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;StudentNametxt.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;signOutBTN.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;StudentAttendanceTable.Name" xml:space="preserve">
-    <value>StudentAttendanceTable</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="StudentNametxt.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="StudentNametxt.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="saveAs_btn.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
-  </data>
-  <data name="&gt;&gt;FromDate.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="FromDate.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="showFrom_label.Text" xml:space="preserve">
-    <value>Show From</value>
-  </data>
-  <data name="&gt;&gt;StudentAttendanceTable.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;AbsentDays.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="absentdays_label.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
-  </data>
-  <data name="ToDate.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>200, 27</value>
-  </data>
-  <data name="settings.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
-  </data>
-  <data name="&gt;&gt;showFrom_label.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="name_label.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;class_label.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;STATUS.Name" xml:space="preserve">
-    <value>STATUS</value>
-  </data>
-  <data name="settings.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="settings.Location" type="System.Drawing.Point, System.Drawing">
-    <value>962, 27</value>
-  </data>
-  <data name="AbsentDays.Location" type="System.Drawing.Point, System.Drawing">
-    <value>962, 168</value>
-  </data>
-  <data name="&gt;&gt;ToDate.Name" xml:space="preserve">
-    <value>ToDate</value>
+  <data name="StudentNametxt.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 10.2pt</value>
   </data>
   <data name="StudentNametxt.Location" type="System.Drawing.Point, System.Drawing">
     <value>190, 91</value>
   </data>
-  <data name="&gt;&gt;showFrom_label.ZOrder" xml:space="preserve">
-    <value>11</value>
+  <data name="StudentNametxt.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
-  <data name="&gt;&gt;class_label.ZOrder" xml:space="preserve">
-    <value>12</value>
+  <data name="StudentNametxt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>781, 27</value>
   </data>
-  <data name="&gt;&gt;DayFormatComboBox.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="StudentNametxt.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
-  <data name="absentdays_label.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 10.2pt</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="name_label.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 19</value>
-  </data>
-  <data name="settings.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>150, 40</value>
+  <data name="&gt;&gt;StudentNametxt.Name" xml:space="preserve">
+    <value>StudentNametxt</value>
   </data>
   <data name="&gt;&gt;StudentNametxt.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="class_label.Text" xml:space="preserve">
-    <value>Class</value>
+  <data name="&gt;&gt;StudentNametxt.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="&gt;&gt;AbsentDays.Name" xml:space="preserve">
-    <value>AbsentDays</value>
+  <data name="&gt;&gt;StudentNametxt.ZOrder" xml:space="preserve">
+    <value>16</value>
   </data>
-  <data name="absentdays_label.Size" type="System.Drawing.Size, System.Drawing">
-    <value>102, 19</value>
-  </data>
-  <data name="to_label.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="class_label.Size" type="System.Drawing.Size, System.Drawing">
-    <value>49, 19</value>
-  </data>
-  <data name="AbsentDays.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>80, 27</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="STATUS.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="StudentClasstxt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>427, 27</value>
-  </data>
-  <data name="StudentClasstxt.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="name_label.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Date Format</value>
+  <data name="name_label.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;absentdays_label.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>StudentForm</value>
-  </data>
-  <data name="absentdays_label.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
+  <data name="name_label.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 10.2pt</value>
   </data>
   <data name="name_label.Location" type="System.Drawing.Point, System.Drawing">
     <value>80, 94</value>
   </data>
-  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="name_label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 19</value>
   </data>
-  <data name="&gt;&gt;ToDate.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="name_label.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
-  <data name="&gt;&gt;to_label.ZOrder" xml:space="preserve">
-    <value>10</value>
+  <data name="name_label.Text" xml:space="preserve">
+    <value>Name</value>
   </data>
   <data name="&gt;&gt;name_label.Name" xml:space="preserve">
     <value>name_label</value>
   </data>
-  <data name="AbsentDays.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>100, 27</value>
+  <data name="&gt;&gt;name_label.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="StudentClasstxt.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="&gt;&gt;name_label.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;name_label.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="class_label.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="class_label.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="class_label.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 10.2pt</value>
   </data>
-  <data name="DayFormatComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>924, 94</value>
+  <data name="class_label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>80, 130</value>
   </data>
-  <data name="signOutBTN.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+  <data name="class_label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 19</value>
   </data>
-  <data name="&gt;&gt;absentdays_label.Name" xml:space="preserve">
-    <value>absentdays_label</value>
+  <data name="class_label.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
-  <data name="StudentNametxt.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 10.2pt</value>
+  <data name="class_label.Text" xml:space="preserve">
+    <value>Class</value>
   </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
+  <data name="&gt;&gt;class_label.Name" xml:space="preserve">
+    <value>class_label</value>
   </data>
-  <data name="settings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 40</value>
+  <data name="&gt;&gt;class_label.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;ToDate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;class_label.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="saveAs_btn.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>810, 95</value>
-  </data>
-  <data name="&gt;&gt;DATE.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="saveAs_btn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 40</value>
-  </data>
-  <data name="&gt;&gt;FromDate.Name" xml:space="preserve">
-    <value>FromDate</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1176, 610</value>
-  </data>
-  <data name="settings.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>99, 19</value>
-  </data>
-  <data name="signOutBTN.Location" type="System.Drawing.Point, System.Drawing">
-    <value>50, 27</value>
-  </data>
-  <data name="DayFormatComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 24</value>
-  </data>
-  <data name="&gt;&gt;StudentClasstxt.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;class_label.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
-  <data name="to_label.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 10.2pt</value>
+  <data name="StudentClasstxt.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
   </data>
-  <data name="AbsentDays.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="StudentClasstxt.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="StudentClasstxt.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 10.2pt</value>
   </data>
   <data name="StudentClasstxt.Location" type="System.Drawing.Point, System.Drawing">
     <value>190, 127</value>
   </data>
-  <data name="DayFormatComboBox.Items1" xml:space="preserve">
-    <value>day, dd Month YYYY</value>
-  </data>
-  <data name="name_label.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="StudentNametxt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>427, 27</value>
-  </data>
-  <data name="ToDate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="&gt;&gt;AbsentDays.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="absentdays_label.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Student</value>
-  </data>
-  <data name="AbsentDays.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>On</value>
-  </data>
-  <data name="&gt;&gt;saveAs_btn.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;StudentClasstxt.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;settings.Name" xml:space="preserve">
-    <value>settings</value>
-  </data>
-  <data name="AbsentDays.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;name_label.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="StudentAttendanceTable.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 16</value>
-  </data>
-  <data name="signOutBTN.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
-  </data>
-  <data name="StudentAttendanceTable.RowHeadersWidth" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
-  <data name="saveAs_btn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
-  </data>
-  <data name="to_label.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="ToDate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>497, 168</value>
-  </data>
-  <data name="DATE.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;name_label.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;StudentAttendanceTable.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="STATUS.HeaderText" xml:space="preserve">
-    <value>STATUS</value>
-  </data>
-  <data name="&gt;&gt;DayFormatComboBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;DayFormatComboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DayFormatComboBox.Name" xml:space="preserve">
-    <value>DayFormatComboBox</value>
-  </data>
-  <data name="&gt;&gt;name_label.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;DATE.Name" xml:space="preserve">
-    <value>DATE</value>
-  </data>
-  <data name="&gt;&gt;signOutBTN.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="to_label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>449, 174</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="&gt;&gt;signOutBTN.Name" xml:space="preserve">
-    <value>signOutBTN</value>
-  </data>
-  <data name="DayFormatComboBox.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 10.2pt</value>
-  </data>
-  <data name="&gt;&gt;saveAs_btn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;FromDate.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;StudentNametxt.Name" xml:space="preserve">
-    <value>StudentNametxt</value>
-  </data>
-  <data name="&gt;&gt;absentdays_label.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="name_label.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="AbsentDays.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="saveAs_btn.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="name_label.Text" xml:space="preserve">
-    <value>Name</value>
-  </data>
-  <data name="FromDate.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>150, 27</value>
-  </data>
-  <data name="absentdays_label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>833, 171</value>
-  </data>
-  <data name="&gt;&gt;settings.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="ToDate.CustomFormat" xml:space="preserve">
-    <value>dd/MM/yyyy</value>
-  </data>
-  <data name="DayFormatComboBox.Items2" xml:space="preserve">
-    <value>Month dd</value>
-  </data>
-  <data name="StudentAttendanceTable.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1014, 291</value>
-  </data>
-  <data name="&gt;&gt;ToDate.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="settings.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="StudentClasstxt.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
-  <data name="class_label.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;StudentClasstxt.Name" xml:space="preserve">
-    <value>StudentClasstxt</value>
-  </data>
-  <data name="name_label.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 10.2pt</value>
-  </data>
-  <data name="StudentAttendanceTable.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="showFrom_label.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 10.2pt</value>
-  </data>
-  <data name="&gt;&gt;FromDate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="ToDate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 27</value>
-  </data>
-  <data name="&gt;&gt;AbsentDays.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;saveAs_btn.Name" xml:space="preserve">
-    <value>saveAs_btn</value>
-  </data>
-  <data name="StudentClasstxt.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="class_label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>80, 130</value>
-  </data>
-  <data name="to_label.Size" type="System.Drawing.Size, System.Drawing">
-    <value>25, 19</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="to_label.Text" xml:space="preserve">
-    <value>To</value>
-  </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="AbsentDays.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 27</value>
-  </data>
-  <data name="DATE.HeaderText" xml:space="preserve">
-    <value>DATE</value>
-  </data>
-  <data name="class_label.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="absentdays_label.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
+  <data name="StudentClasstxt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>781, 27</value>
   </data>
   <data name="StudentClasstxt.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="ToDate.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>200, 27</value>
-  </data>
-  <data name="&gt;&gt;StudentNametxt.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="StudentAttendanceTable.Location" type="System.Drawing.Point, System.Drawing">
-    <value>84, 224</value>
-  </data>
-  <data name="saveAs_btn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1000, 559</value>
-  </data>
-  <data name="showFrom_label.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="StudentNametxt.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="settings.Text" xml:space="preserve">
-    <value>Settings</value>
-  </data>
-  <data name="FromDate.CustomFormat" xml:space="preserve">
-    <value>dd/MM/yyyy</value>
-  </data>
-  <data name="StudentNametxt.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="AbsentDays.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="StudentNametxt.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;saveAs_btn.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="StudentClasstxt.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="&gt;&gt;StudentAttendanceTable.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;class_label.Name" xml:space="preserve">
-    <value>class_label</value>
-  </data>
-  <data name="&gt;&gt;to_label.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="class_label.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 10.2pt</value>
-  </data>
-  <data name="signOutBTN.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 40</value>
-  </data>
-  <data name="&gt;&gt;class_label.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
-    <value>GrowAndShrink</value>
-  </data>
-  <data name="saveAs_btn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="&gt;&gt;settings.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="FromDate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 27</value>
-  </data>
-  <data name="showFrom_label.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;STATUS.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="DayFormatComboBox.Items" xml:space="preserve">
-    <value>MM/dd/YYYY</value>
-  </data>
-  <data name="FromDate.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>200, 27</value>
-  </data>
-  <data name="DayFormatComboBox.Items3" xml:space="preserve">
-    <value>YYYY Month</value>
-  </data>
-  <data name="signOutBTN.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>150, 40</value>
-  </data>
-  <data name="&gt;&gt;settings.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="saveAs_btn.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>150, 40</value>
-  </data>
-  <data name="FromDate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>206, 168</value>
-  </data>
-  <data name="&gt;&gt;to_label.Name" xml:space="preserve">
-    <value>to_label</value>
-  </data>
-  <data name="&gt;&gt;absentdays_label.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;signOutBTN.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="DayFormatComboBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="class_label.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="absentdays_label.Text" xml:space="preserve">
-    <value>Absent Days</value>
-  </data>
-  <data name="settings.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>150, 40</value>
-  </data>
-  <data name="ToDate.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 10.2pt</value>
-  </data>
-  <data name="to_label.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="saveAs_btn.Text" xml:space="preserve">
-    <value>Save As</value>
-  </data>
-  <data name="saveAs_btn.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>150, 40</value>
-  </data>
-  <data name="FromDate.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 10.2pt</value>
-  </data>
-  <data name="ToDate.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="signOutBTN.Text" xml:space="preserve">
-    <value>Sign out</value>
-  </data>
-  <data name="&gt;&gt;showFrom_label.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="StudentAttendanceTable.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="showFrom_label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>80, 171</value>
-  </data>
-  <data name="FromDate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="showFrom_label.Size" type="System.Drawing.Size, System.Drawing">
-    <value>92, 19</value>
-  </data>
-  <data name="signOutBTN.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>150, 40</value>
-  </data>
-  <data name="&gt;&gt;showFrom_label.Name" xml:space="preserve">
-    <value>showFrom_label</value>
-  </data>
-  <data name="signOutBTN.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
+  <data name="&gt;&gt;StudentClasstxt.Name" xml:space="preserve">
+    <value>StudentClasstxt</value>
   </data>
   <data name="&gt;&gt;StudentClasstxt.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;StudentClasstxt.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;StudentClasstxt.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="showFrom_label.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="showFrom_label.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 10.2pt</value>
+  </data>
+  <data name="showFrom_label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>80, 171</value>
+  </data>
+  <data name="showFrom_label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 19</value>
+  </data>
+  <data name="showFrom_label.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="showFrom_label.Text" xml:space="preserve">
+    <value>Show From</value>
+  </data>
+  <data name="&gt;&gt;showFrom_label.Name" xml:space="preserve">
+    <value>showFrom_label</value>
+  </data>
+  <data name="&gt;&gt;showFrom_label.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;showFrom_label.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;showFrom_label.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="to_label.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="to_label.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="to_label.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 10.2pt</value>
+  </data>
+  <data name="to_label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>449, 174</value>
+  </data>
+  <data name="to_label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 19</value>
+  </data>
+  <data name="to_label.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="to_label.Text" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="&gt;&gt;to_label.Name" xml:space="preserve">
+    <value>to_label</value>
+  </data>
   <data name="&gt;&gt;to_label.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;to_label.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;to_label.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="StudentAttendanceTable.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="DATE.HeaderText" xml:space="preserve">
+    <value>DATE</value>
+  </data>
+  <data name="DATE.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="STATUS.HeaderText" xml:space="preserve">
+    <value>STATUS</value>
+  </data>
+  <data name="STATUS.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="StudentAttendanceTable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>84, 224</value>
+  </data>
+  <data name="StudentAttendanceTable.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="StudentAttendanceTable.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="StudentAttendanceTable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1368, 493</value>
+  </data>
+  <data name="StudentAttendanceTable.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;StudentAttendanceTable.Name" xml:space="preserve">
+    <value>StudentAttendanceTable</value>
+  </data>
+  <data name="&gt;&gt;StudentAttendanceTable.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;StudentAttendanceTable.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;StudentAttendanceTable.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="absentdays_label.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="absentdays_label.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="absentdays_label.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 10.2pt</value>
+  </data>
+  <data name="absentdays_label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>833, 171</value>
+  </data>
+  <data name="absentdays_label.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="absentdays_label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 19</value>
+  </data>
+  <data name="absentdays_label.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="absentdays_label.Text" xml:space="preserve">
+    <value>Absent Days</value>
+  </data>
+  <data name="&gt;&gt;absentdays_label.Name" xml:space="preserve">
+    <value>absentdays_label</value>
+  </data>
+  <data name="&gt;&gt;absentdays_label.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;absentdays_label.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;absentdays_label.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="AbsentDays.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="AbsentDays.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="AbsentDays.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 10.2pt</value>
+  </data>
+  <data name="AbsentDays.Location" type="System.Drawing.Point, System.Drawing">
+    <value>962, 168</value>
+  </data>
+  <data name="AbsentDays.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="AbsentDays.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 27</value>
+  </data>
+  <data name="AbsentDays.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>80, 27</value>
+  </data>
+  <data name="AbsentDays.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 27</value>
+  </data>
+  <data name="AbsentDays.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;AbsentDays.Name" xml:space="preserve">
+    <value>AbsentDays</value>
+  </data>
+  <data name="&gt;&gt;AbsentDays.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AbsentDays.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;AbsentDays.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="signOutBTN.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="signOutBTN.Location" type="System.Drawing.Point, System.Drawing">
+    <value>84, 21</value>
+  </data>
+  <data name="signOutBTN.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="signOutBTN.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>150, 40</value>
+  </data>
+  <data name="signOutBTN.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>150, 40</value>
+  </data>
+  <data name="signOutBTN.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 40</value>
+  </data>
+  <data name="signOutBTN.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="signOutBTN.Text" xml:space="preserve">
+    <value>Sign out</value>
+  </data>
+  <data name="&gt;&gt;signOutBTN.Name" xml:space="preserve">
+    <value>signOutBTN</value>
+  </data>
+  <data name="&gt;&gt;signOutBTN.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;signOutBTN.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;signOutBTN.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="saveAs_btn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="saveAs_btn.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="saveAs_btn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="saveAs_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1354, 761</value>
+  </data>
+  <data name="saveAs_btn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="saveAs_btn.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>150, 40</value>
+  </data>
+  <data name="saveAs_btn.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>150, 40</value>
+  </data>
+  <data name="saveAs_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 40</value>
+  </data>
+  <data name="saveAs_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="saveAs_btn.Text" xml:space="preserve">
+    <value>Save As</value>
+  </data>
+  <data name="&gt;&gt;saveAs_btn.Name" xml:space="preserve">
+    <value>saveAs_btn</value>
+  </data>
+  <data name="&gt;&gt;saveAs_btn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;saveAs_btn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;saveAs_btn.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="ToDate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="ToDate.CustomFormat" xml:space="preserve">
+    <value>dd/MM/yyyy</value>
+  </data>
+  <data name="ToDate.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 10.2pt</value>
+  </data>
+  <data name="ToDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>497, 168</value>
+  </data>
+  <data name="ToDate.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>200, 27</value>
+  </data>
+  <data name="ToDate.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>200, 27</value>
+  </data>
+  <data name="ToDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 27</value>
+  </data>
+  <data name="ToDate.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;ToDate.Name" xml:space="preserve">
+    <value>ToDate</value>
+  </data>
+  <data name="&gt;&gt;ToDate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToDate.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ToDate.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="FromDate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="FromDate.CustomFormat" xml:space="preserve">
+    <value>dd/MM/yyyy</value>
+  </data>
+  <data name="FromDate.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 10.2pt</value>
+  </data>
+  <data name="FromDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>206, 168</value>
+  </data>
+  <data name="FromDate.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>200, 27</value>
+  </data>
+  <data name="FromDate.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>150, 27</value>
+  </data>
+  <data name="FromDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 27</value>
+  </data>
+  <data name="FromDate.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;FromDate.Name" xml:space="preserve">
+    <value>FromDate</value>
+  </data>
+  <data name="&gt;&gt;FromDate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FromDate.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;FromDate.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="settings.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="settings.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="settings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>84, 761</value>
+  </data>
+  <data name="settings.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="settings.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>150, 40</value>
+  </data>
+  <data name="settings.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>150, 40</value>
+  </data>
+  <data name="settings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 40</value>
+  </data>
+  <data name="settings.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="settings.Text" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="&gt;&gt;settings.Name" xml:space="preserve">
+    <value>settings</value>
+  </data>
+  <data name="&gt;&gt;settings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;settings.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;settings.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="DayFormatComboBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="DayFormatComboBox.Items" xml:space="preserve">
+    <value>MM/dd/YYYY</value>
+  </data>
+  <data name="DayFormatComboBox.Items1" xml:space="preserve">
+    <value>day, dd Month YYYY</value>
+  </data>
+  <data name="DayFormatComboBox.Items2" xml:space="preserve">
+    <value>Month dd</value>
+  </data>
+  <data name="DayFormatComboBox.Items3" xml:space="preserve">
+    <value>YYYY Month</value>
+  </data>
+  <data name="DayFormatComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1278, 195</value>
+  </data>
+  <data name="DayFormatComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 24</value>
+  </data>
+  <data name="DayFormatComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;DayFormatComboBox.Name" xml:space="preserve">
+    <value>DayFormatComboBox</value>
+  </data>
+  <data name="&gt;&gt;DayFormatComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DayFormatComboBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DayFormatComboBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 10.2pt</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1142, 196</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 19</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Date Format</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pictureBox2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1239, -43</value>
+  </data>
+  <data name="pictureBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>237, 232</value>
+  </data>
+  <data name="pictureBox2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="pictureBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.Name" xml:space="preserve">
+    <value>pictureBox2</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>ar</value>
-  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 16</value>
+  </data>
+  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1530, 812</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>On</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Student</value>
+  </data>
+  <data name="&gt;&gt;DATE.Name" xml:space="preserve">
+    <value>DATE</value>
+  </data>
+  <data name="&gt;&gt;DATE.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;STATUS.Name" xml:space="preserve">
+    <value>STATUS</value>
+  </data>
+  <data name="&gt;&gt;STATUS.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>StudentForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

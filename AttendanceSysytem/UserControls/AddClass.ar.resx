@@ -121,4 +121,16 @@
   <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>Yes</value>
   </data>
+  <data name="btnSave.Text" xml:space="preserve">
+    <value>حفظ</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>اضف فصل</value>
+  </data>
+  <data name="Supervisor.Text" xml:space="preserve">
+    <value>المشرف</value>
+  </data>
+  <data name="ClassName.Text" xml:space="preserve">
+    <value>الاسم</value>
+  </data>
 </root>

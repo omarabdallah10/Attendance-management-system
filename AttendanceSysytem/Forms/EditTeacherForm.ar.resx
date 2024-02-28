@@ -160,4 +160,7 @@
   <data name="save_btn.Text" xml:space="preserve">
     <value>حفظ</value>
   </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>تعديل المُدرس</value>
+  </data>
 </root>
