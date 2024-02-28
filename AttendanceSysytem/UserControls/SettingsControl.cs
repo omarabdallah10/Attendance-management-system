@@ -47,19 +47,19 @@ namespace AttendanceSysytem.UserControls
         private void save_btn_Click(object sender, EventArgs e)
         {
             XmlNode password = User.SelectSingleNode("Password");
-            if (password_box.Text != password.InnerText)
-            {
+            /*if (password_box.Text != password.InnerText)
+            {*/
                 password.InnerText = password_box.Text;
                 DataManagement.SaveXml(Document);
-                MessageBox.Show("Password updated successfully");
+                MessageBox.Show("Settings updated successfully");
+                /*}
+                else
+                {
+                    MessageBox.Show("Password didn't change");
+                }*/
             }
-            else
-            {
-                MessageBox.Show("Password didn't change");
-            }
-        }
 
-        private void font_Click(object sender, EventArgs e)
+            private void font_Click(object sender, EventArgs e)
         {
             FontDialog font = new FontDialog();
             font.ShowDialog();
