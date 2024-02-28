@@ -1,6 +1,6 @@
 ﻿namespace AttendanceSysytem.UserControls
 {
-    partial class Settings1
+    partial class Settings
     {
         /// <summary> 
         /// Required designer variable.
@@ -50,6 +50,7 @@
             this.font.TabIndex = 49;
             this.font.Text = "Font";
             this.font.UseVisualStyleBackColor = true;
+            this.font.Click += new System.EventHandler(this.font_Click);
             // 
             // Langauge
             // 

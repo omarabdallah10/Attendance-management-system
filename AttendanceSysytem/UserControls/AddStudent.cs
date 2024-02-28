@@ -21,6 +21,7 @@ namespace AttendanceSysytem.UserControls
 
         private void AddStudent_Load(object sender, EventArgs e)
         {
+            DataManagement.ChangeFont(this, DataManagement.MyFont, true);
             XmlDocument doc = DataManagement.xmlDoc();
             XmlNodeList ClassNodes = doc.SelectNodes("//Class");
             foreach (XmlNode ClassNode in ClassNodes)
