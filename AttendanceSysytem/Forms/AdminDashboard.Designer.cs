@@ -98,6 +98,7 @@
             this.btnViewAttendance.Image = global::AttendanceSysytem.Properties.Resources.att;
             this.btnViewAttendance.Name = "btnViewAttendance";
             this.btnViewAttendance.UseVisualStyleBackColor = true;
+            this.btnViewAttendance.Click += new System.EventHandler(this.btnViewAttendance_Click);
             // 
             // btnEditUsers
             // 

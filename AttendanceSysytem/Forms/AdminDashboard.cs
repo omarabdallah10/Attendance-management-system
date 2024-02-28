@@ -29,6 +29,8 @@ namespace AttendanceSysytem.Forms
             timer1.Start();
             labelUsername.Text = recived.Name;
             labelRole.Text = "Admin";
+
+
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -92,10 +94,69 @@ namespace AttendanceSysytem.Forms
 
         }
 
+        private void btnViewAttendance_Click(object sender, EventArgs e)
+        {
+            panel3.Controls.Clear();
+            ViewAttendance viewAttendanceControl = new ViewAttendance();
+            panel3.Controls.Add(viewAttendanceControl);
+            panel3.BringToFront();
+            Dock = DockStyle.Fill;
+
+            
+        }
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
             panel3.BringToFront();
         }
 
+        
     }
 }
+
+
+/*
+ dataGridViewAttendance.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+            dataGridViewAttendance.AllowUserToAddRows = false;
+
+            dataGridViewAttendance.AlternatingRowsDefaultCellStyle.Font = dataGridViewAttendance.RowsDefaultCellStyle.Font;
+            //load dates into DateComboBox from xml file
+            XmlDataDocument xmlData = new XmlDataDocument();
+            string xmlPath = DataManagement.xmlPath();
+            xmlData.DataSet.ReadXml(xmlPath);
+
+            DataView dv = new DataView(xmlData.DataSet.Tables["AttendanceRecord"]);
+            DataTable dt = dv.ToTable(true, "Date");
+            DateComboBox.DataSource = dt;
+            DateComboBox.DisplayMember = "Date";
+
+
+
+
+            // -- PD Track is selected by default
+            TrackCompoBox.SelectedIndex = 0;
+            // -- last index of combobox is selected
+            DateComboBox.SelectedIndex = DateComboBox.Items.Count - 1;
+
+
+            try
+            {
+
+                XmlDataDocument xmlData = new XmlDataDocument();
+                string xmlPath = DataManagement.xmlPath();
+                xmlData.DataSet.ReadXml(xmlPath);
+
+                //view the matched date and track
+                DataView dv = new DataView(xmlData.DataSet.Tables["AttendanceRecord"]);
+                dv.RowFilter = "Date = '" + DateComboBox.Text + "' AND ClassName = '" + TrackCompoBox.Text + "'";
+                dataGridViewAttendance.DataSource = dv;
+
+                //MessageBox.Show("Data Loaded Successfully!");
+            }
+            catch (Exception ex)
+            {
+                //MessageBox.Show(Text = ex.Message);
+                MessageBox.Show("Sorry Something go wrong! \nPlease ry again later.");
+
+            }
+ */

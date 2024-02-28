@@ -236,6 +236,12 @@
     <Compile Include="UserControls\SettingsControl.Designer.cs">
       <DependentUpon>SettingsControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\ViewAttendance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ViewAttendance.Designer.cs">
+      <DependentUpon>ViewAttendance.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Forms\AddClassForm.ar.resx">
       <DependentUpon>AddClassForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -403,6 +409,9 @@
     <EmbeddedResource Include="UserControls\SettingsControl.resx">
       <DependentUpon>SettingsControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ViewAttendance.resx">
+      <DependentUpon>ViewAttendance.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -469,7 +478,6 @@
     <None Include="Resources\class.png" />
   </ItemGroup>
   <ItemGroup>
-
     <None Include="Resources\Login %281%29.png" />
   </ItemGroup>
   <ItemGroup>
