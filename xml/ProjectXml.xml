@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <School xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="projectSchema.xsd">
   <Users>
     <Admin>
@@ -180,20 +180,6 @@
       <Status>Present</Status>
     </AttendanceRecord>
     <!-- Add more attendance records as needed -->
-    <AttendanceRecord>
-      <UserID>S304</UserID>
-      <Name>kareem ahmed</Name>
-      <ClassName>OS</ClassName>
-      <Date>2024-02-27</Date>
-      <Status>Present</Status>
-    </AttendanceRecord>
-    <AttendanceRecord>
-      <UserID>S004</UserID>
-      <Name>Zeoz Khaledooo</Name>
-      <ClassName>OS</ClassName>
-      <Date>2024-02-27</Date>
-      <Status>Present</Status>
-    </AttendanceRecord>
     <AttendanceRecord>
       <UserID>S003</UserID>
       <Name>Omar Abdullah</Name>
