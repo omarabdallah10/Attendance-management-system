@@ -81,10 +81,10 @@
     </Student>
     <Student>
       <UserID>S004</UserID>
-      <Name>Zeoz Khaledooo</Name>
-      <Email>Zeoz@example.com</Email>
-      <Password>123456789Aa7a</Password>
-      <ClassName>OS</ClassName>
+      <Name>Zoz Khaled</Name>
+      <Email>Zeoz@ex.com</Email>
+      <Password>123456789Aa@</Password>
+      <ClassName>PD</ClassName>
     </Student>
   </Users>
   <Class>
@@ -115,6 +115,7 @@
       <UserID>T002</UserID>
       <UserID>T004</UserID>
       <UserID>T161</UserID>
+      <UserID>T001</UserID>
     </Teachers>
     <Students>
       <UserID>S304</UserID>
@@ -128,8 +129,8 @@
     </Supervisor>
     <Teachers>
       <UserID>T555</UserID>
-      <UserID>T002</UserID>
       <UserID>T161</UserID>
+      <UserID>T002</UserID>
     </Teachers>
     <Students>
       <UserID>S003</UserID>
