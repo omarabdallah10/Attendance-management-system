@@ -291,9 +291,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
+            this.AutoSize = true;
             this.Controls.Add(this.editStudent1);
             this.Name = "Edit";
-            this.Size = new System.Drawing.Size(1171, 661);
+            this.Size = new System.Drawing.Size(1174, 664);
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StudentsTable)).EndInit();

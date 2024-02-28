@@ -63,7 +63,6 @@ namespace AttendanceSysytem.UserControls
         {
             FontDialog font = new FontDialog();
             font.ShowDialog();
-
             Classes.Settings.ChangeFontForAllPages(font.Font);
         }
     }
