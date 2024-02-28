@@ -46,12 +46,14 @@
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.label1.Name = "label1";
             // 
             // btnSave
             // 
             resources.ApplyResources(this.btnSave, "btnSave");
-            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnSave.ForeColor = System.Drawing.Color.White;
             this.btnSave.Name = "btnSave";
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
@@ -59,6 +61,7 @@
             // Password
             // 
             resources.ApplyResources(this.Password, "Password");
+            this.Password.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Password.Name = "Password";
             // 
             // txtEmail
@@ -69,6 +72,7 @@
             // label2
             // 
             resources.ApplyResources(this.label2, "label2");
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.label2.Name = "label2";
             // 
             // txtFName
@@ -80,6 +84,7 @@
             // FName
             // 
             resources.ApplyResources(this.FName, "FName");
+            this.FName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.FName.Name = "FName";
             // 
             // txtPassword
@@ -96,17 +101,20 @@
             // Lname
             // 
             resources.ApplyResources(this.Lname, "Lname");
+            this.Lname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Lname.Name = "Lname";
             // 
             // checkedListBox1
             // 
             resources.ApplyResources(this.checkedListBox1, "checkedListBox1");
+            this.checkedListBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.checkedListBox1.FormattingEnabled = true;
             this.checkedListBox1.Name = "checkedListBox1";
             // 
             // Classes
             // 
             resources.ApplyResources(this.Classes, "Classes");
+            this.Classes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Classes.Name = "Classes";
             // 
             // AddTeacher
@@ -126,6 +134,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.Password);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Name = "AddTeacher";
             this.Load += new System.EventHandler(this.AddTeacher_Load);
             this.ResumeLayout(false);
