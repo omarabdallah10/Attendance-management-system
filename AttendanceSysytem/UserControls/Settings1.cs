@@ -12,19 +12,19 @@ using System.Xml;
 
 namespace AttendanceSysytem.UserControls
 {
-    public partial class Settings : UserControl
+    public partial class Settings1 : UserControl
     {
         public User Recived { get; set; }
         public XmlDocument Document { get; set; }
         public XmlElement User { get; set; }
-        public Settings()
+        public Settings1()
         {
             InitializeComponent();
         }
 
         private void Settings_Load(object sender, EventArgs e)
         {
-            Font = DataManagement.MyFont;
+            Font = Settings.MyFont;
             Document = DataManagement.xmlDoc();
             User = DataManagement.GetElementById(Document, Recived.UserID, "Admin");
 
@@ -45,14 +45,6 @@ namespace AttendanceSysytem.UserControls
             {
                 MessageBox.Show("Password didn't change");
             }
-        }
-
-        private void font_Click(object sender, EventArgs e)
-        {
-            FontDialog font = new FontDialog();
-            font.ShowDialog();
-
-            DataManagement.ChangeFontForAllPages(font.Font);
         }
     }
 }

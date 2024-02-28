@@ -64,11 +64,6 @@ namespace AttendanceSysytem.Forms
             panel3.Controls.Add(addTeacherControl);
         }
 
-        private void AdminDashboard_Load(object sender, EventArgs e)
-        {
-            labelUsername.Text = recived.Name;
-            labelRole.Text = "Admin";
-        }
 
         private void btnEditUsers_Click(object sender, EventArgs e)
         {
@@ -80,7 +75,7 @@ namespace AttendanceSysytem.Forms
         private void btnSettings_Click(object sender, EventArgs e)
         {
             panel3.Controls.Clear();
-            Settings settings = new Settings();
+            Settings1 settings = new Settings1();
             settings.Recived = recived;
             panel3.Controls.Add(settings);
         }

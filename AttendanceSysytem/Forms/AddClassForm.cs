@@ -90,9 +90,5 @@ namespace AttendanceSysytem.Forms
             Hide();
         }
 
-        private void AddClassForm_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
