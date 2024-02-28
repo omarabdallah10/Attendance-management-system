@@ -117,80 +117,56 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;add_students_btn.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="add_students_btn.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="supervisor_label.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;go_back_btn.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;class_name_label.Name" xml:space="preserve">
-    <value>class_name_label</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="class_name_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>323, 168</value>
+  <data name="go_back_btn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="go_back_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 46</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="go_back_btn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
-  <data name="&gt;&gt;class_name_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="go_back_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 40</value>
   </data>
-  <data name="&gt;&gt;class_name_label.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;save_btn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;supervisor_label.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="go_back_btn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 46</value>
-  </data>
-  <data name="&gt;&gt;class_name_txt.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="save_btn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="supervisor_label.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 12pt, style=Italic</value>
-  </data>
-  <data name="&gt;&gt;go_back_btn.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="add_teachers_btn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>195, 272</value>
-  </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
-  </data>
-  <data name="save_btn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>559, 526</value>
-  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="go_back_btn.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
+  </data>
+  <data name="go_back_btn.Text" xml:space="preserve">
+    <value>Go Back</value>
+  </data>
+  <data name="&gt;&gt;go_back_btn.Name" xml:space="preserve">
+    <value>go_back_btn</value>
   </data>
   <data name="&gt;&gt;go_back_btn.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;save_btn.Parent" xml:space="preserve">
+  <data name="&gt;&gt;go_back_btn.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;supervisor_label.Name" xml:space="preserve">
-    <value>supervisor_label</value>
+  <data name="&gt;&gt;go_back_btn.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="save_btn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="save_btn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="save_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1222, 726</value>
+  </data>
+  <data name="save_btn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="save_btn.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>150, 50</value>
+  </data>
+  <data name="save_btn.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>150, 50</value>
   </data>
   <data name="save_btn.Size" type="System.Drawing.Size, System.Drawing">
     <value>150, 50</value>
@@ -198,214 +174,421 @@
   <data name="save_btn.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="class_name_label.Size" type="System.Drawing.Size, System.Drawing">
-    <value>114, 24</value>
-  </data>
-  <data name="&gt;&gt;supervisor_label.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="class_name_label.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 12pt, style=Italic</value>
-  </data>
-  <data name="add_students_btn.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
-  </data>
-  <data name="class_name_label.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="&gt;&gt;class_name_label.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="SupervisorComboBox.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="class_name_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>243, 32</value>
-  </data>
-  <data name="save_btn.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
-  </data>
-  <data name="class_name_label.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="supervisor_label.Text" xml:space="preserve">
-    <value>Supervisor</value>
-  </data>
-  <data name="class_name_txt.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Edit Class</value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>On</value>
-  </data>
-  <data name="&gt;&gt;class_name_label.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="class_name_txt.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 12pt, style=Italic</value>
-  </data>
-  <data name="save_btn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
-  </data>
-  <data name="class_name_label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>191, 171</value>
-  </data>
-  <data name="SupervisorComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>323, 220</value>
-  </data>
-  <data name="&gt;&gt;add_teachers_btn.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="add_students_btn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>195, 335</value>
-  </data>
-  <data name="&gt;&gt;add_teachers_btn.Name" xml:space="preserve">
-    <value>add_teachers_btn</value>
-  </data>
-  <data name="&gt;&gt;add_teachers_btn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="save_btn.Text" xml:space="preserve">
+    <value>Save</value>
   </data>
   <data name="&gt;&gt;save_btn.Name" xml:space="preserve">
     <value>save_btn</value>
   </data>
-  <data name="save_btn.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>150, 50</value>
-  </data>
-  <data name="&gt;&gt;class_name_txt.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
-    <value>GrowAndShrink</value>
-  </data>
-  <data name="SupervisorComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>243, 32</value>
-  </data>
-  <data name="supervisor_label.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;SupervisorComboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="add_teachers_btn.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
-  </data>
-  <data name="&gt;&gt;supervisor_label.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="supervisor_label.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 24</value>
-  </data>
-  <data name="add_teachers_btn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="add_teachers_btn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>371, 42</value>
-  </data>
-  <data name="class_name_txt.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 16</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>EditClassForm</value>
-  </data>
-  <data name="&gt;&gt;add_students_btn.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="save_btn.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>150, 50</value>
-  </data>
-  <data name="add_students_btn.Text" xml:space="preserve">
-    <value>Add Students</value>
-  </data>
-  <data name="SupervisorComboBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 12pt, style=Italic</value>
-  </data>
-  <data name="&gt;&gt;SupervisorComboBox.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;SupervisorComboBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;go_back_btn.Name" xml:space="preserve">
-    <value>go_back_btn</value>
-  </data>
-  <data name="&gt;&gt;SupervisorComboBox.Name" xml:space="preserve">
-    <value>SupervisorComboBox</value>
-  </data>
-  <data name="&gt;&gt;add_students_btn.Name" xml:space="preserve">
-    <value>add_students_btn</value>
-  </data>
-  <data name="add_students_btn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="add_teachers_btn.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="add_students_btn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>371, 42</value>
-  </data>
-  <data name="supervisor_label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>191, 226</value>
-  </data>
-  <data name="supervisor_label.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>746, 604</value>
-  </data>
-  <data name="add_teachers_btn.Text" xml:space="preserve">
-    <value>Add Teachers</value>
-  </data>
-  <data name="&gt;&gt;add_students_btn.Type" xml:space="preserve">
+  <data name="&gt;&gt;save_btn.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;save_btn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="&gt;&gt;save_btn.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;class_name_txt.Name" xml:space="preserve">
-    <value>class_name_txt</value>
-  </data>
-  <data name="class_name_txt.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
-  <data name="go_back_btn.Text" xml:space="preserve">
-    <value>Go Back</value>
-  </data>
-  <data name="go_back_btn.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
-  </data>
-  <data name="go_back_btn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 40</value>
-  </data>
-  <data name="add_students_btn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="add_teachers_btn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+  <data name="class_name_label.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
   </data>
   <data name="class_name_label.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="SupervisorComboBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
+  <data name="class_name_label.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Italic</value>
+  </data>
+  <data name="class_name_label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>434, 56</value>
+  </data>
+  <data name="class_name_label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 24</value>
+  </data>
+  <data name="class_name_label.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
   <data name="class_name_label.Text" xml:space="preserve">
     <value>Class Name</value>
   </data>
-  <data name="save_btn.Text" xml:space="preserve">
-    <value>Save</value>
+  <data name="&gt;&gt;class_name_label.Name" xml:space="preserve">
+    <value>class_name_label</value>
   </data>
-  <data name="&gt;&gt;add_teachers_btn.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;class_name_label.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;class_name_label.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;class_name_label.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="supervisor_label.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="supervisor_label.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="supervisor_label.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Italic</value>
+  </data>
+  <data name="supervisor_label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>434, 111</value>
+  </data>
+  <data name="supervisor_label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 24</value>
+  </data>
+  <data name="supervisor_label.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="supervisor_label.Text" xml:space="preserve">
+    <value>Supervisor</value>
+  </data>
+  <data name="&gt;&gt;supervisor_label.Name" xml:space="preserve">
+    <value>supervisor_label</value>
+  </data>
+  <data name="&gt;&gt;supervisor_label.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;supervisor_label.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;supervisor_label.ZOrder" xml:space="preserve">
     <value>6</value>
+  </data>
+  <data name="class_name_txt.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="class_name_txt.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Italic</value>
+  </data>
+  <data name="class_name_txt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>566, 53</value>
+  </data>
+  <data name="class_name_txt.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="class_name_txt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>416, 32</value>
+  </data>
+  <data name="class_name_txt.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;class_name_txt.Name" xml:space="preserve">
+    <value>class_name_txt</value>
+  </data>
+  <data name="&gt;&gt;class_name_txt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;class_name_txt.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;class_name_txt.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="SupervisorComboBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="SupervisorComboBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Italic</value>
+  </data>
+  <data name="SupervisorComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>566, 105</value>
+  </data>
+  <data name="SupervisorComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>416, 32</value>
+  </data>
+  <data name="SupervisorComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;SupervisorComboBox.Name" xml:space="preserve">
+    <value>SupervisorComboBox</value>
+  </data>
+  <data name="&gt;&gt;SupervisorComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SupervisorComboBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;SupervisorComboBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="StudentsTable.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <metadata name="ID.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="ID.HeaderText" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="ID.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="ID.Width" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <metadata name="TeacherName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="TeacherName.HeaderText" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="TeacherName.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <metadata name="InClass.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="InClass.HeaderText" xml:space="preserve">
+    <value>In Class</value>
+  </data>
+  <data name="InClass.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="checkCol.HeaderText" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="checkCol.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="StudentsTable.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Disable</value>
+  </data>
+  <data name="StudentsTable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>735, 214</value>
+  </data>
+  <data name="StudentsTable.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="StudentsTable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>649, 481</value>
+  </data>
+  <data name="StudentsTable.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;StudentsTable.Name" xml:space="preserve">
+    <value>StudentsTable</value>
+  </data>
+  <data name="&gt;&gt;StudentsTable.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;StudentsTable.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;StudentsTable.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="students_label.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="students_label.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="students_label.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 20pt</value>
+  </data>
+  <data name="students_label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>On</value>
+  </data>
+  <data name="students_label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>972, 166</value>
+  </data>
+  <data name="students_label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 46</value>
+  </data>
+  <data name="students_label.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="students_label.Text" xml:space="preserve">
+    <value>Students</value>
+  </data>
+  <data name="&gt;&gt;students_label.Name" xml:space="preserve">
+    <value>students_label</value>
+  </data>
+  <data name="&gt;&gt;students_label.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;students_label.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;students_label.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="TeachersTable.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <metadata name="dataGridViewTextBoxColumn1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="dataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn1.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn1.Width" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <metadata name="dataGridViewTextBoxColumn2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="dataGridViewTextBoxColumn2.HeaderText" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn2.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="Classes.HeaderText" xml:space="preserve">
+    <value>Classes</value>
+  </data>
+  <data name="Classes.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="dataGridViewCheckBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="dataGridViewCheckBoxColumn1.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="TeachersTable.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Disable</value>
+  </data>
+  <data name="TeachersTable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 214</value>
+  </data>
+  <data name="TeachersTable.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="TeachersTable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>688, 481</value>
+  </data>
+  <data name="TeachersTable.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;TeachersTable.Name" xml:space="preserve">
+    <value>TeachersTable</value>
+  </data>
+  <data name="&gt;&gt;TeachersTable.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TeachersTable.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TeachersTable.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="teachers_label.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="teachers_label.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="teachers_label.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 20pt</value>
+  </data>
+  <data name="teachers_label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>On</value>
+  </data>
+  <data name="teachers_label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>262, 166</value>
+  </data>
+  <data name="teachers_label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 46</value>
+  </data>
+  <data name="teachers_label.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="teachers_label.Text" xml:space="preserve">
+    <value>Teachers</value>
+  </data>
+  <data name="&gt;&gt;teachers_label.Name" xml:space="preserve">
+    <value>teachers_label</value>
+  </data>
+  <data name="&gt;&gt;teachers_label.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;teachers_label.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;teachers_label.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 16</value>
+  </data>
+  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1409, 804</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>On</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Edit Class</value>
+  </data>
+  <data name="&gt;&gt;ID.Name" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="&gt;&gt;ID.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TeacherName.Name" xml:space="preserve">
+    <value>TeacherName</value>
+  </data>
+  <data name="&gt;&gt;TeacherName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;InClass.Name" xml:space="preserve">
+    <value>InClass</value>
+  </data>
+  <data name="&gt;&gt;InClass.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkCol.Name" xml:space="preserve">
+    <value>checkCol</value>
+  </data>
+  <data name="&gt;&gt;checkCol.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewTextBoxColumn1.Name" xml:space="preserve">
+    <value>dataGridViewTextBoxColumn1</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewTextBoxColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewTextBoxColumn2.Name" xml:space="preserve">
+    <value>dataGridViewTextBoxColumn2</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewTextBoxColumn2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Classes.Name" xml:space="preserve">
+    <value>Classes</value>
+  </data>
+  <data name="&gt;&gt;Classes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewCheckBoxColumn1.Name" xml:space="preserve">
+    <value>dataGridViewCheckBoxColumn1</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewCheckBoxColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>EditClassForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>
