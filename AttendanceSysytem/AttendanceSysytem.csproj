@@ -61,6 +61,7 @@
   <ItemGroup>
     <Compile Include="Classes\Adding.cs" />
     <Compile Include="Classes\Attendance.cs" />
+    <Compile Include="Classes\backupManager.cs" />
     <Compile Include="Classes\DataManagement.cs" />
     <Compile Include="Classes\login.cs" />
     <Compile Include="Classes\Track.cs" />
@@ -334,6 +335,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\class.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

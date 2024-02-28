@@ -8,7 +8,7 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Xml;
+using System;
 
 
 namespace AttendanceSysytem
@@ -24,7 +24,10 @@ namespace AttendanceSysytem
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Application.Run(new AdminDashboard());
+            // initialize the backup manager
+            backupManager.InitializeBackupTimer();
+
+            Application.Run(new TeacherViewAttendanceForm());
 
 
 

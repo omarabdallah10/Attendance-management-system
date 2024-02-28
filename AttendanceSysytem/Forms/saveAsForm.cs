@@ -24,50 +24,61 @@ namespace AttendanceSysytem.Forms
             // System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
         }
 
+
+        private void SaveAsPDF(string fileName)
+        {
+            // Create a new PDF document
+            PdfDocument pdf = new PdfDocument();
+            pdf.Info.Title = "Created Attendance Report";
+            PdfPage pdfPage = pdf.AddPage();
+            XGraphics graph = XGraphics.FromPdfPage(pdfPage);
+            XFont font = new XFont("Verdana", 20, XFontStyle.Bold);
+            graph.DrawString("Attendance Report \n" + RichTxtBox.Text, font, XBrushes.Black,
+                new XRect(0, 0, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.Center);
+            pdf.Save(fileName);
+        }
+
+        private void SaveAsExcel(string fileName)
+        {
+            // Create a new Excel document
+            Microsoft.Office.Interop.Excel.Application excel = new Microsoft.Office.Interop.Excel.Application();
+            excel.Workbooks.Add();
+            Microsoft.Office.Interop.Excel._Worksheet workSheet = excel.ActiveSheet;
+            workSheet.Cells[1, "A"] = RichTxtBox.Text;
+            workSheet.SaveAs(fileName);
+        }
+
+
         private void btnSaveAsPDF_Click(object sender, EventArgs e)
         {
+            
             SaveFileDialog sfd = new SaveFileDialog();
-            sfd.Filter = "PDF Files|*.pdf";
+            sfd.Filter = "PDF Files|*.pdf|Excel Files|*.xlsx";
             sfd.DefaultExt = "pdf";
             sfd.AddExtension = true;
             sfd.FileName = "Attendance Report";
             sfd.OverwritePrompt = true;
 
-                
-                if(sfd.ShowDialog() == DialogResult.OK)
+            if (sfd.ShowDialog() == DialogResult.OK)
+            {
+                if (sfd.FilterIndex == 1) // PDF selected
                 {
-                    //create a new pdf document
-                    
-                        PdfDocument pdf = new PdfDocument();
-                        pdf.Info.Title = "Created Attendance Report";
-                        PdfPage pdfPage = pdf.AddPage();
-                        XGraphics graph = XGraphics.FromPdfPage(pdfPage);
-                        XFont font = new XFont("Verdana", 20, XFontStyle.Bold);
-                        graph.DrawString("Attendance Report \n"+ RichTxtBox.Text, font, XBrushes.Black,
-                            new XRect(0, 0, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.Center);
-                        pdf.Save(sfd.FileName);
+                    SaveAsPDF(sfd.FileName);
                 }
-            
+                else if (sfd.FilterIndex == 2) // Excel selected
+                {
+                    SaveAsExcel(sfd.FileName);
+                }
+            }
+
+
         }
+
+        
 
         private void btnSaveAsExcel_Click(object sender, EventArgs e)
         {
-            SaveFileDialog sfd = new SaveFileDialog();
-            sfd.Filter = "Excel Files|*.xlsx";
-            sfd.DefaultExt = "xlsx";
-            sfd.AddExtension = true;
-            sfd.FileName = "Attendance Report";
-            sfd.OverwritePrompt = true;
-
-            if(sfd.ShowDialog() == DialogResult.OK)
-            {
-                //create a new excel document
-                Microsoft.Office.Interop.Excel.Application excel = new Microsoft.Office.Interop.Excel.Application();
-                excel.Workbooks.Add();
-                Microsoft.Office.Interop.Excel._Worksheet workSheet = excel.ActiveSheet;
-                workSheet.Cells[1, "A"] = RichTxtBox.Text;
-                workSheet.SaveAs(sfd.FileName); 
-            }
+            
 
         }
 
@@ -76,4 +87,5 @@ namespace AttendanceSysytem.Forms
         }
     }
 }
+
 

@@ -11,6 +11,8 @@ using System.Windows.Forms;
 using System.Xml;
 using System.IO;
 using System.Xml.Linq;
+using PdfSharp.Drawing;
+using PdfSharp.Pdf;
 
 
 
@@ -28,6 +30,10 @@ namespace AttendanceSysytem.Forms
         
         private void TakeAttendanceForm_Load(object sender, EventArgs e)
         {
+            //check if the user is logged in
+
+
+
             //'select track' is displayed by default
             ClassComboBox.Text = "Select Class";
             dataGridViewTakeAttendance.AlternatingRowsDefaultCellStyle.Font = dataGridViewTakeAttendance.RowsDefaultCellStyle.Font;
@@ -40,6 +46,9 @@ namespace AttendanceSysytem.Forms
         {
             //clear the datagridview
             dataGridViewTakeAttendance.Columns.Clear();
+
+           
+
 
             //display the students of the selected class from the combobox in the datagridview
             try
@@ -148,10 +157,30 @@ namespace AttendanceSysytem.Forms
                     string xmlPath = DataManagement.xmlPath();
                     xmlDoc.Load(xmlPath);
 
-                    XmlNode parentNode = xmlDoc.SelectSingleNode("School/AttendanceData");
+                    /*XmlNode parentNode = xmlDoc.SelectSingleNode("School/AttendanceData");
                     parentNode.AppendChild(parentNode.OwnerDocument.ReadNode(newAttendanceRecord.CreateReader()));
 
+                    xmlDoc.Save(xmlPath);*/
+
+                    // check the date if it exists --> if it exists, update the status only -- if not, add a new record
+                    XmlNodeList AttendanceRecords = xmlDoc.SelectNodes("//AttendanceRecord");
+                    int recordExists = 0;
+                    foreach (XmlNode record in AttendanceRecords)
+                    {
+                        if (record.SelectSingleNode("UserID").InnerText == userID && record.SelectSingleNode("Date").InnerText == todayDate)
+                        {
+                            record.SelectSingleNode("Status").InnerText = status;
+                            recordExists = 1;
+                            break;
+                        }
+                    }
+                    if (recordExists == 0)
+                    {
+                        XmlNode parentNode = xmlDoc.SelectSingleNode("School/AttendanceData");
+                        parentNode.AppendChild(parentNode.OwnerDocument.ReadNode(newAttendanceRecord.CreateReader()));
+                    }
                     xmlDoc.Save(xmlPath);
+
 
                     if(i == dataGridViewTakeAttendance.Rows.Count - 1)
                     {
@@ -165,6 +194,8 @@ namespace AttendanceSysytem.Forms
             }
 
         }
+
+      
     }
 }
 

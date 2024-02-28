@@ -33,6 +33,7 @@
             this.btnGoBack = new System.Windows.Forms.Button();
             this.dataGridViewTakeAttendance = new System.Windows.Forms.DataGridView();
             this.btnSave = new System.Windows.Forms.Button();
+            this.btnSaveAs = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTakeAttendance)).BeginInit();
             this.SuspendLayout();
             // 
@@ -91,10 +92,10 @@
             // 
             // btnSave
             // 
-            this.btnSave.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnSave.BackColor = System.Drawing.Color.Lime;
             this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(302, 385);
+            this.btnSave.Location = new System.Drawing.Point(468, 385);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(200, 40);
             this.btnSave.TabIndex = 16;
@@ -102,11 +103,24 @@
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
+            // btnSaveAs
+            // 
+            this.btnSaveAs.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnSaveAs.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSaveAs.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveAs.Location = new System.Drawing.Point(87, 385);
+            this.btnSaveAs.Name = "btnSaveAs";
+            this.btnSaveAs.Size = new System.Drawing.Size(200, 40);
+            this.btnSaveAs.TabIndex = 17;
+            this.btnSaveAs.Text = "Save As";
+            this.btnSaveAs.UseVisualStyleBackColor = false;
+            // 
             // TakeAttendanceForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnSaveAs);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.ClassComboBox);
             this.Controls.Add(this.label2);
@@ -128,5 +142,6 @@
         private System.Windows.Forms.Button btnGoBack;
         private System.Windows.Forms.DataGridView dataGridViewTakeAttendance;
         private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnSaveAs;
     }
 }
