@@ -79,5 +79,14 @@ namespace AttendanceSysytem.Forms
             settings.Recived = recived;
             panel3.Controls.Add(settings);
         }
+
+        private void AdminDashboard_Load_1(object sender, EventArgs e)
+        {
+            labelUsername.Text = recived.Name;
+            labelRole.Text = "Admin";
+            
+        }
+
+
     }
 }
