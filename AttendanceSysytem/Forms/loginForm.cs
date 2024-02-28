@@ -21,6 +21,7 @@ namespace AttendanceSysytem
         {
 
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
             Settings.ChangeFont(this, Settings.MyFont, true);
         }
 
@@ -75,6 +76,7 @@ namespace AttendanceSysytem
         }
         private void loginForm_Load(object sender, EventArgs e)
         {
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
     }
 }
