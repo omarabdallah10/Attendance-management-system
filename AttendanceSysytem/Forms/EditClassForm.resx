@@ -156,9 +156,6 @@
   <data name="&gt;&gt;supervisor_label.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="add_students_btn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
   <data name="go_back_btn.Location" type="System.Drawing.Point, System.Drawing">
     <value>26, 46</value>
   </data>
@@ -177,8 +174,8 @@
   <data name="add_teachers_btn.Location" type="System.Drawing.Point, System.Drawing">
     <value>195, 272</value>
   </data>
-  <data name="&gt;&gt;add_teachers_btn.Name" xml:space="preserve">
-    <value>add_teachers_btn</value>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
   </data>
   <data name="save_btn.Location" type="System.Drawing.Point, System.Drawing">
     <value>559, 526</value>
@@ -189,11 +186,11 @@
   <data name="&gt;&gt;go_back_btn.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="class_name_label.Text" xml:space="preserve">
-    <value>Class Name</value>
-  </data>
   <data name="&gt;&gt;save_btn.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="&gt;&gt;supervisor_label.Name" xml:space="preserve">
+    <value>supervisor_label</value>
   </data>
   <data name="save_btn.Size" type="System.Drawing.Size, System.Drawing">
     <value>150, 50</value>
@@ -210,11 +207,20 @@
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
+  <data name="class_name_label.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Italic</value>
+  </data>
   <data name="add_students_btn.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt</value>
   </data>
+  <data name="class_name_label.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
   <data name="&gt;&gt;class_name_label.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="SupervisorComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
   </data>
   <data name="class_name_txt.Size" type="System.Drawing.Size, System.Drawing">
     <value>243, 32</value>
@@ -222,11 +228,11 @@
   <data name="save_btn.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt</value>
   </data>
+  <data name="class_name_label.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
   <data name="supervisor_label.Text" xml:space="preserve">
     <value>Supervisor</value>
-  </data>
-  <data name="add_teachers_btn.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
   </data>
   <data name="class_name_txt.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
@@ -237,14 +243,11 @@
   <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>On</value>
   </data>
-  <data name="class_name_label.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="&gt;&gt;class_name_label.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="class_name_txt.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt, style=Italic</value>
-  </data>
-  <data name="add_teachers_btn.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
   </data>
   <data name="save_btn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
@@ -258,14 +261,11 @@
   <data name="&gt;&gt;add_teachers_btn.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;class_name_label.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
   <data name="add_students_btn.Location" type="System.Drawing.Point, System.Drawing">
     <value>195, 335</value>
   </data>
-  <data name="save_btn.Text" xml:space="preserve">
-    <value>Save</value>
+  <data name="&gt;&gt;add_teachers_btn.Name" xml:space="preserve">
+    <value>add_teachers_btn</value>
   </data>
   <data name="&gt;&gt;add_teachers_btn.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -279,6 +279,9 @@
   <data name="&gt;&gt;class_name_txt.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
   <data name="SupervisorComboBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>243, 32</value>
   </data>
@@ -288,8 +291,8 @@
   <data name="&gt;&gt;SupervisorComboBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
-    <value>GrowAndShrink</value>
+  <data name="add_teachers_btn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
   </data>
   <data name="&gt;&gt;supervisor_label.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -309,8 +312,8 @@
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>8, 16</value>
   </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>EditClassForm</value>
   </data>
   <data name="&gt;&gt;add_students_btn.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -320,6 +323,9 @@
   </data>
   <data name="add_students_btn.Text" xml:space="preserve">
     <value>Add Students</value>
+  </data>
+  <data name="SupervisorComboBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Italic</value>
   </data>
   <data name="&gt;&gt;SupervisorComboBox.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -336,11 +342,11 @@
   <data name="&gt;&gt;add_students_btn.Name" xml:space="preserve">
     <value>add_students_btn</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>EditClassForm</value>
+  <data name="add_students_btn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
   </data>
-  <data name="&gt;&gt;supervisor_label.Name" xml:space="preserve">
-    <value>supervisor_label</value>
+  <data name="add_teachers_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
   <data name="add_students_btn.Size" type="System.Drawing.Size, System.Drawing">
     <value>371, 42</value>
@@ -356,9 +362,6 @@
   </data>
   <data name="add_teachers_btn.Text" xml:space="preserve">
     <value>Add Teachers</value>
-  </data>
-  <data name="&gt;&gt;add_teachers_btn.ZOrder" xml:space="preserve">
-    <value>6</value>
   </data>
   <data name="&gt;&gt;add_students_btn.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -381,34 +384,28 @@
   <data name="go_back_btn.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 40</value>
   </data>
-  <data name="class_name_label.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="add_students_btn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
   <data name="add_teachers_btn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
-  <data name="SupervisorComboBox.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
+  <data name="class_name_label.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="SupervisorComboBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
-  <data name="class_name_label.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
+  <data name="class_name_label.Text" xml:space="preserve">
+    <value>Class Name</value>
   </data>
-  <data name="class_name_label.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 12pt, style=Italic</value>
+  <data name="save_btn.Text" xml:space="preserve">
+    <value>Save</value>
   </data>
-  <data name="SupervisorComboBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 12pt, style=Italic</value>
+  <data name="&gt;&gt;add_teachers_btn.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
-  </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>ar</value>
   </metadata>
 </root>

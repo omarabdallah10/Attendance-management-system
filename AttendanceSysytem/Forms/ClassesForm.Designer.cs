@@ -40,7 +40,6 @@ namespace AttendanceSysytem.Forms
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.classes_label = new System.Windows.Forms.Label();
-            this.go_back_btn = new System.Windows.Forms.Button();
             this.ClassesTable = new System.Windows.Forms.DataGridView();
             this.ClassName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SuperVisorID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,19 +53,8 @@ namespace AttendanceSysytem.Forms
             resources.ApplyResources(this.classes_label, "classes_label");
             this.classes_label.Name = "classes_label";
             // 
-            // go_back_btn
-            // 
-            resources.ApplyResources(this.go_back_btn, "go_back_btn");
-            this.go_back_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.go_back_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.go_back_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.go_back_btn.Name = "go_back_btn";
-            this.go_back_btn.UseVisualStyleBackColor = false;
-            this.go_back_btn.Click += new System.EventHandler(this.go_back_btn_Click);
-            // 
             // ClassesTable
             // 
-            resources.ApplyResources(this.ClassesTable, "ClassesTable");
             this.ClassesTable.AllowUserToAddRows = false;
             this.ClassesTable.AllowUserToDeleteRows = false;
             this.ClassesTable.AllowUserToResizeColumns = false;
@@ -75,6 +63,7 @@ namespace AttendanceSysytem.Forms
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Calibri", 12F);
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             this.ClassesTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            resources.ApplyResources(this.ClassesTable, "ClassesTable");
             this.ClassesTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.ClassesTable.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.ClassesTable.BackgroundColor = System.Drawing.SystemColors.Control;
@@ -161,7 +150,6 @@ namespace AttendanceSysytem.Forms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Controls.Add(this.ClassesTable);
-            this.Controls.Add(this.go_back_btn);
             this.Controls.Add(this.classes_label);
             this.Name = "ClassesForm";
             this.Load += new System.EventHandler(this.ClassesForm_Load);
@@ -174,7 +162,6 @@ namespace AttendanceSysytem.Forms
             #endregion
 
             private Label classes_label;
-            private Button go_back_btn;
         private DataGridView ClassesTable;
         private DataGridViewTextBoxColumn ClassName;
         private DataGridViewTextBoxColumn SuperVisorID;

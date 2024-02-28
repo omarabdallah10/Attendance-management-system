@@ -95,5 +95,6 @@ namespace AttendanceSysytem.Forms
         {
             panel3.BringToFront();
         }
+
     }
 }
