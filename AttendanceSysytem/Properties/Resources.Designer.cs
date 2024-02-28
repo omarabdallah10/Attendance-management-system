@@ -103,6 +103,26 @@ namespace AttendanceSysytem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap attendanceLogo_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("attendanceLogo-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap attendanceLogo_removebg_preview1 {
+            get {
+                object obj = ResourceManager.GetObject("attendanceLogo-removebg-preview1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap calender__1_ {
             get {
                 object obj = ResourceManager.GetObject("calender (1)", resourceCulture);
@@ -146,6 +166,16 @@ namespace AttendanceSysytem.Properties {
         internal static System.Drawing.Bitmap dropdown_arrow {
             get {
                 object obj = ResourceManager.GetObject("dropdown_arrow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Login__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Login (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

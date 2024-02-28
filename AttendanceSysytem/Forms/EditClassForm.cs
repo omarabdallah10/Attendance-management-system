@@ -59,7 +59,7 @@ namespace AttendanceSysytem.Forms
             XmlNode oldSuper = doc.SelectSingleNode("//Users/Teacher[UserID='" + classNode.SelectSingleNode("Supervisor/UserID").InnerText + "']");
             XmlNodeList classnodes = doc.SelectNodes("//Class");
             int flag = 0;
-            foreach (XmlNode classnode in classnodes)
+            /*foreach (XmlNode classnode in classnodes)
             {
                 if (classnode.SelectSingleNode("Name").InnerText == class_name_txt.Text && class_name_txt.Text != recived.Name)
                 {
@@ -75,7 +75,7 @@ namespace AttendanceSysytem.Forms
                 classNode.SelectSingleNode("Supervisor/UserID").InnerText = newSuper.SelectSingleNode("UserID").InnerText;
             }
             if (flag == 0 && (class_name_txt.Text != recived.Name || newSuper != oldSuper))
-            {
+            {*/
                 name.InnerText = class_name_txt.Text;
                 DataManagement.changeStdClassName(doc, recived.Name, class_name_txt.Text);
                 SaveTeachers();
@@ -83,11 +83,11 @@ namespace AttendanceSysytem.Forms
                 DataManagement.SaveXml(doc);
                 MessageBox.Show("Your edits have been saved successfully");
                 Close();
-            }
+           /* }
             else
             {
                 MessageBox.Show("Class name already exists, please choose another one");
-            }
+            }*/
 
         }
 

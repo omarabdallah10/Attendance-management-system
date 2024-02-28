@@ -63,7 +63,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(3)))), ((int)(((byte)(125)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel2);
             resources.ApplyResources(this.panel1, "panel1");
@@ -226,8 +226,7 @@
             resources.ApplyResources(this.btnLogout, "btnLogout");
             this.btnLogout.BackColor = System.Drawing.Color.White;
             this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLogout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(3)))), ((int)(((byte)(125)))));
-            this.btnLogout.Image = global::AttendanceSysytem.Properties.Resources.logOut_icon;
+            this.btnLogout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.UseVisualStyleBackColor = false;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
@@ -235,8 +234,8 @@
             // DateandTime
             // 
             this.DateandTime.BackColor = System.Drawing.Color.Transparent;
-            this.DateandTime.ForeColor = System.Drawing.Color.Chocolate;
             resources.ApplyResources(this.DateandTime, "DateandTime");
+            this.DateandTime.ForeColor = System.Drawing.Color.OrangeRed;
             this.DateandTime.Name = "DateandTime";
             // 
             // timer1
@@ -257,6 +256,8 @@
             this.Controls.Add(this.panelBack);
             this.Controls.Add(this.panel1);
             this.Name = "AdminDashboard";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.AdminDashboard_Load);
             this.panel1.ResumeLayout(false);
