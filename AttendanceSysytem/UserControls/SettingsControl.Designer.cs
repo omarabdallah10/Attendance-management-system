@@ -45,7 +45,7 @@
             this.Languages.Items.AddRange(new object[] {
             "العربية",
             "English"});
-            this.Languages.Location = new System.Drawing.Point(157, 246);
+            this.Languages.Location = new System.Drawing.Point(272, 281);
             this.Languages.Name = "Languages";
             this.Languages.Size = new System.Drawing.Size(358, 28);
             this.Languages.TabIndex = 50;
@@ -53,16 +53,15 @@
             // 
             // font
             // 
-            this.font.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.font.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.font.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.font.Cursor = System.Windows.Forms.Cursors.Hand;
             this.font.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.font.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.font.Location = new System.Drawing.Point(157, 284);
+            this.font.Location = new System.Drawing.Point(380, 346);
             this.font.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.font.Name = "font";
-            this.font.Size = new System.Drawing.Size(371, 42);
+            this.font.Size = new System.Drawing.Size(234, 40);
             this.font.TabIndex = 49;
             this.font.Text = "Font";
             this.font.UseVisualStyleBackColor = true;
@@ -74,7 +73,7 @@
             this.Settings.Enabled = false;
             this.Settings.Font = new System.Drawing.Font("Segoe UI", 20F);
             this.Settings.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Settings.Location = new System.Drawing.Point(257, 48);
+            this.Settings.Location = new System.Drawing.Point(372, 83);
             this.Settings.Name = "Settings";
             this.Settings.Size = new System.Drawing.Size(141, 46);
             this.Settings.TabIndex = 48;
@@ -83,7 +82,7 @@
             // password_box
             // 
             this.password_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.password_box.Location = new System.Drawing.Point(201, 153);
+            this.password_box.Location = new System.Drawing.Point(316, 188);
             this.password_box.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.password_box.Name = "password_box";
             this.password_box.Size = new System.Drawing.Size(314, 30);
@@ -96,7 +95,7 @@
             this.password_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.password_label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.password_label.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.password_label.Location = new System.Drawing.Point(61, 156);
+            this.password_label.Location = new System.Drawing.Point(176, 191);
             this.password_label.Name = "password_label";
             this.password_label.Size = new System.Drawing.Size(106, 25);
             this.password_label.TabIndex = 46;
@@ -104,14 +103,15 @@
             // 
             // save_btn
             // 
+            this.save_btn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.save_btn.BackColor = System.Drawing.Color.LightSkyBlue;
             this.save_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.save_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.save_btn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.save_btn.Location = new System.Drawing.Point(265, 368);
+            this.save_btn.Location = new System.Drawing.Point(380, 403);
             this.save_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.save_btn.Name = "save_btn";
-            this.save_btn.Size = new System.Drawing.Size(200, 40);
+            this.save_btn.Size = new System.Drawing.Size(234, 40);
             this.save_btn.TabIndex = 44;
             this.save_btn.Text = "Save";
             this.save_btn.UseVisualStyleBackColor = false;
@@ -121,6 +121,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.Controls.Add(this.Languages);
             this.Controls.Add(this.font);
             this.Controls.Add(this.Settings);
@@ -128,7 +129,7 @@
             this.Controls.Add(this.password_label);
             this.Controls.Add(this.save_btn);
             this.Name = "SettingsControl";
-            this.Size = new System.Drawing.Size(856, 535);
+            this.Size = new System.Drawing.Size(879, 621);
             this.Load += new System.EventHandler(this.SettingsControl_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -83,8 +83,8 @@
             // 
             // btnSettings
             // 
-            resources.ApplyResources(this.btnSettings, "btnSettings");
             this.btnSettings.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btnSettings, "btnSettings");
             this.btnSettings.ForeColor = System.Drawing.Color.White;
             this.btnSettings.Image = global::AttendanceSysytem.Properties.Resources.settings1;
             this.btnSettings.Name = "btnSettings";
@@ -93,8 +93,8 @@
             // 
             // btnViewAttendance
             // 
-            resources.ApplyResources(this.btnViewAttendance, "btnViewAttendance");
             this.btnViewAttendance.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btnViewAttendance, "btnViewAttendance");
             this.btnViewAttendance.ForeColor = System.Drawing.Color.White;
             this.btnViewAttendance.Image = global::AttendanceSysytem.Properties.Resources.att;
             this.btnViewAttendance.Name = "btnViewAttendance";
@@ -102,8 +102,8 @@
             // 
             // btnEditUsers
             // 
-            resources.ApplyResources(this.btnEditUsers, "btnEditUsers");
             this.btnEditUsers.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btnEditUsers, "btnEditUsers");
             this.btnEditUsers.ForeColor = System.Drawing.Color.White;
             this.btnEditUsers.Image = global::AttendanceSysytem.Properties.Resources.addStudent;
             this.btnEditUsers.Name = "btnEditUsers";
@@ -112,8 +112,8 @@
             // 
             // btnAddClass
             // 
-            resources.ApplyResources(this.btnAddClass, "btnAddClass");
             this.btnAddClass.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btnAddClass, "btnAddClass");
             this.btnAddClass.ForeColor = System.Drawing.Color.White;
             this.btnAddClass.Image = global::AttendanceSysytem.Properties.Resources._class;
             this.btnAddClass.Name = "btnAddClass";
@@ -122,8 +122,8 @@
             // 
             // btnAddTeacher
             // 
-            resources.ApplyResources(this.btnAddTeacher, "btnAddTeacher");
             this.btnAddTeacher.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btnAddTeacher, "btnAddTeacher");
             this.btnAddTeacher.ForeColor = System.Drawing.Color.White;
             this.btnAddTeacher.Image = global::AttendanceSysytem.Properties.Resources.addStudent;
             this.btnAddTeacher.Name = "btnAddTeacher";
@@ -132,8 +132,8 @@
             // 
             // btnAddStudent
             // 
-            resources.ApplyResources(this.btnAddStudent, "btnAddStudent");
             this.btnAddStudent.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btnAddStudent, "btnAddStudent");
             this.btnAddStudent.ForeColor = System.Drawing.Color.White;
             this.btnAddStudent.Image = global::AttendanceSysytem.Properties.Resources.addStudent;
             this.btnAddStudent.Name = "btnAddStudent";
@@ -175,20 +175,20 @@
             // 
             // panelBack
             // 
+            resources.ApplyResources(this.panelBack, "panelBack");
             this.panelBack.Controls.Add(this.panelTop);
             this.panelBack.Controls.Add(this.btnLogout);
             this.panelBack.Controls.Add(this.DateandTime);
-            resources.ApplyResources(this.panelBack, "panelBack");
             this.panelBack.Name = "panelBack";
             // 
             // panelTop
             // 
+            resources.ApplyResources(this.panelTop, "panelTop");
             this.panelTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(3)))), ((int)(((byte)(125)))));
             this.panelTop.Controls.Add(this.labelRole);
             this.panelTop.Controls.Add(this.label7);
             this.panelTop.Controls.Add(this.labelUsername);
             this.panelTop.Controls.Add(this.label4);
-            resources.ApplyResources(this.panelTop, "panelTop");
             this.panelTop.Name = "panelTop";
             // 
             // labelRole
@@ -221,11 +221,11 @@
             // 
             // btnLogout
             // 
+            resources.ApplyResources(this.btnLogout, "btnLogout");
             this.btnLogout.BackColor = System.Drawing.Color.White;
             this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(3)))), ((int)(((byte)(125)))));
             this.btnLogout.Image = global::AttendanceSysytem.Properties.Resources.logOut_icon;
-            resources.ApplyResources(this.btnLogout, "btnLogout");
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.UseVisualStyleBackColor = false;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
@@ -248,8 +248,8 @@
             // 
             // AdminDashboard
             // 
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             resources.ApplyResources(this, "$this");
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panelBack);
@@ -263,9 +263,11 @@
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelBack.ResumeLayout(false);
+            this.panelBack.PerformLayout();
             this.panelTop.ResumeLayout(false);
             this.panelTop.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
