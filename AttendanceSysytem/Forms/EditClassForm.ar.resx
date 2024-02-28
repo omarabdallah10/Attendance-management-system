@@ -134,4 +134,16 @@
   <data name="$this.Text" xml:space="preserve">
     <value>تعديل فصل</value>
   </data>
+  <data name="supervisor_label.Text" xml:space="preserve">
+    <value>المشرف</value>
+  </data>
+  <data name="go_back_btn.Text" xml:space="preserve">
+    <value>العودة</value>
+  </data>
+  <data name="class_name_label.Text" xml:space="preserve">
+    <value>اسم الفصل</value>
+  </data>
+  <data name="save_btn.Text" xml:space="preserve">
+    <value>حفظ</value>
+  </data>
 </root>

@@ -51,6 +51,12 @@
             this.Supervisor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewButtonColumn2 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.classes_label = new System.Windows.Forms.Label();
+            this.ClassesTable = new System.Windows.Forms.DataGridView();
+            this.ClassName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SuperVisorID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Supervisor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewButtonColumn2 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.classes_label = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.StudentsTable = new System.Windows.Forms.DataGridView();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -68,6 +74,7 @@
             this.teachers_label = new System.Windows.Forms.Label();
             this.editStudent1 = new System.Windows.Forms.TabControl();
             this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ClassesTable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClassesTable)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StudentsTable)).BeginInit();
@@ -417,6 +424,7 @@
             this.Load += new System.EventHandler(this.Edit_Load);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ClassesTable)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClassesTable)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();

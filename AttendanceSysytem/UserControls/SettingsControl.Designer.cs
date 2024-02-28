@@ -47,12 +47,16 @@
             resources.GetString("Languages.Items1")});
             this.Languages.Name = "Languages";
             this.Languages.ValueMember = "English";
+            this.Languages.SelectedIndexChanged += new System.EventHandler(this.Languages_SelectedIndexChanged_1);
             // 
             // font
             // 
             resources.ApplyResources(this.font, "font");
             this.font.Cursor = System.Windows.Forms.Cursors.Hand;
             this.font.Name = "font";
+            this.font.Size = new System.Drawing.Size(234, 41);
+            this.font.TabIndex = 49;
+            this.font.Text = "Font";
             this.font.UseVisualStyleBackColor = true;
             this.font.Click += new System.EventHandler(this.font_Click);
             // 
@@ -92,6 +96,7 @@
             this.Controls.Add(this.password_label);
             this.Controls.Add(this.save_btn);
             this.Name = "SettingsControl";
+            this.Size = new System.Drawing.Size(879, 622);
             this.Load += new System.EventHandler(this.SettingsControl_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
