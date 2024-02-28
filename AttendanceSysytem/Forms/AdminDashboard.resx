@@ -136,7 +136,7 @@
     <value>0</value>
   </data>
   <data name="btnSettings.Text" xml:space="preserve">
-    <value>              Settings</value>
+    <value>Settings</value>
   </data>
   <data name="btnSettings.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -172,7 +172,7 @@
     <value>0</value>
   </data>
   <data name="btnViewAttendance.Text" xml:space="preserve">
-    <value>              View Attendance</value>
+    <value>View Attendance</value>
   </data>
   <data name="btnViewAttendance.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -208,7 +208,7 @@
     <value>0</value>
   </data>
   <data name="btnEditUsers.Text" xml:space="preserve">
-    <value>              Edit Users</value>
+    <value>Edit Users</value>
   </data>
   <data name="btnEditUsers.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -244,7 +244,7 @@
     <value>0</value>
   </data>
   <data name="btnAddClass.Text" xml:space="preserve">
-    <value>              Add Class</value>
+    <value>Add Class</value>
   </data>
   <data name="btnAddClass.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -280,7 +280,7 @@
     <value>0</value>
   </data>
   <data name="btnAddTeacher.Text" xml:space="preserve">
-    <value>              Add Teacher</value>
+    <value>Add Teacher</value>
   </data>
   <data name="btnAddTeacher.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -316,7 +316,7 @@
     <value>0</value>
   </data>
   <data name="btnAddStudent.Text" xml:space="preserve">
-    <value>              Add Student</value>
+    <value>Add Student</value>
   </data>
   <data name="btnAddStudent.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -667,7 +667,7 @@
     <value>True</value>
   </data>
   <data name="btnLogout.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1075, 3</value>
+    <value>1036, 4</value>
   </data>
   <data name="btnLogout.Size" type="System.Drawing.Size, System.Drawing">
     <value>109, 42</value>
@@ -695,6 +695,9 @@
   </data>
   <data name="DateandTime.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
+  </data>
+  <data name="DateandTime.Text" xml:space="preserve">
+    <value>Welcome:</value>
   </data>
   <data name="&gt;&gt;DateandTime.Name" xml:space="preserve">
     <value>DateandTime</value>
@@ -776,6 +779,9 @@
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>On</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>

@@ -128,7 +128,7 @@
     <value>398, 82</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>Track Name: </value>
+    <value>Track Name:</value>
   </data>
   <data name="TrackCompoBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10.2pt</value>
@@ -286,7 +286,7 @@
     <value>OS</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>Date: </value>
+    <value>Date:</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>

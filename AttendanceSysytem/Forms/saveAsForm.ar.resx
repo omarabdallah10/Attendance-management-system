@@ -128,4 +128,10 @@
   <data name="$this.Text" xml:space="preserve">
     <value>حفظ كـ</value>
   </data>
+  <data name="btnSaveAsExcel.Text" xml:space="preserve">
+    <value>حفظ على هيئة EXCEL</value>
+  </data>
+  <data name="btnSaveAsPDF.Text" xml:space="preserve">
+    <value>حفظ على هيئة PDF</value>
+  </data>
 </root>

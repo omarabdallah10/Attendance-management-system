@@ -128,4 +128,16 @@
   <data name="$this.Text" xml:space="preserve">
     <value>عرض المُدِّرس</value>
   </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>اسم الفصل:</value>
+  </data>
+  <data name="btnGoBack.Text" xml:space="preserve">
+    <value>العودة</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>التاريخ:</value>
+  </data>
+  <data name="btnViewAttendance.Text" xml:space="preserve">
+    <value>عرض الحضور</value>
+  </data>
 </root>

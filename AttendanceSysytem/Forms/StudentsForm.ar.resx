@@ -128,4 +128,22 @@
   <data name="$this.Text" xml:space="preserve">
     <value>الطلاب</value>
   </data>
+  <data name="Edit.HeaderText" xml:space="preserve">
+    <value>تعديل</value>
+  </data>
+  <data name="StdName.HeaderText" xml:space="preserve">
+    <value>الاسم</value>
+  </data>
+  <data name="go_back_btn.Text" xml:space="preserve">
+    <value>العودة</value>
+  </data>
+  <data name="ID.HeaderText" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="students_label.Text" xml:space="preserve">
+    <value>الطلاب</value>
+  </data>
+  <data name="Class.HeaderText" xml:space="preserve">
+    <value>الفصل</value>
+  </data>
 </root>

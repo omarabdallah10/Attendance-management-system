@@ -46,7 +46,7 @@
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
-            this.label1.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label1.ForeColor = System.Drawing.Color.DarkOrange;
             this.label1.Name = "label1";
             // 
             // txtName
@@ -57,12 +57,14 @@
             // ClassName
             // 
             resources.ApplyResources(this.ClassName, "ClassName");
+            this.ClassName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.ClassName.Name = "ClassName";
             // 
             // btnSave
             // 
             resources.ApplyResources(this.btnSave, "btnSave");
-            this.btnSave.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnSave.ForeColor = System.Drawing.Color.White;
             this.btnSave.Name = "btnSave";
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
@@ -70,6 +72,7 @@
             // Supervisor
             // 
             resources.ApplyResources(this.Supervisor, "Supervisor");
+            this.Supervisor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Supervisor.Name = "Supervisor";
             // 
             // AddClass
