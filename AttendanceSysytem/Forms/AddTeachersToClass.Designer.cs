@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddTeachersToClass));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -54,9 +55,7 @@
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Calibri", 12F);
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             this.TeachersTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.TeachersTable.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.TeachersTable, "TeachersTable");
             this.TeachersTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.TeachersTable.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.TeachersTable.BackgroundColor = System.Drawing.SystemColors.Control;
@@ -85,9 +84,6 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.TeachersTable.DefaultCellStyle = dataGridViewCellStyle3;
             this.TeachersTable.GridColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.TeachersTable.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.TeachersTable.Location = new System.Drawing.Point(56, 124);
-            this.TeachersTable.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TeachersTable.Name = "TeachersTable";
             this.TeachersTable.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -103,22 +99,17 @@
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             this.TeachersTable.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.TeachersTable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.TeachersTable.Size = new System.Drawing.Size(745, 286);
-            this.TeachersTable.TabIndex = 10;
             // 
             // ID
             // 
             this.ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.ID.HeaderText = "ID";
-            this.ID.MinimumWidth = 6;
+            resources.ApplyResources(this.ID, "ID");
             this.ID.Name = "ID";
-            this.ID.Width = 60;
             // 
             // TeacherName
             // 
             this.TeacherName.FillWeight = 84.78261F;
-            this.TeacherName.HeaderText = "Name";
-            this.TeacherName.MinimumWidth = 6;
+            resources.ApplyResources(this.TeacherName, "TeacherName");
             this.TeacherName.Name = "TeacherName";
             this.TeacherName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.TeacherName.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
@@ -126,8 +117,7 @@
             // Classes
             // 
             this.Classes.FillWeight = 84.78261F;
-            this.Classes.HeaderText = "Classes";
-            this.Classes.MinimumWidth = 6;
+            resources.ApplyResources(this.Classes, "Classes");
             this.Classes.Name = "Classes";
             this.Classes.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Classes.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
@@ -135,60 +125,42 @@
             // checkCol
             // 
             this.checkCol.FillWeight = 60F;
-            this.checkCol.HeaderText = "Add";
-            this.checkCol.MinimumWidth = 6;
+            resources.ApplyResources(this.checkCol, "checkCol");
             this.checkCol.Name = "checkCol";
             this.checkCol.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // teachers_label
             // 
-            this.teachers_label.AutoSize = true;
-            this.teachers_label.Enabled = false;
-            this.teachers_label.Font = new System.Drawing.Font("Segoe UI", 20F);
-            this.teachers_label.Location = new System.Drawing.Point(356, 76);
+            resources.ApplyResources(this.teachers_label, "teachers_label");
             this.teachers_label.Name = "teachers_label";
-            this.teachers_label.Size = new System.Drawing.Size(149, 46);
-            this.teachers_label.TabIndex = 9;
-            this.teachers_label.Text = "Teachers";
             // 
             // go_back_btn
             // 
             this.go_back_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.go_back_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.go_back_btn, "go_back_btn");
             this.go_back_btn.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.go_back_btn.Location = new System.Drawing.Point(26, 26);
             this.go_back_btn.Name = "go_back_btn";
-            this.go_back_btn.Size = new System.Drawing.Size(122, 35);
-            this.go_back_btn.TabIndex = 11;
-            this.go_back_btn.Text = "Go Back";
             this.go_back_btn.UseVisualStyleBackColor = false;
             this.go_back_btn.Click += new System.EventHandler(this.go_back_btn_Click);
             // 
             // Save_btn
             // 
-            this.Save_btn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.Save_btn, "Save_btn");
             this.Save_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.Save_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Save_btn.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Save_btn.Location = new System.Drawing.Point(714, 500);
             this.Save_btn.Name = "Save_btn";
-            this.Save_btn.Size = new System.Drawing.Size(122, 35);
-            this.Save_btn.TabIndex = 12;
-            this.Save_btn.Text = "Save";
             this.Save_btn.UseVisualStyleBackColor = false;
             this.Save_btn.Click += new System.EventHandler(this.Save_btn_Click);
             // 
             // AddTeachersToClass
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(861, 557);
             this.Controls.Add(this.Save_btn);
             this.Controls.Add(this.go_back_btn);
             this.Controls.Add(this.TeachersTable);
             this.Controls.Add(this.teachers_label);
             this.Name = "AddTeachersToClass";
-            this.Text = "AddTeachersToClass";
             this.Load += new System.EventHandler(this.AddTeachersToClass_Load);
             ((System.ComponentModel.ISupportInitialize)(this.TeachersTable)).EndInit();
             this.ResumeLayout(false);

@@ -19,7 +19,7 @@ namespace AttendanceSysytem.Forms
         public StudentForm()
         {
             InitializeComponent();
-            DataManagement.ChangeFont(this, DataManagement.MyFont, true);
+            Settings.ChangeFont(this, Settings.MyFont, true);
         }
 
         private void FromDate_ValueChanged(object sender, EventArgs e)
@@ -35,6 +35,8 @@ namespace AttendanceSysytem.Forms
 
         private void StudentForm_Load(object sender, EventArgs e)
         {
+            DayFormatComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            DayFormatComboBox.SelectedIndex = 0;
             StudentAttendanceTable.AlternatingRowsDefaultCellStyle.Font = StudentAttendanceTable.RowsDefaultCellStyle.Font;
             if (recived != null && recived.UserID[0].ToString() == "S")
             {
@@ -49,7 +51,7 @@ namespace AttendanceSysytem.Forms
             else
             {
                 MessageBox.Show("Not Authorized", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                
+
             }
         }
 
@@ -72,6 +74,29 @@ namespace AttendanceSysytem.Forms
             settingsForm.Recived = recived;
             settingsForm.Show();
 
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (DayFormatComboBox.SelectedIndex)
+            {
+                case 0:
+                    DateFormat = "MM/dd/yyyy";
+                    recived.ShowStudentAttendance(FromDate.Value, ToDate.Value, this);
+                    break;
+                case 1:
+                    DateFormat = "dddd, dd MMMM yyyy";
+                    recived.ShowStudentAttendance(FromDate.Value, ToDate.Value, this);
+                    break;
+                case 2:
+                    DateFormat = "MMMM dd";
+                    recived.ShowStudentAttendance(FromDate.Value, ToDate.Value, this);
+                    break;
+                case 3:
+                    DateFormat = "yyyy MMMM";
+                    recived.ShowStudentAttendance(FromDate.Value, ToDate.Value, this);
+                    break;
+            }
         }
     }
 }

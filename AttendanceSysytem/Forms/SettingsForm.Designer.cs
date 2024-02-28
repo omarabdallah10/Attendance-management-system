@@ -28,121 +28,90 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SettingsForm));
             this.password_box = new System.Windows.Forms.TextBox();
             this.password_label = new System.Windows.Forms.Label();
             this.cancel_btn = new System.Windows.Forms.Button();
             this.save_btn = new System.Windows.Forms.Button();
             this.Settings = new System.Windows.Forms.Label();
             this.font = new System.Windows.Forms.Button();
-            this.Langauge = new System.Windows.Forms.Button();
+            this.Languages = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // password_box
             // 
-            this.password_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.password_box.Location = new System.Drawing.Point(278, 164);
-            this.password_box.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            resources.ApplyResources(this.password_box, "password_box");
             this.password_box.Name = "password_box";
-            this.password_box.Size = new System.Drawing.Size(314, 30);
-            this.password_box.TabIndex = 39;
             // 
             // password_label
             // 
-            this.password_label.AutoSize = true;
-            this.password_label.Enabled = false;
-            this.password_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.password_label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.password_label.Location = new System.Drawing.Point(138, 167);
+            resources.ApplyResources(this.password_label, "password_label");
+            this.password_label.BackColor = System.Drawing.Color.White;
+            this.password_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.password_label.Name = "password_label";
-            this.password_label.Size = new System.Drawing.Size(106, 25);
-            this.password_label.TabIndex = 37;
-            this.password_label.Text = "Password";
             // 
             // cancel_btn
             // 
-            this.cancel_btn.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.cancel_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.cancel_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cancel_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cancel_btn.Location = new System.Drawing.Point(568, 379);
-            this.cancel_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            resources.ApplyResources(this.cancel_btn, "cancel_btn");
+            this.cancel_btn.ForeColor = System.Drawing.Color.White;
             this.cancel_btn.Name = "cancel_btn";
-            this.cancel_btn.Size = new System.Drawing.Size(200, 40);
-            this.cancel_btn.TabIndex = 35;
-            this.cancel_btn.Text = "Cancel";
             this.cancel_btn.UseVisualStyleBackColor = false;
             this.cancel_btn.Click += new System.EventHandler(this.cancel_btn_Click);
             // 
             // save_btn
             // 
-            this.save_btn.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.save_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.save_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.save_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.save_btn.Location = new System.Drawing.Point(342, 379);
-            this.save_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            resources.ApplyResources(this.save_btn, "save_btn");
+            this.save_btn.ForeColor = System.Drawing.Color.White;
             this.save_btn.Name = "save_btn";
-            this.save_btn.Size = new System.Drawing.Size(200, 40);
-            this.save_btn.TabIndex = 34;
-            this.save_btn.Text = "Save";
             this.save_btn.UseVisualStyleBackColor = false;
             this.save_btn.Click += new System.EventHandler(this.save_btn_Click);
             // 
             // Settings
             // 
-            this.Settings.AutoSize = true;
-            this.Settings.Enabled = false;
-            this.Settings.Font = new System.Drawing.Font("Segoe UI", 20F);
-            this.Settings.Location = new System.Drawing.Point(334, 59);
+            resources.ApplyResources(this.Settings, "Settings");
+            this.Settings.BackColor = System.Drawing.Color.White;
+            this.Settings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Settings.Name = "Settings";
-            this.Settings.Size = new System.Drawing.Size(141, 46);
-            this.Settings.TabIndex = 40;
-            this.Settings.Text = "Settings";
             // 
             // font
             // 
-            this.font.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.font, "font");
+            this.font.BackColor = System.Drawing.Color.White;
             this.font.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.font.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.font.Location = new System.Drawing.Point(234, 296);
-            this.font.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.font.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.font.Name = "font";
-            this.font.Size = new System.Drawing.Size(371, 42);
-            this.font.TabIndex = 42;
-            this.font.Text = "Font";
-            this.font.UseVisualStyleBackColor = true;
+            this.font.UseVisualStyleBackColor = false;
             this.font.Click += new System.EventHandler(this.font_Click);
             // 
-            // Langauge
+            // Languages
             // 
-            this.Langauge.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Langauge.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Langauge.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.Langauge.Location = new System.Drawing.Point(234, 237);
-            this.Langauge.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Langauge.Name = "Langauge";
-            this.Langauge.Size = new System.Drawing.Size(371, 42);
-            this.Langauge.TabIndex = 41;
-            this.Langauge.Text = "Langauge";
-            this.Langauge.UseVisualStyleBackColor = true;
-            this.Langauge.Click += new System.EventHandler(this.Langauge_Click);
+            this.Languages.DisplayMember = "English";
+            resources.ApplyResources(this.Languages, "Languages");
+            this.Languages.FormattingEnabled = true;
+            this.Languages.Items.AddRange(new object[] {
+            resources.GetString("Languages.Items"),
+            resources.GetString("Languages.Items1")});
+            this.Languages.Name = "Languages";
+            this.Languages.ValueMember = "English";
+            this.Languages.SelectedIndexChanged += new System.EventHandler(this.Languages_SelectedIndexChanged);
             // 
             // SettingsForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.Languages);
             this.Controls.Add(this.font);
-            this.Controls.Add(this.Langauge);
             this.Controls.Add(this.Settings);
             this.Controls.Add(this.password_box);
             this.Controls.Add(this.password_label);
             this.Controls.Add(this.cancel_btn);
             this.Controls.Add(this.save_btn);
             this.Name = "SettingsForm";
-            this.Text = "SettingsForm";
             this.Load += new System.EventHandler(this.SettingsForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -157,6 +126,6 @@
         private System.Windows.Forms.Button save_btn;
         private System.Windows.Forms.Label Settings;
         private System.Windows.Forms.Button font;
-        private System.Windows.Forms.Button Langauge;
+        private System.Windows.Forms.ComboBox Languages;
     }
 }

@@ -3,9 +3,11 @@ using AttendanceSysytem.Forms;
 using AttendanceSysytem.Users;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Security.Cryptography;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System;
@@ -21,19 +23,24 @@ namespace AttendanceSysytem
         [STAThread]
         static void Main()
         {
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            // initialize the backup manager
-            backupManager.InitializeBackupTimer();
 
-            Application.Run(new TeacherViewAttendanceForm());
+            // Initialize the LanguageManager
+            Settings.Initialize();
+
+            // Subscribe to FormOpened event to track new forms
+            Application.ApplicationExit += (sender, e) => Settings.FormOpened -= Settings.OnFormOpened;
+            Settings.FormOpened += (form) => Settings.AddForm(form);
+            Application.Run(new loginForm());
 
 
 
 
 
-            
+
             //isAdmin("Admin@admin.com", "123456789");
         }
     }

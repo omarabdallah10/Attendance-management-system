@@ -20,19 +20,19 @@ namespace AttendanceSysytem.Forms
         {
             InitializeComponent();
             this.oldform = oldform;
-            DataManagement.ChangeFont(this, DataManagement.MyFont, true);
+            Settings.ChangeFont(this, Settings.MyFont, true);
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.ColumnIndex==3)
             {
-                EditStudentForm form = new EditStudentForm(this);
-                MessageBox.Show(StudentsTable.Rows.SharedRow(e.RowIndex).Cells[0].Value.ToString());
-                form.Recived = StudentsTable.Rows.SharedRow(e.RowIndex).Cells[0].Value.ToString();
-                Console.WriteLine(form.Recived);
-                form.Show();
-                Hide();
+                //EditStudentForm form = new EditStudentForm();
+                //MessageBox.Show(StudentsTable.Rows.SharedRow(e.RowIndex).Cells[0].Value.ToString());
+                //form.Recived = StudentsTable.Rows.SharedRow(e.RowIndex).Cells[0].Value.ToString();
+                //Console.WriteLine(form.Recived);
+                //form.Show();
+                //Hide();
             }
         }
 
@@ -53,7 +53,6 @@ namespace AttendanceSysytem.Forms
                 string StudentPassword = StudentRecord.SelectSingleNode("Password").InnerText;
                 string ClassName = StudentRecord.SelectSingleNode("ClassName").InnerText;
                 Student std = new Student(StudentName,StudentEmail,StudentPassword,StudentID, ClassName);
-                std.ShowStudentData(this);
                 StudentsList.Add(std);
             }
 

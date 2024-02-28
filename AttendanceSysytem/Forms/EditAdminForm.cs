@@ -17,7 +17,7 @@ namespace AttendanceSysytem.Forms
         public EditAdminForm(Form oldform)
         {
             adminform = oldform;
-            DataManagement.ChangeFont(this, DataManagement.MyFont, true);
+            Settings.ChangeFont(this, Settings.MyFont, true);
             InitializeComponent();
         }
 
@@ -52,6 +52,11 @@ namespace AttendanceSysytem.Forms
         {
             adminform.Show();
             Hide();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

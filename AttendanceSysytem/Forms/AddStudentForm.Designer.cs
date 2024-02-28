@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddStudentForm));
             this.btnSave = new System.Windows.Forms.Button();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtLName = new System.Windows.Forms.TextBox();
@@ -45,147 +46,84 @@
             // 
             // btnSave
             // 
+            resources.ApplyResources(this.btnSave, "btnSave");
             this.btnSave.BackColor = System.Drawing.Color.LightSkyBlue;
             this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(199, 360);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(220, 45);
-            this.btnSave.TabIndex = 11;
-            this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // txtPassword
             // 
-            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(387, 225);
+            resources.ApplyResources(this.txtPassword, "txtPassword");
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(281, 30);
-            this.txtPassword.TabIndex = 8;
-            this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtPassword.UseSystemPasswordChar = true;
             // 
             // txtLName
             // 
-            this.txtLName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLName.Location = new System.Drawing.Point(387, 123);
+            resources.ApplyResources(this.txtLName, "txtLName");
             this.txtLName.Name = "txtLName";
-            this.txtLName.Size = new System.Drawing.Size(281, 30);
-            this.txtLName.TabIndex = 4;
-            this.txtLName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Password
             // 
-            this.Password.AutoSize = true;
-            this.Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Password.Location = new System.Drawing.Point(210, 228);
+            resources.ApplyResources(this.Password, "Password");
             this.Password.Name = "Password";
-            this.Password.Size = new System.Drawing.Size(106, 25);
-            this.Password.TabIndex = 7;
-            this.Password.Text = "Password";
             // 
             // Lname
             // 
-            this.Lname.AutoSize = true;
-            this.Lname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lname.Location = new System.Drawing.Point(210, 126);
+            resources.ApplyResources(this.Lname, "Lname");
             this.Lname.Name = "Lname";
-            this.Lname.Size = new System.Drawing.Size(115, 25);
-            this.Lname.TabIndex = 3;
-            this.Lname.Text = "Last Name";
             // 
             // txtFName
             // 
-            this.txtFName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFName.Location = new System.Drawing.Point(387, 71);
+            resources.ApplyResources(this.txtFName, "txtFName");
             this.txtFName.Name = "txtFName";
-            this.txtFName.Size = new System.Drawing.Size(281, 30);
-            this.txtFName.TabIndex = 2;
-            this.txtFName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtFName.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // Class
             // 
-            this.Class.AutoSize = true;
-            this.Class.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Class.Location = new System.Drawing.Point(210, 281);
+            resources.ApplyResources(this.Class, "Class");
             this.Class.Name = "Class";
-            this.Class.Size = new System.Drawing.Size(67, 25);
-            this.Class.TabIndex = 9;
-            this.Class.Text = "Class";
-            this.Class.Click += new System.EventHandler(this.label1_Click);
             // 
             // FName
             // 
-            this.FName.AutoSize = true;
-            this.FName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FName.Location = new System.Drawing.Point(210, 74);
+            resources.ApplyResources(this.FName, "FName");
             this.FName.Name = "FName";
-            this.FName.Size = new System.Drawing.Size(116, 25);
-            this.FName.TabIndex = 1;
-            this.FName.Text = "First Name";
-            this.FName.Click += new System.EventHandler(this.label2_Click);
             // 
             // btnCancel
             // 
+            resources.ApplyResources(this.btnCancel, "btnCancel");
             this.btnCancel.BackColor = System.Drawing.Color.LightSkyBlue;
             this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Location = new System.Drawing.Point(448, 360);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(220, 45);
-            this.btnCancel.TabIndex = 12;
-            this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // AddStudent
             // 
-            this.AddStudent.AutoSize = true;
-            this.AddStudent.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddStudent.Location = new System.Drawing.Point(382, 26);
+            resources.ApplyResources(this.AddStudent, "AddStudent");
             this.AddStudent.Name = "AddStudent";
-            this.AddStudent.Size = new System.Drawing.Size(132, 25);
-            this.AddStudent.TabIndex = 0;
-            this.AddStudent.Text = "Add Student";
-            this.AddStudent.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // ClassList
             // 
+            resources.ApplyResources(this.ClassList, "ClassList");
             this.ClassList.FormattingEnabled = true;
-            this.ClassList.ItemHeight = 16;
-            this.ClassList.Location = new System.Drawing.Point(387, 285);
             this.ClassList.Name = "ClassList";
-            this.ClassList.Size = new System.Drawing.Size(281, 24);
-            this.ClassList.TabIndex = 11;
-            this.ClassList.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // txtEmail
             // 
-            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(387, 173);
+            resources.ApplyResources(this.txtEmail, "txtEmail");
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(281, 30);
-            this.txtEmail.TabIndex = 6;
-            this.txtEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // email
             // 
-            this.email.AutoSize = true;
-            this.email.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.email.Location = new System.Drawing.Point(210, 176);
+            resources.ApplyResources(this.email, "email");
             this.email.Name = "email";
-            this.email.Size = new System.Drawing.Size(65, 25);
-            this.email.TabIndex = 5;
-            this.email.Text = "Email";
             // 
             // AddStudentForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ClientSize = new System.Drawing.Size(832, 453);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.email);
             this.Controls.Add(this.ClassList);
@@ -200,7 +138,6 @@
             this.Controls.Add(this.Password);
             this.Controls.Add(this.Lname);
             this.Name = "AddStudentForm";
-            this.Text = "AddStudentForm";
             this.Load += new System.EventHandler(this.AddStudentForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
