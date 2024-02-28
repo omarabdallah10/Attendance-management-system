@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
@@ -17,9 +18,15 @@ namespace AttendanceSysytem.Forms
         Form adminform = new AdminFunctionalitiesForm();
         public AddClassForm(Form f1)
         {
-            DataManagement.ChangeFont(this, DataManagement.MyFont, true);
+            //Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ar");
+            Settings.ChangeFont(this, Settings.MyFont, true);
             adminform = f1;
             InitializeComponent();
+            
+        }
+
+        private void AddClassForm_Load(object sender, EventArgs e)
+        {
             XmlDocument doc = DataManagement.xmlDoc();
             XmlNodeList TeacherNodes = doc.SelectNodes("//Users/Teacher");
             foreach (XmlNode TeacherNode in TeacherNodes)
@@ -31,11 +38,6 @@ namespace AttendanceSysytem.Forms
             }
             txtSupervisor.SelectedIndex = 0;
             txtSupervisor.DropDownStyle = ComboBoxStyle.DropDownList;
-        }
-
-        private void AddClassForm_Load(object sender, EventArgs e)
-        {
-            
         }
 
         private void btnSave_Click(object sender, EventArgs e)

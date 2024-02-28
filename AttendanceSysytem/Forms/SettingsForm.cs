@@ -26,14 +26,16 @@ namespace AttendanceSysytem.Forms
 
         private void SettingsForm_Load(object sender, EventArgs e)
         {
-            this.Font = DataManagement.MyFont;
+            Languages.DropDownStyle = ComboBoxStyle.DropDownList;
+            this.Font = Classes.Settings.MyFont;
             Document = DataManagement.xmlDoc();
             //Console.WriteLine(Recived.Name);
-            string type="Student";
-            if (Recived.UserID[0]=='T')
+            string type = "Student";
+            if (Recived.UserID[0] == 'T')
             {
                 type = "Teacher";
-            }else if (Recived.UserID[0]=='A')
+            }
+            else if (Recived.UserID[0] == 'A')
             {
                 type = "Admin";
 
@@ -42,13 +44,6 @@ namespace AttendanceSysytem.Forms
 
             XmlNode password = User.SelectSingleNode("Password");
             password_box.Text = password.InnerText;
-            /*
-            string fname = name.InnerText.Split(' ')[0];
-            string lname = name.InnerText.Split(' ')[1];
-            FnameTxt.Text = fname;
-            LnameTxt.Text = lname;
-            email_box.Text = email.InnerText;
-            password_box.Text = password.InnerText;*/
         }
 
 
@@ -56,33 +51,36 @@ namespace AttendanceSysytem.Forms
         {
             FontDialog font = new FontDialog();
             font.ShowDialog();
-            
-            DataManagement.ChangeFontForAllPages(font.Font);
-        }
 
-        private void Langauge_Click(object sender, EventArgs e)
-        {
-
+            Classes.Settings.ChangeFontForAllPages(font.Font);
         }
 
         private void save_btn_Click(object sender, EventArgs e)
         {
             XmlNode password = User.SelectSingleNode("Password");
-            if (password_box.Text != password.InnerText)
-            {
+            /*if (password_box.Text != password.InnerText)
+            {*/
                 password.InnerText = password_box.Text;
                 DataManagement.SaveXml(Document);
-                MessageBox.Show("Password updated successfully");
-            }
+                MessageBox.Show("Settings updated successfully");
+            /*}
             else
             {
                 MessageBox.Show("Password didn't change");
-            }
+            }*/
         }
 
         private void cancel_btn_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void Languages_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (Languages.SelectedIndex == 0)
+                Classes.Settings.SwitchLanguage("ar");
+            else
+                Classes.Settings.SwitchLanguage("en");
         }
     }
 }

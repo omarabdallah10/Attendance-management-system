@@ -20,7 +20,7 @@ namespace AttendanceSysytem.Forms
         public TeacherViewAttendanceForm()
         {
             InitializeComponent();
-            DataManagement.ChangeFont(this, DataManagement.MyFont, true);
+            Settings.ChangeFont(this, Settings.MyFont, true);
         }
 
         //load Data on form load

@@ -73,11 +73,11 @@ namespace AttendanceSysytem.Users
 
 
 
-        public void ShowTeacherData(TeachersForm MyForm)
-        {
-            // Load the XML file
-            XmlDocument xmlDoc = DataManagement.xmlDoc();
-            MyForm.AddRow(UserID, Name, TeacherClasses, SupervisedClass);
-        }
+        //public void ShowTeacherData(TeachersForm MyForm)
+        //{
+        //    // Load the XML file
+        //    XmlDocument xmlDoc = DataManagement.xmlDoc();
+        //    MyForm.AddRow(UserID, Name, TeacherClasses, SupervisedClass);
+        //}
     }
 }

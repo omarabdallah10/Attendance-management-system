@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddStudentsToClass));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -36,43 +37,35 @@
             this.Save_btn = new System.Windows.Forms.Button();
             this.go_back_btn = new System.Windows.Forms.Button();
             this.StudentsTable = new System.Windows.Forms.DataGridView();
-            this.students_label = new System.Windows.Forms.Label();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TeacherName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.InClass = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.checkCol = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.students_label = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.StudentsTable)).BeginInit();
             this.SuspendLayout();
             // 
             // Save_btn
             // 
-            this.Save_btn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.Save_btn, "Save_btn");
             this.Save_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.Save_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Save_btn.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Save_btn.Location = new System.Drawing.Point(724, 436);
             this.Save_btn.Name = "Save_btn";
-            this.Save_btn.Size = new System.Drawing.Size(122, 35);
-            this.Save_btn.TabIndex = 16;
-            this.Save_btn.Text = "Save";
             this.Save_btn.UseVisualStyleBackColor = false;
             this.Save_btn.Click += new System.EventHandler(this.Save_btn_Click);
             // 
             // go_back_btn
             // 
+            resources.ApplyResources(this.go_back_btn, "go_back_btn");
             this.go_back_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.go_back_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.go_back_btn.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.go_back_btn.Location = new System.Drawing.Point(12, 12);
             this.go_back_btn.Name = "go_back_btn";
-            this.go_back_btn.Size = new System.Drawing.Size(122, 35);
-            this.go_back_btn.TabIndex = 15;
-            this.go_back_btn.Text = "Go Back";
             this.go_back_btn.UseVisualStyleBackColor = false;
             this.go_back_btn.Click += new System.EventHandler(this.go_back_btn_Click);
             // 
             // StudentsTable
             // 
+            resources.ApplyResources(this.StudentsTable, "StudentsTable");
             this.StudentsTable.AllowUserToAddRows = false;
             this.StudentsTable.AllowUserToDeleteRows = false;
             this.StudentsTable.AllowUserToResizeColumns = false;
@@ -81,9 +74,6 @@
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Calibri", 12F);
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             this.StudentsTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.StudentsTable.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.StudentsTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.StudentsTable.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.StudentsTable.BackgroundColor = System.Drawing.SystemColors.Control;
@@ -112,9 +102,6 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.StudentsTable.DefaultCellStyle = dataGridViewCellStyle3;
             this.StudentsTable.GridColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.StudentsTable.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.StudentsTable.Location = new System.Drawing.Point(27, 97);
-            this.StudentsTable.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.StudentsTable.Name = "StudentsTable";
             this.StudentsTable.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -130,63 +117,48 @@
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             this.StudentsTable.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.StudentsTable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.StudentsTable.Size = new System.Drawing.Size(803, 319);
-            this.StudentsTable.TabIndex = 14;
-            // 
-            // students_label
-            // 
-            this.students_label.AutoSize = true;
-            this.students_label.Enabled = false;
-            this.students_label.Font = new System.Drawing.Font("Segoe UI", 20F);
-            this.students_label.Location = new System.Drawing.Point(327, 49);
-            this.students_label.Name = "students_label";
-            this.students_label.Size = new System.Drawing.Size(151, 46);
-            this.students_label.TabIndex = 13;
-            this.students_label.Text = "Students";
             // 
             // ID
             // 
             this.ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.ID.HeaderText = "ID";
-            this.ID.MinimumWidth = 6;
+            resources.ApplyResources(this.ID, "ID");
             this.ID.Name = "ID";
-            this.ID.Width = 60;
             // 
             // TeacherName
             // 
             this.TeacherName.FillWeight = 84.78261F;
-            this.TeacherName.HeaderText = "Name";
-            this.TeacherName.MinimumWidth = 6;
+            resources.ApplyResources(this.TeacherName, "TeacherName");
             this.TeacherName.Name = "TeacherName";
             this.TeacherName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.TeacherName.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // InClass
             // 
-            this.InClass.HeaderText = "In Class";
-            this.InClass.MinimumWidth = 6;
+            resources.ApplyResources(this.InClass, "InClass");
             this.InClass.Name = "InClass";
             this.InClass.ReadOnly = true;
             // 
             // checkCol
             // 
             this.checkCol.FillWeight = 60F;
-            this.checkCol.HeaderText = "Add";
-            this.checkCol.MinimumWidth = 6;
+            resources.ApplyResources(this.checkCol, "checkCol");
             this.checkCol.Name = "checkCol";
             this.checkCol.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
+            // students_label
+            // 
+            resources.ApplyResources(this.students_label, "students_label");
+            this.students_label.Name = "students_label";
+            // 
             // AddStudentsToClass
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(858, 483);
             this.Controls.Add(this.Save_btn);
             this.Controls.Add(this.go_back_btn);
             this.Controls.Add(this.StudentsTable);
             this.Controls.Add(this.students_label);
             this.Name = "AddStudentsToClass";
-            this.Text = "AddStudentsToClass";
             this.Load += new System.EventHandler(this.AddStudentsToClass_Load);
             ((System.ComponentModel.ISupportInitialize)(this.StudentsTable)).EndInit();
             this.ResumeLayout(false);
