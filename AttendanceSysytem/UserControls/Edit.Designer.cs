@@ -51,12 +51,6 @@
             this.Supervisor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewButtonColumn2 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.classes_label = new System.Windows.Forms.Label();
-            this.ClassesTable = new System.Windows.Forms.DataGridView();
-            this.ClassName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SuperVisorID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Supervisor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewButtonColumn2 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.classes_label = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.StudentsTable = new System.Windows.Forms.DataGridView();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -420,9 +414,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.editStudent1);
             this.Name = "Edit";
+            this.Load += new System.EventHandler(this.Edit_Load);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ClassesTable)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClassesTable)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();

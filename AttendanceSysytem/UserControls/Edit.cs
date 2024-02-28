@@ -67,11 +67,10 @@ namespace AttendanceSysytem.UserControls
 
         private void Edit_Load(object sender, EventArgs e)
         {
-
             // Teachers
             printTeachersTable();
             // Students
-            printStudentTable();
+            printStudentsTable();
         }
         public void printTeachersTable()
         {
@@ -91,12 +90,12 @@ namespace AttendanceSysytem.UserControls
                 this.TeachersTable.Rows.Add(_teacher.UserID, _teacher.Name, _teacher.getClassesFromXML(), _teacher.getSupervisedClassesFromXML());
             }
         }
-        public void printStudentTable()
+        public void printStudentsTable()
         {
             XmlNodeList Students = xmlDoc.SelectNodes("//Users/Student");
+            StudentsTable.AlternatingRowsDefaultCellStyle.Font = StudentsTable.RowsDefaultCellStyle.Font;
             this.StudentsTable.Rows.Clear();
             List<Student> StudentsList = new List<Student>();
-            StudentsTable.AlternatingRowsDefaultCellStyle.Font = StudentsTable.RowsDefaultCellStyle.Font;
             foreach (XmlElement StudentRecord in Students)
             {
                 string StudentID = StudentRecord.SelectSingleNode("UserID").InnerText;
@@ -106,8 +105,9 @@ namespace AttendanceSysytem.UserControls
                 string ClassName = StudentRecord.SelectSingleNode("ClassName").InnerText;
 
                 Student std = new Student(StudentName, StudentEmail, StudentPassword, StudentID, ClassName);
-                StudentsTable.Rows.Add(std.UserID, std.Name, std.ClassName);
                 StudentsList.Add(std);
+                Console.WriteLine(ClassName);
+                this.StudentsTable.Rows.Add(std.UserID, std.Name, std.ClassName);
             }
         }
     }
