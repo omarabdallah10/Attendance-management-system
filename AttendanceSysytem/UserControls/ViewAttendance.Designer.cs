@@ -123,7 +123,7 @@
             this.btnViewAttendance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.btnViewAttendance.ForeColor = System.Drawing.Color.White;
             this.btnViewAttendance.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnViewAttendance.Location = new System.Drawing.Point(290, 123);
+            this.btnViewAttendance.Location = new System.Drawing.Point(230, 123);
             this.btnViewAttendance.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnViewAttendance.Name = "btnViewAttendance";
             this.btnViewAttendance.Size = new System.Drawing.Size(234, 46);
@@ -140,7 +140,7 @@
             this.btnSaveAs.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.btnSaveAs.ForeColor = System.Drawing.Color.White;
             this.btnSaveAs.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnSaveAs.Location = new System.Drawing.Point(652, 123);
+            this.btnSaveAs.Location = new System.Drawing.Point(590, 123);
             this.btnSaveAs.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSaveAs.Name = "btnSaveAs";
             this.btnSaveAs.Size = new System.Drawing.Size(234, 46);

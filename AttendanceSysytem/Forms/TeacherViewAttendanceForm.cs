@@ -134,6 +134,14 @@ namespace AttendanceSysytem.Forms
 
         private void btnSaveAs_Click(object sender, EventArgs e)
         {
+
+            //if no data to save
+            if (dataGridViewAttendance.Rows.Count == 0)
+            {
+                MessageBox.Show("No data to save!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             //get the data from the datagridview Fro the excel file
             string data = "";
             for (int i = 0; i < dataGridViewAttendance.Rows.Count; i++)
