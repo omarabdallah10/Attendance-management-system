@@ -222,4 +222,25 @@
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
     <value>1125, 521</value>
   </data>
+  <data name="Lname.Text" xml:space="preserve">
+    <value>اسم العائلة</value>
+  </data>
+  <data name="FName.Text" xml:space="preserve">
+    <value>الاسم الأول</value>
+  </data>
+  <data name="Class.Text" xml:space="preserve">
+    <value>فصل</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>أضف طالب</value>
+  </data>
+  <data name="email.Text" xml:space="preserve">
+    <value>البريد الالكتروني</value>
+  </data>
+  <data name="btnSave.Text" xml:space="preserve">
+    <value>حفظ</value>
+  </data>
+  <data name="Password.Text" xml:space="preserve">
+    <value>كلمة السر</value>
+  </data>
 </root>

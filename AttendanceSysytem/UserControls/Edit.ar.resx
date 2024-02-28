@@ -124,4 +124,61 @@
   <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
     <value>1143, 586</value>
   </data>
+  <data name="ClassName.HeaderText" xml:space="preserve">
+    <value>الاسم</value>
+  </data>
+  <data name="SuperVisorID.HeaderText" xml:space="preserve">
+    <value>رقم المشرف</value>
+  </data>
+  <data name="Supervisor.HeaderText" xml:space="preserve">
+    <value>المشرف</value>
+  </data>
+  <data name="dataGridViewButtonColumn2.HeaderText" xml:space="preserve">
+    <value>تعديل</value>
+  </data>
+  <data name="classes_label.Text" xml:space="preserve">
+    <value>الفصول</value>
+  </data>
+  <data name="tabPage3.Text" xml:space="preserve">
+    <value>الفصول</value>
+  </data>
+  <data name="ID.HeaderText" xml:space="preserve">
+    <value>الرقم التعريفي</value>
+  </data>
+  <data name="StdName.HeaderText" xml:space="preserve">
+    <value>الاسم</value>
+  </data>
+  <data name="Class.HeaderText" xml:space="preserve">
+    <value>الفصل</value>
+  </data>
+  <data name="dataGridViewButtonColumn1.HeaderText" xml:space="preserve">
+    <value>تعديل</value>
+  </data>
+  <data name="students_label.Text" xml:space="preserve">
+    <value>الطلاب</value>
+  </data>
+  <data name="tabPage2.Text" xml:space="preserve">
+    <value>الطلاب</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>الرقم التعريفي</value>
+  </data>
+  <data name="TeacherName.HeaderText" xml:space="preserve">
+    <value>الاسماء</value>
+  </data>
+  <data name="Classes.HeaderText" xml:space="preserve">
+    <value>الفصول</value>
+  </data>
+  <data name="Supervised_Class.HeaderText" xml:space="preserve">
+    <value>مشرف الفصل</value>
+  </data>
+  <data name="dataGridViewButtonColumn3.HeaderText" xml:space="preserve">
+    <value>تعديل</value>
+  </data>
+  <data name="teachers_label.Text" xml:space="preserve">
+    <value>المُدرسين</value>
+  </data>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>المُدرسين</value>
+  </data>
 </root>

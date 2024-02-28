@@ -121,4 +121,16 @@
   <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>No</value>
   </data>
+  <data name="font.Text" xml:space="preserve">
+    <value>الخط</value>
+  </data>
+  <data name="Settings.Text" xml:space="preserve">
+    <value>الاعدادات</value>
+  </data>
+  <data name="password_label.Text" xml:space="preserve">
+    <value>كلمة السر</value>
+  </data>
+  <data name="save_btn.Text" xml:space="preserve">
+    <value>حفظ</value>
+  </data>
 </root>

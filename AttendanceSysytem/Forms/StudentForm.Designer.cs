@@ -91,8 +91,8 @@ namespace AttendanceSysytem.Forms
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StudentForm));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.StudentNametxt = new System.Windows.Forms.TextBox();
             this.name_label = new System.Windows.Forms.Label();
             this.class_label = new System.Windows.Forms.Label();
@@ -111,7 +111,9 @@ namespace AttendanceSysytem.Forms
             this.settings = new System.Windows.Forms.Button();
             this.DayFormatComboBox = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.StudentAttendanceTable)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // StudentNametxt
@@ -150,25 +152,25 @@ namespace AttendanceSysytem.Forms
             // 
             // StudentAttendanceTable
             // 
-            resources.ApplyResources(this.StudentAttendanceTable, "StudentAttendanceTable");
             this.StudentAttendanceTable.AllowUserToAddRows = false;
             this.StudentAttendanceTable.AllowUserToDeleteRows = false;
             this.StudentAttendanceTable.AllowUserToOrderColumns = true;
             this.StudentAttendanceTable.AllowUserToResizeColumns = false;
             this.StudentAttendanceTable.AllowUserToResizeRows = false;
+            resources.ApplyResources(this.StudentAttendanceTable, "StudentAttendanceTable");
             this.StudentAttendanceTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.StudentAttendanceTable.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.StudentAttendanceTable.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.StudentAttendanceTable.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.StudentAttendanceTable.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.StudentAttendanceTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.StudentAttendanceTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.StudentAttendanceTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.StudentAttendanceTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.DATE,
@@ -177,8 +179,8 @@ namespace AttendanceSysytem.Forms
             this.StudentAttendanceTable.Name = "StudentAttendanceTable";
             this.StudentAttendanceTable.ReadOnly = true;
             this.StudentAttendanceTable.RowHeadersVisible = false;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.StudentAttendanceTable.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.StudentAttendanceTable.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.StudentAttendanceTable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.StudentAttendanceTable_CellContentClick);
             // 
             // DATE
@@ -207,9 +209,9 @@ namespace AttendanceSysytem.Forms
             // 
             // signOutBTN
             // 
-            resources.ApplyResources(this.signOutBTN, "signOutBTN");
             this.signOutBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.signOutBTN.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.signOutBTN, "signOutBTN");
             this.signOutBTN.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.signOutBTN.Name = "signOutBTN";
             this.signOutBTN.UseVisualStyleBackColor = false;
@@ -271,10 +273,20 @@ namespace AttendanceSysytem.Forms
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = global::AttendanceSysytem.Properties.Resources.attendanceLogo_removebg_preview1;
+            resources.ApplyResources(this.pictureBox2, "pictureBox2");
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.TabStop = false;
+            // 
             // StudentForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.DayFormatComboBox);
             this.Controls.Add(this.settings);
@@ -294,6 +306,7 @@ namespace AttendanceSysytem.Forms
             this.Name = "StudentForm";
             this.Load += new System.EventHandler(this.StudentForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.StudentAttendanceTable)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -332,5 +345,6 @@ namespace AttendanceSysytem.Forms
         private DataGridViewTextBoxColumn DATE;
         private DataGridViewTextBoxColumn STATUS;
         private Label label1;
+        private PictureBox pictureBox2;
     }
 }
