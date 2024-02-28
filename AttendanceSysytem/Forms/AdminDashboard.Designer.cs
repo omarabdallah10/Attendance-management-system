@@ -71,6 +71,7 @@
             // 
             // panel4
             // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.panel4.Controls.Add(this.btnSettings);
             this.panel4.Controls.Add(this.btnViewAttendance);
             this.panel4.Controls.Add(this.btnEditUsers);
@@ -148,6 +149,7 @@
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.pictureBox1);
@@ -184,7 +186,7 @@
             // panelTop
             // 
             resources.ApplyResources(this.panelTop, "panelTop");
-            this.panelTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(3)))), ((int)(((byte)(125)))));
+            this.panelTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.panelTop.Controls.Add(this.labelRole);
             this.panelTop.Controls.Add(this.label7);
             this.panelTop.Controls.Add(this.labelUsername);
@@ -194,28 +196,28 @@
             // labelRole
             // 
             resources.ApplyResources(this.labelRole, "labelRole");
-            this.labelRole.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(3)))), ((int)(((byte)(125)))));
+            this.labelRole.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.labelRole.ForeColor = System.Drawing.Color.White;
             this.labelRole.Name = "labelRole";
             // 
             // label7
             // 
             resources.ApplyResources(this.label7, "label7");
-            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(3)))), ((int)(((byte)(125)))));
+            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Name = "label7";
             // 
             // labelUsername
             // 
             resources.ApplyResources(this.labelUsername, "labelUsername");
-            this.labelUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(3)))), ((int)(((byte)(125)))));
+            this.labelUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.labelUsername.ForeColor = System.Drawing.Color.White;
             this.labelUsername.Name = "labelUsername";
             // 
             // label4
             // 
             resources.ApplyResources(this.label4, "label4");
-            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(3)))), ((int)(((byte)(125)))));
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Name = "label4";
             // 
@@ -233,7 +235,7 @@
             // DateandTime
             // 
             this.DateandTime.BackColor = System.Drawing.Color.Transparent;
-            this.DateandTime.ForeColor = System.Drawing.Color.IndianRed;
+            this.DateandTime.ForeColor = System.Drawing.Color.Chocolate;
             resources.ApplyResources(this.DateandTime, "DateandTime");
             this.DateandTime.Name = "DateandTime";
             // 

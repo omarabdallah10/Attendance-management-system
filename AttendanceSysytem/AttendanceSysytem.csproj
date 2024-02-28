@@ -374,6 +374,9 @@
     <EmbeddedResource Include="UserControls\AddStudent.resx">
       <DependentUpon>AddStudent.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\AddTeacher.ar.resx">
+      <DependentUpon>AddTeacher.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\AddTeacher.resx">
       <DependentUpon>AddTeacher.cs</DependentUpon>
     </EmbeddedResource>

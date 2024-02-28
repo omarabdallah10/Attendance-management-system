@@ -54,7 +54,9 @@
             // email
             // 
             this.email.AutoSize = true;
+            this.email.BackColor = System.Drawing.Color.Snow;
             this.email.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.email.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.email.Location = new System.Drawing.Point(18, 186);
             this.email.Name = "email";
             this.email.Size = new System.Drawing.Size(65, 25);
@@ -63,6 +65,7 @@
             // 
             // ClassList
             // 
+            this.ClassList.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.ClassList.FormattingEnabled = true;
             this.ClassList.ItemHeight = 16;
             this.ClassList.Location = new System.Drawing.Point(372, 300);
@@ -73,7 +76,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.BackColor = System.Drawing.Color.Snow;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(132, 25);
@@ -94,6 +99,7 @@
             // 
             this.Class.AutoSize = true;
             this.Class.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Class.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Class.Location = new System.Drawing.Point(184, 296);
             this.Class.Name = "Class";
             this.Class.Size = new System.Drawing.Size(67, 25);
@@ -103,7 +109,9 @@
             // FName
             // 
             this.FName.AutoSize = true;
+            this.FName.BackColor = System.Drawing.Color.Snow;
             this.FName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.FName.Location = new System.Drawing.Point(18, 84);
             this.FName.Name = "FName";
             this.FName.Size = new System.Drawing.Size(116, 25);
@@ -112,9 +120,10 @@
             // 
             // btnSave
             // 
-            this.btnSave.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.ForeColor = System.Drawing.Color.White;
             this.btnSave.Location = new System.Drawing.Point(308, 388);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(220, 45);
@@ -145,7 +154,9 @@
             // Password
             // 
             this.Password.AutoSize = true;
+            this.Password.BackColor = System.Drawing.Color.Snow;
             this.Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Password.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Password.Location = new System.Drawing.Point(489, 186);
             this.Password.Name = "Password";
             this.Password.Size = new System.Drawing.Size(106, 25);
@@ -155,7 +166,9 @@
             // Lname
             // 
             this.Lname.AutoSize = true;
+            this.Lname.BackColor = System.Drawing.Color.Snow;
             this.Lname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Lname.Location = new System.Drawing.Point(489, 86);
             this.Lname.Name = "Lname";
             this.Lname.Size = new System.Drawing.Size(115, 25);
