@@ -208,20 +208,6 @@
       <Status>Present</Status>
     </AttendanceRecord>
     <AttendanceRecord>
-      <UserID>S001</UserID>
-      <Name>Abdelhameed Osama</Name>
-      <ClassName>PD</ClassName>
-      <Date>2024-02-27</Date>
-      <Status>Present</Status>
-    </AttendanceRecord>
-    <AttendanceRecord>
-      <UserID>S002</UserID>
-      <Name>AbdUllah Aiman</Name>
-      <ClassName>PD</ClassName>
-      <Date>2024-02-27</Date>
-      <Status>Absent</Status>
-    </AttendanceRecord>
-    <AttendanceRecord>
       <UserID>S304</UserID>
       <Name>kareem ahmed</Name>
       <ClassName>OS</ClassName>
@@ -233,6 +219,34 @@
       <Name>Zeoz Khaledooo</Name>
       <ClassName>OS</ClassName>
       <Date>2024-02-27</Date>
+      <Status>Absent</Status>
+    </AttendanceRecord>
+    <AttendanceRecord>
+      <UserID>S003</UserID>
+      <Name>Omar Abdullah</Name>
+      <ClassName>AI</ClassName>
+      <Date>2024-02-27</Date>
+      <Status>Absent</Status>
+    </AttendanceRecord>
+    <AttendanceRecord>
+      <UserID>S001</UserID>
+      <Name>Abdelhameed Osama</Name>
+      <ClassName>PD</ClassName>
+      <Date>2024-02-28</Date>
+      <Status>Present</Status>
+    </AttendanceRecord>
+    <AttendanceRecord>
+      <UserID>S002</UserID>
+      <Name>AbdUllah Aiman</Name>
+      <ClassName>PD</ClassName>
+      <Date>2024-02-28</Date>
+      <Status>Absent</Status>
+    </AttendanceRecord>
+    <AttendanceRecord>
+      <UserID>S003</UserID>
+      <Name>Omar Abdullah</Name>
+      <ClassName>AI</ClassName>
+      <Date>2024-02-28</Date>
       <Status>Absent</Status>
     </AttendanceRecord>
     <AttendanceRecord>

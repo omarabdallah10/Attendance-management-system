@@ -1,15 +1,16 @@
 ﻿using AttendanceSysytem.Classes;
+using PdfSharp.Drawing;
+using PdfSharp.Pdf;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Management.Instrumentation;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
-
 using System.Xml;
 
 namespace AttendanceSysytem.Forms
@@ -25,6 +26,8 @@ namespace AttendanceSysytem.Forms
         //load Data on form load
         private void TeacherViewAttendanceForm_Load(object sender, EventArgs e)
         {
+            dataGridViewAttendance.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
             dataGridViewAttendance.AllowUserToAddRows = false;
 
             dataGridViewAttendance.AlternatingRowsDefaultCellStyle.Font = dataGridViewAttendance.RowsDefaultCellStyle.Font;
@@ -51,7 +54,6 @@ namespace AttendanceSysytem.Forms
 
         private void btnViewAttendance_Click(object sender, EventArgs e)
         {
-
             // Show the attendance of the selected track and date
             try
             {
@@ -81,6 +83,105 @@ namespace AttendanceSysytem.Forms
             teacherFunctionalitiesForm form = new teacherFunctionalitiesForm();
             form.Show();
             Hide();
+        }
+
+
+
+        private void SaveAsPDF(string fileName, string data)
+        {
+            //make an instance of the pdf document as a table and add the data to it
+
+            PdfDocument pdf = new PdfDocument();
+            pdf.Info.Title = "Created Attendance Report";
+            PdfPage pdfPage = pdf.AddPage();
+            XGraphics graph = XGraphics.FromPdfPage(pdfPage);
+            XFont font = new XFont("Verdana", 20, XFontStyle.Bold);
+            // draw every row in a new line
+            string[] rows = data.Split('\n');
+            //make a table of the data
+            for (int i = 0; i < rows.Length; i++)
+            {
+                string[] columns = rows[i].Split(' ');
+                for (int j = 0; j < columns.Length; j++)
+                {
+                    graph.DrawString(columns[j], font, XBrushes.Black,
+                                                              new XRect(j * 100, i * 20, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft);
+                }
+            }
+
+
+            /*for (int i = 0; i < rows.Length; i++)
+            {
+                graph.DrawString(rows[i], font, XBrushes.Black,
+                                       new XRect(0, i * 20, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.Center);
+            }*/
+
+            pdf.Save(fileName);
+
+        }
+
+        private void SaveAsExcel(string fileName, string data)
+        {
+            // Create a new Excel document and devide the data into rows and columns
+            Microsoft.Office.Interop.Excel.Application excel = new Microsoft.Office.Interop.Excel.Application();
+            excel.Workbooks.Add();
+            Microsoft.Office.Interop.Excel._Worksheet workSheet = excel.ActiveSheet;
+            string[] rows = data.Split('\n');
+            for (int i = 0; i < rows.Length; i++)
+            {
+                string[] columns = rows[i].Split(' ');
+                for (int j = 0; j < columns.Length; j++)
+                {
+                    workSheet.Cells[i + 1, j + 1] = columns[j];
+                }
+            }
+            workSheet.SaveAs(fileName);
+
+        }
+
+        private void btnSaveAs_Click(object sender, EventArgs e)
+        {
+            //get the data from the datagridview Fro the excel file
+            string data = "";
+            for (int i = 0; i < dataGridViewAttendance.Rows.Count; i++)
+            {
+                //add the title for the first row
+                if (i == 0)
+                {
+                    for (int j = 0; j < dataGridViewAttendance.Columns.Count; j++)
+                    {
+                        data = "UserID" + " " + "Fname" + " " + "Lname" + " " + "Class" + " " + "Date" + " " + "Status";
+                    }
+                    data += "\n";
+                }
+
+                for (int j = 0; j < dataGridViewAttendance.Columns.Count; j++)
+                {
+                    data += dataGridViewAttendance.Rows[i].Cells[j].Value.ToString() + " ";
+                }
+                data += "\n";
+
+            }
+
+            //save the data as pdf or excel
+            SaveFileDialog sfd = new SaveFileDialog();
+            sfd.Filter = "PDF Files|*.pdf|Excel Files|*.xlsx";
+            sfd.DefaultExt = "pdf";
+            sfd.AddExtension = true;
+            sfd.FileName = "Attendance Report";
+            sfd.OverwritePrompt = true;
+
+            if (sfd.ShowDialog() == DialogResult.OK)
+            {
+                if (sfd.FilterIndex == 1) // PDF selected
+                {
+                    SaveAsPDF(sfd.FileName, data);
+                }
+                else if (sfd.FilterIndex == 2) // Excel selected
+                {
+                    SaveAsExcel(sfd.FileName, data);
+                }
+            }
         }
     }
 }

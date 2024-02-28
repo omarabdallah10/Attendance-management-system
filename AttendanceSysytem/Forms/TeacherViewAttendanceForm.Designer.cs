@@ -36,6 +36,7 @@
             this.DateComboBox = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnViewAttendance = new System.Windows.Forms.Button();
+            this.btnSaveAs = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAttendance)).BeginInit();
             this.SuspendLayout();
             // 
@@ -97,11 +98,28 @@
             this.btnViewAttendance.UseVisualStyleBackColor = false;
             this.btnViewAttendance.Click += new System.EventHandler(this.btnViewAttendance_Click);
             // 
+            // btnSaveAs
+            // 
+            this.btnSaveAs.BackColor = System.Drawing.Color.ForestGreen;
+            this.btnSaveAs.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSaveAs.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveAs.ForeColor = System.Drawing.Color.White;
+            this.btnSaveAs.Location = new System.Drawing.Point(111, 130);
+            this.btnSaveAs.Name = "btnSaveAs";
+            this.btnSaveAs.Size = new System.Drawing.Size(200, 40);
+            this.btnSaveAs.TabIndex = 7;
+            this.btnSaveAs.Text = "Save As";
+            this.btnSaveAs.UseVisualStyleBackColor = false;
+            this.btnSaveAs.Click += new System.EventHandler(this.btnSaveAs_Click);
+            // 
             // TeacherViewAttendanceForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.ClientSize = new System.Drawing.Size(832, 453);
+            this.Controls.Add(this.btnSaveAs);
+
             this.Controls.Add(this.btnViewAttendance);
             this.Controls.Add(this.DateComboBox);
             this.Controls.Add(this.label2);
@@ -126,5 +144,6 @@
         private System.Windows.Forms.ComboBox DateComboBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnViewAttendance;
+        private System.Windows.Forms.Button btnSaveAs;
     }
 }
