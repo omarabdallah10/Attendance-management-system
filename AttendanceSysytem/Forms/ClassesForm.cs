@@ -29,10 +29,10 @@ namespace AttendanceSysytem.Forms
                 string supervisor = row.Cells["Supervisor"].Value.ToString();
                 string supervisorID= row.Cells["SupervisorID"].Value.ToString();
 
-                EditClassForm form = new EditClassForm();
-                form.recived = new Track(Classname.ToString(), supervisorID.ToString());
-                form.StartPosition = FormStartPosition.CenterScreen;
-                form.Show();
+                //EditClassForm form = new EditClassForm();
+                //form.recived = new Track(Classname.ToString(), supervisorID.ToString());
+                //form.StartPosition = FormStartPosition.CenterScreen;
+                //form.Show();
 
                 this.Hide();
             }

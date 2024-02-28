@@ -166,7 +166,7 @@ namespace AttendanceSysytem.Classes
                     XmlNode classname = doc.SelectSingleNode("//Class/Supervisor[UserID='" + id + "']");
                     //Console.WriteLine(classname.ParentNode.FirstChild.InnerText);
                     Track t1 = new Track(classname.ParentNode.FirstChild.InnerText, id);
-                    EditClassForm editClassForm = new EditClassForm();
+                    //EditClassForm editClassForm = new EditClassForm();
                     MessageBox.Show($"This teacher is a supervisor for class{t1.Name}, please change its supervisor first");
 
                     return;
