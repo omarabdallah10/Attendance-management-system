@@ -128,4 +128,25 @@
   <data name="$this.Text" xml:space="preserve">
     <value>الإعدادات</value>
   </data>
+  <data name="password_label.Text" xml:space="preserve">
+    <value>كلمة السر</value>
+  </data>
+  <data name="cancel_btn.Text" xml:space="preserve">
+    <value>الغاء</value>
+  </data>
+  <data name="save_btn.Text" xml:space="preserve">
+    <value>حفظ</value>
+  </data>
+  <data name="Settings.Text" xml:space="preserve">
+    <value>الإعدادات</value>
+  </data>
+  <data name="font.Text" xml:space="preserve">
+    <value>نوع الخط</value>
+  </data>
+  <data name="Languages.Items1" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="Languages.Items" xml:space="preserve">
+    <value>العربية</value>
+  </data>
 </root>

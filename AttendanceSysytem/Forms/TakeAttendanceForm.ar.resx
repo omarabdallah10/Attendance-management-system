@@ -128,4 +128,13 @@
   <data name="$this.Text" xml:space="preserve">
     <value>تسجيل الغياب</value>
   </data>
+  <data name="btnSave.Text" xml:space="preserve">
+    <value>حفظ</value>
+  </data>
+  <data name="btnGoBack.Text" xml:space="preserve">
+    <value>العودة</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>فصل :</value>
+  </data>
 </root>

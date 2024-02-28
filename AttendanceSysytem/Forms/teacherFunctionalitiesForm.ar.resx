@@ -1804,4 +1804,13 @@
   <data name="$this.Text" xml:space="preserve">
     <value>المُدِّرس</value>
   </data>
+  <data name="btnSignOut.Text" xml:space="preserve">
+    <value>تسجيل خروج</value>
+  </data>
+  <data name="btnViewAttendance.Text" xml:space="preserve">
+    <value>عرض الحضور</value>
+  </data>
+  <data name="btnTakeAttendance.Text" xml:space="preserve">
+    <value>تسجيل الحضور</value>
+  </data>
 </root>

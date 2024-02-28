@@ -136,7 +136,7 @@
     <value>0</value>
   </data>
   <data name="btnSettings.Text" xml:space="preserve">
-    <value>              Settings</value>
+    <value>Settings</value>
   </data>
   <data name="btnSettings.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -172,7 +172,7 @@
     <value>0</value>
   </data>
   <data name="btnViewAttendance.Text" xml:space="preserve">
-    <value>              View Attendance</value>
+    <value>View Attendance</value>
   </data>
   <data name="btnViewAttendance.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -208,7 +208,7 @@
     <value>0</value>
   </data>
   <data name="btnEditUsers.Text" xml:space="preserve">
-    <value>              Edit Users</value>
+    <value>Edit Users</value>
   </data>
   <data name="btnEditUsers.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -244,7 +244,7 @@
     <value>0</value>
   </data>
   <data name="btnAddClass.Text" xml:space="preserve">
-    <value>              Add Class</value>
+    <value>Add Class</value>
   </data>
   <data name="btnAddClass.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -280,7 +280,7 @@
     <value>0</value>
   </data>
   <data name="btnAddTeacher.Text" xml:space="preserve">
-    <value>              Add Teacher</value>
+    <value>Add Teacher</value>
   </data>
   <data name="btnAddTeacher.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -316,7 +316,7 @@
     <value>0</value>
   </data>
   <data name="btnAddStudent.Text" xml:space="preserve">
-    <value>              Add Student</value>
+    <value>Add Student</value>
   </data>
   <data name="btnAddStudent.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -797,5 +797,11 @@
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnLogout.Text" xml:space="preserve">
+    <value>Log Out</value>
+  </data>
+  <data name="DateandTime.Text" xml:space="preserve">
+    <value>Welcome:</value>
   </data>
 </root>

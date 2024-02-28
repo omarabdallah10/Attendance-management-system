@@ -124,4 +124,19 @@
   <data name="$this.Text" xml:space="preserve">
     <value>واجهة تعديل المشرف</value>
   </data>
+  <data name="teachers_btn.Text" xml:space="preserve">
+    <value>المعلمين</value>
+  </data>
+  <data name="students_btn.Text" xml:space="preserve">
+    <value>الطلاب</value>
+  </data>
+  <data name="classes_btn.Text" xml:space="preserve">
+    <value>الفصول</value>
+  </data>
+  <data name="go_back_btn.Text" xml:space="preserve">
+    <value>العودة</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>من تحب ان تعدل او تحذف؟</value>
+  </data>
 </root>
