@@ -74,5 +74,10 @@ namespace AttendanceSysytem.UserControls
         {
             editStudent1.SelectedTab = tabPage2;
         }
+
+        private void ClassesTable_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
