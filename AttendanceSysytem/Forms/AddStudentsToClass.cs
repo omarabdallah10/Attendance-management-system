@@ -68,11 +68,11 @@ namespace AttendanceSysytem.Forms
 
         private void go_back_btn_Click(object sender, EventArgs e)
         {
-            EditClassForm editClassForm = new EditClassForm();
-            editClassForm.recived = recivedTrack;
-            editClassForm.StartPosition = FormStartPosition.CenterScreen;
-            editClassForm.Show();
-            Close();
+            //EditClassForm editClassForm = new EditClassForm();
+            //editClassForm.recived = recivedTrack;
+            //editClassForm.StartPosition = FormStartPosition.CenterScreen;
+            //editClassForm.Show();
+            //Close();
         }
     }
 }

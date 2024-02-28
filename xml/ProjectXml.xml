@@ -39,17 +39,17 @@
     </Teacher>
     <Student>
       <UserID>S774</UserID>
-      <Name>abodya abodk</Name>
+      <Name>abody abodk</Name>
       <Email>abody@abodk.com</Email>
       <Password>@1254Adsd</Password>
-      <ClassName>PD</ClassName>
+      <ClassName>OS</ClassName>
     </Student>
     <Student>
       <UserID>S849</UserID>
-      <Name>alo ahme</Name>
+      <Name>ali ahmed</Name>
       <Email>ahmed@ahmed.alo</Email>
       <Password>123@adadaA</Password>
-      <ClassName>OS</ClassName>
+      <ClassName>PD</ClassName>
     </Student>
     <Student>
       <UserID>S304</UserID>
@@ -70,7 +70,7 @@
       <Name>AbdUllah Aiman</Name>
       <Email>abdUllah_aiman@example.com</Email>
       <Password>123456789Aa</Password>
-      <ClassName>PD</ClassName>
+      <ClassName>AI</ClassName>
     </Student>
     <Student>
       <UserID>S003</UserID>
@@ -114,8 +114,8 @@
     <Teachers>
       <UserID>T002</UserID>
       <UserID>T004</UserID>
-      <UserID>T161</UserID>
       <UserID>T001</UserID>
+      <UserID>T161</UserID>
     </Teachers>
     <Students>
       <UserID>S304</UserID>

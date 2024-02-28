@@ -154,13 +154,13 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="ClassesTable.Location" type="System.Drawing.Point, System.Drawing">
-    <value>180, 113</value>
+    <value>48, 100</value>
   </data>
   <data name="ClassesTable.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
   <data name="ClassesTable.Size" type="System.Drawing.Size, System.Drawing">
-    <value>769, 412</value>
+    <value>1043, 440</value>
   </data>
   <data name="ClassesTable.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -193,7 +193,7 @@
     <value>NoControl</value>
   </data>
   <data name="classes_label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>486, 65</value>
+    <value>504, 52</value>
   </data>
   <data name="classes_label.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -289,13 +289,13 @@
     <value>6</value>
   </data>
   <data name="StudentsTable.Location" type="System.Drawing.Point, System.Drawing">
-    <value>59, 95</value>
+    <value>52, 103</value>
   </data>
   <data name="StudentsTable.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
   <data name="StudentsTable.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1020, 504</value>
+    <value>1043, 440</value>
   </data>
   <data name="StudentsTable.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -325,7 +325,7 @@
     <value>Segoe UI, 20pt</value>
   </data>
   <data name="students_label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>466, 47</value>
+    <value>488, 55</value>
   </data>
   <data name="students_label.Size" type="System.Drawing.Size, System.Drawing">
     <value>151, 46</value>
@@ -421,7 +421,7 @@
     <value>6</value>
   </data>
   <data name="TeachersTable.Location" type="System.Drawing.Point, System.Drawing">
-    <value>39, 116</value>
+    <value>50, 98</value>
   </data>
   <data name="TeachersTable.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
@@ -457,7 +457,7 @@
     <value>On</value>
   </data>
   <data name="teachers_label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>498, 52</value>
+    <value>511, 50</value>
   </data>
   <data name="teachers_label.Size" type="System.Drawing.Size, System.Drawing">
     <value>149, 46</value>

@@ -139,8 +139,8 @@
   <data name="ID.MinimumWidth" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="ID.Width" type="System.Int32, mscorlib">
-    <value>60</value>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="Save_btn.Font" type="System.Drawing.Font, System.Drawing">
@@ -151,6 +151,10 @@
   </data>
   <data name="&gt;&gt;students_label.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="StudentsTable.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Disable</value>
   </data>
   <data name="&gt;&gt;StudentsTable.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -182,10 +186,6 @@
   <data name="&gt;&gt;ID.Name" xml:space="preserve">
     <value>ID</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Save_btn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
-  </data>
   <data name="students_label.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -198,11 +198,11 @@
   <data name="students_label.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="StudentsTable.Location" type="System.Drawing.Point, System.Drawing">
-    <value>27, 97</value>
+  <data name="Save_btn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Save_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
   </data>
   <data name="ID.HeaderText" xml:space="preserve">
     <value>ID</value>
@@ -234,8 +234,8 @@
   <data name="&gt;&gt;students_label.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="StudentsTable.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>Disable</value>
+  <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
   </data>
   <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
@@ -246,8 +246,8 @@
   <data name="&gt;&gt;ID.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="students_label.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 20pt</value>
+  <data name="ID.Width" type="System.Int32, mscorlib">
+    <value>60</value>
   </data>
   <data name="&gt;&gt;StudentsTable.Parent" xml:space="preserve">
     <value>$this</value>
@@ -266,6 +266,9 @@
   </data>
   <data name="&gt;&gt;go_back_btn.Name" xml:space="preserve">
     <value>go_back_btn</value>
+  </data>
+  <data name="&gt;&gt;checkCol.Name" xml:space="preserve">
+    <value>checkCol</value>
   </data>
   <data name="&gt;&gt;students_label.Parent" xml:space="preserve">
     <value>$this</value>
@@ -306,25 +309,19 @@
   <data name="go_back_btn.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 13.8pt</value>
   </data>
-  <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>Yes</value>
-  </data>
   <data name="go_back_btn.Size" type="System.Drawing.Size, System.Drawing">
     <value>122, 35</value>
   </data>
-  <data name="&gt;&gt;checkCol.Name" xml:space="preserve">
-    <value>checkCol</value>
+  <data name="StudentsTable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 97</value>
   </data>
-  <data name="Save_btn.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
+  <data name="students_label.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 20pt</value>
   </data>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>ar</value>
-  </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="InClass.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="InClass.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="TeacherName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

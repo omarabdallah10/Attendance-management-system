@@ -117,15 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>On</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>أضف طالب إلى فصل</value>
-  </data>
-  <data name="checkCol.HeaderText" xml:space="preserve">
-    <value>أضف</value>
+  <data name="Save_btn.Text" xml:space="preserve">
+    <value>حفظ</value>
   </data>
   <data name="go_back_btn.Text" xml:space="preserve">
     <value>العودة</value>
@@ -133,16 +126,37 @@
   <data name="ID.HeaderText" xml:space="preserve">
     <value>الرقم التعريفي</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ID.Width" type="System.Int32, mscorlib">
+    <value>128</value>
+  </data>
+  <data name="TeacherName.HeaderText" xml:space="preserve">
+    <value>الاسم</value>
+  </data>
   <data name="InClass.HeaderText" xml:space="preserve">
     <value>في فصل</value>
   </data>
-  <data name="Save_btn.Text" xml:space="preserve">
-    <value>حفظ</value>
+  <data name="checkCol.HeaderText" xml:space="preserve">
+    <value>أضف</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="students_label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 46</value>
   </data>
   <data name="students_label.Text" xml:space="preserve">
     <value>الطلاب</value>
   </data>
-  <data name="TeacherName.HeaderText" xml:space="preserve">
-    <value>الاسم</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>On</value>
+  </data>
+  <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="$this.RightToLeftLayout" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>أضف طالب إلى فصل</value>
   </data>
 </root>

@@ -1,4 +1,5 @@
 ﻿using AttendanceSysytem.Classes;
+using AttendanceSysytem.UserControls;
 using AttendanceSysytem.Users;
 using Microsoft.Office.Interop.Excel;
 using System;
@@ -17,11 +18,13 @@ namespace AttendanceSysytem.Forms
     public partial class EditClassForm : Form
     {
         public Classes.Track recived { get; set; }
-        public XmlDocument doc{ get; set; }
-        public EditClassForm()
+        public XmlDocument doc { get; set; }
+        Edit ParentController = null;
+        public EditClassForm(Edit _parentController)
         {
             InitializeComponent();
             Settings.ChangeFont(this, Settings.MyFont, true);
+            ParentController = _parentController;
         }
 
         private void EditClassForm_Load(object sender, EventArgs e)
@@ -29,7 +32,7 @@ namespace AttendanceSysytem.Forms
             doc = DataManagement.xmlDoc();
             SupervisorComboBox.Font = this.Font;
             class_name_txt.Text = recived.Name;
-            SupervisorComboBox.Items.Add(recived.Supervisor.Name);            
+            SupervisorComboBox.Items.Add(recived.Supervisor.Name);
             XmlNodeList TeacherNodes = doc.SelectNodes("//Users/Teacher");
             foreach (XmlNode TeacherNode in TeacherNodes)
             {
@@ -40,22 +43,16 @@ namespace AttendanceSysytem.Forms
             }
             SupervisorComboBox.SelectedIndex = 0;
             SupervisorComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            // Print Teachers
+            printTeachersTable();
+            // Print Students outside class
+            printStudentsTable();
 
 
-        }
-
-        private void add_teachers_btn_Click(object sender, EventArgs e)
-        {
-            AddTeachersToClass addteacherform = new AddTeachersToClass();
-            addteacherform.recivedTrack = recived;
-            addteacherform.StartPosition = FormStartPosition.CenterScreen;
-            addteacherform.Show();
-            Close();
         }
 
         private void save_btn_Click(object sender, EventArgs e)
         {
-
             XmlNode classNode = doc.SelectSingleNode("//Class[Name='" + recived.Name + "']");
             XmlNode name = classNode.SelectSingleNode("Name");
             XmlNode newSuper = doc.SelectSingleNode("//Users/Teacher[Name='" + SupervisorComboBox.Text + "']");
@@ -64,7 +61,7 @@ namespace AttendanceSysytem.Forms
             int flag = 0;
             foreach (XmlNode classnode in classnodes)
             {
-                if(classnode.SelectSingleNode("Name").InnerText == class_name_txt.Text && class_name_txt.Text != recived.Name)
+                if (classnode.SelectSingleNode("Name").InnerText == class_name_txt.Text && class_name_txt.Text != recived.Name)
                 {
                     flag++;
                     break;
@@ -81,11 +78,11 @@ namespace AttendanceSysytem.Forms
             {
                 name.InnerText = class_name_txt.Text;
                 DataManagement.changeStdClassName(doc, recived.Name, class_name_txt.Text);
+                SaveTeachers();
+                SaveStudents();
                 DataManagement.SaveXml(doc);
                 MessageBox.Show("Your edits have been saved successfully");
-                ClassesForm classsForm = new ClassesForm();
-                classsForm.Show();
-                Hide();
+                Close();
             }
             else
             {
@@ -94,20 +91,81 @@ namespace AttendanceSysytem.Forms
 
         }
 
-        private void go_back_btn_Click(object sender, EventArgs e)
+        private void printStudentsTable()
         {
-            ClassesForm classesForm = new ClassesForm();
-            classesForm.Show();
-            Hide();
+            XmlDocument xmlDoc = DataManagement.xmlDoc();
+            XmlNodeList Students = xmlDoc.SelectNodes($"//Users/Student[ClassName != '{recived.Name}']");
+            //Console.WriteLine(Students.Count+"AAAAAAAAAa");
+            if (recived.Name == null) { recived.Name = ""; }
+            // Clear existing rows in the DataGridView
+            this.StudentsTable.Rows.Clear();
+            foreach (XmlElement StudentsRecord in Students)
+            {
+                string StudentID = StudentsRecord.SelectSingleNode("UserID").InnerText;
+                string StudentName = StudentsRecord.SelectSingleNode("Name").InnerText;
+                string StudentEmail = StudentsRecord.SelectSingleNode("Email").InnerText;
+                string StudentPassword = StudentsRecord.SelectSingleNode("Password").InnerText;
+                string StudentClass = StudentsRecord.SelectSingleNode("ClassName").InnerText;
+
+                this.StudentsTable.Rows.Add(StudentID, StudentName, StudentClass, false);
+
+            }
+        }
+        private void printTeachersTable()
+        {
+            XmlDocument xmlDoc = DataManagement.xmlDoc();
+            XmlNodeList Teachers = xmlDoc.SelectNodes("//Users/Teacher");
+            if (recived.Name == null) { recived.Name = ""; }
+            // Clear existing rows in the DataGridView
+            this.TeachersTable.Rows.Clear();
+            foreach (XmlElement TeacherRecord in Teachers)
+            {
+                string TeacherID = TeacherRecord.SelectSingleNode("UserID").InnerText;
+                string TeacherName = TeacherRecord.SelectSingleNode("Name").InnerText;
+                string TeacherEmail = TeacherRecord.SelectSingleNode("Email").InnerText;
+                string TeacherPassword = TeacherRecord.SelectSingleNode("Password").InnerText;
+
+                Teacher _teacher = new Teacher(TeacherName, TeacherEmail, TeacherPassword, TeacherID);
+                string[] teacherClasses = _teacher.getClassesFromXML().Split(',');
+                this.TeachersTable.Rows.Add(TeacherID, TeacherName, _teacher.getClassesFromXML(), teacherClasses.Any(c => c.Trim() == recived.Name));
+
+            }
+        }
+        private void SaveTeachers()
+        {
+            XmlDocument xmlDoc = DataManagement.xmlDoc();
+            XmlNode Teachers = xmlDoc.SelectSingleNode($"//Class[Name = '{recived.Name}' ]/Teachers");
+            Teachers.RemoveAll();
+            DataManagement.SaveXml(xmlDoc);
+            for (int i = 0; i < this.TeachersTable.RowCount; i++)
+            {
+                //Console.WriteLine(this.TeachersTable.Rows[i].Cells[3].Value.ToString());
+                if (this.TeachersTable.Rows[i].Cells[3].Value.ToString() == "True")
+                {
+                    string id = this.TeachersTable.Rows[i].Cells[0].Value.ToString();
+                    Adding.addTeacherToClass(id, recived.Name);
+                }
+            }
+            MessageBox.Show($"Teachers Added successfully to class {recived.Name}", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+        private void SaveStudents()
+        {
+            for (int i = 0; i < this.StudentsTable.RowCount; i++)
+            {
+                //Console.WriteLine(this.TeachersTable.Rows[i].Cells[3].Value.ToString());
+                if (this.StudentsTable.Rows[i].Cells[3].Value.ToString() == "True")
+                {
+                    string id = this.StudentsTable.Rows[i].Cells[0].Value.ToString();
+                    string oldClassName = this.StudentsTable.Rows[i].Cells[2].Value.ToString();
+                    Adding.addStudentToClass(id, oldClassName, recived.Name);
+                }
+            }
+            MessageBox.Show($"Students Added successfully to class {recived.Name}", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void add_students_btn_Click(object sender, EventArgs e)
+        private void EditClassForm_FormClosed(object sender, FormClosedEventArgs e)
         {
-            AddStudentsToClass addStudentform = new AddStudentsToClass();
-            addStudentform.recivedTrack = recived;
-            addStudentform.StartPosition = FormStartPosition.CenterScreen;
-            addStudentform.Show();
-            Close();
+            ParentController.printClassesTable();
         }
     }
 }

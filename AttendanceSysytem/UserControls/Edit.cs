@@ -17,7 +17,7 @@ namespace AttendanceSysytem.UserControls
 {
     public partial class Edit : UserControl
     {
-        XmlDocument xmlDoc = DataManagement.xmlDoc();
+
         public Edit()
         {
             InitializeComponent();
@@ -58,7 +58,18 @@ namespace AttendanceSysytem.UserControls
 
         private void ClassesTable_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.ColumnIndex == 3)
+            {
+                DataGridViewRow row = ClassesTable.Rows[e.RowIndex];
+                string Classname = row.Cells["ClassName"].Value.ToString();
+                string supervisor = row.Cells["Supervisor"].Value.ToString();
+                string supervisorID = row.Cells["SupervisorID"].Value.ToString();
 
+                EditClassForm form = new EditClassForm(this);
+                form.recived = new Track(Classname.ToString(), supervisorID.ToString());
+                form.StartPosition = FormStartPosition.CenterScreen;
+                form.ShowDialog();
+            }
         }
         private void tabPage3_Enter(object sender, EventArgs e)
         {
@@ -71,9 +82,12 @@ namespace AttendanceSysytem.UserControls
             printTeachersTable();
             // Students
             printStudentsTable();
+            // Classes
+            printClassesTable();
         }
         public void printTeachersTable()
         {
+            XmlDocument xmlDoc = DataManagement.xmlDoc();
             XmlNodeList Teachers = xmlDoc.SelectNodes("//Users/Teacher");
             TeachersTable.AlternatingRowsDefaultCellStyle.Font = TeachersTable.RowsDefaultCellStyle.Font;
             // Clear existing rows in the DataGridView
@@ -92,6 +106,7 @@ namespace AttendanceSysytem.UserControls
         }
         public void printStudentsTable()
         {
+            XmlDocument xmlDoc = DataManagement.xmlDoc();
             XmlNodeList Students = xmlDoc.SelectNodes("//Users/Student");
             StudentsTable.AlternatingRowsDefaultCellStyle.Font = StudentsTable.RowsDefaultCellStyle.Font;
             this.StudentsTable.Rows.Clear();
@@ -108,6 +123,20 @@ namespace AttendanceSysytem.UserControls
                 StudentsList.Add(std);
                 Console.WriteLine(ClassName);
                 this.StudentsTable.Rows.Add(std.UserID, std.Name, std.ClassName);
+            }
+        }
+        public void printClassesTable()
+        {
+            ClassesTable.AlternatingRowsDefaultCellStyle.Font = ClassesTable.RowsDefaultCellStyle.Font;
+            XmlDocument xmlDoc = DataManagement.xmlDoc();
+            ClassesTable.Rows.Clear();
+            XmlNodeList MyClasses = xmlDoc.SelectNodes("//Class");
+            foreach (XmlNode MyClass in MyClasses)
+            {
+                string _className = MyClass.SelectSingleNode("Name").InnerText;
+                string _supervisorID = MyClass.SelectSingleNode("Supervisor/UserID").InnerText;
+                string _supervisorName = DataManagement.getUserById(_supervisorID).Name;
+                this.ClassesTable.Rows.Add(_className, _supervisorID, _supervisorName);
             }
         }
     }
