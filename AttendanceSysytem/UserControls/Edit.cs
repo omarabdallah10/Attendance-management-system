@@ -67,11 +67,10 @@ namespace AttendanceSysytem.UserControls
 
         private void Edit_Load(object sender, EventArgs e)
         {
-
             // Teachers
             printTeachersTable();
             // Students
-            printStudentTable();
+            printStudentsTable();
         }
         public void printTeachersTable()
         {
@@ -91,12 +90,12 @@ namespace AttendanceSysytem.UserControls
                 this.TeachersTable.Rows.Add(_teacher.UserID, _teacher.Name, _teacher.getClassesFromXML(), _teacher.getSupervisedClassesFromXML());
             }
         }
-        public void printStudentTable()
+        public void printStudentsTable()
         {
             XmlNodeList Students = xmlDoc.SelectNodes("//Users/Student");
+            StudentsTable.AlternatingRowsDefaultCellStyle.Font = StudentsTable.RowsDefaultCellStyle.Font;
             this.StudentsTable.Rows.Clear();
             List<Student> StudentsList = new List<Student>();
-            StudentsTable.AlternatingRowsDefaultCellStyle.Font = StudentsTable.RowsDefaultCellStyle.Font;
             foreach (XmlElement StudentRecord in Students)
             {
                 string StudentID = StudentRecord.SelectSingleNode("UserID").InnerText;
@@ -106,63 +105,9 @@ namespace AttendanceSysytem.UserControls
                 string ClassName = StudentRecord.SelectSingleNode("ClassName").InnerText;
 
                 Student std = new Student(StudentName, StudentEmail, StudentPassword, StudentID, ClassName);
-                StudentsTable.Rows.Add(std.UserID, std.Name, std.ClassName);
                 StudentsList.Add(std);
-            }
-        }
-
-        private void Edit_Load(object sender, EventArgs e)
-        {
-
-        }
-        private void tabPage3_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Edit_Load(object sender, EventArgs e)
-        {
-
-            // Teachers
-            printTeachersTable();
-            // Students
-            printStudentTable();
-        }
-        public void printTeachersTable()
-        {
-            XmlNodeList Teachers = xmlDoc.SelectNodes("//Users/Teacher");
-            TeachersTable.AlternatingRowsDefaultCellStyle.Font = TeachersTable.RowsDefaultCellStyle.Font;
-            // Clear existing rows in the DataGridView
-            this.TeachersTable.Rows.Clear();
-            List<Teacher> TeachersList = new List<Teacher>();
-            foreach (XmlElement TeacherRecord in Teachers)
-            {
-                string TeacherID = TeacherRecord.SelectSingleNode("UserID").InnerText;
-                string TeacherName = TeacherRecord.SelectSingleNode("Name").InnerText;
-                string TeacherEmail = TeacherRecord.SelectSingleNode("Email").InnerText;
-                string TeacherPassword = TeacherRecord.SelectSingleNode("Password").InnerText;
-                Teacher _teacher = new Teacher(TeacherName, TeacherEmail, TeacherPassword, TeacherID);
-                TeachersList.Add(_teacher);
-                this.TeachersTable.Rows.Add(_teacher.UserID, _teacher.Name, _teacher.getClassesFromXML(), _teacher.getSupervisedClassesFromXML());
-            }
-        }
-        public void printStudentTable()
-        {
-            XmlNodeList Students = xmlDoc.SelectNodes("//Users/Student");
-            this.StudentsTable.Rows.Clear();
-            List<Student> StudentsList = new List<Student>();
-            StudentsTable.AlternatingRowsDefaultCellStyle.Font = StudentsTable.RowsDefaultCellStyle.Font;
-            foreach (XmlElement StudentRecord in Students)
-            {
-                string StudentID = StudentRecord.SelectSingleNode("UserID").InnerText;
-                string StudentName = StudentRecord.SelectSingleNode("Name").InnerText;
-                string StudentEmail = StudentRecord.SelectSingleNode("Email").InnerText;
-                string StudentPassword = StudentRecord.SelectSingleNode("Password").InnerText;
-                string ClassName = StudentRecord.SelectSingleNode("ClassName").InnerText;
-
-                Student std = new Student(StudentName, StudentEmail, StudentPassword, StudentID, ClassName);
-                StudentsTable.Rows.Add(std.UserID, std.Name, std.ClassName);
-                StudentsList.Add(std);
+                Console.WriteLine(ClassName);
+                this.StudentsTable.Rows.Add(std.UserID, std.Name, std.ClassName);
             }
         }
     }

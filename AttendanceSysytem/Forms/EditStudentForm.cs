@@ -89,9 +89,10 @@ namespace AttendanceSysytem.Forms
             Close();
         }
 
-        private void EditStudentForm_FormClosed(object sender, FormClosedEventArgs e)
+        private void EditStudentForm_FormClosed_1(object sender, FormClosedEventArgs e)
         {
-            ParentController.printStudentTable();
+            Console.WriteLine("Printed student table");
+            ParentController.printStudentsTable();
         }
     }
 }
