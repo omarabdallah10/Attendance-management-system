@@ -65,5 +65,13 @@ namespace AttendanceSysytem.UserControls
             font.ShowDialog();
             Classes.Settings.ChangeFontForAllPages(font.Font);
         }
+
+        private void Languages_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+                if (Languages.SelectedIndex == 0)
+                    Classes.Settings.SwitchLanguage("ar");
+                else
+                    Classes.Settings.SwitchLanguage("en"); 
+        }
     }
 }

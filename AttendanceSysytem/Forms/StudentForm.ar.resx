@@ -131,4 +131,34 @@
   <data name="absentdays_label.Text" xml:space="preserve">
     <value>أيام الغياب</value>
   </data>
+  <data name="showFrom_label.Text" xml:space="preserve">
+    <value>أظهر الاستمارة</value>
+  </data>
+  <data name="class_label.Text" xml:space="preserve">
+    <value>فصل</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>صيغة التاريخ</value>
+  </data>
+  <data name="STATUS.HeaderText" xml:space="preserve">
+    <value>الحالة</value>
+  </data>
+  <data name="name_label.Text" xml:space="preserve">
+    <value>الاسم</value>
+  </data>
+  <data name="to_label.Text" xml:space="preserve">
+    <value>الى</value>
+  </data>
+  <data name="DATE.HeaderText" xml:space="preserve">
+    <value>التاريخ</value>
+  </data>
+  <data name="settings.Text" xml:space="preserve">
+    <value>الاعدادات</value>
+  </data>
+  <data name="saveAs_btn.Text" xml:space="preserve">
+    <value>حفظ كـ</value>
+  </data>
+  <data name="signOutBTN.Text" xml:space="preserve">
+    <value>تسجيل الخروج</value>
+  </data>
 </root>

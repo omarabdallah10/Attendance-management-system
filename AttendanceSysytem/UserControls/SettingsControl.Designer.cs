@@ -50,6 +50,7 @@
             this.Languages.Size = new System.Drawing.Size(358, 28);
             this.Languages.TabIndex = 50;
             this.Languages.ValueMember = "English";
+            this.Languages.SelectedIndexChanged += new System.EventHandler(this.Languages_SelectedIndexChanged_1);
             // 
             // font
             // 
@@ -61,7 +62,7 @@
             this.font.Location = new System.Drawing.Point(380, 346);
             this.font.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.font.Name = "font";
-            this.font.Size = new System.Drawing.Size(234, 40);
+            this.font.Size = new System.Drawing.Size(234, 41);
             this.font.TabIndex = 49;
             this.font.Text = "Font";
             this.font.UseVisualStyleBackColor = true;
@@ -129,7 +130,7 @@
             this.Controls.Add(this.password_label);
             this.Controls.Add(this.save_btn);
             this.Name = "SettingsControl";
-            this.Size = new System.Drawing.Size(879, 621);
+            this.Size = new System.Drawing.Size(879, 622);
             this.Load += new System.EventHandler(this.SettingsControl_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

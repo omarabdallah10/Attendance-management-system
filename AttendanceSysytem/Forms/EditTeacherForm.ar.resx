@@ -125,4 +125,31 @@
   <data name="$this.RightToLeftLayout" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="cancel_btn.Text" xml:space="preserve">
+    <value>الغاء</value>
+  </data>
+  <data name="email_label.Text" xml:space="preserve">
+    <value>البريد الالكتروني</value>
+  </data>
+  <data name="class_label.Text" xml:space="preserve">
+    <value>الفصول</value>
+  </data>
+  <data name="LName.Text" xml:space="preserve">
+    <value>اسم العائلة</value>
+  </data>
+  <data name="Fname.Text" xml:space="preserve">
+    <value>الاسم الأول</value>
+  </data>
+  <data name="delete_teacher_btn.Text" xml:space="preserve">
+    <value>حذف المعلم</value>
+  </data>
+  <data name="password_label.Text" xml:space="preserve">
+    <value>كلمة السر</value>
+  </data>
+  <data name="edit_teacher_label.Text" xml:space="preserve">
+    <value>تعديل المعلم</value>
+  </data>
+  <data name="save_btn.Text" xml:space="preserve">
+    <value>حفظ</value>
+  </data>
 </root>

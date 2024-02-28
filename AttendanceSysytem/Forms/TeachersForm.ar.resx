@@ -128,4 +128,25 @@
   <data name="$this.Text" xml:space="preserve">
     <value>جميع المدرسين</value>
   </data>
+  <data name="TeacherName.HeaderText" xml:space="preserve">
+    <value>الاسم</value>
+  </data>
+  <data name="dataGridViewButtonColumn1.HeaderText" xml:space="preserve">
+    <value>تعديل</value>
+  </data>
+  <data name="Supervised_Class.HeaderText" xml:space="preserve">
+    <value>الفصل المسؤول عنه</value>
+  </data>
+  <data name="go_back_btn.Text" xml:space="preserve">
+    <value>العودة</value>
+  </data>
+  <data name="Classes.HeaderText" xml:space="preserve">
+    <value>الفصول</value>
+  </data>
+  <data name="teachers_label.Text" xml:space="preserve">
+    <value>المٌدرسين</value>
+  </data>
+  <data name="ID.HeaderText" xml:space="preserve">
+    <value>ID</value>
+  </data>
 </root>
