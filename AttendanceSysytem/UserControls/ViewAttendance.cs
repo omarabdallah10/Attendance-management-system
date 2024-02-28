@@ -32,14 +32,27 @@ namespace AttendanceSysytem.UserControls
             string xmlPath = DataManagement.xmlPath();
             xmlData.DataSet.ReadXml(xmlPath);
 
+            DataView dv = new DataView(xmlData.DataSet.Tables["AttendanceRecord"]);
+            DataTable dt = dv.ToTable(true, "Date");
+            DateComboBox.DataSource = dt;
+            DateComboBox.DisplayMember = "Date";
+
+
+
+
+            // -- PD Track is selected by default
+            classComboBox.SelectedIndex = 0;
+            // -- last index of combobox is selected
+            DateComboBox.SelectedIndex = DateComboBox.Items.Count - 1;
 
 
 
 
         }
-        private void classComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
+        
 
+        private void btnViewAttendance_Click(object sender, EventArgs e)
+        {
             // Show the attendance of the selected track and date
             try
             {
@@ -48,11 +61,10 @@ namespace AttendanceSysytem.UserControls
                 string xmlPath = DataManagement.xmlPath();
                 xmlData.DataSet.ReadXml(xmlPath);
 
-                //view the matched track only
+                //view the matched date and track
                 DataView dv = new DataView(xmlData.DataSet.Tables["AttendanceRecord"]);
-                dv.RowFilter = "ClassName = '" + classComboBox.Text + "'";
+                dv.RowFilter = "Date = '" + DateComboBox.Text + "' AND ClassName = '" + classComboBox.Text + "'";
                 dataGridViewAttendance.DataSource = dv;
-
 
                 //MessageBox.Show("Data Loaded Successfully!");
             }
@@ -62,10 +74,6 @@ namespace AttendanceSysytem.UserControls
                 MessageBox.Show("Sorry Something go wrong! \nPlease ry again later.");
 
             }
-
-
         }
-
-        
     }
 }

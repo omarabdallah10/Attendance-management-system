@@ -31,6 +31,9 @@
             this.classComboBox = new System.Windows.Forms.ComboBox();
             this.classes_label = new System.Windows.Forms.Label();
             this.dataGridViewAttendance = new System.Windows.Forms.DataGridView();
+            this.DateComboBox = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnViewAttendance = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAttendance)).BeginInit();
             this.SuspendLayout();
             // 
@@ -41,11 +44,10 @@
             "PD",
             "OS",
             "AI"});
-            this.classComboBox.Location = new System.Drawing.Point(529, 58);
+            this.classComboBox.Location = new System.Drawing.Point(230, 57);
             this.classComboBox.Name = "classComboBox";
-            this.classComboBox.Size = new System.Drawing.Size(184, 24);
+            this.classComboBox.Size = new System.Drawing.Size(200, 24);
             this.classComboBox.TabIndex = 12;
-            this.classComboBox.SelectedIndexChanged += new System.EventHandler(this.classComboBox_SelectedIndexChanged);
             // 
             // classes_label
             // 
@@ -57,7 +59,7 @@
             this.classes_label.Font = new System.Drawing.Font("Segoe UI", 20F);
             this.classes_label.ForeColor = System.Drawing.Color.Coral;
             this.classes_label.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.classes_label.Location = new System.Drawing.Point(386, 37);
+            this.classes_label.Location = new System.Drawing.Point(87, 36);
             this.classes_label.Margin = new System.Windows.Forms.Padding(0);
             this.classes_label.MaximumSize = new System.Drawing.Size(1800, 100);
             this.classes_label.Name = "classes_label";
@@ -68,20 +70,74 @@
             // 
             // dataGridViewAttendance
             // 
-            this.dataGridViewAttendance.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.dataGridViewAttendance.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.dataGridViewAttendance.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridViewAttendance.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewAttendance.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dataGridViewAttendance.Location = new System.Drawing.Point(73, 110);
+            this.dataGridViewAttendance.Location = new System.Drawing.Point(73, 188);
             this.dataGridViewAttendance.Name = "dataGridViewAttendance";
             this.dataGridViewAttendance.RowHeadersWidth = 51;
             this.dataGridViewAttendance.RowTemplate.Height = 24;
-            this.dataGridViewAttendance.Size = new System.Drawing.Size(993, 482);
+            this.dataGridViewAttendance.Size = new System.Drawing.Size(993, 404);
             this.dataGridViewAttendance.TabIndex = 14;
+            // 
+            // DateComboBox
+            // 
+            this.DateComboBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DateComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
+            this.DateComboBox.FormattingEnabled = true;
+            this.DateComboBox.ItemHeight = 20;
+            this.DateComboBox.Items.AddRange(new object[] {
+            ""});
+            this.DateComboBox.Location = new System.Drawing.Point(743, 57);
+            this.DateComboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.DateComboBox.Name = "DateComboBox";
+            this.DateComboBox.Size = new System.Drawing.Size(200, 28);
+            this.DateComboBox.TabIndex = 15;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.Enabled = false;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 20F);
+            this.label1.ForeColor = System.Drawing.Color.Coral;
+            this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label1.Location = new System.Drawing.Point(600, 39);
+            this.label1.Margin = new System.Windows.Forms.Padding(0);
+            this.label1.MaximumSize = new System.Drawing.Size(1800, 100);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(98, 46);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "Date:";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnViewAttendance
+            // 
+            this.btnViewAttendance.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnViewAttendance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnViewAttendance.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnViewAttendance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.btnViewAttendance.ForeColor = System.Drawing.Color.White;
+            this.btnViewAttendance.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnViewAttendance.Location = new System.Drawing.Point(441, 117);
+            this.btnViewAttendance.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnViewAttendance.Name = "btnViewAttendance";
+            this.btnViewAttendance.Size = new System.Drawing.Size(234, 46);
+            this.btnViewAttendance.TabIndex = 45;
+            this.btnViewAttendance.Text = "View Attendance";
+            this.btnViewAttendance.UseVisualStyleBackColor = false;
+            this.btnViewAttendance.Click += new System.EventHandler(this.btnViewAttendance_Click);
             // 
             // ViewAttendance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnViewAttendance);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.DateComboBox);
             this.Controls.Add(this.dataGridViewAttendance);
             this.Controls.Add(this.classes_label);
             this.Controls.Add(this.classComboBox);
@@ -98,5 +154,8 @@
         private System.Windows.Forms.ComboBox classComboBox;
         private System.Windows.Forms.Label classes_label;
         private System.Windows.Forms.DataGridView dataGridViewAttendance;
+        private System.Windows.Forms.ComboBox DateComboBox;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnViewAttendance;
     }
 }
