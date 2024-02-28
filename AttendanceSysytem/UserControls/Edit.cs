@@ -79,5 +79,10 @@ namespace AttendanceSysytem.UserControls
         {
 
         }
+
+        private void Edit_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
