@@ -35,6 +35,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnViewAttendance = new System.Windows.Forms.Button();
             this.btnSaveAs = new System.Windows.Forms.Button();
+            this.btnPDf = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAttendance)).BeginInit();
             this.SuspendLayout();
             // 
@@ -123,10 +124,10 @@
             this.btnViewAttendance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.btnViewAttendance.ForeColor = System.Drawing.Color.White;
             this.btnViewAttendance.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnViewAttendance.Location = new System.Drawing.Point(230, 123);
+            this.btnViewAttendance.Location = new System.Drawing.Point(214, 126);
             this.btnViewAttendance.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnViewAttendance.Name = "btnViewAttendance";
-            this.btnViewAttendance.Size = new System.Drawing.Size(234, 46);
+            this.btnViewAttendance.Size = new System.Drawing.Size(280, 40);
             this.btnViewAttendance.TabIndex = 45;
             this.btnViewAttendance.Text = "View Attendance";
             this.btnViewAttendance.UseVisualStyleBackColor = false;
@@ -140,19 +141,35 @@
             this.btnSaveAs.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.btnSaveAs.ForeColor = System.Drawing.Color.White;
             this.btnSaveAs.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnSaveAs.Location = new System.Drawing.Point(590, 123);
+            this.btnSaveAs.Location = new System.Drawing.Point(520, 126);
             this.btnSaveAs.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSaveAs.Name = "btnSaveAs";
-            this.btnSaveAs.Size = new System.Drawing.Size(234, 46);
+            this.btnSaveAs.Size = new System.Drawing.Size(280, 40);
             this.btnSaveAs.TabIndex = 46;
-            this.btnSaveAs.Text = "Save AS";
+            this.btnSaveAs.Text = "Save AS Excel";
             this.btnSaveAs.UseVisualStyleBackColor = false;
             this.btnSaveAs.Click += new System.EventHandler(this.btnSaveAs_Click);
+            // 
+            // btnPDf
+            // 
+            this.btnPDf.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnPDf.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPDf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnPDf.ForeColor = System.Drawing.Color.White;
+            this.btnPDf.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.btnPDf.Location = new System.Drawing.Point(820, 126);
+            this.btnPDf.Name = "btnPDf";
+            this.btnPDf.Size = new System.Drawing.Size(280, 40);
+            this.btnPDf.TabIndex = 47;
+            this.btnPDf.Text = "Save As PDF";
+            this.btnPDf.UseVisualStyleBackColor = false;
+            this.btnPDf.Click += new System.EventHandler(this.btnPDf_Click);
             // 
             // ViewAttendance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnPDf);
             this.Controls.Add(this.btnSaveAs);
             this.Controls.Add(this.btnViewAttendance);
             this.Controls.Add(this.label1);
@@ -177,5 +194,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnViewAttendance;
         private System.Windows.Forms.Button btnSaveAs;
+        private System.Windows.Forms.Button btnPDf;
     }
 }
