@@ -108,6 +108,7 @@
             this.Controls.Add(this.Password);
             this.Controls.Add(this.Username);
             this.Name = "loginForm";
+            this.Load += new System.EventHandler(this.loginForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
