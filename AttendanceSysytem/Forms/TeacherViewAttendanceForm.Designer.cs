@@ -32,7 +32,7 @@
             this.dataGridViewAttendance = new System.Windows.Forms.DataGridView();
             this.btnGoBack = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.TrackCompoBox = new System.Windows.Forms.ComboBox();
+            this.classCompoBox = new System.Windows.Forms.ComboBox();
             this.DateComboBox = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnViewAttendance = new System.Windows.Forms.Button();
@@ -65,16 +65,12 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.label1.Name = "label1";
             // 
-            // TrackCompoBox
+            // classCompoBox
             // 
-            resources.ApplyResources(this.TrackCompoBox, "TrackCompoBox");
-            this.TrackCompoBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.TrackCompoBox.FormattingEnabled = true;
-            this.TrackCompoBox.Items.AddRange(new object[] {
-            resources.GetString("TrackCompoBox.Items"),
-            resources.GetString("TrackCompoBox.Items1"),
-            resources.GetString("TrackCompoBox.Items2")});
-            this.TrackCompoBox.Name = "TrackCompoBox";
+            resources.ApplyResources(this.classCompoBox, "classCompoBox");
+            this.classCompoBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.classCompoBox.FormattingEnabled = true;
+            this.classCompoBox.Name = "classCompoBox";
             // 
             // DateComboBox
             // 
@@ -120,7 +116,7 @@
             this.Controls.Add(this.btnViewAttendance);
             this.Controls.Add(this.DateComboBox);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.TrackCompoBox);
+            this.Controls.Add(this.classCompoBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnGoBack);
             this.Controls.Add(this.dataGridViewAttendance);
@@ -137,7 +133,7 @@
         private System.Windows.Forms.DataGridView dataGridViewAttendance;
         private System.Windows.Forms.Button btnGoBack;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox TrackCompoBox;
+        private System.Windows.Forms.ComboBox classCompoBox;
         private System.Windows.Forms.ComboBox DateComboBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnViewAttendance;

@@ -42,10 +42,6 @@
             resources.ApplyResources(this.ClassComboBox, "ClassComboBox");
             this.ClassComboBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ClassComboBox.FormattingEnabled = true;
-            this.ClassComboBox.Items.AddRange(new object[] {
-            resources.GetString("ClassComboBox.Items"),
-            resources.GetString("ClassComboBox.Items1"),
-            resources.GetString("ClassComboBox.Items2")});
             this.ClassComboBox.Name = "ClassComboBox";
             this.ClassComboBox.SelectedIndexChanged += new System.EventHandler(this.ClassComboBox_SelectedIndexChanged);
             // 

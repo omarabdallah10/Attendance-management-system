@@ -123,13 +123,16 @@
   <data name="&gt;&gt;label2.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>398, 82</value>
+  <data name="&gt;&gt;btnGoBack.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Track Name:</value>
   </data>
+  <data name="&gt;&gt;btnSaveAs.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="TrackCompoBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10.2pt</value>
   </data>
@@ -228,8 +231,8 @@
   <data name="&gt;&gt;btnGoBack.Name" xml:space="preserve">
     <value>btnGoBack</value>
   </data>
-  <data name="&gt;&gt;btnGoBack.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;classCompoBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="DateComboBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>546, 79</value>
@@ -249,14 +252,17 @@
   <data name="btnGoBack.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="&gt;&gt;btnSaveAs.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="classCompoBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>546, 35</value>
   </data>
   <data name="TrackCompoBox.Items" xml:space="preserve">
     <value>PD</value>
   </data>
   <data name="&gt;&gt;label2.Name" xml:space="preserve">
     <value>label2</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>398, 82</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Teacher View</value>
@@ -291,8 +297,14 @@
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
+  <data name="&gt;&gt;classCompoBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
   <data name="TrackCompoBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
+  </data>
+  <data name="&gt;&gt;classCompoBox.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;TrackCompoBox.Parent" xml:space="preserve">
     <value>$this</value>
@@ -319,6 +331,9 @@
     <value>View Attendance</value>
   </data>
   <data name="TrackCompoBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="classCompoBox.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
@@ -350,6 +365,9 @@
   </data>
   <data name="&gt;&gt;btnGoBack.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="&gt;&gt;classCompoBox.Name" xml:space="preserve">
+    <value>classCompoBox</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>

@@ -18,6 +18,7 @@ namespace AttendanceSysytem
     {
         public Teacher recived { get; set; }
         public XmlDocument xmlDoc { get; set; }
+
         
         public teacherFunctionalitiesForm()
         {
@@ -31,6 +32,7 @@ namespace AttendanceSysytem
         private void btnViewAttendance_Click(object sender, EventArgs e)
         {
             TeacherViewAttendanceForm form = new TeacherViewAttendanceForm();
+            form.recived = recived;
             form.Show();
             Hide();
         }
@@ -70,6 +72,7 @@ namespace AttendanceSysytem
         private void btnTakeAttendance_Click(object sender, EventArgs e)
         {
             TakeAttendanceForm form = new TakeAttendanceForm();
+            form.recived = recived;
             form.Show();
             Hide();
         }

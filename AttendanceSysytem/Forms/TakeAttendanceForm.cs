@@ -13,6 +13,7 @@ using System.IO;
 using System.Xml.Linq;
 using PdfSharp.Drawing;
 using PdfSharp.Pdf;
+using AttendanceSysytem.Users;
 
 
 
@@ -20,26 +21,38 @@ namespace AttendanceSysytem.Forms
 {
     public partial class TakeAttendanceForm : Form
     {
-
+        public Teacher recived { get; set; }
+        public XmlDocument xmlDoc { get; set; }
 
         public TakeAttendanceForm()
         {
             InitializeComponent();
             Settings.ChangeFont(this, Settings.MyFont, true);
+            xmlDoc = DataManagement.xmlDoc();
         }
 
 
         private void TakeAttendanceForm_Load(object sender, EventArgs e)
         {
-            //check if the user is logged in
-
-
 
             //'select track' is displayed by default
             ClassComboBox.Text = "Select Class";
             dataGridViewTakeAttendance.AlternatingRowsDefaultCellStyle.Font = dataGridViewTakeAttendance.RowsDefaultCellStyle.Font;
             dataGridViewTakeAttendance.AllowUserToAddRows = false;
-            
+
+            string UserID = recived.UserID;
+
+            //show the class for that supervisor in the combobox
+            XmlNodeList Class = xmlDoc.SelectNodes("//Class");
+            foreach (XmlElement ClassRecord in Class)
+            {
+
+                if (ClassRecord.SelectSingleNode("Supervisor/UserID").InnerText == UserID)
+                {
+                    string ClassName = ClassRecord.SelectSingleNode("Name").InnerText;
+                    ClassComboBox.Items.Add(ClassName);
+                }
+            }
 
         }
 
@@ -47,9 +60,6 @@ namespace AttendanceSysytem.Forms
         {
             //clear the datagridview
             dataGridViewTakeAttendance.Columns.Clear();
-
-           
-
 
             //display the students of the selected class from the combobox in the datagridview
             try

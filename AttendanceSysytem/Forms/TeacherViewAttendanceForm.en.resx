@@ -121,6 +121,16 @@
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>136, 25</value>
   </data>
+  <data name="classCompoBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.2pt</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="classCompoBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="classCompoBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 28</value>
+  </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 25</value>
   </data>
