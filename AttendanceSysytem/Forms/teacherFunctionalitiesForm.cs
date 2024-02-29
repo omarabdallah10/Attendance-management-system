@@ -31,7 +31,7 @@ namespace AttendanceSysytem
 
         private void btnViewAttendance_Click(object sender, EventArgs e)
         {
-            TeacherViewAttendanceForm form = new TeacherViewAttendanceForm();
+            view_attendance form = new view_attendance();
             form.recived = recived;
             form.Show();
             Hide();
