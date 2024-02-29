@@ -427,7 +427,7 @@
     <value>3, 2, 3, 2</value>
   </data>
   <data name="TeachersTable.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1072, 456</value>
+    <value>1072, 459</value>
   </data>
   <data name="TeachersTable.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -487,7 +487,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1176, 632</value>
+    <value>1176, 635</value>
   </data>
   <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -511,13 +511,13 @@
     <value>On</value>
   </data>
   <data name="editStudent1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+    <value>0, -3</value>
   </data>
   <data name="editStudent1.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>No</value>
   </data>
   <data name="editStudent1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1184, 661</value>
+    <value>1184, 664</value>
   </data>
   <data name="editStudent1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>

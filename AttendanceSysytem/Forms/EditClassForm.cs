@@ -166,6 +166,8 @@ namespace AttendanceSysytem.Forms
 
         private void EditClassForm_FormClosed(object sender, FormClosedEventArgs e)
         {
+            ParentController.printTeachersTable();
+            ParentController.printStudentsTable();
             ParentController.printClassesTable();
         }
     }
