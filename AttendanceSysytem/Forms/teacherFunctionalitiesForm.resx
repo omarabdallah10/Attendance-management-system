@@ -117,9 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnTakeAttendance.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="&gt;&gt;btnTakeAttendance.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
@@ -141,20 +140,11 @@
   <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
   </data>
-  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
   <data name="&gt;&gt;btnTakeAttendance.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="btnSignOut.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 40</value>
-  </data>
   <data name="btnViewAttendance.Size" type="System.Drawing.Size, System.Drawing">
     <value>220, 45</value>
-  </data>
-  <data name="settings.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>150, 40</value>
   </data>
   <data name="btnSignOut.Location" type="System.Drawing.Point, System.Drawing">
     <value>57, 35</value>
@@ -162,8 +152,12 @@
   <data name="&gt;&gt;btnSignOut.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="settings.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>teacherFunctionalitiesForm</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>teacher Functionalities</value>
@@ -171,8 +165,8 @@
   <data name="&gt;&gt;btnViewAttendance.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="settings.Location" type="System.Drawing.Point, System.Drawing">
-    <value>638, 35</value>
+  <data name="settings.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>150, 40</value>
   </data>
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
     <value>4</value>
@@ -213,8 +207,8 @@
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>8, 16</value>
   </data>
-  <data name="&gt;&gt;settings.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="settings.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>150, 40</value>
   </data>
   <data name="btnSignOut.Text" xml:space="preserve">
     <value>Sign out</value>
@@ -234,8 +228,8 @@
   <data name="btnSignOut.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
-  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="&gt;&gt;settings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1900,16 +1894,19 @@
   <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
   </data>
-  <data name="&gt;&gt;btnTakeAttendance.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
-  <data name="btnViewAttendance.Text" xml:space="preserve">
-    <value>View Attendance</value>
+  <data name="btnTakeAttendance.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
   </data>
-  <data name="&gt;&gt;btnViewAttendance.Parent" xml:space="preserve">
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;settings.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="btnViewAttendance.Location" type="System.Drawing.Point, System.Drawing">
@@ -1918,14 +1915,14 @@
   <data name="settings.Size" type="System.Drawing.Size, System.Drawing">
     <value>150, 40</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>teacherFunctionalitiesForm</value>
+  <data name="&gt;&gt;btnViewAttendance.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="btnViewAttendance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
-  <data name="settings.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>150, 40</value>
+  <data name="btnSignOut.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 40</value>
   </data>
   <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1936,8 +1933,11 @@
   <data name="btnTakeAttendance.Size" type="System.Drawing.Size, System.Drawing">
     <value>220, 45</value>
   </data>
-  <data name="&gt;&gt;settings.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="settings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>638, 35</value>
+  </data>
+  <data name="btnViewAttendance.Text" xml:space="preserve">
+    <value>View Attendance</value>
   </data>
   <data name="&gt;&gt;settings.Name" xml:space="preserve">
     <value>settings</value>

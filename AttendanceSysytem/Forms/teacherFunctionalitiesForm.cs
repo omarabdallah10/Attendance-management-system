@@ -10,12 +10,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml;
 
 namespace AttendanceSysytem
 { 
     public partial class teacherFunctionalitiesForm : Form
     {
         public Teacher recived { get; set; }
+        public XmlDocument xmlDoc { get; set; }
         public teacherFunctionalitiesForm()
         {
             InitializeComponent();
@@ -40,6 +42,9 @@ namespace AttendanceSysytem
 
         private void teacherFunctionalitiesForm_Load(object sender, EventArgs e)
         {
+            xmlDoc = DataManagement.xmlDoc();
+            XmlNode teacher = xmlDoc.SelectSingleNode("//Users/Teacher[UserID='" + recived.UserID + "']");
+            Console.WriteLine(teacher.InnerText);
         }
 
         private void btnTakeAttendance_Click(object sender, EventArgs e)
@@ -48,5 +53,6 @@ namespace AttendanceSysytem
             form.Show();
             Hide();
         }
+
     }
 }

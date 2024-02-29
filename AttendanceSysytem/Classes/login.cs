@@ -24,7 +24,7 @@ namespace AttendanceSysytem.Classes
                 XmlNode IDNode = adminNode.SelectSingleNode("UserID");
                 XmlNode NameNode = adminNode.SelectSingleNode("Name");
 
-                if (email == EmailNode.InnerText && password == PasswordNode.InnerText) 
+                if (email == EmailNode.InnerText.ToLower() && password == PasswordNode.InnerText) 
                 {
                     return new Admin(NameNode.InnerText, EmailNode.InnerText, PasswordNode.InnerText, IDNode.InnerText);
                 }

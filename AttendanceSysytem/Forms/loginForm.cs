@@ -32,7 +32,7 @@ namespace AttendanceSysytem
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            string email = txtUserName.Text;
+            string email = txtUserName.Text.ToLower();
             string password = txtPassword.Text;
 
             User validator = (User)login.isAdmin(email, password);

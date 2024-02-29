@@ -136,7 +136,7 @@
     <value>3, 2, 3, 2</value>
   </data>
   <data name="StudentNametxt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>781, 27</value>
+    <value>338, 27</value>
   </data>
   <data name="StudentNametxt.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -235,7 +235,7 @@
     <value>3, 2, 3, 2</value>
   </data>
   <data name="StudentClasstxt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>781, 27</value>
+    <value>338, 27</value>
   </data>
   <data name="StudentClasstxt.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
