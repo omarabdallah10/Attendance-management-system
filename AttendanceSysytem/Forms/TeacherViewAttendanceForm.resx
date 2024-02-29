@@ -123,22 +123,18 @@
   <data name="&gt;&gt;label2.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;btnGoBack.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>398, 82</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Track Name:</value>
   </data>
-  <data name="&gt;&gt;btnSaveAs.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>832, 453</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="TrackCompoBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10.2pt</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnSaveAs.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
   </data>
   <data name="DateComboBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10.2pt</value>
@@ -165,6 +161,7 @@
   <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>On</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="dataGridViewAttendance.RowHeadersWidth" type="System.Int32, mscorlib">
     <value>51</value>
   </data>
@@ -174,14 +171,17 @@
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
   </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Date:</value>
+  </data>
   <data name="&gt;&gt;btnGoBack.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;btnSaveAs.Name" xml:space="preserve">
-    <value>btnSaveAs</value>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 16</value>
   </data>
   <data name="&gt;&gt;dataGridViewAttendance.Name" xml:space="preserve">
     <value>dataGridViewAttendance</value>
@@ -203,6 +203,9 @@
   </data>
   <data name="&gt;&gt;DateComboBox.Name" xml:space="preserve">
     <value>DateComboBox</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="btnViewAttendance.Size" type="System.Drawing.Size, System.Drawing">
     <value>280, 40</value>
@@ -249,23 +252,20 @@
   <data name="&gt;&gt;dataGridViewAttendance.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="btnSaveAs.Text" xml:space="preserve">
+    <value>Save As</value>
+  </data>
   <data name="btnGoBack.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
-  </data>
-  <data name="classCompoBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>546, 35</value>
   </data>
   <data name="TrackCompoBox.Items" xml:space="preserve">
     <value>PD</value>
   </data>
+  <data name="TrackCompoBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
   <data name="&gt;&gt;label2.Name" xml:space="preserve">
     <value>label2</value>
-  </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>398, 82</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Teacher View</value>
   </data>
   <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
@@ -312,14 +312,14 @@
   <data name="TrackCompoBox.Items1" xml:space="preserve">
     <value>OS</value>
   </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Date:</value>
+  <data name="&gt;&gt;btnGoBack.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Teacher View</value>
   </data>
   <data name="DateComboBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 28</value>
@@ -330,14 +330,14 @@
   <data name="btnViewAttendance.Text" xml:space="preserve">
     <value>View Attendance</value>
   </data>
-  <data name="TrackCompoBox.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="btnSaveAs.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
   </data>
   <data name="classCompoBox.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>832, 453</value>
+  <data name="classCompoBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>546, 35</value>
   </data>
   <data name="btnGoBack.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 40</value>
@@ -372,8 +372,11 @@
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 16</value>
+  <data name="&gt;&gt;btnSaveAs.Name" xml:space="preserve">
+    <value>btnSaveAs</value>
+  </data>
+  <data name="btnViewAttendance.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
   <data name="DateComboBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
@@ -384,8 +387,8 @@
   <data name="DateComboBox.ItemHeight" type="System.Int32, mscorlib">
     <value>20</value>
   </data>
-  <data name="btnViewAttendance.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="&gt;&gt;btnSaveAs.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="dataGridViewAttendance.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -396,7 +399,4 @@
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>en</value>
   </metadata>
-  <data name="btnSaveAs.Text" xml:space="preserve">
-    <value>Save As</value>
-  </data>
 </root>
