@@ -44,7 +44,7 @@ namespace AttendanceSysytem.Classes
                 XmlNode NameNode = studentNode.SelectSingleNode("Name");
                 XmlNode ClassNode = studentNode.SelectSingleNode("ClassName");
 
-                if (email == EmailNode.InnerText && password == PasswordNode.InnerText)
+                if (email == EmailNode.InnerText.ToLower() && password == PasswordNode.InnerText)
                 {
                     return new Student(NameNode.InnerText, EmailNode.InnerText, PasswordNode.InnerText, IDNode.InnerText, ClassNode.InnerText);
                 }
@@ -63,7 +63,7 @@ namespace AttendanceSysytem.Classes
                 XmlNode IDNode = teacherNode.SelectSingleNode("UserID");
                 XmlNode NameNode = teacherNode.SelectSingleNode("Name");
 
-                if (email == EmailNode.InnerText && password == PasswordNode.InnerText)
+                if (email == EmailNode.InnerText.ToLower() && password == PasswordNode.InnerText)
                 {
                     return new Teacher(NameNode.InnerText, EmailNode.InnerText, PasswordNode.InnerText, IDNode.InnerText);
                 }
