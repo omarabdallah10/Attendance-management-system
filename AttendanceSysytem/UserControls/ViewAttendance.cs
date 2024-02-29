@@ -124,7 +124,7 @@ namespace AttendanceSysytem.UserControls
 
         private void btnSaveAs_Click(object sender, EventArgs e)
         {
-            //check if the datagridview is empty --> disable the save button
+            //if no data to save
             if (dataGridViewAttendance.Rows.Count == 0)
             {
                 MessageBox.Show("No data to save!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
