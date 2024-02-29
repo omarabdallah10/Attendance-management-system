@@ -42,7 +42,6 @@ namespace AttendanceSysytem
             SettingsForm settingsForm = new SettingsForm();
             settingsForm.Recived = recived;
             settingsForm.Show();
-            Hide();
         }
 
         private void teacherFunctionalitiesForm_Load(object sender, EventArgs e)
