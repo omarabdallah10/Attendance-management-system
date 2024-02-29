@@ -34,17 +34,25 @@
             this.classCompoBox = new System.Windows.Forms.ComboBox();
             this.btnSaveAs = new System.Windows.Forms.Button();
             this.btnViewAttendance = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.DateComboBox = new System.Windows.Forms.ComboBox();
-            this.dataGridViewAttendance = new System.Windows.Forms.DataGridView();
+            this.btnSaveAs = new System.Windows.Forms.Button();
+            this.btnPDf = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAttendance)).BeginInit();
             this.SuspendLayout();
             // 
+            // dataGridViewAttendance
+            // 
+            this.dataGridViewAttendance.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.dataGridViewAttendance.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewAttendance.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            resources.ApplyResources(this.dataGridViewAttendance, "dataGridViewAttendance");
+            this.dataGridViewAttendance.Name = "dataGridViewAttendance";
+            this.dataGridViewAttendance.RowTemplate.Height = 24;
+            // 
             // btnGoBack
             // 
-            resources.ApplyResources(this.btnGoBack, "btnGoBack");
             this.btnGoBack.BackColor = System.Drawing.Color.OrangeRed;
             this.btnGoBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.btnGoBack, "btnGoBack");
             this.btnGoBack.ForeColor = System.Drawing.Color.White;
             this.btnGoBack.Name = "btnGoBack";
             this.btnGoBack.UseVisualStyleBackColor = false;
@@ -58,30 +66,19 @@
             // 
             // classCompoBox
             // 
-            resources.ApplyResources(this.classCompoBox, "classCompoBox");
             this.classCompoBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.classCompoBox.FormattingEnabled = true;
+            resources.ApplyResources(this.classCompoBox, "classCompoBox");
             this.classCompoBox.Name = "classCompoBox";
             // 
             // btnSaveAs
             // 
-            resources.ApplyResources(this.btnSaveAs, "btnSaveAs");
-            this.btnSaveAs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnSaveAs.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSaveAs.ForeColor = System.Drawing.Color.White;
-            this.btnSaveAs.Name = "btnSaveAs";
-            this.btnSaveAs.UseVisualStyleBackColor = false;
-            this.btnSaveAs.Click += new System.EventHandler(this.btnSaveAs_Click);
-            // 
-            // btnViewAttendance
-            // 
-            resources.ApplyResources(this.btnViewAttendance, "btnViewAttendance");
-            this.btnViewAttendance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnViewAttendance.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnViewAttendance.ForeColor = System.Drawing.Color.White;
-            this.btnViewAttendance.Name = "btnViewAttendance";
-            this.btnViewAttendance.UseVisualStyleBackColor = false;
-            this.btnViewAttendance.Click += new System.EventHandler(this.btnViewAttendance_Click);
+            this.DateComboBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.DateComboBox, "DateComboBox");
+            this.DateComboBox.FormattingEnabled = true;
+            this.DateComboBox.Items.AddRange(new object[] {
+            resources.GetString("DateComboBox.Items")});
+            this.DateComboBox.Name = "DateComboBox";
             // 
             // label2
             // 
@@ -89,29 +86,42 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.label2.Name = "label2";
             // 
-            // DateComboBox
+            // btnViewAttendance
             // 
-            resources.ApplyResources(this.DateComboBox, "DateComboBox");
-            this.DateComboBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.DateComboBox.FormattingEnabled = true;
-            this.DateComboBox.Items.AddRange(new object[] {
-            resources.GetString("DateComboBox.Items")});
-            this.DateComboBox.Name = "DateComboBox";
+            this.btnViewAttendance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnViewAttendance.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.btnViewAttendance, "btnViewAttendance");
+            this.btnViewAttendance.ForeColor = System.Drawing.Color.White;
+            this.btnViewAttendance.Name = "btnViewAttendance";
+            this.btnViewAttendance.UseVisualStyleBackColor = false;
+            this.btnViewAttendance.Click += new System.EventHandler(this.btnViewAttendance_Click);
             // 
-            // dataGridViewAttendance
+            // label2
             // 
-            resources.ApplyResources(this.dataGridViewAttendance, "dataGridViewAttendance");
-            this.dataGridViewAttendance.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
-            this.dataGridViewAttendance.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewAttendance.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dataGridViewAttendance.Name = "dataGridViewAttendance";
-            this.dataGridViewAttendance.RowTemplate.Height = 24;
+            this.btnSaveAs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnSaveAs.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.btnSaveAs, "btnSaveAs");
+            this.btnSaveAs.ForeColor = System.Drawing.Color.White;
+            this.btnSaveAs.Name = "btnSaveAs";
+            this.btnSaveAs.UseVisualStyleBackColor = false;
+            this.btnSaveAs.Click += new System.EventHandler(this.btnSaveAs_Click);
+            // 
+            // btnPDf
+            // 
+            this.btnPDf.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnPDf.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.btnPDf, "btnPDf");
+            this.btnPDf.ForeColor = System.Drawing.Color.White;
+            this.btnPDf.Name = "btnPDf";
+            this.btnPDf.UseVisualStyleBackColor = false;
+            this.btnPDf.Click += new System.EventHandler(this.btnPDf_Click);
             // 
             // TeacherViewAttendanceForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Controls.Add(this.btnPDf);
             this.Controls.Add(this.btnSaveAs);
             this.Controls.Add(this.btnViewAttendance);
             this.Controls.Add(this.DateComboBox);
@@ -134,8 +144,7 @@
         private System.Windows.Forms.ComboBox classCompoBox;
         private System.Windows.Forms.Button btnSaveAs;
         private System.Windows.Forms.Button btnViewAttendance;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox DateComboBox;
-        private System.Windows.Forms.DataGridView dataGridViewAttendance;
+        private System.Windows.Forms.Button btnSaveAs;
+        private System.Windows.Forms.Button btnPDf;
     }
 }
