@@ -90,7 +90,7 @@
             this.DateComboBox.ItemHeight = 20;
             this.DateComboBox.Items.AddRange(new object[] {
             ""});
-            this.DateComboBox.Location = new System.Drawing.Point(743, 57);
+            this.DateComboBox.Location = new System.Drawing.Point(701, 57);
             this.DateComboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.DateComboBox.Name = "DateComboBox";
             this.DateComboBox.Size = new System.Drawing.Size(200, 28);
@@ -106,7 +106,7 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI", 20F);
             this.label1.ForeColor = System.Drawing.Color.Coral;
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(600, 39);
+            this.label1.Location = new System.Drawing.Point(565, 39);
             this.label1.Margin = new System.Windows.Forms.Padding(0);
             this.label1.MaximumSize = new System.Drawing.Size(1800, 100);
             this.label1.Name = "label1";
