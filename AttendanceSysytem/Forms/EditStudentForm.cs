@@ -32,6 +32,12 @@ namespace AttendanceSysytem.Forms
 
         private void save_btn_Click(object sender, EventArgs e)
         {
+            Console.WriteLine(StudentElement);
+            string oldClass = StudentElement.SelectSingleNode("ClassName").InnerText;
+            XmlNode users = Doc.SelectSingleNode("//Users");
+            XmlNode Std = users.SelectSingleNode("//Student[Name='" + StudentElement.SelectSingleNode("Name").InnerText + "']");
+            XmlNode UserID = Std.SelectSingleNode("UserID");
+            StudentElement.PrependChild(UserID);
             XmlNode name = StudentElement.SelectSingleNode("Name");
             name.InnerText = FnameTxt.Text + " " + LnameTxt.Text;
             XmlNode email = StudentElement.SelectSingleNode("Email");
@@ -40,6 +46,27 @@ namespace AttendanceSysytem.Forms
             password.InnerText = password_box.Text;
             XmlNode className = StudentElement.SelectSingleNode("ClassName");
             className.InnerText = classes_list.Text;
+            //adding the id to the new class
+            XmlNode newclass=Doc.SelectSingleNode("//Class[Name='"+classes_list.Text+"']");
+            
+            newclass.SelectSingleNode("Students").AppendChild(UserID.CloneNode(true));
+            //removing the id from the old class
+            XmlNodeList ClassNodes = Doc.SelectNodes("//Class");
+            foreach (XmlNode ClassNode in ClassNodes)
+            {
+                if (ClassNode.SelectSingleNode("Name").InnerText == oldClass)
+                {
+                    XmlNodeList UserIDS = ClassNode.SelectSingleNode("Students").ChildNodes;
+                    foreach (XmlNode id in UserIDS)
+                    {
+                        if (id.InnerText == UserID.InnerText)
+                        {
+                            ClassNode.SelectSingleNode("Students").RemoveChild(id);
+                            break;
+                        }
+                    }
+                }
+            }
             if (Valid.ValidUserInput(name.InnerText, email.InnerText, password.InnerText))
             {
                 MessageBox.Show("Data has been updated");

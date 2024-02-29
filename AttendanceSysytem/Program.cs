@@ -10,7 +10,7 @@ using System.Security.Cryptography;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Xml;
+using System;
 
 
 namespace AttendanceSysytem
@@ -26,6 +26,7 @@ namespace AttendanceSysytem
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
 
             // Initialize the LanguageManager
             Settings.Initialize();

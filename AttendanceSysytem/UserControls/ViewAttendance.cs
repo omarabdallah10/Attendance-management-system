@@ -1,30 +1,28 @@
-﻿using AttendanceSysytem.Classes;
-using PdfSharp.Drawing;
-using PdfSharp.Pdf;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Management.Instrumentation;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
+using AttendanceSysytem.Classes;
+using PdfSharp.Drawing;
+using PdfSharp.Pdf;
 
-namespace AttendanceSysytem.Forms
+namespace AttendanceSysytem.UserControls
 {
-    public partial class TeacherViewAttendanceForm : Form
+    public partial class ViewAttendance : UserControl
     {
-        public TeacherViewAttendanceForm()
+        public ViewAttendance()
         {
             InitializeComponent();
-            Settings.ChangeFont(this, Settings.MyFont, true);
         }
 
-        //load Data on form load
-        private void TeacherViewAttendanceForm_Load(object sender, EventArgs e)
+
+        private void ViewAttendance_Load(object sender, EventArgs e)
         {
             dataGridViewAttendance.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
@@ -41,16 +39,19 @@ namespace AttendanceSysytem.Forms
             DateComboBox.DataSource = dt;
             DateComboBox.DisplayMember = "Date";
 
-            
 
-            
+
+
             // -- PD Track is selected by default
-            TrackCompoBox.SelectedIndex = 0;
+            classComboBox.SelectedIndex = 0;
             // -- last index of combobox is selected
             DateComboBox.SelectedIndex = DateComboBox.Items.Count - 1;
 
-        }
 
+
+
+        }
+        
 
         private void btnViewAttendance_Click(object sender, EventArgs e)
         {
@@ -64,7 +65,7 @@ namespace AttendanceSysytem.Forms
 
                 //view the matched date and track
                 DataView dv = new DataView(xmlData.DataSet.Tables["AttendanceRecord"]);
-                dv.RowFilter = "Date = '" + DateComboBox.Text + "' AND ClassName = '" + TrackCompoBox.Text + "'";
+                dv.RowFilter = "Date = '" + DateComboBox.Text + "' AND ClassName = '" + classComboBox.Text + "'";
                 dataGridViewAttendance.DataSource = dv;
 
                 //MessageBox.Show("Data Loaded Successfully!");
@@ -75,22 +76,11 @@ namespace AttendanceSysytem.Forms
                 MessageBox.Show("Sorry Something go wrong! \nPlease ry again later.");
 
             }
-
         }
-
-        private void btnGoBack_Click(object sender, EventArgs e)
-        {
-            teacherFunctionalitiesForm form = new teacherFunctionalitiesForm();
-            form.Show();
-            Hide();
-        }
-
-
 
         private void SaveAsPDF(string fileName, string data)
         {
             //make an instance of the pdf document as a table and add the data to it
-
             PdfDocument pdf = new PdfDocument();
             pdf.Info.Title = "Created Attendance Report";
             PdfPage pdfPage = pdf.AddPage();
@@ -134,13 +124,13 @@ namespace AttendanceSysytem.Forms
 
         private void btnSaveAs_Click(object sender, EventArgs e)
         {
-
             //if no data to save
             if (dataGridViewAttendance.Rows.Count == 0)
             {
                 MessageBox.Show("No data to save!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+
 
             //get the data from the datagridview Fro the excel file
             string data = "";

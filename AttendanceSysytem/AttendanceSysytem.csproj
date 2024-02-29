@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="Classes\Adding.cs" />
     <Compile Include="Classes\Attendance.cs" />
+    <Compile Include="Classes\backupManager.cs" />
     <Compile Include="Classes\DataManagement.cs" />
     <Compile Include="Classes\login.cs" />
     <Compile Include="Classes\Settings.cs" />
@@ -235,6 +236,12 @@
     <Compile Include="UserControls\SettingsControl.Designer.cs">
       <DependentUpon>SettingsControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\ViewAttendance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ViewAttendance.Designer.cs">
+      <DependentUpon>ViewAttendance.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Forms\AddClassForm.ar.resx">
       <DependentUpon>AddClassForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -401,6 +408,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\SettingsControl.resx">
       <DependentUpon>SettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ViewAttendance.resx">
+      <DependentUpon>ViewAttendance.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

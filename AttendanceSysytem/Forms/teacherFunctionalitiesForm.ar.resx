@@ -1813,4 +1813,7 @@
   <data name="btnTakeAttendance.Text" xml:space="preserve">
     <value>تسجيل الحضور</value>
   </data>
+  <data name="settings.Text" xml:space="preserve">
+    <value>اعدادات</value>
+  </data>
 </root>

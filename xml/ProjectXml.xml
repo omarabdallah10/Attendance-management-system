@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <School xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="projectSchema.xsd">
   <Users>
     <Admin>
@@ -56,7 +56,7 @@
       <Name>kareem ahmed</Name>
       <Email>kareemAhmed@email.com</Email>
       <Password>Kareem123!</Password>
-      <ClassName>OS</ClassName>
+      <ClassName>PD</ClassName>
     </Student>
     <Student>
       <UserID>S001</UserID>
@@ -181,20 +181,6 @@
     </AttendanceRecord>
     <!-- Add more attendance records as needed -->
     <AttendanceRecord>
-      <UserID>S304</UserID>
-      <Name>kareem ahmed</Name>
-      <ClassName>OS</ClassName>
-      <Date>2024-02-27</Date>
-      <Status>Present</Status>
-    </AttendanceRecord>
-    <AttendanceRecord>
-      <UserID>S004</UserID>
-      <Name>Zeoz Khaledooo</Name>
-      <ClassName>OS</ClassName>
-      <Date>2024-02-27</Date>
-      <Status>Present</Status>
-    </AttendanceRecord>
-    <AttendanceRecord>
       <UserID>S003</UserID>
       <Name>Omar Abdullah</Name>
       <ClassName>AI</ClassName>
@@ -216,20 +202,6 @@
       <Status>Present</Status>
     </AttendanceRecord>
     <AttendanceRecord>
-      <UserID>S001</UserID>
-      <Name>Abdelhameed Osama</Name>
-      <ClassName>PD</ClassName>
-      <Date>2024-02-27</Date>
-      <Status>Present</Status>
-    </AttendanceRecord>
-    <AttendanceRecord>
-      <UserID>S002</UserID>
-      <Name>AbdUllah Aiman</Name>
-      <ClassName>PD</ClassName>
-      <Date>2024-02-27</Date>
-      <Status>Absent</Status>
-    </AttendanceRecord>
-    <AttendanceRecord>
       <UserID>S304</UserID>
       <Name>kareem ahmed</Name>
       <ClassName>OS</ClassName>
@@ -241,6 +213,34 @@
       <Name>Zeoz Khaledooo</Name>
       <ClassName>OS</ClassName>
       <Date>2024-02-27</Date>
+      <Status>Absent</Status>
+    </AttendanceRecord>
+    <AttendanceRecord>
+      <UserID>S003</UserID>
+      <Name>Omar Abdullah</Name>
+      <ClassName>AI</ClassName>
+      <Date>2024-02-27</Date>
+      <Status>Absent</Status>
+    </AttendanceRecord>
+    <AttendanceRecord>
+      <UserID>S001</UserID>
+      <Name>Abdelhameed Osama</Name>
+      <ClassName>PD</ClassName>
+      <Date>2024-02-28</Date>
+      <Status>Present</Status>
+    </AttendanceRecord>
+    <AttendanceRecord>
+      <UserID>S002</UserID>
+      <Name>AbdUllah Aiman</Name>
+      <ClassName>PD</ClassName>
+      <Date>2024-02-28</Date>
+      <Status>Absent</Status>
+    </AttendanceRecord>
+    <AttendanceRecord>
+      <UserID>S003</UserID>
+      <Name>Omar Abdullah</Name>
+      <ClassName>AI</ClassName>
+      <Date>2024-02-28</Date>
       <Status>Absent</Status>
     </AttendanceRecord>
     <AttendanceRecord>

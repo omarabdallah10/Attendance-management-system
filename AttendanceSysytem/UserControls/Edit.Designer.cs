@@ -178,6 +178,7 @@
             // classes_label
             // 
             resources.ApplyResources(this.classes_label, "classes_label");
+            this.classes_label.ForeColor = System.Drawing.Color.Coral;
             this.classes_label.Name = "classes_label";
             // 
             // tabPage2
@@ -283,6 +284,7 @@
             // students_label
             // 
             resources.ApplyResources(this.students_label, "students_label");
+            this.students_label.ForeColor = System.Drawing.Color.Coral;
             this.students_label.Name = "students_label";
             // 
             // tabPage1
@@ -397,6 +399,7 @@
             // teachers_label
             // 
             resources.ApplyResources(this.teachers_label, "teachers_label");
+            this.teachers_label.ForeColor = System.Drawing.Color.Coral;
             this.teachers_label.Name = "teachers_label";
             // 
             // editStudent1
