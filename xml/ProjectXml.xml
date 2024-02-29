@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <School xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="projectSchema.xsd">
   <Users>
     <Admin>
@@ -283,7 +283,7 @@
       <Name>kareem ahmed</Name>
       <ClassName>OS</ClassName>
       <Date>2024-02-29</Date>
-      <Status>Present</Status>
+      <Status>Absent</Status>
     </AttendanceRecord>
   </AttendanceData>
 </School>
