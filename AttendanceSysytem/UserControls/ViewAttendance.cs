@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
 using AttendanceSysytem.Classes;
+using iTextSharp.text.pdf;
 using PdfSharp.Drawing;
 using PdfSharp.Pdf;
 
@@ -40,19 +42,7 @@ namespace AttendanceSysytem.UserControls
             DateComboBox.DataSource = dt;
             DateComboBox.DisplayMember = "Date";
 
-            /*ToDateComboBox.DataSource = dt;
-            ToDateComboBox.DisplayMember = "Date";*/
-
-            //PD is selected by default
-            classComboBox.SelectedIndex = 0;
-            /*//first index of combobox is selected for the from date
-            FromDateComboBox.SelectedIndex = 0;
-            // -- last index of combobox is selected
-            ToDateComboBox.SelectedIndex = ToDateComboBox.Items.Count - 1;*/
-
-
-
-
+            
         }
         
 
@@ -65,13 +55,6 @@ namespace AttendanceSysytem.UserControls
                 XmlDataDocument xmlData = new XmlDataDocument();
                 string xmlPath = DataManagement.xmlPath();
                 xmlData.DataSet.ReadXml(xmlPath);
-
-                /*//view the students in the selected class and the period between the selected dates
-                DataView dv = new DataView(xmlData.DataSet.Tables["AttendanceRecord"]);
-                dv.RowFilter = "Date >= '" + DateComboBox.Text + "' AND Date <= '" + ToDateComboBox.Text + "' AND ClassName = '" + classComboBox.Text + "'";
-                dataGridViewAttendance.DataSource = dv;*/
-
-
 
                 //view the matched date and track
                 DataView dv = new DataView(xmlData.DataSet.Tables["AttendanceRecord"]);
@@ -88,30 +71,6 @@ namespace AttendanceSysytem.UserControls
             }
         }
 
-        private void SaveAsPDF(string fileName, string data)
-        {
-            //make an instance of the pdf document as a table and add the data to it
-            PdfDocument pdf = new PdfDocument();
-            pdf.Info.Title = "Created Attendance Report";
-            PdfPage pdfPage = pdf.AddPage();
-            XGraphics graph = XGraphics.FromPdfPage(pdfPage);
-            XFont font = new XFont("Verdana", 20, XFontStyle.Bold);
-            // draw every row in a new line
-            string[] rows = data.Split('\n');
-            //make a table of the data
-            for (int i = 0; i < rows.Length; i++)
-            {
-                string[] columns = rows[i].Split(' ');
-                for (int j = 0; j < columns.Length; j++)
-                {
-                    graph.DrawString(columns[j], font, XBrushes.Black,
-                                                              new XRect(j * 100, i * 20, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft);
-                }
-            }
-
-            pdf.Save(fileName);
-
-        }
 
         private void SaveAsExcel(string fileName, string data)
         {
@@ -130,6 +89,47 @@ namespace AttendanceSysytem.UserControls
             }
             workSheet.SaveAs(fileName);
 
+        }
+        private void ExportDataToPdf()
+        {
+            try
+            {
+                // Create a Document
+                iTextSharp.text.Document doc = new iTextSharp.text.Document();
+                string sCurrentDirectory = AppDomain.CurrentDomain.BaseDirectory;
+                string sFile = System.IO.Path.Combine(sCurrentDirectory, @"..\..\..\reports\report.pdf");
+                string filePath = Path.GetFullPath(sFile);
+
+                PdfWriter.GetInstance(doc, new FileStream(filePath, FileMode.Create));
+
+                doc.Open();
+
+                doc.Add(new iTextSharp.text.Paragraph("Attendance Report"));
+
+                PdfPTable table = new PdfPTable(dataGridViewAttendance.Columns.Count);
+
+                foreach (DataGridViewColumn column in dataGridViewAttendance.Columns)
+                {
+                    table.AddCell(new PdfPCell(new iTextSharp.text.Phrase(column.HeaderText)));
+                }
+
+                foreach (DataGridViewRow row in dataGridViewAttendance.Rows)
+                {
+                    foreach (DataGridViewCell cell in row.Cells)
+                    {
+                        table.AddCell(new PdfPCell(new iTextSharp.text.Phrase(cell.Value?.ToString() ?? "")));
+                    }
+                }
+
+                doc.Add(table);
+                doc.Close();
+
+                MessageBox.Show("Data exported to PDF successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnSaveAs_Click(object sender, EventArgs e)
@@ -166,27 +166,23 @@ namespace AttendanceSysytem.UserControls
 
             //save the data as pdf or excel
             SaveFileDialog sfd = new SaveFileDialog();
-            sfd.Filter = "PDF Files|*.pdf|Excel Files|*.xlsx";
-            sfd.DefaultExt = "pdf";
+            sfd.Filter = "Excel Files|*.xlsx";
+            sfd.DefaultExt = "xlsx";
             sfd.AddExtension = true;
             sfd.FileName = "Attendance Report";
             sfd.OverwritePrompt = true;
 
             if (sfd.ShowDialog() == DialogResult.OK)
             {
-                if (sfd.FilterIndex == 1) // PDF selected
-                {
-                    SaveAsPDF(sfd.FileName, data);
-                }
-                else if (sfd.FilterIndex == 2) // Excel selected
-                {
+                
                     SaveAsExcel(sfd.FileName, data);
-                }
+                
             }
         }
 
-        
-
-        
+        private void btnPDf_Click(object sender, EventArgs e)
+        {
+            ExportDataToPdf();
+        }
     }
 }

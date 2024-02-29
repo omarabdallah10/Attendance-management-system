@@ -37,10 +37,6 @@ namespace AttendanceSysytem
             Application.Run(new loginForm());
 
 
-
-
-
-
             //isAdmin("Admin@admin.com", "123456789");
         }
     }
