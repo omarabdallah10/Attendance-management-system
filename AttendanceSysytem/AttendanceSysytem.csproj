@@ -359,6 +359,9 @@
     <EmbeddedResource Include="Forms\TeacherViewAttendanceForm.ar.resx">
       <DependentUpon>TeacherViewAttendanceForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TeacherViewAttendanceForm.en.resx">
+      <DependentUpon>TeacherViewAttendanceForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\TeacherViewAttendanceForm.resx">
       <DependentUpon>TeacherViewAttendanceForm.cs</DependentUpon>
     </EmbeddedResource>

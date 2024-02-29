@@ -43,7 +43,7 @@
             // dataGridViewAttendance
             // 
             resources.ApplyResources(this.dataGridViewAttendance, "dataGridViewAttendance");
-            this.dataGridViewAttendance.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.dataGridViewAttendance.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridViewAttendance.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewAttendance.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dataGridViewAttendance.Name = "dataGridViewAttendance";
@@ -52,7 +52,7 @@
             // btnGoBack
             // 
             resources.ApplyResources(this.btnGoBack, "btnGoBack");
-            this.btnGoBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnGoBack.BackColor = System.Drawing.Color.OrangeRed;
             this.btnGoBack.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGoBack.ForeColor = System.Drawing.Color.White;
             this.btnGoBack.Name = "btnGoBack";
@@ -62,6 +62,7 @@
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.label1.Name = "label1";
             // 
             // TrackCompoBox
@@ -87,13 +88,15 @@
             // label2
             // 
             resources.ApplyResources(this.label2, "label2");
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.label2.Name = "label2";
             // 
             // btnViewAttendance
             // 
             resources.ApplyResources(this.btnViewAttendance, "btnViewAttendance");
-            this.btnViewAttendance.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnViewAttendance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnViewAttendance.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnViewAttendance.ForeColor = System.Drawing.Color.White;
             this.btnViewAttendance.Name = "btnViewAttendance";
             this.btnViewAttendance.UseVisualStyleBackColor = false;
             this.btnViewAttendance.Click += new System.EventHandler(this.btnViewAttendance_Click);
@@ -101,7 +104,7 @@
             // btnSaveAs
             // 
             resources.ApplyResources(this.btnSaveAs, "btnSaveAs");
-            this.btnSaveAs.BackColor = System.Drawing.Color.ForestGreen;
+            this.btnSaveAs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnSaveAs.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSaveAs.ForeColor = System.Drawing.Color.White;
             this.btnSaveAs.Name = "btnSaveAs";

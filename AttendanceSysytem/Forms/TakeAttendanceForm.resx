@@ -127,6 +127,10 @@
   <data name="dataGridViewTakeAttendance.Size" type="System.Drawing.Size, System.Drawing">
     <value>777, 242</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnSaveAs.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -139,15 +143,12 @@
   <data name="btnSave.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt, style=Bold</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="dataGridViewTakeAttendance.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
   </data>
-  <data name="&gt;&gt;btnGoBack.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dataGridViewTakeAttendance.Name" xml:space="preserve">
-    <value>dataGridViewTakeAttendance</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>On</value>
   </data>
   <data name="&gt;&gt;ClassComboBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -155,7 +156,6 @@
   <data name="&gt;&gt;label2.Name" xml:space="preserve">
     <value>label2</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
   </data>
@@ -163,10 +163,10 @@
     <value>541, 35</value>
   </data>
   <data name="&gt;&gt;btnGoBack.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="&gt;&gt;btnGoBack.Parent" xml:space="preserve">
     <value>$this</value>
@@ -195,14 +195,11 @@
   <data name="&gt;&gt;btnGoBack.Name" xml:space="preserve">
     <value>btnGoBack</value>
   </data>
-  <data name="ClassComboBox.Items" xml:space="preserve">
-    <value>PD</value>
+  <data name="&gt;&gt;btnGoBack.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Take Attendance</value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>On</value>
   </data>
   <data name="ClassComboBox.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -229,7 +226,7 @@
     <value>800, 450</value>
   </data>
   <data name="&gt;&gt;btnSave.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="&gt;&gt;btnSaveAs.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -252,6 +249,9 @@
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
   </data>
+  <data name="&gt;&gt;dataGridViewTakeAttendance.Name" xml:space="preserve">
+    <value>dataGridViewTakeAttendance</value>
+  </data>
   <data name="&gt;&gt;btnSave.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
@@ -273,8 +273,8 @@
   <data name="dataGridViewTakeAttendance.Location" type="System.Drawing.Point, System.Drawing">
     <value>11, 106</value>
   </data>
-  <data name="btnSaveAs.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
+  <data name="ClassComboBox.Items" xml:space="preserve">
+    <value>PD</value>
   </data>
   <data name="btnGoBack.Location" type="System.Drawing.Point, System.Drawing">
     <value>27, 23</value>
@@ -292,7 +292,7 @@
     <value>16</value>
   </data>
   <data name="&gt;&gt;dataGridViewTakeAttendance.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt, style=Bold</value>
@@ -304,7 +304,7 @@
     <value>302, 385</value>
   </data>
   <data name="&gt;&gt;ClassComboBox.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="btnSave.Text" xml:space="preserve">
     <value>Save</value>

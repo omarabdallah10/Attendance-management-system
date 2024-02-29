@@ -264,8 +264,8 @@
   <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>832, 453</value>
+  <data name="btnSaveAs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
   </data>
   <data name="&gt;&gt;btnSaveAs.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -321,8 +321,8 @@
   <data name="TrackCompoBox.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="DateComboBox.ItemHeight" type="System.Int32, mscorlib">
-    <value>20</value>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>832, 453</value>
   </data>
   <data name="btnGoBack.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 40</value>
@@ -363,6 +363,9 @@
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>142, 25</value>
   </data>
+  <data name="DateComboBox.ItemHeight" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
   <data name="btnViewAttendance.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
@@ -373,6 +376,6 @@
     <value>True</value>
   </metadata>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>ar</value>
+    <value>en</value>
   </metadata>
 </root>

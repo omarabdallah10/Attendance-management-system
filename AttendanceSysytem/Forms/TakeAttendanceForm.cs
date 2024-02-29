@@ -20,6 +20,8 @@ namespace AttendanceSysytem.Forms
 {
     public partial class TakeAttendanceForm : Form
     {
+
+
         public TakeAttendanceForm()
         {
             InitializeComponent();
@@ -27,7 +29,6 @@ namespace AttendanceSysytem.Forms
         }
 
 
-        
         private void TakeAttendanceForm_Load(object sender, EventArgs e)
         {
             //check if the user is logged in
@@ -195,7 +196,12 @@ namespace AttendanceSysytem.Forms
 
         }
 
-      
+        private void btnGoBack_Click(object sender, EventArgs e)
+        {
+                teacherFunctionalitiesForm form = new teacherFunctionalitiesForm();
+                form.Show();
+                Hide();
+        }
     }
 }
 

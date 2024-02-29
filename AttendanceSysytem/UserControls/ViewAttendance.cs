@@ -36,16 +36,19 @@ namespace AttendanceSysytem.UserControls
 
             DataView dv = new DataView(xmlData.DataSet.Tables["AttendanceRecord"]);
             DataTable dt = dv.ToTable(true, "Date");
+
             DateComboBox.DataSource = dt;
             DateComboBox.DisplayMember = "Date";
 
+            /*ToDateComboBox.DataSource = dt;
+            ToDateComboBox.DisplayMember = "Date";*/
 
-
-
-            // -- PD Track is selected by default
+            //PD is selected by default
             classComboBox.SelectedIndex = 0;
+            /*//first index of combobox is selected for the from date
+            FromDateComboBox.SelectedIndex = 0;
             // -- last index of combobox is selected
-            DateComboBox.SelectedIndex = DateComboBox.Items.Count - 1;
+            ToDateComboBox.SelectedIndex = ToDateComboBox.Items.Count - 1;*/
 
 
 
@@ -62,6 +65,13 @@ namespace AttendanceSysytem.UserControls
                 XmlDataDocument xmlData = new XmlDataDocument();
                 string xmlPath = DataManagement.xmlPath();
                 xmlData.DataSet.ReadXml(xmlPath);
+
+                /*//view the students in the selected class and the period between the selected dates
+                DataView dv = new DataView(xmlData.DataSet.Tables["AttendanceRecord"]);
+                dv.RowFilter = "Date >= '" + DateComboBox.Text + "' AND Date <= '" + ToDateComboBox.Text + "' AND ClassName = '" + classComboBox.Text + "'";
+                dataGridViewAttendance.DataSource = dv;*/
+
+
 
                 //view the matched date and track
                 DataView dv = new DataView(xmlData.DataSet.Tables["AttendanceRecord"]);
@@ -174,5 +184,9 @@ namespace AttendanceSysytem.UserControls
                 }
             }
         }
+
+        
+
+        
     }
 }

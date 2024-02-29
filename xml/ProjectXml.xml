@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <School xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="projectSchema.xsd">
   <Users>
     <Admin>
@@ -269,6 +269,20 @@
       <Name>Zeoz Khaledooo</Name>
       <ClassName>OS</ClassName>
       <Date>2024-02-28</Date>
+      <Status>Present</Status>
+    </AttendanceRecord>
+    <AttendanceRecord>
+      <UserID>S774</UserID>
+      <Name>abody abodk</Name>
+      <ClassName>OS</ClassName>
+      <Date>2024-02-29</Date>
+      <Status>Present</Status>
+    </AttendanceRecord>
+    <AttendanceRecord>
+      <UserID>S304</UserID>
+      <Name>kareem ahmed</Name>
+      <ClassName>OS</ClassName>
+      <Date>2024-02-29</Date>
       <Status>Present</Status>
     </AttendanceRecord>
   </AttendanceData>
