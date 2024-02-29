@@ -59,8 +59,8 @@ namespace AttendanceSysytem.Forms
             XmlNode newSuper = doc.SelectSingleNode("//Users/Teacher[Name='" + SupervisorComboBox.Text + "']");
             XmlNode oldSuper = doc.SelectSingleNode("//Users/Teacher[UserID='" + classNode.SelectSingleNode("Supervisor/UserID").InnerText + "']");
             XmlNodeList classnodes = doc.SelectNodes("//Class");
-            int flag = 0;
-            /*foreach (XmlNode classnode in classnodes)
+            /*int flag = 0;
+            foreach (XmlNode classnode in classnodes)
             {
                 if (classnode.SelectSingleNode("Name").InnerText == class_name_txt.Text && class_name_txt.Text != recived.Name)
                 {
@@ -71,17 +71,18 @@ namespace AttendanceSysytem.Forms
             Console.WriteLine(flag);
             if (newSuper != oldSuper && flag == 0)
             {
-                newSuper.Attributes[0].InnerText = "true";
-                oldSuper.Attributes[0].InnerText = "false";
-                classNode.SelectSingleNode("Supervisor/UserID").InnerText = newSuper.SelectSingleNode("UserID").InnerText;
             }
             if (flag == 0 && (class_name_txt.Text != recived.Name || newSuper != oldSuper))
             {*/
+            newSuper.Attributes[0].InnerText = "true";
+            oldSuper.Attributes[0].InnerText = "false";
+            classNode.SelectSingleNode("Supervisor/UserID").InnerText = newSuper.SelectSingleNode("UserID").InnerText;
             name.InnerText = class_name_txt.Text;
             DataManagement.changeStdClassName(doc, recived.Name, class_name_txt.Text);
             SaveTeachers();
             SaveStudents();
             MessageBox.Show("Your edits have been saved successfully");
+            DataManagement.SaveXml(doc);
             Close();
             /* }
              else
