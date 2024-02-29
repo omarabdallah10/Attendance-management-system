@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <School xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="projectSchema.xsd">
   <Users>
     <Admin>
@@ -49,7 +49,7 @@
       <Name>ali ahmed</Name>
       <Email>ahmed@ahmed.alo</Email>
       <Password>123@adadaA</Password>
-      <ClassName>OS</ClassName>
+      <ClassName>AI</ClassName>
     </Student>
     <Student>
       <UserID>S304</UserID>
@@ -63,14 +63,14 @@
       <Name>Abdelhameed Osama</Name>
       <Email>abdelhameed_osama@example.com</Email>
       <Password>123456789Aa</Password>
-      <ClassName>OS</ClassName>
+      <ClassName>PD</ClassName>
     </Student>
     <Student>
       <UserID>S002</UserID>
       <Name>AbdUllah Aiman</Name>
       <Email>abdUllah_aiman@example.com</Email>
       <Password>123456789Aa</Password>
-      <ClassName>OS</ClassName>
+      <ClassName>PD</ClassName>
     </Student>
     <Student>
       <UserID>S003</UserID>
@@ -78,6 +78,13 @@
       <Email>omar_abdullah@example.com</Email>
       <Password>123456789Aa</Password>
       <ClassName>AI</ClassName>
+    </Student>
+    <Student>
+      <UserID>S004</UserID>
+      <Name>Zoz Khaled</Name>
+      <Email>Zeoz@ex.com</Email>
+      <Password>123456789Aa@</Password>
+      <ClassName>OS</ClassName>
     </Student>
   </Users>
   <Class>
@@ -93,9 +100,6 @@
     </Teachers>
     <Students>
       <UserID>S207</UserID>
-      <UserID>S001</UserID>
-      <UserID>S002</UserID>
-      <UserID>S849</UserID>
       <UserID>S774</UserID>
     </Students>
   </Class>
@@ -111,7 +115,10 @@
       <UserID>T004</UserID>
     </Teachers>
     <Students>
+      <UserID>S004</UserID>
       <UserID>S304</UserID>
+      <UserID>S001</UserID>
+      <UserID>S002</UserID>
     </Students>
   </Class>
   <Class>
@@ -120,12 +127,13 @@
       <UserID>T004</UserID>
     </Supervisor>
     <Teachers>
-      <UserID>T555</UserID>
       <UserID>T161</UserID>
+      <UserID>T555</UserID>
       <UserID>T002</UserID>
     </Teachers>
     <Students>
       <UserID>S003</UserID>
+      <UserID>S849</UserID>
     </Students>
   </Class>
   <AttendanceData>

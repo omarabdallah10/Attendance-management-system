@@ -133,4 +133,7 @@
   <data name="save_btn.Text" xml:space="preserve">
     <value>حفظ</value>
   </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>اللغة</value>
+  </data>
 </root>

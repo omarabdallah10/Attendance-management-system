@@ -85,8 +85,6 @@ namespace AttendanceSysytem.Classes
         public static void addStudentToClass(string Studentid, string oldclassNam, string ClassNam)
         {
             XmlDocument doc = DataManagement.xmlDoc();
-
-
             XmlNode MyNewClassStudents = doc.SelectSingleNode("//Class[Name = '" + ClassNam + "']/Students");
 
             XmlNode newStudent = doc.CreateElement("UserID");
@@ -95,6 +93,7 @@ namespace AttendanceSysytem.Classes
             MyNewClassStudents.AppendChild(newStudent);
 
             XmlNode oldClass = doc.SelectSingleNode("//Class[Name = '" + oldclassNam + "']/Students[UserID='" + Studentid + "']");
+            Console.WriteLine(oldclassNam + "::::" + Studentid);
             foreach (XmlNode student in oldClass)
             {
                 if (student.InnerText == Studentid)
