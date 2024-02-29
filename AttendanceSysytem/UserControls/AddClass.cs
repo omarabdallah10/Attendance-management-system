@@ -62,7 +62,7 @@ namespace AttendanceSysytem.UserControls
                 School.AppendChild(newClass);
                 School.InsertBefore(newClass, oldClass);
                 DataManagement.SaveXml(doc);
-                MessageBox.Show("Student Added successfully");
+                MessageBox.Show("Class Added successfully");
                 foreach (Control control in Controls)
                 {
                     if (control is System.Windows.Forms.TextBox)
