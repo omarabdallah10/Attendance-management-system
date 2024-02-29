@@ -209,6 +209,7 @@ namespace AttendanceSysytem.Forms
         private void btnGoBack_Click(object sender, EventArgs e)
         {
                 teacherFunctionalitiesForm form = new teacherFunctionalitiesForm();
+                form.recived = recived;
                 form.Show();
                 Hide();
         }
