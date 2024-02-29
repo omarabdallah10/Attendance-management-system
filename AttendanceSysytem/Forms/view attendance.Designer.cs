@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(view_attendance));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.classCompoBox = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.FromDate = new System.Windows.Forms.DateTimePicker();
@@ -44,6 +44,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.DayFormatComboBox = new System.Windows.Forms.ComboBox();
+            this.btnGoBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.StudentAttendanceTable)).BeginInit();
             this.SuspendLayout();
             // 
@@ -93,14 +94,14 @@
             this.StudentAttendanceTable.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.StudentAttendanceTable.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.StudentAttendanceTable.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.StudentAttendanceTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.StudentAttendanceTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.StudentAttendanceTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.StudentAttendanceTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.DATE,
@@ -110,8 +111,8 @@
             this.StudentAttendanceTable.Name = "StudentAttendanceTable";
             this.StudentAttendanceTable.ReadOnly = true;
             this.StudentAttendanceTable.RowHeadersVisible = false;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.StudentAttendanceTable.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.StudentAttendanceTable.RowsDefaultCellStyle = dataGridViewCellStyle2;
             // 
             // DATE
             // 
@@ -164,10 +165,21 @@
             this.DayFormatComboBox.Name = "DayFormatComboBox";
             this.DayFormatComboBox.SelectedIndexChanged += new System.EventHandler(this.DayFormatComboBox_SelectedIndexChanged);
             // 
+            // btnGoBack
+            // 
+            this.btnGoBack.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnGoBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.btnGoBack, "btnGoBack");
+            this.btnGoBack.ForeColor = System.Drawing.Color.White;
+            this.btnGoBack.Name = "btnGoBack";
+            this.btnGoBack.UseVisualStyleBackColor = false;
+            this.btnGoBack.Click += new System.EventHandler(this.btnGoBack_Click);
+            // 
             // view_attendance
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnGoBack);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.DayFormatComboBox);
             this.Controls.Add(this.label2);
@@ -201,5 +213,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn UserID;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox DayFormatComboBox;
+        private System.Windows.Forms.Button btnGoBack;
     }
 }

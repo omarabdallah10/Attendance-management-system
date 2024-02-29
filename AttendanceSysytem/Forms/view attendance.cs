@@ -152,5 +152,13 @@ namespace AttendanceSysytem.Forms
             }
             printTable();
         }
+
+        private void btnGoBack_Click(object sender, EventArgs e)
+        {
+            teacherFunctionalitiesForm form = new teacherFunctionalitiesForm();
+            form.recived = recived;
+            form.Show();
+            Hide();
+        }
     }
 }
