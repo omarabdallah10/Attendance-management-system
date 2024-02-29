@@ -131,6 +131,9 @@
   <data name="classCompoBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 28</value>
   </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 25</value>
+  </data>
   <data name="btnSaveAs.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt, style=Bold</value>
   </data>
@@ -139,14 +142,5 @@
   </data>
   <data name="btnSaveAs.Text" xml:space="preserve">
     <value>Save AS</value>
-  </data>
-  <data name="btnViewAttendance.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>On</value>
-  </data>
-  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>On</value>
-  </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 25</value>
   </data>
 </root>

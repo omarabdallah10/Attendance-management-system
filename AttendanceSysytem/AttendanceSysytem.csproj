@@ -153,12 +153,6 @@
     <Compile Include="Forms\TeacherViewAttendanceForm.Designer.cs">
       <DependentUpon>TeacherViewAttendanceForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\view attendance.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\view attendance.Designer.cs">
-      <DependentUpon>view attendance.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Forms\teacherFunctionalitiesForm.cs">
@@ -296,12 +290,6 @@
     <EmbeddedResource Include="Forms\TeacherViewAttendanceForm.resx">
       <DependentUpon>TeacherViewAttendanceForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\view attendance.ar.resx">
-      <DependentUpon>view attendance.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\view attendance.resx">
-      <DependentUpon>view attendance.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -348,9 +336,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\SettingsControl.resx">
       <DependentUpon>SettingsControl.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\ViewAttendance.ar.resx">
-      <DependentUpon>ViewAttendance.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ViewAttendance.resx">
       <DependentUpon>ViewAttendance.cs</DependentUpon>
