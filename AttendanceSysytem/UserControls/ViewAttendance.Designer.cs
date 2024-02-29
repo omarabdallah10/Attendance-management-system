@@ -79,7 +79,7 @@
             this.dataGridViewAttendance.Name = "dataGridViewAttendance";
             this.dataGridViewAttendance.RowHeadersWidth = 51;
             this.dataGridViewAttendance.RowTemplate.Height = 24;
-            this.dataGridViewAttendance.Size = new System.Drawing.Size(993, 404);
+            this.dataGridViewAttendance.Size = new System.Drawing.Size(1080, 471);
             this.dataGridViewAttendance.TabIndex = 14;
             // 
             // DateComboBox
@@ -161,7 +161,7 @@
             this.Controls.Add(this.classes_label);
             this.Controls.Add(this.classComboBox);
             this.Name = "ViewAttendance";
-            this.Size = new System.Drawing.Size(1133, 653);
+            this.Size = new System.Drawing.Size(1314, 766);
             this.Load += new System.EventHandler(this.ViewAttendance_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAttendance)).EndInit();
             this.ResumeLayout(false);
