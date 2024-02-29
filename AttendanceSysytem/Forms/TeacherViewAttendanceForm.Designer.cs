@@ -29,10 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TeacherViewAttendanceForm));
+            this.dataGridViewAttendance = new System.Windows.Forms.DataGridView();
             this.btnGoBack = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.classCompoBox = new System.Windows.Forms.ComboBox();
-            this.btnSaveAs = new System.Windows.Forms.Button();
+            this.DateComboBox = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.btnViewAttendance = new System.Windows.Forms.Button();
             this.btnSaveAs = new System.Windows.Forms.Button();
             this.btnPDf = new System.Windows.Forms.Button();
@@ -71,7 +73,7 @@
             resources.ApplyResources(this.classCompoBox, "classCompoBox");
             this.classCompoBox.Name = "classCompoBox";
             // 
-            // btnSaveAs
+            // DateComboBox
             // 
             this.DateComboBox.Cursor = System.Windows.Forms.Cursors.Hand;
             resources.ApplyResources(this.DateComboBox, "DateComboBox");
@@ -96,7 +98,7 @@
             this.btnViewAttendance.UseVisualStyleBackColor = false;
             this.btnViewAttendance.Click += new System.EventHandler(this.btnViewAttendance_Click);
             // 
-            // label2
+            // btnSaveAs
             // 
             this.btnSaveAs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnSaveAs.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -139,10 +141,13 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.DataGridView dataGridViewAttendance;
         private System.Windows.Forms.Button btnGoBack;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox classCompoBox;
-        private System.Windows.Forms.Button btnSaveAs;
+        private System.Windows.Forms.ComboBox DateComboBox;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnViewAttendance;
         private System.Windows.Forms.Button btnSaveAs;
         private System.Windows.Forms.Button btnPDf;
