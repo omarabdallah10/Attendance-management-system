@@ -271,5 +271,19 @@
       <Date>2024-02-28</Date>
       <Status>Present</Status>
     </AttendanceRecord>
+    <AttendanceRecord>
+      <UserID>S774</UserID>
+      <Name>abody abodk</Name>
+      <ClassName>OS</ClassName>
+      <Date>2024-02-29</Date>
+      <Status>Present</Status>
+    </AttendanceRecord>
+    <AttendanceRecord>
+      <UserID>S304</UserID>
+      <Name>kareem ahmed</Name>
+      <ClassName>OS</ClassName>
+      <Date>2024-02-29</Date>
+      <Status>Absent</Status>
+    </AttendanceRecord>
   </AttendanceData>
 </School>

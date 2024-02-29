@@ -34,7 +34,6 @@
             this.btnGoBack = new System.Windows.Forms.Button();
             this.dataGridViewTakeAttendance = new System.Windows.Forms.DataGridView();
             this.btnSave = new System.Windows.Forms.Button();
-            this.btnSaveAs = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTakeAttendance)).BeginInit();
             this.SuspendLayout();
             // 
@@ -43,31 +42,29 @@
             resources.ApplyResources(this.ClassComboBox, "ClassComboBox");
             this.ClassComboBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ClassComboBox.FormattingEnabled = true;
-            this.ClassComboBox.Items.AddRange(new object[] {
-            resources.GetString("ClassComboBox.Items"),
-            resources.GetString("ClassComboBox.Items1"),
-            resources.GetString("ClassComboBox.Items2")});
             this.ClassComboBox.Name = "ClassComboBox";
             this.ClassComboBox.SelectedIndexChanged += new System.EventHandler(this.ClassComboBox_SelectedIndexChanged);
             // 
             // label2
             // 
             resources.ApplyResources(this.label2, "label2");
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.label2.Name = "label2";
             // 
             // btnGoBack
             // 
             resources.ApplyResources(this.btnGoBack, "btnGoBack");
-            this.btnGoBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnGoBack.BackColor = System.Drawing.Color.OrangeRed;
             this.btnGoBack.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGoBack.ForeColor = System.Drawing.Color.White;
             this.btnGoBack.Name = "btnGoBack";
             this.btnGoBack.UseVisualStyleBackColor = false;
+            this.btnGoBack.Click += new System.EventHandler(this.btnGoBack_Click);
             // 
             // dataGridViewTakeAttendance
             // 
             resources.ApplyResources(this.dataGridViewTakeAttendance, "dataGridViewTakeAttendance");
-            this.dataGridViewTakeAttendance.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.dataGridViewTakeAttendance.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridViewTakeAttendance.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dataGridViewTakeAttendance.Name = "dataGridViewTakeAttendance";
             this.dataGridViewTakeAttendance.RowTemplate.Height = 24;
@@ -76,25 +73,16 @@
             // btnSave
             // 
             resources.ApplyResources(this.btnSave, "btnSave");
-            this.btnSave.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSave.Name = "btnSave";
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // btnSaveAs
-            // 
-            resources.ApplyResources(this.btnSaveAs, "btnSaveAs");
-            this.btnSaveAs.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.btnSaveAs.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSaveAs.Name = "btnSaveAs";
-            this.btnSaveAs.UseVisualStyleBackColor = false;
-            // 
             // TakeAttendanceForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.btnSaveAs);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.ClassComboBox);
             this.Controls.Add(this.label2);
@@ -115,6 +103,5 @@
         private System.Windows.Forms.Button btnGoBack;
         private System.Windows.Forms.DataGridView dataGridViewTakeAttendance;
         private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.Button btnSaveAs;
     }
 }

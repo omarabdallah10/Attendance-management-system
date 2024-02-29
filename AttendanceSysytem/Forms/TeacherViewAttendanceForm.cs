@@ -1,4 +1,5 @@
 ﻿using AttendanceSysytem.Classes;
+using AttendanceSysytem.Users;
 using PdfSharp.Drawing;
 using PdfSharp.Pdf;
 using System;
@@ -15,12 +16,17 @@ using System.Xml;
 
 namespace AttendanceSysytem.Forms
 {
+
     public partial class TeacherViewAttendanceForm : Form
     {
+        public Teacher recived { get; set; }
+        public XmlDocument xmlDoc { get; set; }
         public TeacherViewAttendanceForm()
         {
             InitializeComponent();
             Settings.ChangeFont(this, Settings.MyFont, true);
+            xmlDoc = DataManagement.xmlDoc();
+
         }
 
         //load Data on form load
@@ -41,11 +47,27 @@ namespace AttendanceSysytem.Forms
             DateComboBox.DataSource = dt;
             DateComboBox.DisplayMember = "Date";
 
-            
 
-            
+            string UserID = recived.UserID;
+
+            XmlNodeList ClassNodes = xmlDoc.SelectNodes("//Class");
+            foreach (XmlNode ClassNode in ClassNodes)
+            {
+                XmlNode TeacherNode = ClassNode.SelectSingleNode("Teachers");
+                XmlNodeList TeachersNodes = TeacherNode.SelectNodes("UserID");
+                foreach (XmlNode teacherNode in TeachersNodes)
+                {
+                    if (UserID == teacherNode.InnerText)
+                    {
+                        string ClassName = ClassNode.SelectSingleNode("Name").InnerText;
+                        classCompoBox.Items.Add(ClassName);
+                    }
+                }
+            }
+
+
             // -- PD Track is selected by default
-            TrackCompoBox.SelectedIndex = 0;
+            classCompoBox.SelectedIndex = 0;
             // -- last index of combobox is selected
             DateComboBox.SelectedIndex = DateComboBox.Items.Count - 1;
 
@@ -64,7 +86,7 @@ namespace AttendanceSysytem.Forms
 
                 //view the matched date and track
                 DataView dv = new DataView(xmlData.DataSet.Tables["AttendanceRecord"]);
-                dv.RowFilter = "Date = '" + DateComboBox.Text + "' AND ClassName = '" + TrackCompoBox.Text + "'";
+                dv.RowFilter = "Date = '" + DateComboBox.Text + "' AND ClassName = '" + classCompoBox.Text + "'";
                 dataGridViewAttendance.DataSource = dv;
 
                 //MessageBox.Show("Data Loaded Successfully!");
