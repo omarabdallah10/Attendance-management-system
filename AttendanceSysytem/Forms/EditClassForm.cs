@@ -19,6 +19,7 @@ namespace AttendanceSysytem.Forms
     {
         public Classes.Track recived { get; set; }
         public XmlDocument doc { get; set; }
+        XmlDocument xmlDoc = DataManagement.xmlDoc();
         Edit ParentController = null;
         public EditClassForm(Edit _parentController)
         {
@@ -76,18 +77,17 @@ namespace AttendanceSysytem.Forms
             }
             if (flag == 0 && (class_name_txt.Text != recived.Name || newSuper != oldSuper))
             {*/
-                name.InnerText = class_name_txt.Text;
-                DataManagement.changeStdClassName(doc, recived.Name, class_name_txt.Text);
-                SaveTeachers();
-                SaveStudents();
-                DataManagement.SaveXml(doc);
-                MessageBox.Show("Your edits have been saved successfully");
-                Close();
-           /* }
-            else
-            {
-                MessageBox.Show("Class name already exists, please choose another one");
-            }*/
+            name.InnerText = class_name_txt.Text;
+            DataManagement.changeStdClassName(doc, recived.Name, class_name_txt.Text);
+            SaveTeachers();
+            SaveStudents();
+            MessageBox.Show("Your edits have been saved successfully");
+            Close();
+            /* }
+             else
+             {
+                 MessageBox.Show("Class name already exists, please choose another one");
+             }*/
 
         }
 
@@ -133,34 +133,35 @@ namespace AttendanceSysytem.Forms
         }
         private void SaveTeachers()
         {
-            XmlDocument xmlDoc = DataManagement.xmlDoc();
             XmlNode Teachers = xmlDoc.SelectSingleNode($"//Class[Name = '{recived.Name}' ]/Teachers");
             Teachers.RemoveAll();
             DataManagement.SaveXml(xmlDoc);
             for (int i = 0; i < this.TeachersTable.RowCount; i++)
             {
-                //Console.WriteLine(this.TeachersTable.Rows[i].Cells[3].Value.ToString());
+                Console.WriteLine(this.TeachersTable.Rows[i].Cells[3].Value.ToString());
                 if (this.TeachersTable.Rows[i].Cells[3].Value.ToString() == "True")
                 {
                     string id = this.TeachersTable.Rows[i].Cells[0].Value.ToString();
+                    Console.WriteLine(id + " :::: " + recived.Name);
                     Adding.addTeacherToClass(id, recived.Name);
                 }
             }
-            MessageBox.Show($"Teachers Added successfully to class {recived.Name}", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //MessageBox.Show($"Teachers Added successfully to class {recived.Name}", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
         private void SaveStudents()
         {
             for (int i = 0; i < this.StudentsTable.RowCount; i++)
             {
-                //Console.WriteLine(this.TeachersTable.Rows[i].Cells[3].Value.ToString());
+                Console.WriteLine(this.StudentsTable.Rows[i].Cells[3].Value.ToString());
                 if (this.StudentsTable.Rows[i].Cells[3].Value.ToString() == "True")
                 {
                     string id = this.StudentsTable.Rows[i].Cells[0].Value.ToString();
                     string oldClassName = this.StudentsTable.Rows[i].Cells[2].Value.ToString();
+                    Console.WriteLine("OLD Class: " + oldClassName + " NEW Class: " + recived.Name);
                     Adding.addStudentToClass(id, oldClassName, recived.Name);
                 }
             }
-            MessageBox.Show($"Students Added successfully to class {recived.Name}", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //MessageBox.Show($"Students Added successfully to class {recived.Name}", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void EditClassForm_FormClosed(object sender, FormClosedEventArgs e)

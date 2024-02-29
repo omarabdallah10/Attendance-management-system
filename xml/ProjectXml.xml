@@ -49,7 +49,7 @@
       <Name>ali ahmed</Name>
       <Email>ahmed@ahmed.alo</Email>
       <Password>123@adadaA</Password>
-      <ClassName>PD</ClassName>
+      <ClassName>OS</ClassName>
     </Student>
     <Student>
       <UserID>S304</UserID>
@@ -62,15 +62,15 @@
       <UserID>S001</UserID>
       <Name>Abdelhameed Osama</Name>
       <Email>abdelhameed_osama@example.com</Email>
-      <Password>610</Password>
-      <ClassName>PD</ClassName>
+      <Password>123456789Aa</Password>
+      <ClassName>OS</ClassName>
     </Student>
     <Student>
       <UserID>S002</UserID>
       <Name>AbdUllah Aiman</Name>
       <Email>abdUllah_aiman@example.com</Email>
       <Password>123456789Aa</Password>
-      <ClassName>AI</ClassName>
+      <ClassName>OS</ClassName>
     </Student>
     <Student>
       <UserID>S003</UserID>
@@ -84,7 +84,7 @@
       <Name>Zoz Khaled</Name>
       <Email>Zeoz@ex.com</Email>
       <Password>123456789Aa@</Password>
-      <ClassName>PD</ClassName>
+      <ClassName>OS</ClassName>
     </Student>
   </Users>
   <Class>
@@ -112,14 +112,14 @@
       <UserID>T002</UserID>
     </Supervisor>
     <Teachers>
+      <UserID>T161</UserID>
+      <UserID>T001</UserID>
       <UserID>T002</UserID>
       <UserID>T004</UserID>
-      <UserID>T001</UserID>
-      <UserID>T161</UserID>
     </Teachers>
     <Students>
-      <UserID>S304</UserID>
       <UserID>S004</UserID>
+      <UserID>S304</UserID>
     </Students>
   </Class>
   <Class>
