@@ -2,6 +2,13 @@
 
 **This repository contains the source code for the Attendance Management System, a Windows Forms application designed to streamline attendance tracking and management in educational institutions.**
 
+## Team members
+
+- **Omar Abdallah**
+- **Abdelhameed OSama**
+- **Abdallah Ayman**
+
+
 **Features:**
 
 * **Role-based access control:** Grants specific functionalities to administrators, teachers, and students.
